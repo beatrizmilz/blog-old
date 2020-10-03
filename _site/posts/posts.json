@@ -1,18 +1,41 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to Beatriz Milz",
-    "description": "Welcome to our new blog, Beatriz Milz. We hope you enjoy \nreading what we have to say!",
+    "path": "posts/2019-06-24-compartilhando-contedo-utilizando-r/",
+    "title": "Compartilhando conteúdo",
+    "description": "Como compartilhar conteúdo sobre R, utilizando R?",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Beatriz Milz",
+        "url": "https://beatrizmilz.com"
       }
     ],
-    "date": "2020-10-03",
-    "categories": [],
-    "preview": {},
-    "last_modified": "2020-10-03T09:46:50-03:00",
+    "date": "2019-06-24",
+    "categories": [
+      "R",
+      "R-Ladies",
+      "R Markdown"
+    ],
+    "preview": "https://media.giphy.com/media/dNgK7Ws7y176U/giphy.gif",
+    "last_modified": "2020-10-03T10:16:54-03:00",
+    "input_file": "compartilhando-contedo-utilizando-r.utf8.md"
+  },
+  {
+    "path": "posts/2019-01-29-meio-ano-r/",
+    "title": "Meio ano de aprendizagem de R!",
+    "description": "Neste texto, gostaria de compartilhar um pouco sobre os primeiros seis meses de aprendizagem em programação, principalmente na linguagem R.",
+    "author": [
+      {
+        "name": "Beatriz Milz",
+        "url": "https://beatrizmilz.com"
+      }
+    ],
+    "date": "2019-01-29",
+    "categories": [
+      "R",
+      "R-Ladies"
+    ],
+    "preview": "https://beatrizmilz.com/img/rladies-1-meetup.jpeg",
+    "last_modified": "2020-10-03T10:07:26-03:00",
     "input_file": {}
   }
 ]

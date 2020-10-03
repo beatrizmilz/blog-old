@@ -3,10 +3,20 @@ title: "Beatriz Milz"
 description: |
   Beatriz Milz
 output_dir: "_site"
+creative_commons: CC BY
 navbar:
+  left:
+    - icon: fas fa-graduation-cap
+      href: https://beatrizmilz.com
+    - text: "Materiais sobre R"
+      href: https://beatrizmilz.github.io/slidesR
+    - text: "CV"
+      href: https://beatrizmilz.github.io/resume/index.pdf
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+output:
+  distill::distill_article:
+    css: styles.css

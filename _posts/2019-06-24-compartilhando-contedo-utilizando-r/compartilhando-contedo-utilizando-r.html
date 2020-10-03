@@ -19,370 +19,39 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Beatriz Milz: About this blog</title>
+  <title>Compartilhando conteúdo</title>
   
-  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
+  <meta property="description" itemprop="description" content="Como compartilhar conteúdo sobre R, utilizando R?"/>
   
-  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
   
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2019-06-24"/>
+  <meta property="article:created" itemprop="dateCreated" content="2019-06-24"/>
+  <meta name="article:author" content="Beatriz Milz"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Beatriz Milz: About this blog"/>
+  <meta property="og:title" content="Compartilhando conteúdo"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the blog"/>
+  <meta property="og:description" content="Como compartilhar conteúdo sobre R, utilizando R?"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Beatriz Milz"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Beatriz Milz: About this blog"/>
-  <meta property="twitter:description" content="Some additional details about the blog"/>
+  <meta property="twitter:title" content="Compartilhando conteúdo"/>
+  <meta property="twitter:description" content="Como compartilhar conteúdo sobre R, utilizando R?"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this blog"]},{"type":"character","attributes":{},"value":["Some additional details about the blog"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","categories","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Compartilhando conteúdo"]},{"type":"character","attributes":{},"value":["Como compartilhar conteúdo sobre R, utilizando R?\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]}]}]},{"type":"character","attributes":{},"value":["R","R-Ladies","R Markdown"]},{"type":"character","attributes":{},"value":["2019-06-24"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
   
-  <script type="application/javascript">
-  
-    window.headroom_prevent_pin = false;
-  
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-  
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-  
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-  
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-  
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["compartilhando-contedo-utilizando-r_files/bowser-1.9.3/bowser.min.js","compartilhando-contedo-utilizando-r_files/distill-2.2.21/template.v2.js","compartilhando-contedo-utilizando-r_files/jquery-1.11.3/jquery.min.js","compartilhando-contedo-utilizando-r_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
-  
-  <style type="text/css">
-  
-  /* Theme (user-documented overrideables for nav appearance) */
-  
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #455a64;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .distill-site-nav a:hover {
-    color: white;
-  }
-  
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-  
-  .distill-site-header {
-  
-  }
-  
-  .distill-site-footer {
-  
-  }
-  
-  
-  /* Site Header */
-  
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-  
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-  
-  
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-  
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-  
-  .distill-site-header .title {
-    font-size: 18px;
-  }
-  
-  .distill-site-header .logo {
-    padding: 0;
-  }
-  
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-  
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-  
-  
-  
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-  
-  
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-  
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-  
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-dropdown-active {
-    display: block;
-  }
-  
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-  
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-  
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative;}
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  
-  /* Site Footer */
-  
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  
-  /* Headroom */
-  
-  d-title {
-    padding-top: 6rem;
-  }
-  
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-  
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-  
-  .headroom--unpinned {
-    top: -100px;
-  }
-  
-  .headroom--pinned {
-    top: 0;
-  }
-  
-  </style>
-  
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
   
@@ -1268,24 +937,13 @@
   </script>
   
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="compartilhando-contedo-utilizando-r_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="compartilhando-contedo-utilizando-r_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="compartilhando-contedo-utilizando-r_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="compartilhando-contedo-utilizando-r_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <style type="text/css">
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #1aa6b4;
-      font-size: 15px;
-    font-weight: 300;
-  }
-  
-  
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
 
 </head>
 
@@ -1294,40 +952,61 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this blog","description":"Some additional details about the blog","authors":[]}
+{"title":"Compartilhando conteúdo","description":"Como compartilhar conteúdo sobre R, utilizando R?","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2019-06-24T00:00:00.000-03:00","citationText":"Milz, 2019"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Beatriz Milz</a>
-<a href="https://beatrizmilz.com">
-<i class="fas fa-graduation-cap" aria-hidden="true"></i>
-</a>
-<a href="https://beatrizmilz.github.io/slidesR">Materiais sobre R</a>
-<a href="https://beatrizmilz.github.io/resume/index.pdf">CV</a>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this blog</h1>
-<p><p>Some additional details about the blog</p></p>
+<h1>Compartilhando conteúdo</h1>
+<p><p>Como compartilhar conteúdo sobre R, utilizando R?</p></p>
 </div>
 
+<div class="d-byline">
+  Beatriz Milz <a href="https://beatrizmilz.com" class="uri">https://beatrizmilz.com</a> 
+  
+<br/>2019-06-24
+</div>
 
 <div class="d-article">
-
+<h1 id="atualização-da-página">Atualização da página</h1>
+<p>No último final de semana, utilizei algumas horas para reformular essa página. Eu utilizava o tema <a href="https://themes.gohugo.io/academic/">Academic</a>, porém queria algo mais simples, então mudei para o <a href="https://themes.gohugo.io/hugo-lithium-theme/">Lithium</a>. Além disso, também habilitei os comentários com o <a href="https://disqus.com/">Disqus</a>, habilitei o <a href="https://analytics.google.com/analytics/web/">Google Analytics</a> e também resolvi testar o <a href="https://netlify.com/">Netlify</a> (que aliás achei incrível).</p>
+<p>Durante esse processo, algumas dificuldades apareceram… Também lembrei da primeira vez que criei uma página com o <a href="https://github.com/rstudio/blogdown"><code>blogdown</code></a>, onde graças à muitos conteúdos online eu consegui colocar no ar depois de várias mensagens de erro.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="https://media.giphy.com/media/ktvFa67wmjDEI/giphy.gif" width="30%" style="display: block; margin: auto;" /></p>
+</div>
+<h2 id="conteúdos-online">Conteúdos online</h2>
+<p>Os conteúdos online, que muitas pessoas disponibilizaram através de posts em blog, livros, documentação, dúvidas no <a href="https://pt.stackoverflow.com/">Stackoverflow</a>, me ajudaram muito a conseguir entender como funcionava o processo de criar uma página com o <a href="https://github.com/rstudio/blogdown"><code>blogdown</code></a>. Esses conteúdos foram essenciais também para entender como deixar esse site disponível online utilizando o <a href="https://github.com">Github</a> (lembrando que a minha formação é em Gestão Ambiental). Porém a maior parte desse conteúdo estava <strong>disponibilizado em inglês</strong>: foram poucos os materiais que encontrei em português.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="https://media.giphy.com/media/1iu8uG2cjYFZS6wTxv/giphy.gif" width="30%" style="display: block; margin: auto;" /></p>
+</div>
+<p>Lembrei também da conversa que tive rapidamente no mês passado com a <a href="https://github.com/JuliaHellenFerreira">Julia</a>, co-organizadora do <a href="https://www.meetup.com/pt-BR/rladies-niteroi/">R-Ladies Niterói</a>, onde disse que seria interessante que ela disponibilizasse online as palestras que ela já fez, para que outras pessoas consigam consultar e aprender com o conteúdo.</p>
+<p>Se você está em dúvida se deve compartilhar conteúdo na internet, eu indico a palestra (em inglês) do <a href="http://varianceexplained.org/about/">David Robinson</a> na <code>rstudio::conf 2019</code>, chamada <a href="https://resources.rstudio.com/rstudio-conf-2019/the-unreasonable-effectiveness-of-public-work">“The unreasonable effectiveness of public work”</a>.</p>
+<p>As formas de compartilhar conteúdo apontadas por David são: escrever um post em um blog, escrever um tweet, contribuir com projetos open source, dar palestras, gravar a tela enquanto faz alguma análise de dados e disponibilizar o vídeo, e escrever um livro sobre o assunto.</p>
+<p>Nessa palestra, David diz que se você der a mesma dica/conselho três vezes, escreva um post em um blog, assim muitas pessoas conseguem acessar esse conteúdo.</p>
+<!-- # ```{r echo=FALSE, fig.align='center', out.width="100%"} -->
+<!-- # blogdown::shortcode('tweet', '928447584712253440') -->
+<!-- # ``` -->
+<h2 id="compartilhando-conteúdo-sobre-r-e-utilizando-r">Compartilhando conteúdo sobre R e utilizando R</h2>
+<p>Por isso, pretendo fazer alguns posts <strong>em português</strong> com algumas <strong>dicas sobre como compartilhar conteúdo na internet</strong>, utilizando <code>R</code>. Não é segredo que eu sou fã dos pacotes criados pelo <a href="https://yihui.name">Yihui Xie</a>, então os temas que pretendo abordar são:</p>
+<ul>
+<li><p>Criar seu currículo com <code>R</code>, usando o pacote <a href="https://github.com/rstudio/pagedown"><code>pagedown</code></a>;</p></li>
+<li><p>Criar uma página/blog com <code>R</code>, usando o pacote <a href="https://github.com/rstudio/blogdown"><code>blogdown</code></a>.</p></li>
+<li><p>Criar apresentações com <code>R</code>, usando o pacote <a href="https://github.com/yihui/xaringan"><code>xaringan</code></a> - lembrando que existe uma apresentação sobre esse assunto disponível <a href="http://beatrizmilz.com/slides/">aqui</a>. O <a href="https://github.com/brunolucian">Bruno Lucian</a> se interessou em compartilhar esse conteúdo no blog <a href="https://www.dadosaleatorios.com.br/">Dados Aleatórios</a>, então quando estiver disponível eu colocarei o link para o post aqui também.</p></li>
+</ul>
+<h2 id="git-e-github">Git e Github</h2>
+<p>Para o compartilhar conteúdo, é interessante também utilizar <code>git</code> e Github. Mas considerando que nesse tema já existe bastante conteúdo em português, por enquanto vou focar nas ferramentas com <code>R</code>, que tem menos conteúdo disponível nessa língua.</p>
+<p>O post do <a href="https://woliveiras.com.br/">William Oliveira</a>, chamado <a href="https://medium.com/trainingcenter/plano-para-estudar-git-e-github-enquanto-aprende-programa%C3%A7%C3%A3o-f5d5f986f459">Plano para estudar Git e GitHub enquanto aprende programação</a>, me ajudou bastante a entender como começar a usar o <code>git</code>. Nesse post ele utiliza o terminal, e para algumas pessoas que estão iniciando essa abordagem pode ser um pouco intimidadora.</p>
+<p>Outra opção para quem está iniciando é utilizar o <a href="https://desktop.github.com/">Github Desktop</a>. Acredito que é uma interface amigável para quem está aprendendo como funciona o <code>git</code>.</p>
+<h2 id="até-logo">Até logo!</h2>
+<p>Pretendo postar sobre esses conteúdos logo logo. Enquanto isso, estou aberta à sugestões. Existem outras formas que vocês usam para divulgar conteúdo utilizando <code>R</code>? Existe alguma que você conheça e gostaria de aprender mais? Existem dificuldades? Se sim, quais?</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="https://media.giphy.com/media/dNgK7Ws7y176U/giphy.gif" width="30%" data-distill-preview=1 style="display: block; margin: auto;" /></p>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -1339,10 +1018,7 @@
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->
