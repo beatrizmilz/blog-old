@@ -18,3 +18,9 @@ navbar:
 output:
   distill::distill_article:
     css: styles.css
+collections:
+  posts:
+    disqus: bea-milz
+    share: [twitter, linkedin]
+    hidden: false
+base_url: https://beamilz.netlify.app/

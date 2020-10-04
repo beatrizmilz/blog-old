@@ -14,10 +14,6 @@ categories:
   - R
 preview: https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png
 base_url: https://beamilz.netlify.app/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app/
-collections:
-  posts:
-    disqus: bea-milz
-    share: [twitter, linkedin]
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = "center")

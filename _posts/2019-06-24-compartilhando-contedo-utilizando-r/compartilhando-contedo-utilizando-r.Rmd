@@ -14,10 +14,6 @@ output:
   distill::distill_article:
     self_contained: false
 base_url: https://beamilz.netlify.app/posts/2019-06-24-compartilhando-contedo-utilizando-r/
-collections:
-  posts:
-    disqus: bea-milz
-    share: [twitter, linkedin]
 ---
 
 ```{r setup, include=FALSE}

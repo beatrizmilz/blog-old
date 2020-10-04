@@ -13,10 +13,6 @@ output:
   distill::distill_article:
     self_contained: false
 base_url: https://beamilz.netlify.app/posts/2019-01-29-meio-ano-r/
-collections:
-  posts:
-    disqus: bea-milz
-    share: [twitter, linkedin]
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = "center", out.width = "100%")

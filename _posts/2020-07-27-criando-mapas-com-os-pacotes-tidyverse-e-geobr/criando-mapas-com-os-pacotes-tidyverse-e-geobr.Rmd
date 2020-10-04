@@ -15,10 +15,6 @@ categories:
   - Macrometrópole Paulista
 bibliography: [pacotes-projeto-fflch.bib]
 base_url: https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/
-collections:
-  posts:
-    disqus: bea-milz
-    share: [twitter, linkedin]
 ---
 
 ```{r setup, include=FALSE}

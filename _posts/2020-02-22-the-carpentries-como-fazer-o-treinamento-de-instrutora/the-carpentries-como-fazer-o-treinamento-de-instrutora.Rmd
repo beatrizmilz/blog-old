@@ -13,10 +13,6 @@ categories:
   - Ensino
   - The Carpentries
 base_url: https://beamilz.netlify.app/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/
-collections:
-  posts:
-    disqus: bea-milz
-    share: [twitter, linkedin]
 ---
 
 Olá a todes! Neste post, vou contar um pouco sobre o que é a [The Carpentries](https://carpentries.org/), como conheci este projeto, como foi o treinamento para me tornar uma instrutora, e quais desafios que percebi para o crescimento da comunidade no Brasil.

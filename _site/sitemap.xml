@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
+  <url>
+    <loc>https://beamilz.netlify.app/</loc>
+    <lastmod>2020-10-03T09:46:46-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/</loc>
+    <lastmod>2020-10-04T15:31:01-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://beamilz.netlify.app/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/</loc>
+    <lastmod>2020-10-04T15:26:04-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://beamilz.netlify.app/posts/2019-08-31-um-ano-aprendendo-r/</loc>
+    <lastmod>2020-10-04T15:30:30-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://beamilz.netlify.app/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app/</loc>
+    <lastmod>2020-10-04T15:29:53-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://beamilz.netlify.app/posts/2019-06-24-compartilhando-contedo-utilizando-r/</loc>
+    <lastmod>2020-10-04T15:35:07-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://beamilz.netlify.app/posts/2019-01-29-meio-ano-r/</loc>
+    <lastmod>2020-10-04T15:31:15-03:00</lastmod>
+  </url>
+</urlset>

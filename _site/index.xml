@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Blog - Bea Milz</title>
+    <link>https://beamilz.netlify.app/</link>
+    <atom:link href="https://beamilz.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Blog e textos sobre R
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>seg, 27 jul 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Criando mapas com os pacotes tidyverse e geobr</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr</link>
+      <description>Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo</description>
+      <category>R</category>
+      <category>Reprodutibilidade</category>
+      <category>Macrometrópole Paulista</category>
+      <guid>https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr</guid>
+      <pubDate>seg, 27 jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>The Carpentries: Como fazer o treinamento de instrutora?</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beamilz.netlify.app/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora</link>
+      <description>Neste post, vou contar um pouco sobre o que é a [The Carpentries](https://carpentries.org/), como conheci este projeto, como foi o treinamento para me tornar uma instrutora, e quais desafios que percebi para o crescimento da comunidade no Brasil.</description>
+      <category>Ensino</category>
+      <category>The Carpentries</category>
+      <guid>https://beamilz.netlify.app/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora</guid>
+      <pubDate>s�b, 22 fev 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://beamilz.netlify.app/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/mapa.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Um ano aprendendo R!</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beamilz.netlify.app/posts/2019-08-31-um-ano-aprendendo-r</link>
+      <description>Um relato deste um ano aprendendo R!</description>
+      <category>R</category>
+      <category>R-Ladies</category>
+      <guid>https://beamilz.netlify.app/posts/2019-08-31-um-ano-aprendendo-r</guid>
+      <pubDate>s�b, 31 ago 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://beatrizmilz.com/img/1anorladies.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Desenvolvendo meu primeiro Shiny App</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beamilz.netlify.app/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app</link>
+      <description>O objetivo deste post é compartilhar um pouco sobre a minha experiência no desenvolvimento do meu primeiro Shiny App.</description>
+      <category>Shiny</category>
+      <category>R</category>
+      <guid>https://beamilz.netlify.app/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app</guid>
+      <pubDate>qua, 21 ago 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Compartilhando conteúdo</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beamilz.netlify.app/posts/2019-06-24-compartilhando-contedo-utilizando-r</link>
+      <description>Como compartilhar conteúdo sobre R, utilizando R?</description>
+      <category>R</category>
+      <category>R-Ladies</category>
+      <category>R Markdown</category>
+      <guid>https://beamilz.netlify.app/posts/2019-06-24-compartilhando-contedo-utilizando-r</guid>
+      <pubDate>seg, 24 jun 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://media.giphy.com/media/dNgK7Ws7y176U/giphy.gif" medium="image" type="image/gif"/>
+    </item>
+    <item>
+      <title>Meio ano de aprendizagem de R!</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beamilz.netlify.app/posts/2019-01-29-meio-ano-r</link>
+      <description>Neste texto, gostaria de compartilhar um pouco sobre os primeiros seis meses de aprendizagem em programação, principalmente na linguagem R.</description>
+      <category>R</category>
+      <category>R-Ladies</category>
+      <guid>https://beamilz.netlify.app/posts/2019-01-29-meio-ano-r</guid>
+      <pubDate>ter, 29 jan 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://beatrizmilz.com/img/rladies-1-meetup.jpeg" medium="image" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>
