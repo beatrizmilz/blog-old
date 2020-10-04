@@ -8,10 +8,12 @@ navbar:
   left:
     - icon: fas fa-graduation-cap
       href: https://beatrizmilz.com
+    - text: "Blog"
+      href: https://beamilz.netlify.app/
     - text: "Materiais sobre R"
       href: https://beatrizmilz.github.io/slidesR
     - text: "CV"
-      href: https://beatrizmilz.github.io/resume/index.pdf
+      href: https://beatrizmilz.github.io/resume/index.html
   right:
     - icon: fas fa-home
       href: index.html
