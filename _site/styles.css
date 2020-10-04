@@ -12,3 +12,14 @@
   height: auto;
   object-fit: contain;
 }
+
+code {
+	color: #000;
+	background-color: #cef1f4;
+	padding: .2em .4em;
+	margin: 0;
+	font-size: 85%;
+	border-radius: 6px;
+}
+
+

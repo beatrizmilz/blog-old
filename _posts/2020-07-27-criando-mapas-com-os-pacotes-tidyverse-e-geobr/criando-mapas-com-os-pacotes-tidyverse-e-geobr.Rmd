@@ -14,6 +14,7 @@ categories:
   - Reprodutibilidade
   - Macrometrópole Paulista
 bibliography: [pacotes-projeto-fflch.bib]
+base_url: https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/
 collections:
   posts:
     disqus: bea-milz
@@ -23,12 +24,12 @@ collections:
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(
-  message = FALSE,
-  warning = FALSE,
-  fig.align = "center",
-  out.width = "100%"
+	echo = TRUE,
+	fig.align = "center",
+	message = FALSE,
+	warning = FALSE,
+	out.width = "100%"
 )
-
 ```
 
 

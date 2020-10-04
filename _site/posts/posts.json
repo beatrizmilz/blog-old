@@ -16,13 +16,15 @@
       "Macrometrópole Paulista"
     ],
     "preview": "posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png",
-    "last_modified": "2020-10-04T14:57:25-03:00",
-    "input_file": {}
+    "last_modified": "2020-10-04T15:25:35-03:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 768
   },
   {
     "path": "posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/",
     "title": "The Carpentries: Como fazer o treinamento de instrutora?",
-    "description": "A short description of the post.",
+    "description": "Neste post, vou contar um pouco sobre o que é a [The Carpentries](https://carpentries.org/), como conheci este projeto, como foi o treinamento para me tornar uma instrutora, e quais desafios que percebi para o crescimento da comunidade no Brasil.",
     "author": [
       {
         "name": "Beatriz Milz",
@@ -35,7 +37,7 @@
       "The Carpentries"
     ],
     "preview": "posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/mapa.jpg",
-    "last_modified": "2020-10-03T13:37:19-03:00",
+    "last_modified": "2020-10-04T15:26:04-03:00",
     "input_file": {}
   },
   {
@@ -54,7 +56,7 @@
       "R-Ladies"
     ],
     "preview": "https://beatrizmilz.com/img/1anorladies.jpg",
-    "last_modified": "2020-10-03T13:29:25-03:00",
+    "last_modified": "2020-10-04T15:24:46-03:00",
     "input_file": {}
   },
   {
@@ -73,7 +75,7 @@
       "R"
     ],
     "preview": "https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png",
-    "last_modified": "2020-10-03T13:24:26-03:00",
+    "last_modified": "2020-10-04T15:24:02-03:00",
     "input_file": {}
   },
   {
@@ -93,7 +95,7 @@
       "R Markdown"
     ],
     "preview": "https://media.giphy.com/media/dNgK7Ws7y176U/giphy.gif",
-    "last_modified": "2020-10-03T10:16:54-03:00",
+    "last_modified": "2020-10-04T15:23:15-03:00",
     "input_file": {}
   },
   {
@@ -112,7 +114,7 @@
       "R-Ladies"
     ],
     "preview": "https://beatrizmilz.com/img/rladies-1-meetup.jpeg",
-    "last_modified": "2020-10-03T10:07:26-03:00",
+    "last_modified": "2020-10-04T15:21:08-03:00",
     "input_file": {}
   }
 ]

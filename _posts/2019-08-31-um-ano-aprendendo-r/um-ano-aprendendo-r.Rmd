@@ -13,6 +13,11 @@ categories:
   - R
   - R-Ladies
 preview: https://beatrizmilz.com/img/1anorladies.jpg
+base_url: https://beamilz.netlify.app/posts/2019-08-31-um-ano-aprendendo-r/
+collections:
+  posts:
+    disqus: bea-milz
+    share: [twitter, linkedin]
 ---
 
 ```{r setup, include=FALSE}

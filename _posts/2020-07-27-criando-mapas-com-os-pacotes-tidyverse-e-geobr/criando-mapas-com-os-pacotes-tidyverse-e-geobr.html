@@ -33,12 +33,18 @@
   <meta property="og:title" content="Criando mapas com os pacotes tidyverse e geobr"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"/>
+  <meta property="og:image" content="https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png"/>
+  <meta property="og:image:width" content="1248"/>
+  <meta property="og:image:height" content="768"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:title" content="Criando mapas com os pacotes tidyverse e geobr"/>
   <meta property="twitter:description" content="Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"/>
+  <meta property="twitter:image" content="https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png"/>
+  <meta property="twitter:image:width" content="1248"/>
+  <meta property="twitter:image:height" content="768"/>
   
   <!--/radix_placeholder_meta_tags-->
   
@@ -55,7 +61,7 @@
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","bibliography","collections"]}},"value":[{"type":"character","attributes":{},"value":["Criando mapas com os pacotes tidyverse e geobr"]},{"type":"character","attributes":{},"value":["Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]}]}]},{"type":"character","attributes":{},"value":["2020-07-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["R","Reprodutibilidade","Macrometrópole Paulista"]},{"type":"character","attributes":{},"value":["pacotes-projeto-fflch.bib"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["bea-milz"]},{"type":"character","attributes":{},"value":["twitter","linkedin"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","bibliography","base_url","collections"]}},"value":[{"type":"character","attributes":{},"value":["Criando mapas com os pacotes tidyverse e geobr"]},{"type":"character","attributes":{},"value":["Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]}]}]},{"type":"character","attributes":{},"value":["2020-07-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["R","Reprodutibilidade","Macrometrópole Paulista"]},{"type":"character","attributes":{},"value":["pacotes-projeto-fflch.bib"]},{"type":"character","attributes":{},"value":["https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["disqus","share"]}},"value":[{"type":"character","attributes":{},"value":["bea-milz"]},{"type":"character","attributes":{},"value":["twitter","linkedin"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -994,7 +1000,21 @@
 <p>Neste post, irei focar em mostrar como abri os dados, e utilizando principalmente o <code>tidyverse</code> <span class="citation" data-cites="tidyverse2019">(Wickham, Averick, et al. <a href="#ref-tidyverse2019" role="doc-biblioref">2019</a>)</span> e o pacote <code>geobr</code> <span class="citation" data-cites="R-geobr">(Pereira and Goncalves <a href="#ref-R-geobr" role="doc-biblioref">2020</a>)</span>, criei mapas com esses dados.</p>
 <h2 id="pacotes-necessários">Pacotes necessários</h2>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(magrittr)
+library(geobr)
+# install.packages(&quot;pdftables&quot;)
+library(pdftables)
+library(readr)
+library(stringr)
+library(abjutils)
+library(ggspatial)
+library(tibble)
+library(knitr)
+library(sf)</code></pre>
 </div>
 <div class="alert alert-primary" role="alert">
 <p><strong>O que é <code>::</code> ?</strong></p>
@@ -1009,7 +1029,18 @@
 <h3 id="dados-de-saneamento">Dados de Saneamento</h3>
 <p>O primeiro passo é fazer o download do arquivo PDF referente ao Apêndice C e converter em CSV. A função <code>download.file()</code> possibilita fazer download de arquivos diretamente do R.</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Link do relatório
+url &lt;-
+  &quot;https://cetesb.sp.gov.br/aguas-interiores/wp-content/uploads/sites/12/2019/10/Ap%C3%AAndice-C_Dados-de-Saneamento-por-Munic%C3%ADpio.pdf&quot; 
 
+
+#Fazer o download do arquivo PDF
+
+download.file(url, # URL do arquivo a ser baixado
+              destfile = &quot;dados/apendice_c_2018.pdf&quot;, # Informar onde quer que seja salvo, e com qual nome e extensão 
+              method = &quot;curl&quot; # Método utilizado para o download
+              )</code></pre>
 </div>
 <p>Para fazer a conversão, utilizei o pacote <code>{pdftables}</code> <span class="citation" data-cites="R-pdftables">(Persson <a href="#ref-R-pdftables" role="doc-biblioref">2016</a>)</span>, que possibilita converter o arquivo PDF para CSV diretamente do R, através da API (e omiti a minha chave da API no código):</p>
 <div class="alert alert-primary" role="alert">
@@ -1020,11 +1051,41 @@
 <p>Caso queira saber mais sobre APIs, leia essa <a href="http://material.curso-r.com/api/">página do material</a> da <a href="http://curso-r.com/">Curso-R</a>.</p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Converter o arquivo PDF em CSV. Utilizei a API que obtive no site, mas para compilar, omiti a API key.
 
+pdftables::convert_pdf(&quot;dados/apendice_c_2018.pdf&quot;,
+                       # Arquivo para converter
+                       output_file = &quot;dados/apendice_c_2018.csv&quot;,
+                       #  Informar onde quer o arquivo gerado
+                       # seja salvo, e com qual nome e extensão
+                       api_key = &quot;...&quot; # Chave da API, gerada através do site.
+                       )</code></pre>
 </div>
 <p>A tabela convertida em <code>.csv</code> pode ser acessada <a href="https://beatrizmilz.github.io/2020-FLS6397/projeto_final/dados/apendice_c_2018.csv">neste link</a>. O próximo passo é carregar a base, usando a função <code>readr::read_csv()</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+apendice_c_2018 &lt;-
+  readr::read_csv(
+    &quot;dados/apendice_c_2018.csv&quot;, # Qual arquivo CSV quero carregar
+    col_names = c(
+      # define o nome das colunas
+      &quot;ugrhi&quot;,
+      &quot;municipio&quot;,
+      &quot;consessao&quot;,
+      &quot;pop_urbana&quot;,
+      &quot;atendimento_coleta_porc&quot;,
+      &quot;atendimento_tratamento_porc&quot;,
+      &quot;eficiencia&quot;,
+      &quot;carga_poluidora_potencial&quot;,
+      &quot;carga_poluidora_remancescente&quot;,
+      &quot;ictem&quot;,
+      &quot;corpo_receptor&quot;
+    ),
+    locale = readr::locale(encoding = &quot;ISO-8859-1&quot;),
+    # encoding dos dados
+    skip = 5 # Quantas linhas para pular no CSV antes de começar a ler os dados.
+  )</code></pre>
 </div>
 <div class="alert alert-primary" role="alert">
 <p><strong>Encoding?</strong></p>
@@ -1039,15 +1100,22 @@
 <li>A base deve conter 645 linhas, referente ao número de municípios no estado de São Paulo<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>:</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+nrow(apendice_c_2018) # consulta quantas linhas tem na base</code></pre>
 <pre><code>
 [1] 701</code></pre>
 </div>
 <p>A base contém mais linhas do que municípios. O código abaixo retira linhas que apenas contém NA, e linhas que não apresentam dados dos municípios:</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+apendice_c_filtrado &lt;- apendice_c_2018 %&gt;%
+  # Filtrar linhas que não contém nome de municípios
+  dplyr::filter(!municipio %in% c(&quot;Estado de São Paulo&quot;, &quot;Município&quot;, NA, &quot;MUNICÍPIO&quot;)) </code></pre>
 </div>
 <p>Agora a base tem 645 linhas, o que corresponde aos 645 municípios do estado de SP. É importante também verificar o tipo de dados nas colunas:</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+tibble::glimpse(apendice_c_filtrado)</code></pre>
 <pre><code>
 Rows: 645
 Columns: 11
@@ -1065,10 +1133,29 @@ $ corpo_receptor                &lt;chr&gt; &quot;Rio Capivari, Rio Sapucaí-...
 </div>
 <p>Algumas colunas são de dados numéricos mas que foram carregadas como texto (<code>&lt;chr&gt;</code>), portanto devem ser convertidas para o tipo correto (possível com a função <code>dplyr::mutate()</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+apendice_c &lt;- apendice_c_filtrado %&gt;%
+  dplyr::mutate(
+    pop_urbana = as.double(pop_urbana) , 
+    atendimento_coleta_porc = as.double(atendimento_coleta_porc),
+    atendimento_tratamento_porc = as.double(atendimento_tratamento_porc),
+    eficiencia = as.double(eficiencia),
+    
+    # As conversões abaixo tem uma etapa a mais, devido à padronização diferente utilizada na base, 
+    #com o ponto e a vírgula para representar as casas decimais:
+    carga_poluidora_potencial =  stringr::str_replace_all(carga_poluidora_potencial, &quot;\\.&quot;, &quot;&quot;) %&gt;%
+      as.double(),
+    
+    carga_poluidora_remancescente =  stringr::str_replace_all(carga_poluidora_remancescente, &quot;\\.&quot;, &quot;&quot;) %&gt;%
+      as.double(),
+    ictem =  stringr::str_replace_all(ictem, &quot;,&quot;, &quot;\\.&quot;) %&gt;% as.double()
+    
+  )</code></pre>
 </div>
 <p>Agora podemos observar novamente o tipo de dados nas colunas, e verificar se todos os dados estão no formato ideal para a análise:</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+tibble::glimpse(apendice_c)</code></pre>
 <pre><code>
 Rows: 645
 Columns: 11
@@ -1088,7 +1175,12 @@ $ corpo_receptor                &lt;chr&gt; &quot;Rio Capivari, Rio Sapucaí-...
 <h3 id="dados-shapefile-dos-município">Dados shapefile dos município</h3>
 <p>Os dados foram obtidos com o pacote <code>geobr</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Lê a base de dados espaciais (do tipo Shapefile) dos municípios do Estado de São Paulo,
+# no ano de 2018, segundo o IBGE.
+# Os dados salvos são da classe Simple Feature
 
+municipios_sp &lt;- geobr::read_municipality(&quot;SP&quot;, 2018)</code></pre>
 </div>
 <div class="alert alert-primary" role="alert">
 <p>O pacote <code>geobr</code> <span class="citation" data-cites="R-geobr">(Pereira and Goncalves <a href="#ref-R-geobr" role="doc-biblioref">2020</a>)</span> é um pacote que disponibiliza funções para realizar o download de diversas bases de dados espaciais oficiais do Brasil. Você pode saber mais no <a href="https://github.com/ipeaGIT/geobr">repositório do pacote no GitHub</a>.</p>
@@ -1101,46 +1193,178 @@ $ corpo_receptor                &lt;chr&gt; &quot;Rio Capivari, Rio Sapucaí-...
 <p>No projeto, defini como área de estudo os municípios das seguintes Unidades de Gerenciamento de Recursos Hídricos (<strong>UGRHI</strong>): Paraíba do Sul, Litoral Norte, Piracicaba/Capivari/Jundiaí, Alto Tietê, Baixada Santista e Tietê/Sorocaba. Essas UGRHIs foram escolhidas por estarem totalmente ou marjoritariamente no território da Macrometrópole Paulista (<strong>MMP</strong>) (considerando a delimitação do DAEE<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>).</p>
 <p>Criei manualmente uma tibble com o número e nome das UGRHIs que farão parte da análise:</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+ugrhis &lt;- tibble::tibble(
+  ugrhi = c(&quot;2&quot;,
+            &quot;3&quot;,
+            &quot;5&quot;,
+            &quot;6&quot;,
+            &quot;7&quot;,
+            &quot;10&quot;),
+  nome_ugrhi = c(
+    &quot; Paraíba do Sul&quot;,
+    &quot; Litoral Norte&quot;,
+    &quot; Piracicaba/Capivari/Jundiaí&quot;,
+    &quot; Alto Tietê&quot;,
+    &quot; Baixada Santista&quot;,
+    &quot; Tietê/Sorocaba&quot;
+  )
+)</code></pre>
 </div>
 <h2 id="unir-as-bases">Unir as bases !</h2>
 <p>A base da CETESB não possui o código de município do IBGE (o ideal para fazer o Join). Neste caso, podemos usar o nome do município, porém é preciso padronizar os nomes em relação à maiúsculas/minúsculas, acentos, presença de traços, entre outros. A maior diferença encontrada foi na grafia do nome do município “São Luiz do Paraitinga”: segundo o site da Assembléia Legislativa do Estado de São Paulo, e o site do município, Luiz é escrito com Z, porém a base da CETESB utiliza a forma incorreta: “São Luís do Paraitinga”. Essas inconsistências foram corrigidas com código abaixo, usando principalmente funções dos pacotes <code>stringr</code>, <code>dplyr</code> e <code>abjutils</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+municipios_sp_limpo &lt;-
+  municipios_sp %&gt;% dplyr::mutate(
+    nome_muni = stringr::str_to_lower(name_muni),
+    nome_muni = stringr::str_replace_all(nome_muni, &quot;-&quot;, &quot; &quot;),
+    nome_muni = abjutils::rm_accent(nome_muni)
+  )
 
+apendice_c_limpo &lt;- apendice_c %&gt;% dplyr::mutate(
+  nome_muni =  dplyr::case_when(
+    municipio == &quot;São Luís do Paraitinga&quot; ~
+      &quot;São Luiz do Paraitinga&quot;,
+    TRUE ~ municipio
+  ),
+  nome_muni = stringr::str_to_lower(nome_muni),
+  nome_muni = stringr::str_replace_all(nome_muni, &quot;-&quot;, &quot; &quot;),
+  nome_muni = abjutils::rm_accent(nome_muni))</code></pre>
 </div>
 <ul>
 <li>Após arrumar a base, podemos unir com as funções do tipo <code>join_*</code>, do pacote <code>dplyr</code> (Sim, é possível usar as funções do tipo <code>join_*</code> com objetos de classe Simple Feature, porém use-os como o primeiro argumento ao usar a função):</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+apendice_c_geo &lt;-
+  dplyr::full_join(municipios_sp_limpo, apendice_c_limpo) %&gt;%
+  dplyr::left_join(ugrhis)
+
+apendice_c_geo %&gt;% nrow() # Confirmando se a nova base tem o número de municípios do estado.</code></pre>
 <pre><code>
 [1] 645</code></pre>
 </div>
 <p>Ao unir as bases, temos colunas duplicadas ou desnecessárias, então é interessante removê-las. Após este procedimento, a base será filtrada para que apenas municípios que fazem parte das UGRHIs analisadas estejam na tibble gerada.</p>
 <p>Além disso, o valor de porcentagem de atendimento de tratamento de esgoto é um valor de porcentagem em relação ao volume de esgoto <strong>coletado</strong>. Por exemplo, o município de Bertioga, segundo os dados da CETESB para 2018, apresenta uma porcentagem de coleta de apenas 34 % do esgoto gerado, e uma porcentagem de 100 % do esgoto tratado. Isso significa que 100 % do esgoto coletado é tratado, e não mostra a porcentagem de todo esgoto gerado que foi tratado. Para isso, criei também uma coluna (chamada <code>porc_real_trat</code>) onde é feito esse cálculo (utilizando a função mutate).</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+saneamento &lt;- apendice_c_geo %&gt;%
+  dplyr::select(-nome_muni,-municipio,-code_state) %&gt;% # Remove colunas duplicadas
+  dplyr::filter(ugrhi %in% ugrhis$ugrhi) %&gt;% # Filtra a coluna UGRHI. Apenas as UGRHIS que estão na tibble
+                                            # criada, permanecerão.
+  dplyr::mutate(porc_real_trat = atendimento_tratamento_porc * atendimento_coleta_porc / 100) # Cria uma nova
+# coluna, com o cálculo do número real de porcentagem de tratamento de esgoto.</code></pre>
 </div>
 <p>A base final que usaremos na análise contém dados de 171 municípios, que fazem parte de 6 UGRHIs diferentes. A soma da população urbana destes municípios é de 32.79 milhões de habitantes, o que corresponde à 75.1 % da população urbana do Estado de São Paulo (segundo os dados da base completa utilizada nessa análise).</p>
 <h2 id="visualizando-os-dados">Visualizando os dados</h2>
 <p>Para evitar duplicação de código, o código abaixo é referente ao estilo do mapa, que aplicarei em todos os mapas seguintes.</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+tema_mapa &lt;-
+  theme_bw() + # Escolhe o tema. Eu gosto do theme_bw() por ser bem simples/limpo
+  
+  # Os códigos abaixo são referentes à estética do tema,
+  # como o tamanho da fonte, direção do texto,
+  # linhas ao fundo, etc.
+  
+  theme(
+    axis.text.y = element_text(
+      angle = 90,
+      hjust = 0.5,
+      size = 8
+    ),
+    axis.text.x = element_text(size = 8),
+    axis.title.y = element_text(size = rel(0.8)),
+    axis.title.x = element_text(size = rel(0.8)),
+    panel.grid.major = element_line(
+      color = gray(0.9),
+      linetype = &quot;dashed&quot;,
+      size = 0.1
+    ),
+    panel.background = element_rect(fill = &quot;white&quot;) +
+      annotation_scale(location = &quot;br&quot;, width_hint = 0.30)
+  )</code></pre>
 </div>
 <p>Com a função <code>geom_sf()</code>, é possível criar mapas utilizando o pacote <code>ggplot2</code> e objetos de classe Simple Feature (sf). Assim podemos usar as nossas habilidades de criar gráficos lindos no <code>ggplot2</code>, e criar mapas também usando as funções que já conhecemos.</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+class(saneamento) # Função class() apresenta a classe do objeto. </code></pre>
 <pre><code>
 [1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
 </div>
 <p>O mapa abaixo apresenta os municípios que fazem parte da análise, segundo a UGRHI, e a localização destes municípios no Estado de São Paulo. Podemos usar mais de uma camada <code>geom_sf()</code> no mesmo mapa, da mesma forma que fazemos com o <code>ggplot2</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+saneamento %&gt;% # Base de dados usada
+  ggplot() + # Inicia o gráfico ggplot
+  geom_sf(data = apendice_c_geo,
+          # Camada do mapa da base completa (Estado SP)
+          alpha = .9,
+          color = NA) +
+  geom_sf(aes(fill = nome_ugrhi)) + # Camada do mapa da base saneamento
+  # Adiciona Título e Legendas
+  labs(fill = &quot;UGRHI&quot;,
+       title = &quot;Municípios que fazem parte da análise, segundo a UGRHI&quot;) +
+  # Adiciona o Norte Geográfico
+  annotation_north_arrow(
+    location = &quot;br&quot;,
+    which_north = &quot;true&quot;,
+    height = unit(1, &quot;cm&quot;),
+    width = unit(1, &quot;cm&quot;),
+    pad_x = unit(0.1, &quot;in&quot;),
+    pad_y = unit(0.1, &quot;in&quot;),
+    style = north_arrow_fancy_orienteering
+  ) +
+  ggspatial::annotation_scale() +
+  # Adiciona o tema criado anteriormente
+  tema_mapa </code></pre>
 <p><img src="criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-area-estudo-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <p>O mapa abaixo apresenta a porcentagem de atendimento de coleta de esgoto, por município:</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+saneamento %&gt;%
+  ggplot() +
+  geom_sf(aes(fill = atendimento_coleta_porc)) +
+  scale_fill_viridis_c(direction = -1, limits = c(0, 100)) + # Escala de cores
+  labs(fill = &quot;Porcentagem de \natendimento de \ncoleta de esgoto&quot;,
+       title = &quot;Porcentagem de atendimento de coleta de esgoto, por município&quot;,
+       subtitle = &quot;Dados da CETESB, para o ano de 2018.&quot;) +
+  annotation_north_arrow(
+    location = &quot;br&quot;,
+    which_north = &quot;true&quot;,
+    height = unit(1, &quot;cm&quot;),
+    width = unit(1, &quot;cm&quot;),
+    pad_x = unit(0.1, &quot;in&quot;),
+    pad_y = unit(0.1, &quot;in&quot;),
+    style = north_arrow_fancy_orienteering
+  ) +
+  ggspatial::annotation_scale() +
+  tema_mapa </code></pre>
 <p><img src="criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-coleta-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <p>O mapa abaixo apresenta a porcentagem de atendimento de tratamento de esgoto, considerando o total de esgoto coletado, por município:</p>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+saneamento %&gt;%
+  ggplot() +
+  geom_sf(aes(fill = porc_real_trat)) +
+  scale_fill_viridis_c(direction = -1, limits = c(0, 100)) +
+  labs(fill = &quot;% de \natendimento de \ntratamento de esgoto &quot;,
+       title = &quot;Porcentagem de atendimento de tratamento de esgoto, por município&quot;,
+       subtitle = &quot;Calculado a partir de dados da CETESB, para o ano de 2018.&quot;) +
+  annotation_north_arrow(
+    location = &quot;br&quot;,
+    which_north = &quot;true&quot;,
+    height = unit(1, &quot;cm&quot;),
+    width = unit(1, &quot;cm&quot;),
+    pad_x = unit(0.1, &quot;in&quot;),
+    pad_y = unit(0.1, &quot;in&quot;),
+    style = north_arrow_fancy_orienteering
+  ) +
+  ggspatial::annotation_scale() +
+  tema_mapa </code></pre>
 <p><img src="criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png" width="100%" data-distill-preview=1 style="display: block; margin: auto;" /></p>
 </div>
 <h2 id="conclusão-do-post">Conclusão do post</h2>
@@ -1162,6 +1386,8 @@ $ corpo_receptor                &lt;chr&gt; &quot;Rio Capivari, Rio Sapucaí-...
 <li>As informações abaixo são interessantes para registrar a versão do R utilizada, versões de pacotes, entre outros.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+sessioninfo::session_info()</code></pre>
 <pre><code>
 - Session info -----------------------------------------------------
  setting  value                       
