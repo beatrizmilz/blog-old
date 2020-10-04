@@ -1,7 +1,7 @@
-name: "blog"
+name: "Blog - Bea Milz"
 title: "Beatriz Milz"
 description: |
-  Beatriz Milz
+  Blog e textos sobre R
 output_dir: "_site"
 creative_commons: CC BY
 navbar:
@@ -13,10 +13,8 @@ navbar:
     - text: "CV"
       href: https://beatrizmilz.github.io/resume/index.pdf
   right:
-    - text: "Home"
+    - icon: fas fa-home
       href: index.html
-    - text: "About"
-      href: about.html
 output:
   distill::distill_article:
     css: styles.css

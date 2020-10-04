@@ -1278,6 +1278,13 @@
     font-weight: 300;
   }
   
+  .posts-list .post-preview img {
+  
+  	max-height: 200px;
+  	width: auto;
+    height: auto;
+    object-fit: contain;
+  }
   
   </style>
   <!--/radix_placeholder_site_in_header-->
@@ -1307,8 +1314,9 @@
 <a href="https://beatrizmilz.github.io/resume/index.pdf">CV</a>
 </div>
 <div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="index.html">
+<i class="fas fa-home" aria-hidden="true"></i>
+</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -1636,6 +1644,58 @@ function init_posts_list() {
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption">Beatriz Milz</h1>
+<a href="posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["R","Reprodutibilidade","Macrometrópole Paulista"]}</script>
+<div class="metadata">
+<div class="publishedDate">July 27, 2020</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png"/>
+</div>
+<div class="description">
+<h2>Criando mapas com os pacotes tidyverse e geobr</h2>
+<p>Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo</p>
+</div>
+</a>
+<a href="posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Ensino","The Carpentries"]}</script>
+<div class="metadata">
+<div class="publishedDate">Feb. 22, 2020</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/mapa.jpg"/>
+</div>
+<div class="description">
+<h2>The Carpentries: Como fazer o treinamento de instrutora?</h2>
+<p>A short description of the post.</p>
+</div>
+</a>
+<a href="posts/2019-08-31-um-ano-aprendendo-r/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["R","R-Ladies"]}</script>
+<div class="metadata">
+<div class="publishedDate">Aug. 31, 2019</div>
+</div>
+<div class="thumbnail">
+<img data-src="https://beatrizmilz.com/img/1anorladies.jpg"/>
+</div>
+<div class="description">
+<h2>Um ano aprendendo R!</h2>
+<p>Um relato deste um ano aprendendo R!</p>
+</div>
+</a>
+<a href="posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Shiny","R"]}</script>
+<div class="metadata">
+<div class="publishedDate">Aug. 21, 2019</div>
+</div>
+<div class="thumbnail">
+<img data-src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png"/>
+</div>
+<div class="description">
+<h2>Desenvolvendo meu primeiro Shiny App</h2>
+<p>O objetivo deste post é compartilhar um pouco sobre a minha experiência no desenvolvimento do meu primeiro Shiny App.</p>
+</div>
+</a>
 <a href="posts/2019-06-24-compartilhando-contedo-utilizando-r/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["R","R-Ladies","R Markdown"]}</script>
 <div class="metadata">
@@ -1668,15 +1728,35 @@ function init_posts_list() {
 <h3>Categories</h3>
 <ul>
 <li>
+<a href="#Ensino">Ensino</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#Macrometrópole_Paulista">Macrometrópole Paulista</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
 <a href="#R">R</a>
-<span class="category-count">(2)</span>
+<span class="category-count">(5)</span>
 </li>
 <li>
 <a href="#R-Ladies">R-Ladies</a>
-<span class="category-count">(2)</span>
+<span class="category-count">(3)</span>
 </li>
 <li>
 <a href="#R_Markdown">R Markdown</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#Reprodutibilidade">Reprodutibilidade</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#Shiny">Shiny</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#The_Carpentries">The Carpentries</a>
 <span class="category-count">(1)</span>
 </li>
 </ul>
@@ -1686,7 +1766,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Beatriz Milz</h1>

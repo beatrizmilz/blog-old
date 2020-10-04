@@ -1,5 +1,82 @@
 [
   {
+    "path": "posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/",
+    "title": "Criando mapas com os pacotes tidyverse e geobr",
+    "description": "Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo",
+    "author": [
+      {
+        "name": "Beatriz Milz",
+        "url": "https://beatrizmilz.com"
+      }
+    ],
+    "date": "2020-07-27",
+    "categories": [
+      "R",
+      "Reprodutibilidade",
+      "Macrometrópole Paulista"
+    ],
+    "preview": "posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png",
+    "last_modified": "2020-10-04T14:57:25-03:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/",
+    "title": "The Carpentries: Como fazer o treinamento de instrutora?",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Beatriz Milz",
+        "url": "https://beatrizmilz.com"
+      }
+    ],
+    "date": "2020-02-22",
+    "categories": [
+      "Ensino",
+      "The Carpentries"
+    ],
+    "preview": "posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/mapa.jpg",
+    "last_modified": "2020-10-03T13:37:19-03:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2019-08-31-um-ano-aprendendo-r/",
+    "title": "Um ano aprendendo R!",
+    "description": "Um relato deste um ano aprendendo R!",
+    "author": [
+      {
+        "name": "Beatriz Milz",
+        "url": "https://beatrizmilz.com"
+      }
+    ],
+    "date": "2019-08-31",
+    "categories": [
+      "R",
+      "R-Ladies"
+    ],
+    "preview": "https://beatrizmilz.com/img/1anorladies.jpg",
+    "last_modified": "2020-10-03T13:29:25-03:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app/",
+    "title": "Desenvolvendo meu primeiro Shiny App",
+    "description": "O objetivo deste post é compartilhar um pouco sobre a minha experiência no desenvolvimento do meu primeiro Shiny App.",
+    "author": [
+      {
+        "name": "Beatriz Milz",
+        "url": "https://beatrizmilz.com"
+      }
+    ],
+    "date": "2019-08-21",
+    "categories": [
+      "Shiny",
+      "R"
+    ],
+    "preview": "https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png",
+    "last_modified": "2020-10-03T13:24:26-03:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2019-06-24-compartilhando-contedo-utilizando-r/",
     "title": "Compartilhando conteúdo",
     "description": "Como compartilhar conteúdo sobre R, utilizando R?",
@@ -17,7 +94,7 @@
     ],
     "preview": "https://media.giphy.com/media/dNgK7Ws7y176U/giphy.gif",
     "last_modified": "2020-10-03T10:16:54-03:00",
-    "input_file": "compartilhando-contedo-utilizando-r.utf8.md"
+    "input_file": {}
   },
   {
     "path": "posts/2019-01-29-meio-ano-r/",
