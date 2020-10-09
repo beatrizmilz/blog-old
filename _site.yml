@@ -20,9 +20,11 @@ navbar:
 output:
   distill::distill_article:
     css: styles.css
+    includes:
+      in_header: utterances.html
 collections:
   posts:
-    disqus: bea-milz
+    # disqus: bea-milz
     share: [twitter, linkedin]
     hidden: false
 base_url: https://beamilz.netlify.app/

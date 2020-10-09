@@ -1308,6 +1308,33 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!/posts/.test(location.pathname)) {
+      return;
+    }
+    var script = document.createElement("script");
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute("repo", "beatrizmilz/blog");
+    script.setAttribute("issue-term", "og:comentario");
+    script.setAttribute("crossorigin", "anonymous");
+    script.setAttribute("label", "comment_thread");
+
+    /* wait for article to load, append script to article element */
+    var observer = new MutationObserver(function (mutations, observer) {
+      var article = document.querySelector("d-appendix");
+      if (article) {
+        observer.disconnect();
+        /* HACK: article scroll */
+        article.setAttribute("style", "overflow-y: hidden");
+        article.appendChild(script);
+      }
+    });
+    observer.observe(document.body, { childList: true });
+  });
+</script>
+
 <style type="text/css">
 .distill-site-nav {
   color: rgba(255, 255, 255, 0.8);
@@ -1954,11 +1981,6 @@ sessioninfo::session_info()</code></pre>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
-    <span class="disqus-comments">
-      <i class="fas fa-comments"></i>
-      &nbsp;
-      <span class="disqus-comment-count" data-disqus-identifier="posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/">Comment on this article</span>
-    </span>
     <span class="article-sharing">
       Share: &nbsp;
       <a href="https://twitter.com/share?text=Criando%20mapas%20com%20os%20pacotes%20tidyverse%20e%20geobr&amp;url=https%3A%2F%2Fbeamilz.netlify.app%2Fposts%2F2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr%2F">
@@ -1969,20 +1991,6 @@ sessioninfo::session_info()</code></pre>
       </a>
     </span>
   </p>
-  <script id="dsq-count-scr" src="https://bea-milz.disqus.com/count.js" async></script>
-  <div id="disqus_thread" class="hidden"></div>
-  <script>
-var disqus_config = function () {
-  this.page.url = 'https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/';
-  this.page.identifier = 'posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/';
-};
-(function() {
-  var d = document, s = d.createElement('script');
-  s.src = 'https://bea-milz.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-})();
-</script>
 </div>
 <!--/radix_placeholder_article_footer-->
 </div>
