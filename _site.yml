@@ -12,9 +12,13 @@ navbar:
     - text: "Sobre mim"
       href: about.html
     - text: "Materiais sobre R"
-      href: materiais_r.html
-    - text: "Videos"
-      href: videos.html
+      menu:
+        - text: "Slides"
+          href: materiais_r.html
+        - text: "Videos"
+          href: videos.html
+        - text: "Textos em outros blogs"
+          href: posts_outros_blogs.html
     - text: "CV"
       href: https://beatrizmilz.github.io/resume/index.html
   right:
