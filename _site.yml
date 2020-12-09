@@ -10,9 +10,9 @@ navbar:
     - icon: fas fa-graduation-cap
       href: https://beatrizmilz.com
     - text: "Blog"
-      href: https://beamilz.netlify.app/
+      href: index.html
     - text: "Materiais sobre R"
-      href: https://beatrizmilz.github.io/slidesR
+      href: materiais_r.html
     - text: "CV"
       href: https://beatrizmilz.github.io/resume/index.html
   right:

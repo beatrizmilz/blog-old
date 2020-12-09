@@ -86,30 +86,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Beatriz Milz: About this blog</title>
+  <title>Beatriz Milz: Git e GitHub no RStudio</title>
   
-  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
   
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
   
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-12-09"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-12-09"/>
+  <meta name="article:author" content="Beatriz Milz"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Beatriz Milz: About this blog"/>
+  <meta property="og:title" content="Beatriz Milz: Git e GitHub no RStudio"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the blog"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Beatriz Milz"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Beatriz Milz: About this blog"/>
-  <meta property="twitter:description" content="Some additional details about the blog"/>
+  <meta property="twitter:title" content="Beatriz Milz: Git e GitHub no RStudio"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this blog"]},{"type":"character","attributes":{},"value":["Some additional details about the blog"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","site"]}},"value":[{"type":"character","attributes":{},"value":["Git e GitHub no RStudio"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["IEE/USP"]}]}]},{"type":"character","attributes":{},"value":["Atualizado em 2020-12-09"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2299,6 +2300,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   	color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
+  <meta name="github-repo" content="beatrizmilz/slidesR"/>
+  <meta name="twitter:title" content="Utilizando o Git e GitHub no RStudio"/>
+  <meta name="twitter:description" content="Apresentação sobre os primeiros passos sobre como utilizar o Git e Git Hub, diretamente do RStudio"/>
+  <meta name="twitter:url" content="https://beatrizmilz.github.io/slidesR/git_rstudio.html"/>
+  <meta name="twitter:image:src" content="https://beatrizmilz.github.io/slidesR/git_rstudio/img/share-card.png"/>
+  <meta name="twitter:image:alt" content="Primeiro slide da apresentação sobre os primeiros passos sobre como utilizar o Git e GitHub diretamente do RStudio Apresentado por Beatriz Milz"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:creator" content="@beamilz"/>
+  <meta name="twitter:site" content="@beamilz"/>
+  <meta property="og:title" content="Utilizando o Git e GitHub no RStudio"/>
+  <meta property="og:description" content="Apresentação sobre os primeiros passos sobre como utilizar o Git e Git Hub, diretamente do RStudio"/>
+  <meta property="og:url" content="https://beatrizmilz.github.io/slidesR/git_rstudio.html"/>
+  <meta property="og:image" content="https://beatrizmilz.github.io/slidesR/git_rstudio/img/share-card.png"/>
+  <meta property="og:image:alt" content="Primeiro slide da apresentação sobre os primeiros passos sobre como utilizar o Git e GitHub diretamente do RStudio Apresentado por Beatriz Milz"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="article:author" content="Beatriz Milz"/>
+  <link href="site_libs/applause-button-3.3.2/applause-button.css" rel="stylesheet" />
+  <script src="site_libs/applause-button-3.3.2/applause-button.js"></script>
+  <script src="site_libs/fitvids-2.1.1/fitvids.min.js"></script>
   <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
@@ -2368,7 +2389,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this blog","description":"Some additional details about the blog","authors":[]}
+{"title":"Git e GitHub no RStudio","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"IEE/USP","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-09T00:00:00.000-03:00","citationText":"Milz, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2398,15 +2419,133 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this blog</h1>
+<h1>Git e GitHub no RStudio</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the blog</p></p>
+
 </div>
 
+<div class="d-byline">
+  Beatriz Milz <a href="https://beatrizmilz.com" class="uri">https://beatrizmilz.com</a> (IEE/USP)
+  
+<br/>Atualizado em 2020-12-09
+</div>
 
 <div class="d-article">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p><applause-button style="width: 70px; height: 70px;float:right;" color="#1aa6b4" url="https://beatrizmilz.github.io/slidesR/"></applause-button> Boas vindas! O público-alvo desta apresentação são pessoas que utilizam o R para análise de dados, tem um conhecimento básico sobre Git e GitHub e querem utilizar essas ferramentas diretamente do RStudio.</p>
+<p>É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes. Por favor, leia o <a href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese">Código de Conduta da R-Ladies</a>.</p>
+<h3 id="slides">Slides</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="shareagain" style="min-width:300px;margin:1em auto;">
+<iframe src="https://beatrizmilz.github.io/slidesR/git_rstudio/index.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
+</div>
+<p style="text-align:right;">
+<a href="https://beatrizmilz.github.io/slidesR/git_rstudio/index.html"><i class="fas fa-external-link-alt"></i> Confira a apresentação</a>
+</p>
+<h3 id="pré-requisitos">Pré-requisitos</h3>
+<p>A atividade será expositiva. Porém, para praticar posteriormente, esses são os pré-requisitos:</p>
+<ul>
+<li><p>Usando no RStudio Cloud:</p>
+<ul>
+<li><a href="https://github.com/">Conta no GitHub</a></li>
+<li><a href="https://rstudio.cloud/projects">Conta na RStudio Cloud</a></li>
+</ul></li>
+<li><p>Usando no seu computador (recomendado):</p>
+<ul>
+<li><a href="https://cran.r-project.org/">R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></li>
+<li><a href="https://git-scm.com/downloads">Git</a></li>
+<li><a href="https://github.com/">Conta no GitHub</a></li>
+<li>Instalação do pacote <code>usethis</code>:</li>
+</ul></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"usethis"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h3 id="material-complementar">Material complementar</h3>
+<ul>
+<li><a href="https://beatrizmilz.github.io/slidesR/git_rstudio/rstudio-cloud/script_config_git.R">Script em R usado no RStudio Cloud durante a apresentação para configurar o Git e GitHub</a></li>
+</ul>
+<h3 id="eventos">Eventos</h3>
+<p>Eventos passados e futuros com uso deste material:</p>
+<ul>
+<li><p><a href="https://www.sympla.com.br/git--rstudio__944832">R-Ladies Goiânia</a>, 27 de agosto de 2020. <a href="https://beatrizmilz.github.io/slidesR/git_rstudio/pdf/rladies-gyn-27-08-2020.pdf">Apresentação utilizada disponível em PDF</a>.</p></li>
+<li><p><a href="https://www.meetup.com/rladies-sao-paulo/events/264535075/">R-Ladies São Paulo</a>, 12 de setembro de 2019. <a href="https://beatrizmilz.github.io/RLadies-Git-RStudio-2019/#1">Apresentação utilizada disponível aqui</a>.</p></li>
+</ul>
+<h3 id="para-aprender-mais">Para aprender mais</h3>
+<ul>
+<li><p><a href="https://hacktoberfest.digitalocean.com/faq/">Evento Hacktoberfest</a></p></li>
+<li><p><a href="https://www.curso-r.com/blog/2019-07-23-zen-do-r-4/">Post sobre o assunto no Blog da Curso-R</a>, por <a href="https://lente.dev/">Caio Lente</a></p></li>
+<li><p><a href="https://happygitwithr.com/">Livro Happy Git with R, em Inglês</a></p></li>
+<li><p><a href="https://github.github.com/training-kit/downloads/pt_BR/github-git-cheat-sheet.pdf">Folha de dicas sobre Git <em>(Cheat Sheet)</em>, em Português</a></p></li>
+<li><p><a href="https://rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf">Folhas de dicas da RStudio <em>(Cheat Sheets)</em> , em Inglês</a></p></li>
+<li><p><a href="https://www.curso-r.com/">Live Stream Curso-R #7 - Colaborando com a Comunidade</a>:</p></li>
+</ul>
+<iframe width="560" height="415" src="https://www.youtube.com/embed/hyLxvGApBJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<h3 id="comunidades-e-locais-amigáveis-para-fazer-perguntas">Comunidades e locais amigáveis para fazer perguntas :)</h3>
+<ul>
+<li><p><a href="https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil">Eventos e redes sociais das R-Ladies no Brasil</a></p></li>
+<li><p><a href="https://discourse.curso-r.com/">Fórum Curso-R</a></p></li>
+<li><p><a href="https://t.me/rbrasiloficial">Telegram R-Brasil</a></p></li>
+</ul>
+<h3 id="glossário">🦜 <a href="https://glosario.carpentries.org/pt/">Glossário</a></h3>
+<ul>
+<li><strong>Termos em português</strong>:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>sistema de controle de versão: Um sistema para gerenciar as
+  mudanças feitas em um software durante o seu desenvolvimento.</code></pre>
+<pre><code>See also: git</code></pre>
+<pre><code></code></pre>
+<pre><code>Git: Uma ferramenta de controle de versão para registrar e
+  gerenciar mudanças em um projeto.</code></pre>
+<pre><code></code></pre>
+<pre><code>GitHub: Uma plataforma baseada em nuvem construída em torno do
+  [Git](#git) que permite salvar versões do seu projeto online e
+  colaborar com outras pessoas usuárias do Git.</code></pre>
+<pre><code></code></pre>
+<pre><code>repositório: Um local onde um [sistema de controle de
+  versão](#version_control_system) armazena os arquivos que compõem
+  um projeto e os metadados que descrevem sua história.</code></pre>
+<pre><code>See also: git and github</code></pre>
+<pre><code></code></pre>
+<pre><code>Git branch: Uma fotografia de uma versão de um repositório Git.
+  Múltiplos branches podem capturar múltiplas versões de um mesmo
+  repositório.</code></pre>
+<pre><code>See also: feature_branch, fork, and master_branch</code></pre>
+<pre><code></code></pre>
+</div>
+<ul>
+<li><strong>Termos em Inglês</strong> (a ajuda na tradução do <a href="https://glosario.carpentries.org/pt/">Glossário</a> é bem vinda!):</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>Git clone: Copies (and usually downloads) a Git [remote
+  repository](#remote_repository) onto the local computer.</code></pre>
+<pre><code></code></pre>
+<pre><code>fork: A copy of one person&#39;s Git repository that lives in another
+  person&#39;s GitHub account. Changes to the content of a fork can be
+  submitted to the [upstream repository](#upstream_repository) via a
+  [pull request](#pull_request).</code></pre>
+<pre><code>See also: branch</code></pre>
+<pre><code></code></pre>
+<pre><code>pull request: The request to merge a new feature or correction
+  created on a user&#39;s fork of a [Git](#git) repository into the
+  [upstream repository](#upstream_repository). The developer will be
+  notified of the change, review it, make or suggest changes, and
+  potentially merge it.</code></pre>
+<pre><code>See also: fork</code></pre>
+<pre><code></code></pre>
+</div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
