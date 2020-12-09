@@ -1,7 +1,8 @@
-name: "Blog - Bea Milz"
-title: "Blog - Bea Milz"
+name: "blog-update-distill"
+title: "Beatriz Milz"
 description: |
   Blog e textos sobre R
+theme: custom.css
 output_dir: "_site"
 creative_commons: CC BY
 navbar:
@@ -17,14 +18,9 @@ navbar:
   right:
     - icon: fas fa-home
       href: index.html
+    # - text: "About"
+    #   href: about.html
 output:
   distill::distill_article:
-    css: styles.css
     includes:
       in_header: utterances.html
-collections:
-  posts:
-    # disqus: bea-milz
-    share: [twitter, linkedin]
-    hidden: false
-base_url: https://beamilz.netlify.app/

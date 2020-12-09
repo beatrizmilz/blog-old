@@ -18,8 +18,75 @@
  <!--radix_placeholder_import_source-->
  <!--/radix_placeholder_import_source-->
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
   <!--radix_placeholder_meta_tags-->
-<title>Blog - Bea Milz: Criando mapas com os pacotes tidyverse e geobr</title>
+<title>Beatriz Milz: Criando mapas com os pacotes tidyverse e geobr</title>
 
 <meta property="description" itemprop="description" content="Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"/>
 
@@ -32,7 +99,7 @@
 <meta name="article:author" content="Beatriz Milz"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Blog - Bea Milz: Criando mapas com os pacotes tidyverse e geobr"/>
+<meta property="og:title" content="Beatriz Milz: Criando mapas com os pacotes tidyverse e geobr"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"/>
 <meta property="og:url" content="https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"/>
@@ -40,11 +107,11 @@
 <meta property="og:image:width" content="1248"/>
 <meta property="og:image:height" content="768"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:site_name" content="Blog - Bea Milz"/>
+<meta property="og:site_name" content="Beatriz Milz"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:title" content="Blog - Bea Milz: Criando mapas com os pacotes tidyverse e geobr"/>
+<meta property="twitter:title" content="Beatriz Milz: Criando mapas com os pacotes tidyverse e geobr"/>
 <meta property="twitter:description" content="Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"/>
 <meta property="twitter:url" content="https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"/>
 <meta property="twitter:image" content="https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png"/>
@@ -52,12 +119,13 @@
 <meta property="twitter:image:height" content="768"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Blog - Bea Milz: Criando mapas com os pacotes tidyverse e geobr"/>
+<meta name="citation_title" content="Beatriz Milz: Criando mapas com os pacotes tidyverse e geobr"/>
 <meta name="citation_fulltext_html_url" content="https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"/>
 <meta name="citation_fulltext_world_readable" content=""/>
 <meta name="citation_online_date" content="2020/07/27"/>
 <meta name="citation_publication_date" content="2020/07/27"/>
 <meta name="citation_author" content="Beatriz Milz"/>
+<meta name="citation_author_institution" content="PROCAM/IEE/USP"/>
 <!--/radix_placeholder_meta_tags-->
   
   <meta name="citation_reference" content="citation_title=Abjutils: Useful tools for jurimetrical analysis used by the brazilian jurimetrics association;citation_publication_date=2019;citation_author=Abjutils: Useful tools for jurimetrical analysis used by the brazilian jurimetrics association"/>
@@ -73,14 +141,15 @@
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","output","categories","bibliography","base_url","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Criando mapas com os pacotes tidyverse e geobr"]},{"type":"character","attributes":{},"value":["Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]}]}]},{"type":"character","attributes":{},"value":["2020-07-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["R","Reprodutibilidade","Macrometrópole Paulista"]},{"type":"character","attributes":{},"value":["pacotes-projeto-fflch.bib"]},{"type":"character","attributes":{},"value":["https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]},{"type":"character","attributes":{},"value":["https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]},{"type":"character","attributes":{},"value":["https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","output","categories","bibliography","base_url","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Criando mapas com os pacotes tidyverse e geobr"]},{"type":"character","attributes":{},"value":["Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["PROCAM/IEE/USP"]},{"type":"character","attributes":{},"value":["0000-0002-3064-4486"]}]}]},{"type":"character","attributes":{},"value":["2020-07-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["R","Reprodutibilidade","Macrometrópole Paulista"]},{"type":"character","attributes":{},"value":["pacotes-projeto-fflch.bib"]},{"type":"character","attributes":{},"value":["https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]},{"type":"character","attributes":{},"value":["https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]},{"type":"character","attributes":{},"value":["https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/bowser-1.9.3/bowser.min.js","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/distill-2.2.21/template.v2.js","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-area-estudo-1.png","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-coleta-1.png","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/jquery-1.11.3/jquery.min.js","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/webcomponents-2.0.0/webcomponents.js","dados/apendice_c_2018.csv","dados/apendice_c_2018.pdf","pacotes-projeto-fflch.bib"]}
+  {"type":"character","attributes":{},"value":["criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/anchor-4.2.2/anchor.min.js","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/bowser-1.9.3/bowser.min.js","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/distill-2.2.21/template.v2.js","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-area-estudo-1.png","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-coleta-1.png","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/jquery-1.11.3/jquery.min.js","criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/webcomponents-2.0.0/webcomponents.js","dados/apendice_c_2018.csv","dados/apendice_c_2018.pdf","pacotes-projeto-fflch.bib"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
 
 <script type="application/javascript">
 
@@ -92,6 +161,7 @@
     var header = $('header').get(0);
     var headerHeight = header.offsetHeight;
     var headroom = new Headroom(header, {
+      tolerance: 5,
       onPin : function() {
         if (window.headroom_prevent_pin) {
           window.headroom_prevent_pin = false;
@@ -140,7 +210,7 @@
 
 .distill-site-nav {
   color: rgba(255, 255, 255, 0.8);
-  background-color: #455a64;
+  background-color: #0F2E3D;
   font-size: 15px;
   font-weight: 300;
 }
@@ -203,6 +273,7 @@
 
 .distill-site-header .title {
   font-size: 18px;
+  min-width: 150px;
 }
 
 .distill-site-header .logo {
@@ -344,7 +415,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
   .distill-site-header.responsive a.nav-toggle {
     position: absolute;
     right: 0;
@@ -418,6 +489,258 @@ d-title {
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+<script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+<script type="application/javascript">
+
+function getMeta(metaName) {
+  var metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
+function offsetURL(url) {
+  var offset = getMeta('distill:offset');
+  return offset ? offset + '/' + url : url;
+}
+
+function createFuseIndex() {
+
+  // create fuse index
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
+  var fuse = new window.Fuse([], options);
+
+  // fetch the main search.json
+  return fetch(offsetURL('search.json'))
+    .then(function(response) {
+      if (response.status == 200) {
+        return response.json().then(function(json) {
+          // index main articles
+          json.articles.forEach(function(article) {
+            fuse.add(article);
+          });
+          // download collections and index their articles
+          return Promise.all(json.collections.map(function(collection) {
+            return fetch(offsetURL(collection)).then(function(response) {
+              if (response.status === 200) {
+                return response.json().then(function(articles) {
+                  articles.forEach(function(article) {
+                    fuse.add(article);
+                  });
+                })
+              } else {
+                return Promise.reject(
+                  new Error('Unexpected status from search index request: ' +
+                            response.status)
+                );
+              }
+            });
+          })).then(function() {
+            return fuse;
+          });
+        });
+
+      } else {
+        return Promise.reject(
+          new Error('Unexpected status from search index request: ' +
+                      response.status)
+        );
+      }
+    });
+}
+
+window.document.addEventListener("DOMContentLoaded", function (event) {
+
+  // get search element (bail if we don't have one)
+  var searchEl = window.document.getElementById('distill-search');
+  if (!searchEl)
+    return;
+
+  createFuseIndex()
+    .then(function(fuse) {
+
+      // make search box visible
+      searchEl.classList.remove('hidden');
+
+      // initialize autocomplete
+      var options = {
+        autoselect: true,
+        hint: false,
+        minLength: 2,
+      };
+      window.autocomplete(searchEl, options, [{
+        source: function(query, callback) {
+          const searchOptions = {
+            isCaseSensitive: false,
+            shouldSort: true,
+            minMatchCharLength: 2,
+            limit: 10,
+          };
+          var results = fuse.search(query, searchOptions);
+          callback(results
+            .map(function(result) { return result.item; })
+            .filter(function(item) { return !!item.description; })
+          );
+        },
+        templates: {
+          suggestion: function(suggestion) {
+            var html = `
+              <div class="search-item">
+                <h3>${suggestion.title}</h3>
+                <div class="search-item-description">
+                  ${suggestion.description}
+                </div>
+                <div class="search-item-preview">
+                  <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
+                </div>
+              </div>
+            `;
+            return html;
+          }
+        }
+      }]).on('autocomplete:selected', function(event, suggestion) {
+        window.location.href = offsetURL(suggestion.path);
+      });
+      // remove inline display style on autocompleter (we want to
+      // manage responsive display via css)
+      $('.algolia-autocomplete').css("display", "");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+});
+
+</script>
+
+<style type="text/css">
+
+/* Algolioa Autocomplete */
+
+.algolia-autocomplete {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: sub;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  border: 1px #0F2E3D solid;
+  width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-nav .algolia-autocomplete {
+    display: none;
+    visibility: hidden;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete {
+    display: inline-block;
+    visibility: visible;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+    margin-left: 0;
+    width: 400px;
+    max-height: 400px;
+  }
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 550px;
+  max-height: 70vh;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.8em;
+  width: 80%;
+  margin-right: 4%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+  display: inline-block;
+  width: 15%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+  height: 3em;
+  width: auto;
+  display: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+  display: initial;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #eee;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+</style>
+
+
 <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -441,6 +764,51 @@ body {
 
 .pagedtable-footer {
   font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
 }
 
 .html-widget {
@@ -482,6 +850,7 @@ body {
 }
 
 d-article {
+  padding-top: 2.5rem;
   padding-bottom: 30px;
 }
 
@@ -493,91 +862,48 @@ d-article>p>img {
   width: 100%;
 }
 
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
 d-article iframe {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 2.0em;
   width: 100%;
 }
 
-figure img.external {
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-  padding: 18px;
-  box-sizing: border-box;
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
-/* CSS for table of contents */
-
-.d-toc {
-  color: rgba(0,0,0,0.8);
-  font-size: 0.8em;
-  line-height: 1em;
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
 }
 
-.d-toc-header {
-  font-size: 0.6rem;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 1.3em;
+d-article div.sourceCode {
+  background-color: white;
 }
 
-.d-toc a {
-  border-bottom: none;
-}
-
-.d-toc ul {
-  padding-left: 0;
-}
-
-.d-toc li>ul {
-  padding-top: 0.8em;
-  padding-left: 16px;
-  margin-bottom: 0.6em;
-}
-
-.d-toc ul,
-.d-toc li {
-  list-style-type: none;
-}
-
-.d-toc li {
-  margin-bottom: 0.9em;
-}
-
-.d-toc-separator {
-  margin-top: 20px;
-  margin-bottom: 2em;
-}
-
-.d-article-with-toc {
-  border-top: none;
-  padding-top: 0;
-}
-
-
-
-/* Tweak code blocks (note that this CSS is repeated above in an injection
-   into the d-code shadow dom) */
-
-d-code {
-  overflow-x: auto !important;
-}
-
-pre.d-code code.d-code {
+d-article div.sourceCode pre {
   padding-left: 10px;
   font-size: 12px;
   border-left: 2px solid rgba(0,0,0,0.1);
 }
 
-pre.text-output {
-
+d-article pre {
   font-size: 12px;
   color: black;
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  margin-top: 0;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -595,20 +921,123 @@ pre.text-output {
   hyphens: none;
 }
 
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
 @media(min-width: 768px) {
 
-d-code {
-  overflow-x: visible !important;
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
 }
 
-pre.d-code code.d-code  {
-    padding-left: 18px;
-    font-size: 14px;
-}
-pre.text-output {
+d-article div.sourceCode pre {
+  padding-left: 18px;
   font-size: 14px;
 }
+
+d-article pre {
+  font-size: 14px;
 }
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
 
 /* Figure */
 
@@ -646,6 +1075,16 @@ pre.text-output {
   color: rgba(0, 0, 0, 1.0);
 }
 
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
 
 
 /* Tweak 1000px media break to show more text */
@@ -721,6 +1160,91 @@ d-appendix .citation-appendix,
   word-wrap: break-word;
 }
 
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
 
 /* Social footer */
 
@@ -775,6 +1299,211 @@ d-appendix .citation-appendix,
 
 .custom p {
   margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 
@@ -906,6 +1635,12 @@ d-appendix .citation-appendix,
   hyphens: none;
 }
 
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
 </style>
 
 <script type="application/javascript">
@@ -921,6 +1656,13 @@ function is_downlevel_browser() {
 
 // show body when load is complete
 function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
 
   // set body to visible
   document.body.style.visibility = 'visible';
@@ -967,23 +1709,8 @@ function init_distill() {
   // create d-appendix
   $('.d-appendix').changeElementType('d-appendix');
 
-  // create d-bibliography
-  var bibliography = $('<d-bibliography></d-bibliography>');
-  $('#distill-bibliography').wrap(bibliography);
-
   // flag indicating that we have appendix items
   var appendix = $('.appendix-bottom').children('h3').length > 0;
-
-  // replace citations with <d-cite>
-  $('.citation').each(function(i, val) {
-    appendix = true;
-    var cites = $(this).attr('data-cites').split(" ");
-    var dt_cite = $('<d-cite></d-cite>');
-    dt_cite.attr('key', cites.join());
-    $(this).replaceWith(dt_cite);
-  });
-  // remove refs
-  $('#refs').remove();
 
   // replace footnotes with <d-footnote>
   $('.footnote-ref').each(function(i, val) {
@@ -1001,39 +1728,21 @@ function init_distill() {
   // remove footnotes
   $('.footnotes').remove();
 
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
   $('h1.appendix, h2.appendix').each(function(i, val) {
     $(this).changeElementType('h3');
   });
   $('h3.appendix').each(function(i, val) {
     var id = $(this).attr('id');
-    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
     appendix = true;
     $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
   });
 
   // show d-appendix if we have appendix content
   $("d-appendix").css('display', appendix ? 'grid' : 'none');
-
-  // replace code blocks with d-code
-  $('pre>code').each(function(i, val) {
-    var code = $(this);
-    var pre = code.parent();
-    var clz = "";
-    var language = pre.attr('class');
-    if (language) {
-      // map unknown languages to "clike" (without this they just dissapear)
-      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
-                               "javascript", "js", "julia", "lua", "markdown",
-                               "markup", "mathml", "python", "svg", "xml"]) == -1)
-        language = "clike";
-      language = ' language="' + language + '"';
-      var dt_code = $('<d-code block' + language + clz + '></d-code>');
-      dt_code.text(code.text());
-      pre.replaceWith(dt_code);
-    } else {
-      code.addClass('text-output').unwrap().changeElementType('pre');
-    }
-  });
 
   // localize layout chunks to just output
   $('.layout-chunk').each(function(i, val) {
@@ -1042,7 +1751,7 @@ function init_distill() {
     var layout = $(this).attr('data-layout');
 
     // apply layout to markdown level block elements
-    var elements = $(this).children().not('d-code, pre.text-output, script');
+    var elements = $(this).children().not('div.sourceCode, pre, script');
     elements.each(function(i, el) {
       var layout_div = $('<div class="' + layout + '"></div>');
       if (layout_div.hasClass('shaded')) {
@@ -1059,6 +1768,13 @@ function init_distill() {
     $(this).children().unwrap();
   });
 
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
   // load distill framework
   load_distill_framework();
 
@@ -1074,12 +1790,26 @@ function init_distill() {
     if (!have_authors)
       $('d-byline').addClass('hidden');
 
-    // table of contents
-    if (have_authors) // adjust border if we are in authors
-      $('.d-toc').parent().addClass('d-article-with-toc');
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
 
     // strip links that point to #
     $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
 
     // hide elements of author/affiliations grid that have no value
     function hide_byline_column(caption) {
@@ -1129,14 +1859,9 @@ function init_distill() {
       grid.children('h3:contains("Affiliations")').text('Affiliation');
     }
 
-    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
-    $('d-code').each(function(i, val) {
-      var style = document.createElement('style');
-      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
-                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
-      if (this.shadowRoot)
-        this.shadowRoot.appendChild(style);
-    });
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
 
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
@@ -1172,9 +1897,7 @@ function init_downlevel() {
   $('.d-byline a').remove();
 
   // remove toc
-  $('.d-toc-header').remove();
-  $('.d-toc').remove();
-  $('.d-toc-separator').remove();
+  $('.d-contents').remove();
 
   // move appendix elements
   $('h1.appendix, h2.appendix').each(function(i, val) {
@@ -1302,8 +2025,318 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </script>
 
+<style type="text/css">
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      50px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    sans-serif;
+  --mono-font:       monospace;
+  --body-font:       sans-serif;
+  --navbar-font:     sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+</style>
+<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat&display=swap');
+
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      50px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:     'Montserrat', sans-serif;
+  --mono-font:       monospace;
+  --body-font:       'Montserrat', sans-serif;
+  --navbar-font:     'Lexend Deca', sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #40B0A6;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #40B0A6;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+
+
+
+.pre {
+  overflow-y: auto;
+}
+</style>
+<style type="text/css">
+/* base style */
+
+/* FONT FAMILIES */
+
+:root {
+  --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body,
+.posts-list .post-preview p,
+.posts-list .description p {
+  font-family: var(--body-font), var(--body-default);
+}
+
+h1, h2, h3, h4, h5, h6,
+.posts-list .post-preview h2,
+.posts-list .description h2 {
+  font-family: var(--heading-font), var(--heading-default);
+}
+
+d-article div.sourceCode code,
+d-article pre code {
+	font-family: var(--mono-font), var(--mono-default);
+}
+
+
+/*-- TITLE --*/
+d-title h1,
+.posts-list > h1 {
+  color: var(--title-color, black);
+}
+
+d-title h1 {
+  font-size: var(--title-size, 50px);
+}
+
+/*-- HEADERS --*/
+d-article h1,
+d-article h2,
+d-article h3,
+d-article h4,
+d-article h5,
+d-article h6 {
+  color: var(--header-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- BODY --*/
+/* only text inside of <p> tags */
+d-article > p {
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+  font-size: var(--body-size, 1.06rem);
+}
+
+/*-- CODE --*/
+d-article div.sourceCode code,
+d-article pre code {
+	font-size: var(--code-size, 14px);
+}
+
+/*-- ASIDE --*/
+d-article aside {
+	font-size: var(--aside-size, 12px);
+	color: var(--aside-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- FIGURE CAPTIONS --*/
+figure .caption,
+figure figcaption,
+.figure .caption {
+	font-size: var(--fig-cap-size, 13px);
+	color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- METADATA --*/
+d-byline h3 {
+	font-size: var(--heading-size, 0.6rem);
+	color: var(--heading-color, rgba(0, 0, 0, 0.5));
+}
+
+d-byline {
+	font-size: var(--body-size, 0.8rem);
+	color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+d-byline a,
+d-article d-byline a {
+	color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- TABLE OF CONTENTS --*/
+.d-contents nav h3 {
+	font-size: var(--heading-size, 18px);
+}
+
+.d-contents nav a {
+	font-size: var(--contents-size, 13px);
+}
+
+/*-- APPENDIX --*/
+d-appendix h3 {
+  font-size: var(--heading-size, 15px);
+	color: var(--heading-color, rgba(0, 0, 0, 0.65));
+}
+
+d-appendix {
+  font-size: var(--text-size, 0.8em);
+	color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+d-appendix d-footnote-list a.footnote-backlink {
+	color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+.distill-site-header .title {
+	font-size: var(--title-size, 18px);
+	font-family: var(--navbar-font), var(--heading-default);
+}
+
+.distill-site-header a,
+.nav-dropdown .nav-dropbtn {
+  font-family: var(--navbar-font), var(--heading-default);
+}
+
+.distill-site-header a:hover {
+	color: var(--hover-color, white);
+}
+
+.distill-site-header {
+	font-size: var(--text-size, 15px);
+	color: var(--text-color, rgba(255, 255, 255, 0.8));
+	background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer {
+	font-size: var(--text-size, 15px);
+	color: var(--text-color, rgba(255, 255, 255, 0.8));
+	background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer a:hover {
+	color: var(--hover-color, white);
+}</style>
 <!--/radix_placeholder_distill-->
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
@@ -1335,34 +2368,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 
-<style type="text/css">
-.distill-site-nav {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: #1aa6b4;
-    font-size: 15px;
-  font-weight: 300;
-}
-
-.posts-list .post-preview img {
-
-	max-height: 200px;
-	width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-code {
-	color: #000;
-	background-color: #cef1f4;
-	padding: .2em .4em;
-	margin: 0;
-	font-size: 85%;
-	border-radius: 6px;
-}
-
-
-
-</style>
 <!--/radix_placeholder_site_in_header-->
 
 
@@ -1373,7 +2378,7 @@ code {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Criando mapas com os pacotes tidyverse e geobr","description":"Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-07-27T00:00:00.000-03:00","citationText":"Milz, 2020"}
+{"title":"Criando mapas com os pacotes tidyverse e geobr","description":"Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"PROCAM/IEE/USP","affiliationURL":"#","orcidID":"0000-0002-3064-4486"}],"publishedDate":"2020-07-27T00:00:00.000-03:00","citationText":"Milz, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1381,13 +2386,14 @@ code {
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="../../index.html" class="title">Blog - Bea Milz</a>
+<a href="../../index.html" class="title">Beatriz Milz</a>
 <a href="https://beatrizmilz.com">
 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
 </a>
 <a href="https://beamilz.netlify.app/">Blog</a>
 <a href="https://beatrizmilz.github.io/slidesR">Materiais sobre R</a>
 <a href="https://beatrizmilz.github.io/resume/index.html">CV</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="../../index.html">
@@ -1403,11 +2409,18 @@ code {
 
 <div class="d-title">
 <h1>Criando mapas com os pacotes tidyverse e geobr</h1>
+<!--radix_placeholder_categories-->
+<div class="dt-tags">
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:Reprodutibilidade" class="dt-tag">Reprodutibilidade</a>
+  <a href="../../index.html#category:Macrometrópole_Paulista" class="dt-tag">Macrometrópole Paulista</a>
+</div>
+<!--/radix_placeholder_categories-->
 <p><p>Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo</p></p>
 </div>
 
 <div class="d-byline">
-  Beatriz Milz <a href="https://beatrizmilz.com" class="uri">https://beatrizmilz.com</a> 
+  Beatriz Milz <a href="https://beatrizmilz.com" class="uri">https://beatrizmilz.com</a> (PROCAM/IEE/USP)
   
 <br/>2020-07-27
 </div>
@@ -1423,21 +2436,23 @@ code {
 <p>Neste post, irei focar em mostrar como abri os dados, e utilizando principalmente o <code>tidyverse</code> <span class="citation" data-cites="tidyverse2019">(Wickham, Averick, et al. <a href="#ref-tidyverse2019" role="doc-biblioref">2019</a>)</span> e o pacote <code>geobr</code> <span class="citation" data-cites="R-geobr">(Pereira and Goncalves <a href="#ref-R-geobr" role="doc-biblioref">2020</a>)</span>, criei mapas com esses dados.</p>
 <h2 id="pacotes-necessários">Pacotes necessários</h2>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-library(tidyverse)
-library(ggplot2)
-library(dplyr)
-library(magrittr)
-library(geobr)
-# install.packages(&quot;pdftables&quot;)
-library(pdftables)
-library(readr)
-library(stringr)
-library(abjutils)
-library(ggspatial)
-library(tibble)
-library(knitr)
-library(sf)</code></pre>
+<div class="sourceCode">
+<pre><code><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>magrittr</span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/ipeaGIT/geobr'>geobr</a></span><span class='op'>)</span>
+<span class='co'># install.packages("pdftables")</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://www.github.com/expersso/pdftables'>pdftables</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://readr.tidyverse.org'>readr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://stringr.tidyverse.org'>stringr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/abjur/abjutils'>abjutils</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://paleolimbot.github.io/ggspatial'>ggspatial</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tibble.tidyverse.org/'>tibble</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://yihui.org/knitr/'>knitr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <div class="alert alert-primary" role="alert">
 <p><strong>O que é <code>::</code> ?</strong></p>
@@ -1452,18 +2467,20 @@ library(sf)</code></pre>
 <h3 id="dados-de-saneamento">Dados de Saneamento</h3>
 <p>O primeiro passo é fazer o download do arquivo PDF referente ao Apêndice C e converter em CSV. A função <code>download.file()</code> possibilita fazer download de arquivos diretamente do R.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-# Link do relatório
-url &lt;-
-  &quot;https://cetesb.sp.gov.br/aguas-interiores/wp-content/uploads/sites/12/2019/10/Ap%C3%AAndice-C_Dados-de-Saneamento-por-Munic%C3%ADpio.pdf&quot; 
+<div class="sourceCode">
+<pre><code><span class='co'># Link do relatório</span>
+<span class='va'>url</span> <span class='op'>&lt;-</span>
+  <span class='st'>"https://cetesb.sp.gov.br/aguas-interiores/wp-content/uploads/sites/12/2019/10/Ap%C3%AAndice-C_Dados-de-Saneamento-por-Munic%C3%ADpio.pdf"</span> 
 
 
-#Fazer o download do arquivo PDF
+<span class='co'>#Fazer o download do arquivo PDF</span>
 
-download.file(url, # URL do arquivo a ser baixado
-              destfile = &quot;dados/apendice_c_2018.pdf&quot;, # Informar onde quer que seja salvo, e com qual nome e extensão 
-              method = &quot;curl&quot; # Método utilizado para o download
-              )</code></pre>
+<span class='fu'><a href='https://rdrr.io/r/utils/download.file.html'>download.file</a></span><span class='op'>(</span><span class='va'>url</span>, <span class='co'># URL do arquivo a ser baixado</span>
+              destfile <span class='op'>=</span> <span class='st'>"dados/apendice_c_2018.pdf"</span>, <span class='co'># Informar onde quer que seja salvo, e com qual nome e extensão </span>
+              method <span class='op'>=</span> <span class='st'>"curl"</span> <span class='co'># Método utilizado para o download</span>
+              <span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <p>Para fazer a conversão, utilizei o pacote <code>{pdftables}</code> <span class="citation" data-cites="R-pdftables">(Persson <a href="#ref-R-pdftables" role="doc-biblioref">2016</a>)</span>, que possibilita converter o arquivo PDF para CSV diretamente do R, através da API (e omiti a minha chave da API no código):</p>
 <div class="alert alert-primary" role="alert">
@@ -1474,41 +2491,45 @@ download.file(url, # URL do arquivo a ser baixado
 <p>Caso queira saber mais sobre APIs, leia essa <a href="http://material.curso-r.com/api/">página do material</a> da <a href="http://curso-r.com/">Curso-R</a>.</p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-# Converter o arquivo PDF em CSV. Utilizei a API que obtive no site, mas para compilar, omiti a API key.
+<div class="sourceCode">
+<pre><code><span class='co'># Converter o arquivo PDF em CSV. Utilizei a API que obtive no site, mas para compilar, omiti a API key.</span>
 
-pdftables::convert_pdf(&quot;dados/apendice_c_2018.pdf&quot;,
-                       # Arquivo para converter
-                       output_file = &quot;dados/apendice_c_2018.csv&quot;,
-                       #  Informar onde quer o arquivo gerado
-                       # seja salvo, e com qual nome e extensão
-                       api_key = &quot;...&quot; # Chave da API, gerada através do site.
-                       )</code></pre>
+<span class='fu'>pdftables</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/pdftables/man/convert_pdf.html'>convert_pdf</a></span><span class='op'>(</span><span class='st'>"dados/apendice_c_2018.pdf"</span>,
+                       <span class='co'># Arquivo para converter</span>
+                       output_file <span class='op'>=</span> <span class='st'>"dados/apendice_c_2018.csv"</span>,
+                       <span class='co'>#  Informar onde quer o arquivo gerado</span>
+                       <span class='co'># seja salvo, e com qual nome e extensão</span>
+                       api_key <span class='op'>=</span> <span class='st'>"..."</span> <span class='co'># Chave da API, gerada através do site.</span>
+                       <span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <p>A tabela convertida em <code>.csv</code> pode ser acessada <a href="https://beatrizmilz.github.io/2020-FLS6397/projeto_final/dados/apendice_c_2018.csv">neste link</a>. O próximo passo é carregar a base, usando a função <code>readr::read_csv()</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-apendice_c_2018 &lt;-
-  readr::read_csv(
-    &quot;dados/apendice_c_2018.csv&quot;, # Qual arquivo CSV quero carregar
-    col_names = c(
-      # define o nome das colunas
-      &quot;ugrhi&quot;,
-      &quot;municipio&quot;,
-      &quot;consessao&quot;,
-      &quot;pop_urbana&quot;,
-      &quot;atendimento_coleta_porc&quot;,
-      &quot;atendimento_tratamento_porc&quot;,
-      &quot;eficiencia&quot;,
-      &quot;carga_poluidora_potencial&quot;,
-      &quot;carga_poluidora_remancescente&quot;,
-      &quot;ictem&quot;,
-      &quot;corpo_receptor&quot;
-    ),
-    locale = readr::locale(encoding = &quot;ISO-8859-1&quot;),
-    # encoding dos dados
-    skip = 5 # Quantas linhas para pular no CSV antes de começar a ler os dados.
-  )</code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>apendice_c_2018</span> <span class='op'>&lt;-</span>
+  <span class='fu'>readr</span><span class='fu'>::</span><span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span>
+    <span class='st'>"dados/apendice_c_2018.csv"</span>, <span class='co'># Qual arquivo CSV quero carregar</span>
+    col_names <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span>
+      <span class='co'># define o nome das colunas</span>
+      <span class='st'>"ugrhi"</span>,
+      <span class='st'>"municipio"</span>,
+      <span class='st'>"consessao"</span>,
+      <span class='st'>"pop_urbana"</span>,
+      <span class='st'>"atendimento_coleta_porc"</span>,
+      <span class='st'>"atendimento_tratamento_porc"</span>,
+      <span class='st'>"eficiencia"</span>,
+      <span class='st'>"carga_poluidora_potencial"</span>,
+      <span class='st'>"carga_poluidora_remancescente"</span>,
+      <span class='st'>"ictem"</span>,
+      <span class='st'>"corpo_receptor"</span>
+    <span class='op'>)</span>,
+    locale <span class='op'>=</span> <span class='fu'>readr</span><span class='fu'>::</span><span class='fu'><a href='https://readr.tidyverse.org/reference/locale.html'>locale</a></span><span class='op'>(</span>encoding <span class='op'>=</span> <span class='st'>"ISO-8859-1"</span><span class='op'>)</span>,
+    <span class='co'># encoding dos dados</span>
+    skip <span class='op'>=</span> <span class='fl'>5</span> <span class='co'># Quantas linhas para pular no CSV antes de começar a ler os dados.</span>
+  <span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <div class="alert alert-primary" role="alert">
 <p><strong>Encoding?</strong></p>
@@ -1523,24 +2544,28 @@ apendice_c_2018 &lt;-
 <li>A base deve conter 645 linhas, referente ao número de municípios no estado de São Paulo<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>:</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-nrow(apendice_c_2018) # consulta quantas linhas tem na base</code></pre>
-<pre><code>
-[1] 701</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>apendice_c_2018</span><span class='op'>)</span> <span class='co'># consulta quantas linhas tem na base</span>
+</code></pre>
+</div>
+<pre><code>[1] 701</code></pre>
 </div>
 <p>A base contém mais linhas do que municípios. O código abaixo retira linhas que apenas contém NA, e linhas que não apresentam dados dos municípios:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-apendice_c_filtrado &lt;- apendice_c_2018 %&gt;%
-  # Filtrar linhas que não contém nome de municípios
-  dplyr::filter(!municipio %in% c(&quot;Estado de São Paulo&quot;, &quot;Município&quot;, NA, &quot;MUNICÍPIO&quot;)) </code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>apendice_c_filtrado</span> <span class='op'>&lt;-</span> <span class='va'>apendice_c_2018</span> <span class='op'>%&gt;%</span>
+  <span class='co'># Filtrar linhas que não contém nome de municípios</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='va'>municipio</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Estado de São Paulo"</span>, <span class='st'>"Município"</span>, <span class='cn'>NA</span>, <span class='st'>"MUNICÍPIO"</span><span class='op'>)</span><span class='op'>)</span> 
+</code></pre>
+</div>
 </div>
 <p>Agora a base tem 645 linhas, o que corresponde aos 645 municípios do estado de SP. É importante também verificar o tipo de dados nas colunas:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-tibble::glimpse(apendice_c_filtrado)</code></pre>
-<pre><code>
-Rows: 645
+<div class="sourceCode">
+<pre><code><span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/glimpse.html'>glimpse</a></span><span class='op'>(</span><span class='va'>apendice_c_filtrado</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>Rows: 645
 Columns: 11
 $ ugrhi                         &lt;chr&gt; &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;2&quot;, &quot;2&quot;, &quot;2...
 $ municipio                     &lt;chr&gt; &quot;Campos do Jordão&quot;, &quot;Santo ...
@@ -1556,31 +2581,34 @@ $ corpo_receptor                &lt;chr&gt; &quot;Rio Capivari, Rio Sapucaí-...
 </div>
 <p>Algumas colunas são de dados numéricos mas que foram carregadas como texto (<code>&lt;chr&gt;</code>), portanto devem ser convertidas para o tipo correto (possível com a função <code>dplyr::mutate()</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-apendice_c &lt;- apendice_c_filtrado %&gt;%
-  dplyr::mutate(
-    pop_urbana = as.double(pop_urbana) , 
-    atendimento_coleta_porc = as.double(atendimento_coleta_porc),
-    atendimento_tratamento_porc = as.double(atendimento_tratamento_porc),
-    eficiencia = as.double(eficiencia),
+<div class="sourceCode">
+<pre><code><span class='va'>apendice_c</span> <span class='op'>&lt;-</span> <span class='va'>apendice_c_filtrado</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
+    pop_urbana <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/double.html'>as.double</a></span><span class='op'>(</span><span class='va'>pop_urbana</span><span class='op'>)</span> , 
+    atendimento_coleta_porc <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/double.html'>as.double</a></span><span class='op'>(</span><span class='va'>atendimento_coleta_porc</span><span class='op'>)</span>,
+    atendimento_tratamento_porc <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/double.html'>as.double</a></span><span class='op'>(</span><span class='va'>atendimento_tratamento_porc</span><span class='op'>)</span>,
+    eficiencia <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/double.html'>as.double</a></span><span class='op'>(</span><span class='va'>eficiencia</span><span class='op'>)</span>,
     
-    # As conversões abaixo tem uma etapa a mais, devido à padronização diferente utilizada na base, 
-    #com o ponto e a vírgula para representar as casas decimais:
-    carga_poluidora_potencial =  stringr::str_replace_all(carga_poluidora_potencial, &quot;\\.&quot;, &quot;&quot;) %&gt;%
-      as.double(),
+    <span class='co'># As conversões abaixo tem uma etapa a mais, devido à padronização diferente utilizada na base, </span>
+    <span class='co'>#com o ponto e a vírgula para representar as casas decimais:</span>
+    carga_poluidora_potencial <span class='op'>=</span>  <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_replace.html'>str_replace_all</a></span><span class='op'>(</span><span class='va'>carga_poluidora_potencial</span>, <span class='st'>"\\."</span>, <span class='st'>""</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+      <span class='fu'><a href='https://rdrr.io/r/base/double.html'>as.double</a></span><span class='op'>(</span><span class='op'>)</span>,
     
-    carga_poluidora_remancescente =  stringr::str_replace_all(carga_poluidora_remancescente, &quot;\\.&quot;, &quot;&quot;) %&gt;%
-      as.double(),
-    ictem =  stringr::str_replace_all(ictem, &quot;,&quot;, &quot;\\.&quot;) %&gt;% as.double()
+    carga_poluidora_remancescente <span class='op'>=</span>  <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_replace.html'>str_replace_all</a></span><span class='op'>(</span><span class='va'>carga_poluidora_remancescente</span>, <span class='st'>"\\."</span>, <span class='st'>""</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+      <span class='fu'><a href='https://rdrr.io/r/base/double.html'>as.double</a></span><span class='op'>(</span><span class='op'>)</span>,
+    ictem <span class='op'>=</span>  <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_replace.html'>str_replace_all</a></span><span class='op'>(</span><span class='va'>ictem</span>, <span class='st'>","</span>, <span class='st'>"\\."</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/double.html'>as.double</a></span><span class='op'>(</span><span class='op'>)</span>
     
-  )</code></pre>
+  <span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <p>Agora podemos observar novamente o tipo de dados nas colunas, e verificar se todos os dados estão no formato ideal para a análise:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-tibble::glimpse(apendice_c)</code></pre>
-<pre><code>
-Rows: 645
+<div class="sourceCode">
+<pre><code><span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/glimpse.html'>glimpse</a></span><span class='op'>(</span><span class='va'>apendice_c</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>Rows: 645
 Columns: 11
 $ ugrhi                         &lt;chr&gt; &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;2&quot;, &quot;2&quot;, &quot;2...
 $ municipio                     &lt;chr&gt; &quot;Campos do Jordão&quot;, &quot;Santo ...
@@ -1598,12 +2626,14 @@ $ corpo_receptor                &lt;chr&gt; &quot;Rio Capivari, Rio Sapucaí-...
 <h3 id="dados-shapefile-dos-município">Dados shapefile dos município</h3>
 <p>Os dados foram obtidos com o pacote <code>geobr</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-# Lê a base de dados espaciais (do tipo Shapefile) dos municípios do Estado de São Paulo,
-# no ano de 2018, segundo o IBGE.
-# Os dados salvos são da classe Simple Feature
+<div class="sourceCode">
+<pre><code><span class='co'># Lê a base de dados espaciais (do tipo Shapefile) dos municípios do Estado de São Paulo,</span>
+<span class='co'># no ano de 2018, segundo o IBGE.</span>
+<span class='co'># Os dados salvos são da classe Simple Feature</span>
 
-municipios_sp &lt;- geobr::read_municipality(&quot;SP&quot;, 2018)</code></pre>
+<span class='va'>municipios_sp</span> <span class='op'>&lt;-</span> <span class='fu'>geobr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/geobr/man/read_municipality.html'>read_municipality</a></span><span class='op'>(</span><span class='st'>"SP"</span>, <span class='fl'>2018</span><span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <div class="alert alert-primary" role="alert">
 <p>O pacote <code>geobr</code> <span class="citation" data-cites="R-geobr">(Pereira and Goncalves <a href="#ref-R-geobr" role="doc-biblioref">2020</a>)</span> é um pacote que disponibiliza funções para realizar o download de diversas bases de dados espaciais oficiais do Brasil. Você pode saber mais no <a href="https://github.com/ipeaGIT/geobr">repositório do pacote no GitHub</a>.</p>
@@ -1616,178 +2646,194 @@ municipios_sp &lt;- geobr::read_municipality(&quot;SP&quot;, 2018)</code></pre>
 <p>No projeto, defini como área de estudo os municípios das seguintes Unidades de Gerenciamento de Recursos Hídricos (<strong>UGRHI</strong>): Paraíba do Sul, Litoral Norte, Piracicaba/Capivari/Jundiaí, Alto Tietê, Baixada Santista e Tietê/Sorocaba. Essas UGRHIs foram escolhidas por estarem totalmente ou marjoritariamente no território da Macrometrópole Paulista (<strong>MMP</strong>) (considerando a delimitação do DAEE<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>).</p>
 <p>Criei manualmente uma tibble com o número e nome das UGRHIs que farão parte da análise:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-ugrhis &lt;- tibble::tibble(
-  ugrhi = c(&quot;2&quot;,
-            &quot;3&quot;,
-            &quot;5&quot;,
-            &quot;6&quot;,
-            &quot;7&quot;,
-            &quot;10&quot;),
-  nome_ugrhi = c(
-    &quot; Paraíba do Sul&quot;,
-    &quot; Litoral Norte&quot;,
-    &quot; Piracicaba/Capivari/Jundiaí&quot;,
-    &quot; Alto Tietê&quot;,
-    &quot; Baixada Santista&quot;,
-    &quot; Tietê/Sorocaba&quot;
-  )
-)</code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>ugrhis</span> <span class='op'>&lt;-</span> <span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/tibble.html'>tibble</a></span><span class='op'>(</span>
+  ugrhi <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"2"</span>,
+            <span class='st'>"3"</span>,
+            <span class='st'>"5"</span>,
+            <span class='st'>"6"</span>,
+            <span class='st'>"7"</span>,
+            <span class='st'>"10"</span><span class='op'>)</span>,
+  nome_ugrhi <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span>
+    <span class='st'>" Paraíba do Sul"</span>,
+    <span class='st'>" Litoral Norte"</span>,
+    <span class='st'>" Piracicaba/Capivari/Jundiaí"</span>,
+    <span class='st'>" Alto Tietê"</span>,
+    <span class='st'>" Baixada Santista"</span>,
+    <span class='st'>" Tietê/Sorocaba"</span>
+  <span class='op'>)</span>
+<span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <h2 id="unir-as-bases">Unir as bases !</h2>
 <p>A base da CETESB não possui o código de município do IBGE (o ideal para fazer o Join). Neste caso, podemos usar o nome do município, porém é preciso padronizar os nomes em relação à maiúsculas/minúsculas, acentos, presença de traços, entre outros. A maior diferença encontrada foi na grafia do nome do município “São Luiz do Paraitinga”: segundo o site da Assembléia Legislativa do Estado de São Paulo, e o site do município, Luiz é escrito com Z, porém a base da CETESB utiliza a forma incorreta: “São Luís do Paraitinga”. Essas inconsistências foram corrigidas com código abaixo, usando principalmente funções dos pacotes <code>stringr</code>, <code>dplyr</code> e <code>abjutils</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-municipios_sp_limpo &lt;-
-  municipios_sp %&gt;% dplyr::mutate(
-    nome_muni = stringr::str_to_lower(name_muni),
-    nome_muni = stringr::str_replace_all(nome_muni, &quot;-&quot;, &quot; &quot;),
-    nome_muni = abjutils::rm_accent(nome_muni)
-  )
+<div class="sourceCode">
+<pre><code><span class='va'>municipios_sp_limpo</span> <span class='op'>&lt;-</span>
+  <span class='va'>municipios_sp</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
+    nome_muni <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/case.html'>str_to_lower</a></span><span class='op'>(</span><span class='va'>name_muni</span><span class='op'>)</span>,
+    nome_muni <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_replace.html'>str_replace_all</a></span><span class='op'>(</span><span class='va'>nome_muni</span>, <span class='st'>"-"</span>, <span class='st'>" "</span><span class='op'>)</span>,
+    nome_muni <span class='op'>=</span> <span class='fu'>abjutils</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/abjutils/man/rm_accent.html'>rm_accent</a></span><span class='op'>(</span><span class='va'>nome_muni</span><span class='op'>)</span>
+  <span class='op'>)</span>
 
-apendice_c_limpo &lt;- apendice_c %&gt;% dplyr::mutate(
-  nome_muni =  dplyr::case_when(
-    municipio == &quot;São Luís do Paraitinga&quot; ~
-      &quot;São Luiz do Paraitinga&quot;,
-    TRUE ~ municipio
-  ),
-  nome_muni = stringr::str_to_lower(nome_muni),
-  nome_muni = stringr::str_replace_all(nome_muni, &quot;-&quot;, &quot; &quot;),
-  nome_muni = abjutils::rm_accent(nome_muni))</code></pre>
+<span class='va'>apendice_c_limpo</span> <span class='op'>&lt;-</span> <span class='va'>apendice_c</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
+  nome_muni <span class='op'>=</span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
+    <span class='va'>municipio</span> <span class='op'>==</span> <span class='st'>"São Luís do Paraitinga"</span> <span class='op'>~</span>
+      <span class='st'>"São Luiz do Paraitinga"</span>,
+    <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>municipio</span>
+  <span class='op'>)</span>,
+  nome_muni <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/case.html'>str_to_lower</a></span><span class='op'>(</span><span class='va'>nome_muni</span><span class='op'>)</span>,
+  nome_muni <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_replace.html'>str_replace_all</a></span><span class='op'>(</span><span class='va'>nome_muni</span>, <span class='st'>"-"</span>, <span class='st'>" "</span><span class='op'>)</span>,
+  nome_muni <span class='op'>=</span> <span class='fu'>abjutils</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/abjutils/man/rm_accent.html'>rm_accent</a></span><span class='op'>(</span><span class='va'>nome_muni</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <ul>
 <li>Após arrumar a base, podemos unir com as funções do tipo <code>join_*</code>, do pacote <code>dplyr</code> (Sim, é possível usar as funções do tipo <code>join_*</code> com objetos de classe Simple Feature, porém use-os como o primeiro argumento ao usar a função):</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-apendice_c_geo &lt;-
-  dplyr::full_join(municipios_sp_limpo, apendice_c_limpo) %&gt;%
-  dplyr::left_join(ugrhis)
+<div class="sourceCode">
+<pre><code><span class='va'>apendice_c_geo</span> <span class='op'>&lt;-</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>full_join</a></span><span class='op'>(</span><span class='va'>municipios_sp_limpo</span>, <span class='va'>apendice_c_limpo</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>left_join</a></span><span class='op'>(</span><span class='va'>ugrhis</span><span class='op'>)</span>
 
-apendice_c_geo %&gt;% nrow() # Confirmando se a nova base tem o número de municípios do estado.</code></pre>
-<pre><code>
-[1] 645</code></pre>
+<span class='va'>apendice_c_geo</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='op'>)</span> <span class='co'># Confirmando se a nova base tem o número de municípios do estado.</span>
+</code></pre>
+</div>
+<pre><code>[1] 645</code></pre>
 </div>
 <p>Ao unir as bases, temos colunas duplicadas ou desnecessárias, então é interessante removê-las. Após este procedimento, a base será filtrada para que apenas municípios que fazem parte das UGRHIs analisadas estejam na tibble gerada.</p>
 <p>Além disso, o valor de porcentagem de atendimento de tratamento de esgoto é um valor de porcentagem em relação ao volume de esgoto <strong>coletado</strong>. Por exemplo, o município de Bertioga, segundo os dados da CETESB para 2018, apresenta uma porcentagem de coleta de apenas 34 % do esgoto gerado, e uma porcentagem de 100 % do esgoto tratado. Isso significa que 100 % do esgoto coletado é tratado, e não mostra a porcentagem de todo esgoto gerado que foi tratado. Para isso, criei também uma coluna (chamada <code>porc_real_trat</code>) onde é feito esse cálculo (utilizando a função mutate).</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-saneamento &lt;- apendice_c_geo %&gt;%
-  dplyr::select(-nome_muni,-municipio,-code_state) %&gt;% # Remove colunas duplicadas
-  dplyr::filter(ugrhi %in% ugrhis$ugrhi) %&gt;% # Filtra a coluna UGRHI. Apenas as UGRHIS que estão na tibble
-                                            # criada, permanecerão.
-  dplyr::mutate(porc_real_trat = atendimento_tratamento_porc * atendimento_coleta_porc / 100) # Cria uma nova
-# coluna, com o cálculo do número real de porcentagem de tratamento de esgoto.</code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>saneamento</span> <span class='op'>&lt;-</span> <span class='va'>apendice_c_geo</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='va'>nome_muni</span>,<span class='op'>-</span><span class='va'>municipio</span>,<span class='op'>-</span><span class='va'>code_state</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='co'># Remove colunas duplicadas</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>ugrhi</span> <span class='op'>%in%</span> <span class='va'>ugrhis</span><span class='op'>$</span><span class='va'>ugrhi</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='co'># Filtra a coluna UGRHI. Apenas as UGRHIS que estão na tibble</span>
+                                            <span class='co'># criada, permanecerão.</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>porc_real_trat <span class='op'>=</span> <span class='va'>atendimento_tratamento_porc</span> <span class='op'>*</span> <span class='va'>atendimento_coleta_porc</span> <span class='op'>/</span> <span class='fl'>100</span><span class='op'>)</span> <span class='co'># Cria uma nova</span>
+<span class='co'># coluna, com o cálculo do número real de porcentagem de tratamento de esgoto.</span>
+</code></pre>
+</div>
 </div>
 <p>A base final que usaremos na análise contém dados de 171 municípios, que fazem parte de 6 UGRHIs diferentes. A soma da população urbana destes municípios é de 32.79 milhões de habitantes, o que corresponde à 75.1 % da população urbana do Estado de São Paulo (segundo os dados da base completa utilizada nessa análise).</p>
 <h2 id="visualizando-os-dados">Visualizando os dados</h2>
 <p>Para evitar duplicação de código, o código abaixo é referente ao estilo do mapa, que aplicarei em todos os mapas seguintes.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-tema_mapa &lt;-
-  theme_bw() + # Escolhe o tema. Eu gosto do theme_bw() por ser bem simples/limpo
+<div class="sourceCode">
+<pre><code><span class='va'>tema_mapa</span> <span class='op'>&lt;-</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_bw</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># Escolhe o tema. Eu gosto do theme_bw() por ser bem simples/limpo</span>
   
-  # Os códigos abaixo são referentes à estética do tema,
-  # como o tamanho da fonte, direção do texto,
-  # linhas ao fundo, etc.
+  <span class='co'># Os códigos abaixo são referentes à estética do tema,</span>
+  <span class='co'># como o tamanho da fonte, direção do texto,</span>
+  <span class='co'># linhas ao fundo, etc.</span>
   
-  theme(
-    axis.text.y = element_text(
-      angle = 90,
-      hjust = 0.5,
-      size = 8
-    ),
-    axis.text.x = element_text(size = 8),
-    axis.title.y = element_text(size = rel(0.8)),
-    axis.title.x = element_text(size = rel(0.8)),
-    panel.grid.major = element_line(
-      color = gray(0.9),
-      linetype = &quot;dashed&quot;,
-      size = 0.1
-    ),
-    panel.background = element_rect(fill = &quot;white&quot;) +
-      annotation_scale(location = &quot;br&quot;, width_hint = 0.30)
-  )</code></pre>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>
+    axis.text.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>
+      angle <span class='op'>=</span> <span class='fl'>90</span>,
+      hjust <span class='op'>=</span> <span class='fl'>0.5</span>,
+      size <span class='op'>=</span> <span class='fl'>8</span>
+    <span class='op'>)</span>,
+    axis.text.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>size <span class='op'>=</span> <span class='fl'>8</span><span class='op'>)</span>,
+    axis.title.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>size <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>rel</a></span><span class='op'>(</span><span class='fl'>0.8</span><span class='op'>)</span><span class='op'>)</span>,
+    axis.title.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>size <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>rel</a></span><span class='op'>(</span><span class='fl'>0.8</span><span class='op'>)</span><span class='op'>)</span>,
+    panel.grid.major <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>
+      color <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grDevices/gray.html'>gray</a></span><span class='op'>(</span><span class='fl'>0.9</span><span class='op'>)</span>,
+      linetype <span class='op'>=</span> <span class='st'>"dashed"</span>,
+      size <span class='op'>=</span> <span class='fl'>0.1</span>
+    <span class='op'>)</span>,
+    panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span> <span class='op'>+</span>
+      <span class='fu'><a href='https://paleolimbot.github.io/ggspatial/reference/annotation_scale.html'>annotation_scale</a></span><span class='op'>(</span>location <span class='op'>=</span> <span class='st'>"br"</span>, width_hint <span class='op'>=</span> <span class='fl'>0.30</span><span class='op'>)</span>
+  <span class='op'>)</span>
+</code></pre>
+</div>
 </div>
 <p>Com a função <code>geom_sf()</code>, é possível criar mapas utilizando o pacote <code>ggplot2</code> e objetos de classe Simple Feature (sf). Assim podemos usar as nossas habilidades de criar gráficos lindos no <code>ggplot2</code>, e criar mapas também usando as funções que já conhecemos.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-class(saneamento) # Função class() apresenta a classe do objeto. </code></pre>
-<pre><code>
-[1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
+<div class="sourceCode">
+<pre><code><span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>saneamento</span><span class='op'>)</span> <span class='co'># Função class() apresenta a classe do objeto. </span>
+</code></pre>
+</div>
+<pre><code>[1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
 </div>
 <p>O mapa abaixo apresenta os municípios que fazem parte da análise, segundo a UGRHI, e a localização destes municípios no Estado de São Paulo. Podemos usar mais de uma camada <code>geom_sf()</code> no mesmo mapa, da mesma forma que fazemos com o <code>ggplot2</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-saneamento %&gt;% # Base de dados usada
-  ggplot() + # Inicia o gráfico ggplot
-  geom_sf(data = apendice_c_geo,
-          # Camada do mapa da base completa (Estado SP)
-          alpha = .9,
-          color = NA) +
-  geom_sf(aes(fill = nome_ugrhi)) + # Camada do mapa da base saneamento
-  # Adiciona Título e Legendas
-  labs(fill = &quot;UGRHI&quot;,
-       title = &quot;Municípios que fazem parte da análise, segundo a UGRHI&quot;) +
-  # Adiciona o Norte Geográfico
-  annotation_north_arrow(
-    location = &quot;br&quot;,
-    which_north = &quot;true&quot;,
-    height = unit(1, &quot;cm&quot;),
-    width = unit(1, &quot;cm&quot;),
-    pad_x = unit(0.1, &quot;in&quot;),
-    pad_y = unit(0.1, &quot;in&quot;),
-    style = north_arrow_fancy_orienteering
-  ) +
-  ggspatial::annotation_scale() +
-  # Adiciona o tema criado anteriormente
-  tema_mapa </code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>saneamento</span> <span class='op'>%&gt;%</span> <span class='co'># Base de dados usada</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># Inicia o gráfico ggplot</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>apendice_c_geo</span>,
+          <span class='co'># Camada do mapa da base completa (Estado SP)</span>
+          alpha <span class='op'>=</span> <span class='fl'>.9</span>,
+          color <span class='op'>=</span> <span class='cn'>NA</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>nome_ugrhi</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># Camada do mapa da base saneamento</span>
+  <span class='co'># Adiciona Título e Legendas</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"UGRHI"</span>,
+       title <span class='op'>=</span> <span class='st'>"Municípios que fazem parte da análise, segundo a UGRHI"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='co'># Adiciona o Norte Geográfico</span>
+  <span class='fu'><a href='https://paleolimbot.github.io/ggspatial/reference/annotation_north_arrow.html'>annotation_north_arrow</a></span><span class='op'>(</span>
+    location <span class='op'>=</span> <span class='st'>"br"</span>,
+    which_north <span class='op'>=</span> <span class='st'>"true"</span>,
+    height <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='st'>"cm"</span><span class='op'>)</span>,
+    width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='st'>"cm"</span><span class='op'>)</span>,
+    pad_x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>0.1</span>, <span class='st'>"in"</span><span class='op'>)</span>,
+    pad_y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>0.1</span>, <span class='st'>"in"</span><span class='op'>)</span>,
+    style <span class='op'>=</span> <span class='va'>north_arrow_fancy_orienteering</span>
+  <span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>ggspatial</span><span class='fu'>::</span><span class='fu'><a href='https://paleolimbot.github.io/ggspatial/reference/annotation_scale.html'>annotation_scale</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='co'># Adiciona o tema criado anteriormente</span>
+  <span class='va'>tema_mapa</span> 
+</code></pre>
+</div>
 <p><img src="criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-area-estudo-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <p>O mapa abaixo apresenta a porcentagem de atendimento de coleta de esgoto, por município:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-saneamento %&gt;%
-  ggplot() +
-  geom_sf(aes(fill = atendimento_coleta_porc)) +
-  scale_fill_viridis_c(direction = -1, limits = c(0, 100)) + # Escala de cores
-  labs(fill = &quot;Porcentagem de \natendimento de \ncoleta de esgoto&quot;,
-       title = &quot;Porcentagem de atendimento de coleta de esgoto, por município&quot;,
-       subtitle = &quot;Dados da CETESB, para o ano de 2018.&quot;) +
-  annotation_north_arrow(
-    location = &quot;br&quot;,
-    which_north = &quot;true&quot;,
-    height = unit(1, &quot;cm&quot;),
-    width = unit(1, &quot;cm&quot;),
-    pad_x = unit(0.1, &quot;in&quot;),
-    pad_y = unit(0.1, &quot;in&quot;),
-    style = north_arrow_fancy_orienteering
-  ) +
-  ggspatial::annotation_scale() +
-  tema_mapa </code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>saneamento</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>atendimento_coleta_porc</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_viridis.html'>scale_fill_viridis_c</a></span><span class='op'>(</span>direction <span class='op'>=</span> <span class='op'>-</span><span class='fl'>1</span>, limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>100</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># Escala de cores</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"Porcentagem de \natendimento de \ncoleta de esgoto"</span>,
+       title <span class='op'>=</span> <span class='st'>"Porcentagem de atendimento de coleta de esgoto, por município"</span>,
+       subtitle <span class='op'>=</span> <span class='st'>"Dados da CETESB, para o ano de 2018."</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://paleolimbot.github.io/ggspatial/reference/annotation_north_arrow.html'>annotation_north_arrow</a></span><span class='op'>(</span>
+    location <span class='op'>=</span> <span class='st'>"br"</span>,
+    which_north <span class='op'>=</span> <span class='st'>"true"</span>,
+    height <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='st'>"cm"</span><span class='op'>)</span>,
+    width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='st'>"cm"</span><span class='op'>)</span>,
+    pad_x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>0.1</span>, <span class='st'>"in"</span><span class='op'>)</span>,
+    pad_y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>0.1</span>, <span class='st'>"in"</span><span class='op'>)</span>,
+    style <span class='op'>=</span> <span class='va'>north_arrow_fancy_orienteering</span>
+  <span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>ggspatial</span><span class='fu'>::</span><span class='fu'><a href='https://paleolimbot.github.io/ggspatial/reference/annotation_scale.html'>annotation_scale</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='va'>tema_mapa</span> 
+</code></pre>
+</div>
 <p><img src="criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-coleta-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <p>O mapa abaixo apresenta a porcentagem de atendimento de tratamento de esgoto, considerando o total de esgoto coletado, por município:</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-saneamento %&gt;%
-  ggplot() +
-  geom_sf(aes(fill = porc_real_trat)) +
-  scale_fill_viridis_c(direction = -1, limits = c(0, 100)) +
-  labs(fill = &quot;% de \natendimento de \ntratamento de esgoto &quot;,
-       title = &quot;Porcentagem de atendimento de tratamento de esgoto, por município&quot;,
-       subtitle = &quot;Calculado a partir de dados da CETESB, para o ano de 2018.&quot;) +
-  annotation_north_arrow(
-    location = &quot;br&quot;,
-    which_north = &quot;true&quot;,
-    height = unit(1, &quot;cm&quot;),
-    width = unit(1, &quot;cm&quot;),
-    pad_x = unit(0.1, &quot;in&quot;),
-    pad_y = unit(0.1, &quot;in&quot;),
-    style = north_arrow_fancy_orienteering
-  ) +
-  ggspatial::annotation_scale() +
-  tema_mapa </code></pre>
+<div class="sourceCode">
+<pre><code><span class='va'>saneamento</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>porc_real_trat</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_viridis.html'>scale_fill_viridis_c</a></span><span class='op'>(</span>direction <span class='op'>=</span> <span class='op'>-</span><span class='fl'>1</span>, limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>100</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"% de \natendimento de \ntratamento de esgoto "</span>,
+       title <span class='op'>=</span> <span class='st'>"Porcentagem de atendimento de tratamento de esgoto, por município"</span>,
+       subtitle <span class='op'>=</span> <span class='st'>"Calculado a partir de dados da CETESB, para o ano de 2018."</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://paleolimbot.github.io/ggspatial/reference/annotation_north_arrow.html'>annotation_north_arrow</a></span><span class='op'>(</span>
+    location <span class='op'>=</span> <span class='st'>"br"</span>,
+    which_north <span class='op'>=</span> <span class='st'>"true"</span>,
+    height <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='st'>"cm"</span><span class='op'>)</span>,
+    width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='st'>"cm"</span><span class='op'>)</span>,
+    pad_x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>0.1</span>, <span class='st'>"in"</span><span class='op'>)</span>,
+    pad_y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>0.1</span>, <span class='st'>"in"</span><span class='op'>)</span>,
+    style <span class='op'>=</span> <span class='va'>north_arrow_fancy_orienteering</span>
+  <span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>ggspatial</span><span class='fu'>::</span><span class='fu'><a href='https://paleolimbot.github.io/ggspatial/reference/annotation_scale.html'>annotation_scale</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='va'>tema_mapa</span> 
+</code></pre>
+</div>
 <p><img src="criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png" width="100%" data-distill-preview=1 style="display: block; margin: auto;" /></p>
 </div>
 <h2 id="conclusão-do-post">Conclusão do post</h2>
@@ -1809,10 +2855,11 @@ saneamento %&gt;%
 <li>As informações abaixo são interessantes para registrar a versão do R utilizada, versões de pacotes, entre outros.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<pre class="r"><code>
-sessioninfo::session_info()</code></pre>
-<pre><code>
-- Session info -----------------------------------------------------
+<div class="sourceCode">
+<pre><code><span class='fu'>sessioninfo</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/sessioninfo/man/session_info.html'>session_info</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>- Session info -----------------------------------------------------
  setting  value                       
  version  R version 4.0.2 (2020-06-22)
  os       Windows 10 x64              
@@ -1822,36 +2869,36 @@ sessioninfo::session_info()</code></pre>
  collate  Portuguese_Brazil.1252      
  ctype    Portuguese_Brazil.1252      
  tz       America/Sao_Paulo           
- date     2020-10-04                  
+ date     2020-12-09                  
 
 - Packages ---------------------------------------------------------
  package     * version date       lib source        
- abjutils    * 0.3.1   2020-08-12 [1] CRAN (R 4.0.2)
+ abjutils    * 0.3.1   2020-08-12 [1] CRAN (R 4.0.3)
  assertthat    0.2.1   2019-03-21 [1] CRAN (R 4.0.2)
- backports     1.1.10  2020-09-15 [1] CRAN (R 4.0.2)
- blob          1.2.1   2020-01-20 [1] CRAN (R 4.0.2)
- broom         0.7.0   2020-07-09 [1] CRAN (R 4.0.2)
+ backports     1.2.0   2020-11-02 [1] CRAN (R 4.0.3)
+ broom         0.7.2   2020-10-20 [1] CRAN (R 4.0.3)
  cellranger    1.1.0   2016-07-27 [1] CRAN (R 4.0.2)
  class         7.3-17  2020-04-26 [1] CRAN (R 4.0.2)
  classInt      0.4-3   2020-04-07 [1] CRAN (R 4.0.2)
- cli           2.0.2   2020-02-28 [1] CRAN (R 4.0.2)
- colorspace    1.4-1   2019-03-18 [1] CRAN (R 4.0.2)
+ cli           2.1.0   2020-10-12 [1] CRAN (R 4.0.3)
+ colorspace    2.0-0   2020-11-11 [1] CRAN (R 4.0.2)
  crayon        1.3.4   2017-09-16 [1] CRAN (R 4.0.2)
  curl          4.3     2019-12-02 [1] CRAN (R 4.0.2)
  DBI           1.1.0   2019-12-15 [1] CRAN (R 4.0.2)
- dbplyr        1.4.4   2020-05-27 [1] CRAN (R 4.0.2)
- digest        0.6.25  2020-02-23 [1] CRAN (R 4.0.2)
- distill       0.8     2020-06-04 [1] CRAN (R 4.0.2)
+ dbplyr        2.0.0   2020-11-03 [1] CRAN (R 4.0.3)
+ digest        0.6.27  2020-10-24 [1] CRAN (R 4.0.3)
+ distill       1.1     2020-12-02 [1] CRAN (R 4.0.3)
+ downlit       0.2.1   2020-11-04 [1] CRAN (R 4.0.3)
  dplyr       * 1.0.2   2020-08-18 [1] CRAN (R 4.0.2)
- e1071         1.7-3   2019-11-26 [1] CRAN (R 4.0.2)
+ e1071         1.7-4   2020-10-14 [1] CRAN (R 4.0.3)
  ellipsis      0.3.1   2020-05-15 [1] CRAN (R 4.0.2)
  evaluate      0.14    2019-05-28 [1] CRAN (R 4.0.2)
  fansi         0.4.1   2020-01-08 [1] CRAN (R 4.0.2)
  farver        2.0.3   2020-01-16 [1] CRAN (R 4.0.2)
  forcats     * 0.5.0   2020-03-01 [1] CRAN (R 4.0.2)
  fs            1.5.0   2020-07-31 [1] CRAN (R 4.0.2)
- generics      0.0.2   2018-11-29 [1] CRAN (R 4.0.2)
- geobr       * 1.3     2020-03-29 [1] CRAN (R 4.0.2)
+ generics      0.1.0   2020-10-31 [1] CRAN (R 4.0.3)
+ geobr       * 1.4     2020-10-04 [1] CRAN (R 4.0.2)
  ggplot2     * 3.3.2   2020-06-19 [1] CRAN (R 4.0.2)
  ggspatial   * 1.1.4   2020-07-12 [1] CRAN (R 4.0.2)
  glue          1.4.2   2020-08-27 [1] CRAN (R 4.0.2)
@@ -1861,11 +2908,11 @@ sessioninfo::session_info()</code></pre>
  htmltools     0.5.0   2020-06-16 [1] CRAN (R 4.0.2)
  httr          1.4.2   2020-07-20 [1] CRAN (R 4.0.2)
  jsonlite      1.7.1   2020-09-07 [1] CRAN (R 4.0.2)
- KernSmooth    2.23-17 2020-04-26 [1] CRAN (R 4.0.2)
+ KernSmooth    2.23-18 2020-10-29 [1] CRAN (R 4.0.3)
  knitr       * 1.30    2020-09-22 [1] CRAN (R 4.0.2)
- labeling      0.3     2014-08-23 [1] CRAN (R 4.0.0)
+ labeling      0.4.2   2020-10-20 [1] CRAN (R 4.0.3)
  lifecycle     0.2.0   2020-03-06 [1] CRAN (R 4.0.2)
- lubridate     1.7.9   2020-06-08 [1] CRAN (R 4.0.2)
+ lubridate     1.7.9.2 2020-11-13 [1] CRAN (R 4.0.2)
  magrittr    * 1.5     2014-11-22 [1] CRAN (R 4.0.2)
  modelr        0.1.8   2020-05-19 [1] CRAN (R 4.0.2)
  munsell       0.5.0   2018-06-12 [1] CRAN (R 4.0.2)
@@ -1873,21 +2920,21 @@ sessioninfo::session_info()</code></pre>
  pillar        1.4.6   2020-07-10 [1] CRAN (R 4.0.2)
  pkgconfig     2.0.3   2019-09-22 [1] CRAN (R 4.0.2)
  purrr       * 0.3.4   2020-04-17 [1] CRAN (R 4.0.2)
- R6            2.4.1   2019-11-12 [1] CRAN (R 4.0.2)
+ R6            2.5.0   2020-10-28 [1] CRAN (R 4.0.3)
  Rcpp          1.0.5   2020-07-06 [1] CRAN (R 4.0.2)
- readr       * 1.3.1   2018-12-21 [1] CRAN (R 4.0.2)
+ readr       * 1.4.0   2020-10-05 [1] CRAN (R 4.0.2)
  readxl        1.3.1   2019-03-13 [1] CRAN (R 4.0.2)
  reprex        0.3.0   2019-05-16 [1] CRAN (R 4.0.2)
- rlang         0.4.7   2020-07-09 [1] CRAN (R 4.0.2)
- rmarkdown     2.3     2020-06-18 [1] CRAN (R 4.0.2)
- rstudioapi    0.11    2020-02-07 [1] CRAN (R 4.0.2)
+ rlang         0.4.8   2020-10-08 [1] CRAN (R 4.0.2)
+ rmarkdown     2.5     2020-10-21 [1] CRAN (R 4.0.3)
+ rstudioapi    0.13    2020-11-12 [1] CRAN (R 4.0.2)
  rvest         0.3.6   2020-07-25 [1] CRAN (R 4.0.2)
  scales        1.1.1   2020-05-11 [1] CRAN (R 4.0.2)
  sessioninfo   1.1.1   2018-11-05 [1] CRAN (R 4.0.2)
  sf          * 0.9-6   2020-09-13 [1] CRAN (R 4.0.2)
  stringi       1.5.3   2020-09-09 [1] CRAN (R 4.0.2)
  stringr     * 1.4.0   2019-02-10 [1] CRAN (R 4.0.2)
- tibble      * 3.0.3   2020-07-10 [1] CRAN (R 4.0.2)
+ tibble      * 3.0.4   2020-10-12 [1] CRAN (R 4.0.3)
  tidyr       * 1.1.2   2020-08-27 [1] CRAN (R 4.0.2)
  tidyselect    1.1.0   2020-05-11 [1] CRAN (R 4.0.2)
  tidyverse   * 1.3.0   2019-11-21 [1] CRAN (R 4.0.2)
@@ -1896,11 +2943,11 @@ sessioninfo::session_info()</code></pre>
  vctrs         0.3.4   2020-08-29 [1] CRAN (R 4.0.2)
  viridisLite   0.3.0   2018-02-01 [1] CRAN (R 4.0.2)
  withr         2.3.0   2020-09-22 [1] CRAN (R 4.0.2)
- xfun          0.17    2020-09-09 [1] CRAN (R 4.0.2)
+ xfun          0.19    2020-10-30 [1] CRAN (R 4.0.3)
  xml2          1.3.2   2020-04-23 [1] CRAN (R 4.0.2)
  yaml          2.2.1   2020-02-01 [1] CRAN (R 4.0.2)
 
-[1] D:/Program Files/R/R-4.0.2/library</code></pre>
+[1] D:/programfiles/R/R-4.0.2/library</code></pre>
 </div>
 <p>O projeto foi realizado com R <span class="citation" data-cites="R-base">(R Core Team <a href="#ref-R-base" role="doc-biblioref">2019</a>)</span>, e os pacotes: <code>{abjutils}</code> <span class="citation" data-cites="R-abjutils">(ABJ <a href="#ref-R-abjutils" role="doc-biblioref">2019</a>)</span>, <code>{dplyr}</code> <span class="citation" data-cites="R-dplyr">(Wickham, François, et al. <a href="#ref-R-dplyr" role="doc-biblioref">2020</a>)</span>, <code>{geobr}</code> <span class="citation" data-cites="R-geobr">(Pereira and Goncalves <a href="#ref-R-geobr" role="doc-biblioref">2020</a>)</span>, <code>{ggplot2}</code> <span class="citation" data-cites="R-ggplot2 ggplot22016">(Wickham, Chang, et al. <a href="#ref-R-ggplot2" role="doc-biblioref">2020</a>; Wickham <a href="#ref-ggplot22016" role="doc-biblioref">2016</a>)</span>, <code>{ggspatial}</code> <span class="citation" data-cites="R-ggspatial">(Dunnington <a href="#ref-R-ggspatial" role="doc-biblioref">2020</a>)</span>, <code>{knitr}</code> <span class="citation" data-cites="R-knitr knitr2015">(Xie <a href="#ref-R-knitr" role="doc-biblioref">2020</a>, <a href="#ref-knitr2015" role="doc-biblioref">2015</a>)</span>, <code>{magrittr}</code> <span class="citation" data-cites="R-magrittr">(Bache and Wickham <a href="#ref-R-magrittr" role="doc-biblioref">2014</a>)</span>, <code>{pdftables}</code> <span class="citation" data-cites="R-pdftables">(Persson <a href="#ref-R-pdftables" role="doc-biblioref">2016</a>)</span>, <code>{readr}</code> <span class="citation" data-cites="R-readr">(Wickham, Hester, and Francois <a href="#ref-R-readr" role="doc-biblioref">2018</a>)</span>, <code>{rmarkdown}</code> <span class="citation" data-cites="R-rmarkdown rmarkdown2018">(Allaire et al. <a href="#ref-R-rmarkdown" role="doc-biblioref">2020</a>; Xie, Allaire, and Grolemund <a href="#ref-rmarkdown2018" role="doc-biblioref">2018</a>)</span>, <code>{sf}</code> <span class="citation" data-cites="R-sf sf2018">(Pebesma <a href="#ref-R-sf" role="doc-biblioref">2020</a>, <a href="#ref-sf2018" role="doc-biblioref">2018</a>)</span>, <code>{stringr}</code> <span class="citation" data-cites="R-stringr">(Wickham <a href="#ref-R-stringr" role="doc-biblioref">2019</a>)</span>, <code>{tibble}</code> <span class="citation" data-cites="R-tibble">(Müller and Wickham <a href="#ref-R-tibble" role="doc-biblioref">2020</a>)</span>.</p>
 <h2 id="muito-obrigada">Muito obrigada!</h2>
@@ -1909,6 +2956,7 @@ sessioninfo::session_info()</code></pre>
 <li><p>A <a href="https://bv.fapesp.br/pt/pesquisador/705683/vanessa-escolano-maso/">Vanessa Escolano Maso</a>, amiga, parceira na R-Ladies São Paulo e também na disciplina, pela companhia durante a disciplina e também por revisar e sugerir melhoras neste post.</p></li>
 <li><p>Ao <a href="https://twitter.com/mauriciovancine">Maurício Vancine</a> pela sua sugestão via <a href="https://twitter.com/mauriciovancine/status/1287852208449638402?s=20">twitter</a> de utilizar a função <code>ggspatial::annotation_scale()</code> para adicionar uma barra de escala nos gráficos.</p></li>
 </ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <div id="refs" class="references" role="doc-bibliography">
 <div id="ref-R-abjutils">
 <p>ABJ. 2019. <em>Abjutils: Useful Tools for Jurimetrical Analysis Used by the Brazilian Jurimetrics Association</em>. <a href="https://github.com/abjur/abjutils">https://github.com/abjur/abjutils</a>.</p>
@@ -1979,19 +3027,6 @@ sessioninfo::session_info()</code></pre>
 </ol>
 </section>
 <!--radix_placeholder_article_footer-->
-<div class="article-footer">
-  <p class="social_footer">
-    <span class="article-sharing">
-      Share: &nbsp;
-      <a href="https://twitter.com/share?text=Criando%20mapas%20com%20os%20pacotes%20tidyverse%20e%20geobr&amp;url=https%3A%2F%2Fbeamilz.netlify.app%2Fposts%2F2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr%2F">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbeamilz.netlify.app%2Fposts%2F2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr%2F&amp;title=Criando%20mapas%20com%20os%20pacotes%20tidyverse%20e%20geobr">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </span>
-  </p>
-</div>
 <!--/radix_placeholder_article_footer-->
 </div>
 
@@ -2003,202 +3038,33 @@ sessioninfo::session_info()</code></pre>
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom">
+  <h3 id="references">References</h3>
+  <div id="references-listing"></div>
   <h3 id="reuse">Reuse</h3>
   <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Milz (2020, July 27). Blog - Bea Milz: Criando mapas com os pacotes tidyverse e geobr. Retrieved from https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/</pre>
+  <pre class="citation-appendix short">Milz (2020, July 27). Beatriz Milz: Criando mapas com os pacotes tidyverse e geobr. Retrieved from https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{milz2020criando,
   author = {Milz, Beatriz},
-  title = {Blog - Bea Milz: Criando mapas com os pacotes tidyverse e geobr},
+  title = {Beatriz Milz: Criando mapas com os pacotes tidyverse e geobr},
   url = {https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/},
   year = {2020}
 }</pre>
 </div>
-<script id="distill-bibliography" type="text/bibtex">
-@Manual{R-abjutils,
-  title = {abjutils: Useful Tools for Jurimetrical Analysis Used by the Brazilian
-Jurimetrics Association},
-  author = {{ABJ}},
-  year = {2019},
-  note = {R package version 0.2.4},
-  url = {https://github.com/abjur/abjutils},
-}
-
-@Manual{R-base,
-  title = {R: A Language and Environment for Statistical Computing},
-  author = {{R Core Team}},
-  organization = {R Foundation for Statistical Computing},
-  address = {Vienna, Austria},
-  year = {2019},
-  url = {https://www.R-project.org/},
-}
-
-@Manual{R-dplyr,
-  title = {dplyr: A Grammar of Data Manipulation},
-  author = {Hadley Wickham and Romain FranÃ§ois and Lionel Henry and Kirill MÃ¼ller},
-  year = {2020},
-  note = {R package version 1.0.0},
-  url = {https://CRAN.R-project.org/package=dplyr},
-}
-
-@Manual{R-geobr,
-  title = {geobr: Loads Shapefiles of Official Spatial Data Sets of Brazil},
-  author = {Rafael H. M. Pereira and Caio Nogueira Goncalves},
-  year = {2020},
-  note = {R package version 1.3},
-  url = {https://CRAN.R-project.org/package=geobr},
-}
-
-@Manual{R-ggplot2,
-  title = {ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics},
-  author = {Hadley Wickham and Winston Chang and Lionel Henry and Thomas Lin Pedersen and Kohske Takahashi and Claus Wilke and Kara Woo and Hiroaki Yutani and Dewey Dunnington},
-  year = {2020},
-  note = {R package version 3.3.2},
-  url = {https://CRAN.R-project.org/package=ggplot2},
-}
-
-@Manual{R-ggspatial,
-  title = {ggspatial: Spatial Data Framework for ggplot2},
-  author = {Dewey Dunnington},
-  year = {2020},
-  note = {R package version 1.1.3},
-  url = {https://CRAN.R-project.org/package=ggspatial},
-}
-
-@Manual{R-knitr,
-  title = {knitr: A General-Purpose Package for Dynamic Report Generation in R},
-  author = {Yihui Xie},
-  year = {2020},
-  note = {R package version 1.29},
-  url = {https://CRAN.R-project.org/package=knitr},
-}
-
-@Manual{R-magrittr,
-  title = {magrittr: A Forward-Pipe Operator for R},
-  author = {Stefan Milton Bache and Hadley Wickham},
-  year = {2014},
-  note = {R package version 1.5},
-  url = {https://CRAN.R-project.org/package=magrittr},
-}
-
-@Manual{R-pdftables,
-  title = {pdftables: Programmatic Conversion of PDF Tables},
-  author = {Eric Persson},
-  year = {2016},
-  note = {R package version 0.1},
-  url = {https://CRAN.R-project.org/package=pdftables},
-}
-
-@Manual{R-readr,
-  title = {readr: Read Rectangular Text Data},
-  author = {Hadley Wickham and Jim Hester and Romain Francois},
-  year = {2018},
-  note = {R package version 1.3.1},
-  url = {https://CRAN.R-project.org/package=readr},
-}
-
-@Manual{R-rmarkdown,
-  title = {rmarkdown: Dynamic Documents for R},
-  author = {JJ Allaire and Yihui Xie and Jonathan McPherson and Javier Luraschi and Kevin Ushey and Aron Atkins and Hadley Wickham and Joe Cheng and Winston Chang and Richard Iannone},
-  year = {2020},
-  note = {R package version 2.3},
-  url = {https://CRAN.R-project.org/package=rmarkdown},
-}
-
-@Manual{R-sf,
-  title = {sf: Simple Features for R},
-  author = {Edzer Pebesma},
-  year = {2020},
-  note = {R package version 0.9-4},
-  url = {https://CRAN.R-project.org/package=sf},
-}
-
-@Manual{R-stringr,
-  title = {stringr: Simple, Consistent Wrappers for Common String Operations},
-  author = {Hadley Wickham},
-  year = {2019},
-  note = {R package version 1.4.0},
-  url = {https://CRAN.R-project.org/package=stringr},
-}
-
-@Manual{R-tibble,
-  title = {tibble: Simple Data Frames},
-  author = {Kirill MÃ¼ller and Hadley Wickham},
-  year = {2020},
-  note = {R package version 3.0.1},
-  url = {https://CRAN.R-project.org/package=tibble},
-}
-
-@Book{ggplot22016,
-  author = {Hadley Wickham},
-  title = {ggplot2: Elegant Graphics for Data Analysis},
-  publisher = {Springer-Verlag New York},
-  year = {2016},
-  isbn = {978-3-319-24277-4},
-  url = {https://ggplot2.tidyverse.org},
-}
-
-@Book{knitr2015,
-  title = {Dynamic Documents with {R} and knitr},
-  author = {Yihui Xie},
-  publisher = {Chapman and Hall/CRC},
-  address = {Boca Raton, Florida},
-  year = {2015},
-  edition = {2nd},
-  note = {ISBN 978-1498716963},
-  url = {https://yihui.org/knitr/},
-}
-
-@InCollection{knitr2014,
-  booktitle = {Implementing Reproducible Computational Research},
-  editor = {Victoria Stodden and Friedrich Leisch and Roger D. Peng},
-  title = {knitr: A Comprehensive Tool for Reproducible Research in {R}},
-  author = {Yihui Xie},
-  publisher = {Chapman and Hall/CRC},
-  year = {2014},
-  note = {ISBN 978-1466561595},
-  url = {http://www.crcpress.com/product/isbn/9781466561595},
-}
-
-@Book{rmarkdown2018,
-  title = {R Markdown: The Definitive Guide},
-  author = {Yihui Xie and J.J. Allaire and Garrett Grolemund},
-  publisher = {Chapman and Hall/CRC},
-  address = {Boca Raton, Florida},
-  year = {2018},
-  note = {ISBN 9781138359338},
-  url = {https://bookdown.org/yihui/rmarkdown},
-}
-
-@Article{sf2018,
-  author = {Edzer Pebesma},
-  title = {{Simple Features for R: Standardized Support for Spatial Vector Data}},
-  year = {2018},
-  journal = {{The R Journal}},
-  doi = {10.32614/RJ-2018-009},
-  url = {https://doi.org/10.32614/RJ-2018-009},
-  pages = {439--446},
-  volume = {10},
-  number = {1},
-}
-
-
- @Article{tidyverse2019,
-    title = {Welcome to the {tidyverse}},
-    author = {Hadley Wickham and Mara Averick and Jennifer Bryan and Winston Chang and Lucy D'Agostino McGowan and Romain FranÃ§ois and Garrett Grolemund and Alex Hayes and Lionel Henry and Jim Hester and Max Kuhn and Thomas Lin Pedersen and Evan Miller and Stephan Milton Bache and Kirill MÃ¼ller and Jeroen Ooms and David Robinson and Dana Paige Seidel and Vitalie Spinu and Kohske Takahashi and Davis Vaughan and Claus Wilke and Kara Woo and Hiroaki Yutani},
-    year = {2019},
-    journal = {Journal of Open Source Software},
-    volume = {4},
-    number = {43},
-    pages = {1686},
-    doi = {10.21105/joss.01686},
-  }
-</script>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+  <div><b><a href="https://beatrizmilz.com">Beatriz Milz</a></b> - 2020
+
+
+
+
+</div>
+</div>
 <!--/radix_placeholder_navigation_after_body-->
+
 
 </body>
 

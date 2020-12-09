@@ -5,6 +5,8 @@ description: |
 author:
   - name: Beatriz Milz
     url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP
+    orcid_id: 0000-0002-3064-4486
 date: 2020-07-27
 output:
   distill::distill_article:

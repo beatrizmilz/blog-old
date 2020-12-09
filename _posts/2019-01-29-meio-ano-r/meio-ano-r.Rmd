@@ -5,6 +5,8 @@ description: |
 author:
   - name: Beatriz Milz
     url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP
+    orcid_id: 0000-0002-3064-4486
 categories:
   - R
   - R-Ladies

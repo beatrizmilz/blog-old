@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-09T10:42:18-03:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Beatriz Milz",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-09T10:42:19-03:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
