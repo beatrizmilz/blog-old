@@ -79,7 +79,11 @@ d-appendix {
 
 
 
-.pre {
-  overflow-y: auto;
+d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
+	overflow: auto !important;
+}
+
+p {
+text-align: justify;
 }
 

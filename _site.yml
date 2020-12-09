@@ -9,17 +9,18 @@ navbar:
   left:
     - icon: fas fa-graduation-cap
       href: https://beatrizmilz.com
-    - text: "Blog"
-      href: index.html
+    - text: "Sobre mim"
+      href: about.html
     - text: "Materiais sobre R"
       href: materiais_r.html
+    - text: "Videos"
+      href: videos.html
     - text: "CV"
       href: https://beatrizmilz.github.io/resume/index.html
   right:
     - icon: fas fa-home
       href: index.html
-    # - text: "About"
-    #   href: about.html
+
 output:
   distill::distill_article:
     includes:

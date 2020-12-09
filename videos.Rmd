@@ -1,0 +1,37 @@
+---
+title: "Videos"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Conferências
+
+### Evento <a href="https://user2020.r-project.org/">useR! 2020</a>
+
+Título: Communities of practice in Latin America: R and Friends 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gtRntU2J3Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+
+
+### Evento <a href="https://www.user2019.fr/">useR! 2019 Toulouse </a>
+
+Título: The evolution and importance of the R-Ladies São Paulo chapter in Brazil
+
+- Lightning Talk - Education & community 
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2HK6hjwhdRk?start=880" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+
+
+
+
+
+## Lives
+
+ > Em breve!

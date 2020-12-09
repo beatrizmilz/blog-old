@@ -2,11 +2,10 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "title": "Sobre mim",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:44-03:00"
+      "contents": "\r\nPortuguês\r\nMeu nome é Beatriz, e meu pronome é “ela”. Atualmente sou doutoranda em Ciência Ambiental (PROCAM/IEE/USP) na Universidade de São Paulo. Sou pesquisadora no Projeto Temático FAPESP MacroAmb - Governança ambiental da Macrometrópole Paulista face à variabilidade climática. Faço parte voluntariamente da equipe da Secretaria Executiva da Revista Ambiente & Sociedade, uma revista científica Brasileira que é referência em estudos interdisciplinares sobre ambiente e sociedade.\r\nSou co-organizadora da R-Ladies São Paulo, uma comunidade que tem como objetivo promover a diversidade de gênero na comunidade da linguagem R. Também participo da comunidade PyLadies São Paulo, que tem como objetivo unir mulheres em torno do mundo da programação, especialmente usando Python.\r\nSou instrutora da Carpentries, um projeto que tem como missão ensinar habilidades de ciência de dados para pessoas pesquisadoras. Também sou instrutora de tidyverse certificada pela RStudio.\r\nDesde abril de 2020, faço parte do time de pessoas Embaixadoras de Inovação Cívica da Open Knowledge Brasil.\r\nEnglish\r\nMy name is Beatriz, and my pronoum is she/her. I’m currently a doctorate student in Environmental Science (PROCAM/IEE/USP) at the University of São Paulo. I’m a researcher at the FAPESP Thematic Project MacroAmb - Environmental Governance of the Sao Paulo Macrometropolis in the context of climatic variability. I am voluntarily part of the Executive Secretariat team of the Journal Ambiente & Sociedade, a Brazilian scientific journal that is a reference in interdisciplinary studies on environment and society.\r\nI am a co-organizer of R-Ladies São Paulo, a community that aims to promote gender diversity in the R community. I also participate in the PyLadies São Paulo community, which aims to unite women around the programming world, especially using Python.\r\nI am an instructor at Carpentries, a project whose mission is to teach data science skills to researchers. I’m also a tidyverse certified instructor by RStudio.\r\nSince April 2020, I’m part of the team of Ambassadors for Civic Innovation of Open Knowledge Brasil.\r\nEspañol\r\nMi nombre es Beatriz y mi pronombre es ella. Actualmente soy estudiante de doctorado en Ciencias Ambientales (PROCAM/IEE/ USP) en la Universidad de São Paulo. Soy investigadora en el Proyecto Temático FAPESP MacroAmb - Gobernanza Ambiental de la Macrometrópole Paulista debido a la variabilidad climática. Soy voluntariamente parte del equipo de la Secretaría Ejecutiva de Revista Ambiente & Sociedade, una revista científica brasileña que es una referencia en estudios interdisciplinarios sobre medio ambiente y sociedad.\r\nSoy coorganizadora de R-Ladies São Paulo, una comunidad que tiene como objetivo promover la diversidad de género en la comunidad de programación R. También participo en la comunidad PyLadies São Paulo, cuyo objetivo es unir a las mujeres en todo el mundo de la programación, especialmente usando Python.\r\nSoy instructora en Carpentries, un proyecto cuya misión es enseñar habilidades de ciencia de datos para investigadores académicos. También soy una [instructora certificada tidyverse por RStudio.\r\nDesde abril de 2020, formo parte del equipo de personas Embajadoras para la Inovación Cívica de Open Knowledge Brasil.\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-09T11:38:23-03:00"
     },
     {
       "path": "apresentacoes_antigas.html",
@@ -19,7 +18,7 @@
       ],
       "date": "Atualizado em `r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n Olá! Abaixo segue uma lista de links de apresentações que fiz antes de agosto/2020, e estão desatualizadas.\r\nAssim que eu atualizar o material, o mesmo ficará na página principal (e retirado desta lista).\r\nPortuguês\r\n Workshop - Apresentações no R ⚔ com xaringan\r\n Introdução ao pacote xaringan - Criando apresentações com R\r\n Comunicando seus resultados: Criando apresentações com R\r\n Dashboards, gráficos, mapas: Possibilidades de visualização de dados com R\r\n Oficina de Introdução ao R\r\n R e Desafios no Projeto Temático MacroAmb\r\nEspañol\r\n Funciones - R para Ciencia de Datos\r\nEnglish\r\n Producing Reports with knitr and R\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:45-03:00"
+      "last_modified": "2020-12-09T11:38:24-03:00"
     },
     {
       "path": "ferramentas.html",
@@ -32,7 +31,7 @@
       ],
       "date": "Atualizado em `r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n Nesta página estão descritas os softwares, pacotes e ferramentas que utilizei para a criação deste site.\r\nLinguagem de programação R R Core Team (2020).\r\nAmbiente de desenvolvimento (IDE) RStudio.\r\nPacotes R Markdown (J. Allaire, Xie, et al. 2020; Xie, Allaire, and Grolemund 2018) e knitr (Xie 2014, 2015, 2020a).\r\nO pacote distill J. Allaire, Iannone, et al. (2020) foi utilizado para criar a estrutura do site.\r\nAs apresentações foram criadas com os pacotes: xaringan Xie (2020b), xaringanthemer Aden-Buie (2020e), xaringanExtra Aden-Buie (2020d) e countdown Aden-Buie (2020b).\r\nO pacote metathis Aden-Buie (2020c) foi utilizado para criação das tags <meta> (de HTML).\r\n👏 Botão de aplauso feito com o pacote applause Aden-Buie (2020a).\r\nOs ícones são dos sites Font Awesome e Academicons.\r\nO versionamento do código e o deploy do site é realizado através deste repositório no GitHub.\r\n🦜 Termos do Glossário foram adicionados através do pacote glosario Wilson et al. (2020).\r\nEmojis adicionados com os pacotes emo Wickham, François, and D’Agostino McGowan (2020) e ermoji Aden-Buie\" (2020).\r\n👩‍💻 + 💜+ ☕+ 🎧 & 🎵 !\r\n\r\n\r\n\r\n\r\n\r\n\r\nAden-Buie, Garrick. 2020a. Applause: Zero-Configuration Button for Adding Applause/Claps/Kudos to Web Pages. https://github.com/gadenbuie/applause.\r\n\r\n\r\n———. 2020b. Countdown: A Countdown Timer for R Markdown Html Presentations and Documents. https://github.com/gadenbuie/countdown.\r\n\r\n\r\n———. 2020c. Metathis: HTML Metadata Tags for R Markdown and Shiny. https://github.com/gadenbuie/metathis.\r\n\r\n\r\n———. 2020d. XaringanExtra: Extras and Extensions for Xaringan Slides. https://github.com/gadenbuie/xaringanExtra.\r\n\r\n\r\n———. 2020e. Xaringanthemer: Custom Xaringan Css Themes. https://CRAN.R-project.org/package=xaringanthemer.\r\n\r\n\r\nAden-Buie\". 2020. Ermoji: RStudio Addin to Search and Copy Emoji. https://github.com/gadenbuie/ermoji.\r\n\r\n\r\nAllaire, JJ, Rich Iannone, Alison Presmanes Hill, and Yihui Xie. 2020. Distill: R Markdown Format for Scientific and Technical Writing. https://CRAN.R-project.org/package=distill.\r\n\r\n\r\nAllaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2020. Rmarkdown: Dynamic Documents for R. https://github.com/rstudio/rmarkdown.\r\n\r\n\r\nR Core Team. 2020. R: A Language and Environment for Statistical Computing. Vienna, Austria: R Foundation for Statistical Computing. https://www.R-project.org/.\r\n\r\n\r\nWickham, Hadley, Romain François, and Lucy D’Agostino McGowan. 2020. Emo: Easily Insert Emoji. https://github.com/hadley/emo.\r\n\r\n\r\nWilson, Greg, Francois Michonneau, Ian Flores Siaca, and Zhian N. Kamvar. 2020. Glosario: A Multilingual Glossary.\r\n\r\n\r\nXie, Yihui. 2014. “Knitr: A Comprehensive Tool for Reproducible Research in R.” In Implementing Reproducible Computational Research, edited by Victoria Stodden, Friedrich Leisch, and Roger D. Peng. Chapman; Hall/CRC. http://www.crcpress.com/product/isbn/9781466561595.\r\n\r\n\r\n———. 2015. Dynamic Documents with R and Knitr. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. https://yihui.org/knitr/.\r\n\r\n\r\n———. 2020a. Knitr: A General-Purpose Package for Dynamic Report Generation in R. https://yihui.org/knitr/.\r\n\r\n\r\n———. 2020b. Xaringan: Presentation Ninja. https://github.com/yihui/xaringan.\r\n\r\n\r\nXie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. R Markdown: The Definitive Guide. Boca Raton, Florida: Chapman; Hall/CRC. https://bookdown.org/yihui/rmarkdown.\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:47-03:00"
+      "last_modified": "2020-12-09T11:38:26-03:00"
     },
     {
       "path": "git_rstudio.html",
@@ -45,14 +44,14 @@
       ],
       "date": "Atualizado em `r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n Boas vindas! O público-alvo desta apresentação são pessoas que utilizam o R para análise de dados, tem um conhecimento básico sobre Git e GitHub e querem utilizar essas ferramentas diretamente do RStudio.\r\nÉ muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes. Por favor, leia o Código de Conduta da R-Ladies.\r\nSlides\r\n\r\n\r\n\r\nfitvids('.shareagain', {players: 'iframe'});\r\n\r\n\r\n Confira a apresentação\r\n\r\nPré-requisitos\r\nA atividade será expositiva. Porém, para praticar posteriormente, esses são os pré-requisitos:\r\nUsando no RStudio Cloud:\r\nConta no GitHub\r\nConta na RStudio Cloud\r\n\r\nUsando no seu computador (recomendado):\r\nR\r\nRStudio\r\nGit\r\nConta no GitHub\r\nInstalação do pacote usethis:\r\n\r\n\r\n\r\ninstall.packages(\"usethis\")\r\n\r\n\r\n\r\nMaterial complementar\r\nScript em R usado no RStudio Cloud durante a apresentação para configurar o Git e GitHub\r\nEventos\r\nEventos passados e futuros com uso deste material:\r\nR-Ladies Goiânia, 27 de agosto de 2020. Apresentação utilizada disponível em PDF.\r\nR-Ladies São Paulo, 12 de setembro de 2019. Apresentação utilizada disponível aqui.\r\nPara aprender mais\r\nEvento Hacktoberfest\r\nPost sobre o assunto no Blog da Curso-R, por Caio Lente\r\nLivro Happy Git with R, em Inglês\r\nFolha de dicas sobre Git (Cheat Sheet), em Português\r\nFolhas de dicas da RStudio (Cheat Sheets) , em Inglês\r\nLive Stream Curso-R #7 - Colaborando com a Comunidade:\r\n\r\n\r\nComunidades e locais amigáveis para fazer perguntas :)\r\nEventos e redes sociais das R-Ladies no Brasil\r\nFórum Curso-R\r\nTelegram R-Brasil\r\n🦜 Glossário\r\nTermos em português:\r\n\r\nsistema de controle de versão: Um sistema para gerenciar as\r\n  mudanças feitas em um software durante o seu desenvolvimento.\r\nSee also: git\r\n\r\nGit: Uma ferramenta de controle de versão para registrar e\r\n  gerenciar mudanças em um projeto.\r\n\r\nGitHub: Uma plataforma baseada em nuvem construída em torno do\r\n  [Git](#git) que permite salvar versões do seu projeto online e\r\n  colaborar com outras pessoas usuárias do Git.\r\n\r\nrepositório: Um local onde um [sistema de controle de\r\n  versão](#version_control_system) armazena os arquivos que compõem\r\n  um projeto e os metadados que descrevem sua história.\r\nSee also: git and github\r\n\r\nGit branch: Uma fotografia de uma versão de um repositório Git.\r\n  Múltiplos branches podem capturar múltiplas versões de um mesmo\r\n  repositório.\r\nSee also: feature_branch, fork, and master_branch\r\n\r\n\r\nTermos em Inglês (a ajuda na tradução do Glossário é bem vinda!):\r\n\r\nGit clone: Copies (and usually downloads) a Git [remote\r\n  repository](#remote_repository) onto the local computer.\r\n\r\nfork: A copy of one person's Git repository that lives in another\r\n  person's GitHub account. Changes to the content of a fork can be\r\n  submitted to the [upstream repository](#upstream_repository) via a\r\n  [pull request](#pull_request).\r\nSee also: branch\r\n\r\npull request: The request to merge a new feature or correction\r\n  created on a user's fork of a [Git](#git) repository into the\r\n  [upstream repository](#upstream_repository). The developer will be\r\n  notified of the change, review it, make or suggest changes, and\r\n  potentially merge it.\r\nSee also: fork\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:50-03:00"
+      "last_modified": "2020-12-09T11:38:27-03:00"
     },
     {
       "path": "index.html",
       "title": "Beatriz Milz",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:50-03:00"
+      "last_modified": "2020-12-09T11:38:28-03:00"
     },
     {
       "path": "introR.html",
@@ -65,7 +64,7 @@
       ],
       "date": "Atualizado em `r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n Boas vindas! O público-alvo desta apresentação são pessoas om interesse em começar a utilizar R para análise de dados.\r\nÉ muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes. Por favor, leia o Código de Conduta da R-Ladies.\r\nSlides\r\n\r\n\r\n\r\nfitvids('.shareagain', {players: 'iframe'});\r\n\r\n\r\n Confira a apresentação\r\n\r\nPré-requisitos\r\nConta na RStudio Cloud\r\nMaterial Complementar\r\nAcompanhe a palestra com o material disponível em  RStudio Cloud\r\nCaso queira usar no seu computador, os arquivos disponibilizados na Cloud são os seguintes:\r\n1-introducao.R\r\n2-operadores.R\r\n3-tipos_dados.R\r\n4-tipos_objetos.R\r\n5-pacotes.R\r\nrladies.csv - Base de dados usada no arquivo 4-tipos_objetos.R.\r\n\r\nEventos\r\nEventos passados e futuros com uso deste material:\r\nR-Ladies Curitiba, 26 de agosto de 2020. Apresentação em PDF.\r\nComunidades e locais amigáveis para fazer perguntas :)\r\nEventos e redes sociais das R-Ladies no Brasil\r\nFórum Curso-R\r\nTelegram R-Brasil\r\nPara aprender mais\r\nLivro R para Ciência de Dados: Gratuito em Inglês e em Espanhol.\r\nCurso-R:\r\nMaterial de estudo\r\nBlog\r\nLivro - em desenvolvimento\r\nLives e vídeos no Youtube\r\nCursos\r\nFórum\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:51-03:00"
+      "last_modified": "2020-12-09T11:38:29-03:00"
     },
     {
       "path": "materiais_R.html",
@@ -78,7 +77,14 @@
       ],
       "date": "Atualizado em `r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n Boas vindas! Nesta página, disponibilizo algumas apresentações mais recentes que fiz (sozinha ou com outras pessoas) sobre R e comunidades.\r\nÉ muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes. Por favor, leia o Código de Conduta da R-Ladies.\r\nCaso queira sugerir um tema, escreva aqui!\r\nR\r\nIntrodução ao R\r\nUtilizando o Git e GitHub no RStudio\r\nR Markdown (preliminar)\r\nMarcação com Markdown\r\nApresentações reprodutíveis com xaringan\r\n\r\nComunidades\r\nR-Ladies São Paulo\r\nOutros\r\nComo este site foi feito?\r\nLinks com apresentações antigas/desatualizadas\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:52-03:00"
+      "last_modified": "2020-12-09T11:38:30-03:00"
+    },
+    {
+      "path": "repositorios.html",
+      "title": "Repositórios interessantes no GitHub ",
+      "author": [],
+      "contents": "\r\n\r\n\r\nMateriais para estudo de R\r\n\r\n\r\n\r\nApresentações das R-Ladies São Paulo\r\n\r\n\r\n\r\nCapítulos e eventos online da R-Ladies no Brasil\r\n\r\n\r\n\r\nPacote Dados - Bases de dados traduzidas em Português\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-09T11:38:31-03:00"
     },
     {
       "path": "rladies.html",
@@ -91,7 +97,7 @@
       ],
       "date": "Atualizado em `r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n Boas vindas! Essa breve apresentação é sobre a comunidade R-Ladies São Paulo.\r\nÉ muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes. Por favor, leia o Código de Conduta da R-Ladies.\r\nSlides\r\n\r\n\r\n\r\nfitvids('.shareagain', {players: 'iframe'});\r\n\r\n\r\n Confira a apresentação\r\n\r\nUtilizando a apresentação\r\nCaso você faça parte de outro capítulo da R-Ladies, sinta-se à vontade para alterar e utilizar essa apresentação - use o código .Rmd.\r\nSerá necessário instalar os seguintes pacotes:\r\ntidyverse\r\nxaringan\r\nmetathis\r\nxaringanExtra\r\n\r\n\r\n# Instalar pacotes do CRAN\r\n\r\ninstall.packages(c(\"tidyverse\", \"xaringan\", \"metathis\"))\r\n\r\n\r\n# Instalar pacotes do GitHub\r\n\r\ndevtools::install_github(\"gadenbuie/xaringanExtra\")\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:53-03:00"
+      "last_modified": "2020-12-09T11:38:32-03:00"
     },
     {
       "path": "rmarkdown.html",
@@ -104,7 +110,14 @@
       ],
       "date": "Atualizado em `r Sys.Date()`",
       "contents": "\r\n\r\n\r\n\r\n Boas vindas! O público-alvo deste material são pessoas que utilizam o R para análise de dados, e gostariam de gerar relatórios dinâmicos com diferentes tipos de outputs.\r\nÉ muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes. Por favor, leia o Código de Conduta da R-Ladies.\r\n\r\nObservação: Futuramente ficará disponível mais conteúdos sobre como usar R Markdown. Por enquanto, os slides abaixo são sobre pacotes utilizados para gerar diferentes tipos de produtos com R Markdown.\r\n\r\nSlides\r\n\r\n\r\n\r\nfitvids('.shareagain', {players: 'iframe'});\r\n\r\n\r\n Confira a apresentação\r\n\r\nArquivos de exemplo mostrados na live:\r\nExemplo de R Markdown com parâmetros: .Rmd e .html\r\nExemplo de código para gerar vários relatórios com parâmetros: .R\r\nArquivos gerados no exemplo: Sistema Cantareira, Guarapiranga e Rio Grande\r\n\r\nLive Stream: We R Live 16: R Markdown: usando o R para comunicar seus resultados:\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-09T10:49:54-03:00"
+      "last_modified": "2020-12-09T11:38:34-03:00"
+    },
+    {
+      "path": "videos.html",
+      "title": "Videos",
+      "author": [],
+      "contents": "\r\nConferências\r\nEvento useR! 2020\r\nTítulo: Communities of practice in Latin America: R and Friends\r\n\r\n\r\nEvento useR! 2019 Toulouse \r\nTítulo: The evolution and importance of the R-Ladies São Paulo chapter in Brazil\r\nLightning Talk - Education & community\r\n\r\n\r\nLives\r\n\r\nEm breve!\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-09T11:38:34-03:00"
     }
   ],
   "collections": ["posts/posts.json"]
