@@ -86,3 +86,13 @@ d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
 p {
 text-align: justify;
 }
+
+
+.avatar {
+	width: 270px;
+	height: 270px;
+	margin: 1em;
+	object-fit: cover;
+	border-radius: 50%;
+	float: left;
+}

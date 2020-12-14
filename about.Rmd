@@ -7,9 +7,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
+
 ## Português
 
-Meu nome é Beatriz, e meu pronome é **"ela"**. Atualmente sou doutoranda em Ciência Ambiental (PROCAM/IEE/USP) na Universidade de São Paulo. Sou pesquisadora no Projeto Temático FAPESP [MacroAmb - Governança ambiental da Macrometrópole Paulista face à variabilidade climática](https://bv.fapesp.br/pt/auxilios/97000/governanca-ambiental-da-macrometropole-paulista-face-a-variabilidade-climatica/). Faço parte voluntariamente da equipe da Secretaria Executiva da [Revista Ambiente & Sociedade](http://www.scielo.br/scielo.php?script=sci_serial&pid=1414-753X&lng=pt&nrm=iso), uma revista científica Brasileira que é referência em estudos interdisciplinares sobre ambiente e sociedade.
+<img src="img/bea.jpg" alt="Beatriz Milz" class = "avatar"> Meu nome é Beatriz, e meu pronome é **"ela"**. Atualmente sou doutoranda em Ciência Ambiental (PROCAM/IEE/USP) na Universidade de São Paulo. Sou pesquisadora no Projeto Temático FAPESP [MacroAmb - Governança ambiental da Macrometrópole Paulista face à variabilidade climática](https://bv.fapesp.br/pt/auxilios/97000/governanca-ambiental-da-macrometropole-paulista-face-a-variabilidade-climatica/). Faço parte voluntariamente da equipe da Secretaria Executiva da [Revista Ambiente & Sociedade](http://www.scielo.br/scielo.php?script=sci_serial&pid=1414-753X&lng=pt&nrm=iso), uma revista científica Brasileira que é referência em estudos interdisciplinares sobre ambiente e sociedade.
 
 Sou co-organizadora da [R-Ladies São Paulo](https://www.meetup.com/R-Ladies-Sao-Paulo/), uma comunidade que tem como objetivo promover a diversidade de gênero na comunidade da linguagem `R`. Também participo da comunidade [PyLadies São Paulo](https://www.sympla.com.br/pyladiessp), que tem como objetivo unir mulheres em torno do mundo da programação, especialmente usando `Python`. 
 

@@ -91,6 +91,8 @@ Eventos passados e futuros com uso deste material:
 
 ### Para aprender mais
 
+- [Videos do evento "R-Ladies SP na Hacktoberfest 2020"](https://youtube.com/playlist?list=PLufjVrrUAoSdny-WECY4Gr2pn5OQGG_FN)
+
 - [Evento Hacktoberfest](https://hacktoberfest.digitalocean.com/faq/)
 
 - [Post sobre o assunto no Blog da Curso-R](https://www.curso-r.com/blog/2019-07-23-zen-do-r-4/), por [Caio Lente](https://lente.dev/)

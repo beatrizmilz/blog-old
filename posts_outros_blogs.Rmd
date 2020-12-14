@@ -17,8 +17,6 @@ knitr::include_graphics("img/tidydevday.jpg")
 ```
 
 
-
-
 ## Blog da [RConsortium](https://www.r-consortium.org/)
 
 [Latin American Communities and Organizations: useR!2020](https://www.r-consortium.org/blog/2020/07/07/latin-american-communities-and-organizations-at-user2020):
