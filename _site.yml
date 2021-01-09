@@ -13,13 +13,15 @@ navbar:
       href: index.html
     - text: "Materiais sobre R"
       menu:
-        - text: "Slides"
+        - text: "Slides e tutoriais"
           href: materiais_r.html
         - text: "Videos"
           href: videos.html
         - text: "Textos em outros blogs"
           href: posts_outros_blogs.html
-    - text: "CV"
+        - text: "Pacote Mananciais"
+          href: pacote_mananciais.html
+    - text: "Curriculo"
       href: https://beatrizmilz.github.io/resume/index.html
   right:
     - icon: fas fa-home
