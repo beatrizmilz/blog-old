@@ -7,10 +7,10 @@ output_dir: "_site"
 creative_commons: CC BY
 navbar:
   left:
-    - icon: fas fa-graduation-cap
-      href: https://beatrizmilz.com
     - text: "Sobre mim"
       href: about.html
+    - text: "Blog"
+      href: index.html
     - text: "Materiais sobre R"
       menu:
         - text: "Slides"
