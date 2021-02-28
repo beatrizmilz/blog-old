@@ -1,0 +1,91 @@
+---
+title: "Certificação da RStudio"
+description: |
+   Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification.
+author:
+  - name: Beatriz Milz
+    url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP
+    orcid_id: 0000-0002-3064-4486
+date: 2021-02-27
+output:
+  distill::distill_article:
+    self_contained: false
+bibliography: packages.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Ano passado, eu realizei o processo de treinamento e certificação da RStudio, e este post tem com objetivo relatar como foi este processo para mim, afim de possivelmente ajudar outras pessoas interessadas em realizar essa certificação.
+
+A RStudio oferece a possibilidade de realizar a certificação dos pacotes [tidyverse](https://www.tidyverse.org/) e [shiny](https://shiny.rstudio.com/). Todas as informações necessárias sobre a certificação estão disponíveis [neste site](https://education.rstudio.com/trainers/), porém também adicionarei alguns links extras aqui!
+
+> Importante: Eu realizei o processo completo de treinamento com o [Greg Wilson](https://twitter.com/gvwilson), porém ele não está mais envolvido no processo de certificação. Portanto, não sei se alguma etapa será alterada. Aqui descreverei como o processo foi quando eu realizei o treinamento.
+
+## Importância da comunidade
+
+Primeiro de tudo: eu gostaria de destacar que a comunidade de R foi essencial para que eu pudesse realizar o treinamento e receber a certificação.
+
+Quando eu fiquei sabendo da existência dessa certificação, eu logo me deparei com uma dificuldade para participar: no site dizia que era necessário pagar um valor alto, e em dólares, para realizar o processo. Então eu deixei pra lá, até que vi um [post](https://yabellini.netlify.app/post/rstudiocertification/) no blog da [Yanina Saibene](https://twitter.com/yabellini) falando como foi o processo de certificação para ela. Então entrei em contato com ela (que havia conhecido pessoalmente na [LatinR 2019](https://latin-r.com/)) para saber mais sobre como foi o processo para ela.
+
+Ela me colocou em contato com um grupo de pessoas que estava se organizando para começar um grupo de estudos (e apoio!) para realizar o processo. Além disso, também me deu mais informações sobre como fazer o processo de forma mais acessível financeiramente.
+
+Para esse grupo de estudos, foi criado um canal no Slack, onde eram compartilhadas dicas, resoluções de exercícios e dúvidas, entre outros. Além disso, a gente se encontrava semanalmente via zoom para discutir os capítulos do livro [R for Data Science](https://r4ds.had.co.nz/) (também disponível em Espanhol [neste link](https://es.r4ds.hadley.nz/)).
+
+A orientação da Yanina e os estudos em grupo foram essenciais para que eu me preparasse para as provas, e me sentisse confiante em realizá-las.
+
+## Como iniciar o processo de treinamento?
+
+Se você se interessou em realizar o processo de treinamento, o primeiro passo para começar é ler as instruções que estão disponíveis [nesta página](https://education.rstudio.com/trainers/), e preencher [este formulário](https://forms.gle/kRucY2joTiPYWmPr8).
+
+> Atenção para as duas perguntas opcionais a final do formulário:
+>
+> -   A primeira é sobre o pertencimento a grupos sub-representados em ciência de dados; neste caso, descreva bem quais são os grupos que você faz parte, e aponte as suas contribuições para a comunidade de R.
+>
+> -   A segunda é sobre a possibilidade de redução da taxa de aplicação das provas e treinamento (*fee waiver*) para pessoas de países em desenvolvimento (*lower-income countries*).
+
+## Treinamento
+
+Após receber uma mensagem de aceite, é necessário indicar uma dentre as datas possíveis para realizar o treinamento. O treinamento que eu fiz foi realizado no período de duas manhãs, e foi totalmente em inglês. O foco do treinamento não foi sobre programação em R, e sim sobre ensino e didática! Todo o conteúdo dos slides utilizados está disponível [neste link](https://drive.google.com/drive/folders/13ohFt3D0EJ5PDbMaWTxnHH-hwA7G0IvY).
+
+Muito do conteúdo apresentado foi parecido com o treinamento oferecido pela The Carpentries (que eu descrevi [neste post](https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/)), e também com o conteúdo do livro escrito por [Greg Wilson](https://twitter.com/gvwilson), entitulado [Teach Tech Together](https://teachtogether.tech/):
+
+
+```{r echo=FALSE, fig.align='center', fig.height=7, fig.alt="Capa do livro Teach Tech Together", fig.cap="Livro Teach Tech Together" }
+# knitr::include_graphics("https://teachtogether.tech/static/t3-front-small.png")
+```
+
+
+
+## Provas de certificação
+
+Após realizar o treinamento, a próxima etapa é realizar a prova de ensino, e a prova da certificação desejada (que, no meu caso, foi sobre tidyverse).
+[Neste link](https://education.rstudio.com/blog/2020/02/instructor-certification-exams/) é possível acessar um exemplo de provas, disponiblizado pela RStudio para estudo. Não existe ordem correta para realizar as provas!
+
+### Prova de Ensino
+
+Antes da prova em si, é necessário enviar alguns materiais solicitados para serem utilizados em uma aula demonstrativa. Os materiais que eu preparei estão disponibilizados nesta página: [https://beatrizmilz.github.io/RStudio_Certification/](https://beatrizmilz.github.io/RStudio_Certification/). Eu utilizei ferramentas como: página do material com distill [@R-distill], apresentação com xaringan [@R-xaringan], exercícios com learnr [@R-learnr], ...
+
+### Prova sobre tidyverse
+
+#### dicas de funcoes uteis
+
+parse_number() e case_when()
+
+## pós provas
+
+-   enviar dados para o site
+-   slack da RStudio
+
+## falar sobre o inglês
+
+
+```{r echo=FALSE}
+knitr::write_bib(
+  c(.packages(), "distill", "xaringan",
+    "learnr", "tidyverse"),
+  'packages.bib'
+)
+```
