@@ -23,6 +23,8 @@ navbar:
           href: pacote_mananciais.html
     - text: "Curriculo"
       href: https://beatrizmilz.github.io/resume/index.html
+    - icon: fab fa-twitch
+      href: https://www.twitch.tv/beamilz
   right:
     - icon: fas fa-home
       href: index.html

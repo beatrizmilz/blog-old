@@ -1,6 +1,6 @@
 ---
 title: "Beatriz Milz"
-image: "img/bea.jpg"
+image: "img/bea.png"
 links:
   - label: Twitter
     url: "https://twitter.com/BeaMilz"
@@ -10,6 +10,8 @@ links:
     url: "mailto:milz.bea@gmail.com"
   - label: Orcid
     url: "https://orcid.org/0000-0002-3064-4486"
+  - label: Twitch
+    url: "https://www.twitch.tv/beamilz"
 output:
   postcards::trestles
 ---
