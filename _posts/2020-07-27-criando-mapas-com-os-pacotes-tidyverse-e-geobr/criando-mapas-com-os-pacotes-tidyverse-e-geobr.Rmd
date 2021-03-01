@@ -12,11 +12,10 @@ output:
   distill::distill_article:
     self_contained: false
 categories:
-  - R
+  - Portugues 
   - Reprodutibilidade
-  - Macrometrópole Paulista
-bibliography: [pacotes-projeto-fflch.bib]
-base_url: https://beamilz.netlify.app/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/
+bibliography: packages.bib
+base_url: https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/
 ---
 
 ```{r setup, include=FALSE}
@@ -488,3 +487,9 @@ O projeto foi realizado com R [@R-base], e os pacotes: `{abjutils}` [@R-abjutils
 
 - Ao [Maurício Vancine](https://twitter.com/mauriciovancine) pela sua sugestão via [twitter](https://twitter.com/mauriciovancine/status/1287852208449638402?s=20) de utilizar a função `ggspatial::annotation_scale()` para adicionar uma barra de escala nos gráficos.  
 
+```{r echo=FALSE}
+knitr::write_bib(
+  c(.packages(),  "tidyverse", "rmarkdown"),
+  'packages.bib'
+)
+```

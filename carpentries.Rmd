@@ -15,7 +15,7 @@ knitr::opts_chunk$set(fig.align = "center")
 Boas vindas!
 Nesta página reúno informações, em português, sobre a comunidade The Carpentries.
 
-- [Post: The Carpentries: Como fazer o treinamento de instrutora?](https://beamilz.netlify.app/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/)
+- [Post: The Carpentries: Como fazer o treinamento de instrutora?](https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/)
 
 
 - Apresentação Python Brasil 2020: 
@@ -24,7 +24,7 @@ Nesta página reúno informações, em português, sobre a comunidade The Carpen
 
   - Slides:
 
-```{r}
+```{r echo=FALSE}
 xaringanExtra::embed_xaringan(
   url = "https://mariguilardi.github.io/Python-Brasil-2020-The-Carpentries/index.html",
   ratio = "16:9"

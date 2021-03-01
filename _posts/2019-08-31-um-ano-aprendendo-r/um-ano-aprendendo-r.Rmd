@@ -12,10 +12,10 @@ output:
   distill::distill_article:
     self_contained: false
 categories:
-  - R
+  - Portugues
   - R-Ladies
 preview: https://beatrizmilz.com/img/1anorladies.jpg
-base_url: https://beamilz.netlify.app/posts/2019-08-31-um-ano-aprendendo-r/
+base_url: https://beatrizmilz.com/posts/2019-08-31-um-ano-aprendendo-r/
 ---
 
 ```{r setup, include=FALSE}

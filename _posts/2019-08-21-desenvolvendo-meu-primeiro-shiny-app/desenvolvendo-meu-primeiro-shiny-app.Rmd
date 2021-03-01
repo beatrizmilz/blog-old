@@ -13,9 +13,9 @@ output:
     self_contained: false
 categories:
   - Shiny
-  - R
+  - Portugues 
 preview: https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png
-base_url: https://beamilz.netlify.app/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app/
+base_url: https://beatrizmilz.com/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app/
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
@@ -41,7 +41,7 @@ Quando voltei do evento, não queria parar de estudar e praticar o que comecei a
 Esse post é uma continuação do post [Ferramenta para Pesquisa de Periódicos](https://beatrizmilz.com/2019/07/04/pesquisa-periodicos/), onde descrevi o Shiny App que criei, mas agora o foco é relatar um pouco o processo de desenvolvimento. Todos os códigos estão disponíveis [neste repositório no Github](https://github.com/beatrizmilz/QualisCAPES).
 
 ```{r out.width="100%"}
-knitr::include_graphics("https://beatrizmilz.com/gif/periodicos_exemplo.gif")
+knitr::include_graphics("https://beatrizmilz.com/img/periodicos_exemplo.gif")
 ```
 
 Exemplo de uso - <a href='https://beatriz-milz.shinyapps.io/pesquisa_periodicos/'>Página para Pesquisa de Periódicos</a>

@@ -8,14 +8,14 @@ author:
     affiliation: PROCAM/IEE/USP
     orcid_id: 0000-0002-3064-4486
 categories:
-  - R
   - R-Ladies
   - R Markdown
+  - Portugues 
 date: 2019-06-24
 output:
   distill::distill_article:
     self_contained: false
-base_url: https://beamilz.netlify.app/posts/2019-06-24-compartilhando-contedo-utilizando-r/
+base_url: https://beatrizmilz.com/posts/2019-06-24-compartilhando-contedo-utilizando-r/
 ---
 
 ```{r setup, include=FALSE}
