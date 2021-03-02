@@ -28,7 +28,10 @@ library(magrittr)
 readr::read_csv2("https://github.com/beatrizmilz/mananciais/raw/master/inst/extdata/mananciais.csv") %>% 
   head() %>% 
   dplyr::select(data, sistema, volume_porcentagem) %>% 
-  reactable::reactable()
+  gt::gt()
+
+# %>% 
+#   reactable::reactable()
 ```
 
 <!-- Place this tag in your head or just before your close body tag. -->
