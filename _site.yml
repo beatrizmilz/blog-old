@@ -19,8 +19,12 @@ navbar:
           href: videos.html
         - text: "Textos em outros blogs"
           href: posts_outros_blogs.html
-        - text: "Pacote Mananciais"
+    - text: "Dados ambientais"
+      menu:
+        - text: "Nível dos reservatórios RMSP - Pacote Mananciais (SABESP)"
           href: pacote_mananciais.html
+        - text: "Qualidade da Água (Infoaguas CETESB)"
+          href: https://beatriz-milz.shinyapps.io/trabalho_final_ws/
     - text: "Pesquisa"
       href: https://beatrizmilz.github.io/tese/
     - text: "Curriculo"
