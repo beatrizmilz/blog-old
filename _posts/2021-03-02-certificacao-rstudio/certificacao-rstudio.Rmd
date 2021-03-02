@@ -7,7 +7,7 @@ author:
     url: https://beatrizmilz.com
     affiliation: PROCAM/IEE/USP
     orcid_id: 0000-0002-3064-4486
-date: 2021-02-28
+date: 2021-03-02
 categories:
   - RStudio
   - Comunidades
@@ -18,7 +18,7 @@ output:
     self_contained: false
 bibliography: packages.bib
 #base_url: https://beatrizmilz.com/posts/ #preencher o final aqui
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}
@@ -77,7 +77,7 @@ Não existe ordem correta para realizar as provas! Outro ponto importante é que
 
 A prova de ensino foi composta por uma aula demonstrativa de 15 minutos, e algumas questões a serem respondidas (relacionadas à ensino).
 
-Antes da prova em si, foi necessário enviar alguns materiais solicitados para serem utilizados em uma aula demonstrativa. Os materiais que eu preparei estão disponibilizados nesta página: [https://beatrizmilz.github.io/RStudio_Certification/](https://beatrizmilz.github.io/RStudio_Certification/). 
+Antes da prova em si, foi necessário enviar alguns materiais solicitados para serem utilizados em uma aula demonstrativa. Os materiais que eu preparei estão disponibilizados nesta página: [https://beatrizmilz.github.io/RStudio_Certification/](https://beatrizmilz.github.io/RStudio_Certification/)  (e o código também está disponível neste [repositório no GitHub](https://github.com/beatrizmilz/RStudio_Certification). 
 
 Eu utilizei ferramentas como uma página onde o material é disponibilizado feita com o pacote [distill](https://rstudio.github.io/distill/) [@R-distill], a apresentação feita com o pacote [xaringan](https://slides.yihui.org/xaringan/) [@R-xaringan], dois exercícios para serem feitos ao final da aula utilizando o pacote [learnr](https://rstudio.github.io/learnr/) [@R-learnr], a demonstração com código ao vivo foi realizada usando a IDE [RStudio](https://rstudio.com/), e um mapa conceitual elaborado com a ferramenta [CMap Tools](https://cmap.ihmc.us/). Porém essas são as ferramentas que *eu* escolhi utilizar, e eu recomendo que você utilize o que estiver mais confortável para você! A única ferramenta que é obrigatória a ser utilizada nessa etapa é a IDE [RStudio](https://rstudio.com/) (o que é fácil de entender o motivo...). 
 

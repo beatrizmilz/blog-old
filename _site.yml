@@ -21,6 +21,8 @@ navbar:
           href: posts_outros_blogs.html
         - text: "Pacote Mananciais"
           href: pacote_mananciais.html
+    - text: "Pesquisa"
+      href: https://beatrizmilz.github.io/tese/
     - text: "Curriculo"
       href: https://beatrizmilz.github.io/resume/index.html
     - icon: fab fa-twitch

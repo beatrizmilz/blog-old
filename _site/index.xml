@@ -7,7 +7,20 @@
     <description>Blog e textos sobre R
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Certificação da RStudio</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio</link>
+      <description>Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification.</description>
+      <category>RStudio</category>
+      <category>Comunidades</category>
+      <category>Portugues</category>
+      <category>Ensino</category>
+      <guid>https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio</guid>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://beatrizmilz.com/img/certificado-rstudio.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Criando mapas com os pacotes tidyverse e geobr</title>
       <dc:creator>Beatriz Milz</dc:creator>
