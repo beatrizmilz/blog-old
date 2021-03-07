@@ -81,6 +81,7 @@ d-appendix {
 
 d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
 	overflow: auto !important;
+  background: #f3f5f7;
 }
 
 p {

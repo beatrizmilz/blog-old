@@ -7,7 +7,18 @@
     <description>Blog e textos sobre R
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Conhecendo o pacote bibliometrix</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beatrizmilz.com/posts/2021-03-07-estudando-bibliometrix</link>
+      <description>Primeiras impressões utilizando o pacote `{bibliometrix}`</description>
+      <category>Estudo</category>
+      <category>Pesquisa</category>
+      <guid>https://beatrizmilz.com/posts/2021-03-07-estudando-bibliometrix</guid>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://beatrizmilz.com/posts/2021-03-07-estudando-bibliometrix/estudando-bibliometrix_files/figure-html5/unnamed-chunk-12-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Certificação da RStudio</title>
       <dc:creator>Beatriz Milz</dc:creator>

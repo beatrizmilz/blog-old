@@ -7,8 +7,14 @@ output_dir: "_site"
 creative_commons: CC BY
 navbar:
   left:
-    - text: "Sobre mim"
-      href: about.html
+    - text: "Sobre a autora"
+      menu:
+        - text: "Beatriz Milz"
+          href: about.html
+        - text: "Pesquisa"
+          href: https://beatrizmilz.github.io/tese/
+        - text: "Curriculo"
+          href: https://beatrizmilz.github.io/resume/index.html
     - text: "Blog"
       href: index.html
     - text: "Materiais sobre R"
@@ -25,13 +31,10 @@ navbar:
           href: pacote_mananciais.html
         - text: "Qualidade da Água (Infoaguas CETESB)"
           href: https://beatriz-milz.shinyapps.io/trabalho_final_ws/
-    - text: "Pesquisa"
-      href: https://beatrizmilz.github.io/tese/
-    - text: "Curriculo"
-      href: https://beatrizmilz.github.io/resume/index.html
+
+  right:
     - icon: fab fa-twitch
       href: https://www.twitch.tv/beamilz
-  right:
     - icon: fas fa-home
       href: index.html
 base_url: https://beatrizmilz.com/

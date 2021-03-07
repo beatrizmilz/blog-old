@@ -127,7 +127,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","bibliography","base_url"]}},"value":[{"type":"character","attributes":{},"value":["Criando mapas com os pacotes tidyverse e geobr"]},{"type":"character","attributes":{},"value":["Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["PROCAM/IEE/USP"]},{"type":"character","attributes":{},"value":["0000-0002-3064-4486"]}]}]},{"type":"character","attributes":{},"value":["2020-07-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["Portugues","Reprodutibilidade"]},{"type":"character","attributes":{},"value":["packages.bib"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","bibliography","base_url"]}},"value":[{"type":"character","attributes":{},"value":["Criando mapas com os pacotes tidyverse e geobr"]},{"type":"character","attributes":{},"value":["Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["PROCAM/IEE/USP"]},{"type":"character","attributes":{},"value":["0000-0002-3064-4486"]}]}]},{"type":"character","attributes":{},"value":["2020-07-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["Portugues","Reprodutibilidade"]},{"type":"character","attributes":{},"value":["packages.bib"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1498,6 +1498,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#dados-utilizados">Dados utilizados</a></li>
+<li><a href="#pacotes-necessários">Pacotes necessários</a></li>
+<li><a href="#abrir-e-arrumar-as-bases-brutas">Abrir e arrumar as bases brutas</a>
+<ul>
+<li><a href="#dados-de-saneamento">Dados de Saneamento</a></li>
+<li><a href="#dados-shapefile-dos-município">Dados shapefile dos município</a></li>
+<li><a href="#lista-de-ugrhis">Lista de UGRHIS</a></li>
+</ul></li>
+<li><a href="#unir-as-bases">Unir as bases !</a></li>
+<li><a href="#visualizando-os-dados">Visualizando os dados</a></li>
+<li><a href="#conclusão-do-post">Conclusão do post</a></li>
+<li><a href="#recomendações-para-a-base-da-cetesb">Recomendações para a base da CETESB</a></li>
+<li><a href="#informações-sobre-a-sessão-do-r-e-rstudio">Informações sobre a sessão do R e RStudio</a></li>
+<li><a href="#muito-obrigada">Muito obrigada!</a></li>
+</ul>
+</nav>
+</div>
 <p>Como eu estou meses sem postar nada no blog, resolvi postar um código adaptado, referente a um projeto final que realizei para a disciplina <a href="https://jonnyphillips.github.io/Ciencia_de_Dados/">“FLS6397 - Introdução à Análise de Dados, Programação e Visualização para as Ciências Sociais”</a>. A disciplina ocorreu no primeiro semestre de 2020, na FFLCH/USP (porém devido à pandemia, a maior parte das aulas foi online). Na <a href="https://jonnyphillips.github.io/Ciencia_de_Dados/">página da disciplina</a>, está disponível tutoriais com todo o conteúdo da disciplina, de graça e aberto para todes!</p>
 <p>As instruções para a realização do projeto estão disponíveis na <a href="https://jonnyphillips.github.io/Ciencia_de_Dados/projeto.html">página da disciplina</a>.</p>
 <h2 id="dados-utilizados">Dados utilizados</h2>
@@ -1941,7 +1962,7 @@ $ corpo_receptor                &lt;chr&gt; &quot;Rio Capivari, Rio Sapucaí-Gua
  collate  pt_BR.UTF-8                 
  ctype    pt_BR.UTF-8                 
  tz       America/Sao_Paulo           
- date     2021-02-28                  
+ date     2021-03-07                  
 
 ─ Packages ─────────────────────────────────────────────────────────
  package     * version    date       lib

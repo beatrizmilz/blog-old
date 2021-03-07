@@ -2191,6 +2191,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
   	overflow: auto !important;
+    background: #f3f5f7;
   }
 
   p {
@@ -2417,7 +2418,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a href="index.html" class="title">Beatriz Milz</a>
-<a href="about.html">Sobre mim</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Sobre a autora
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="about.html">Beatriz Milz</a>
+<a href="https://beatrizmilz.github.io/tese/">Pesquisa</a>
+<a href="https://beatrizmilz.github.io/resume/index.html">Curriculo</a>
+</div>
+</div>
 <a href="index.html">Blog</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
@@ -2442,14 +2454,12 @@ Dados ambientais
 <a href="https://beatriz-milz.shinyapps.io/trabalho_final_ws/">Qualidade da Água (Infoaguas CETESB)</a>
 </div>
 </div>
-<a href="https://beatrizmilz.github.io/tese/">Pesquisa</a>
-<a href="https://beatrizmilz.github.io/resume/index.html">Curriculo</a>
-<a href="https://www.twitch.tv/beamilz">
-<i class="fab fa-twitch" aria-hidden="true"></i>
-</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
+<a href="https://www.twitch.tv/beamilz">
+<i class="fab fa-twitch" aria-hidden="true"></i>
+</a>
 <a href="index.html">
 <i class="fas fa-home" aria-hidden="true"></i>
 </a>
@@ -2595,6 +2605,26 @@ function init_posts_list() {
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Beatriz Milz">Beatriz Milz</h1>
+<a href="posts/2021-03-07-estudando-bibliometrix/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Estudo","Pesquisa"]}</script>
+<div class="metadata">
+<div class="publishedDate">March 7, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Beatriz Milz</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-03-07-estudando-bibliometrix/estudando-bibliometrix_files/figure-html5/unnamed-chunk-12-1.png"/>
+</div>
+<div class="description">
+<h2>Conhecendo o pacote bibliometrix</h2>
+<div class="dt-tags">
+<div class="dt-tag">Estudo</div>
+<div class="dt-tag">Pesquisa</div>
+</div>
+<p>Primeiras impressões utilizando o pacote `{bibliometrix}`</p>
+</div>
+</a>
 <a href="posts/2021-03-02-certificacao-rstudio/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["RStudio","Comunidades","Portugues","Ensino"]}</script>
 <div class="metadata">
@@ -2687,7 +2717,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png"/>
+<img data-src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png"/>
 </div>
 <div class="description">
 <h2>Desenvolvendo meu primeiro Shiny App</h2>
@@ -2747,7 +2777,7 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:Articles">Articles</a>
-<span class="category-count">(7)</span>
+<span class="category-count">(8)</span>
 </li>
 <li>
 <a href="#category:Comunidades">Comunidades</a>
@@ -2756,6 +2786,14 @@ function init_posts_list() {
 <li>
 <a href="#category:Ensino">Ensino</a>
 <span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:Estudo">Estudo</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Pesquisa">Pesquisa</a>
+<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#category:Portugues">Portugues</a>
