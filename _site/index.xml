@@ -66,40 +66,5 @@
       <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
       <media:content url="https://beatrizmilz.com/img/1anorladies.jpg" medium="image" type="image/jpeg"/>
     </item>
-    <item>
-      <title>Desenvolvendo meu primeiro Shiny App</title>
-      <dc:creator>Beatriz Milz</dc:creator>
-      <link>https://beatrizmilz.com/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app</link>
-      <description>O objetivo deste post é compartilhar um pouco sobre a minha experiência no desenvolvimento do meu primeiro Shiny App.</description>
-      <category>Shiny</category>
-      <category>Portugues</category>
-      <guid>https://beatrizmilz.com/posts/2019-08-21-desenvolvendo-meu-primeiro-shiny-app</guid>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      <media:content url="https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/shiny.png" medium="image" type="image/png"/>
-    </item>
-    <item>
-      <title>Compartilhando conteúdo</title>
-      <dc:creator>Beatriz Milz</dc:creator>
-      <link>https://beatrizmilz.com/posts/2019-06-24-compartilhando-contedo-utilizando-r</link>
-      <description>Como compartilhar conteúdo sobre R, utilizando R?</description>
-      <category>R-Ladies</category>
-      <category>R Markdown</category>
-      <category>Portugues</category>
-      <guid>https://beatrizmilz.com/posts/2019-06-24-compartilhando-contedo-utilizando-r</guid>
-      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
-      <media:content url="https://media.giphy.com/media/dNgK7Ws7y176U/giphy.gif" medium="image" type="image/gif"/>
-    </item>
-    <item>
-      <title>Meio ano de aprendizagem de R!</title>
-      <dc:creator>Beatriz Milz</dc:creator>
-      <link>https://beatrizmilz.com/posts/2019-01-29-meio-ano-r</link>
-      <description>Neste texto, gostaria de compartilhar um pouco sobre os primeiros seis meses de aprendizagem em programação, principalmente na linguagem R.</description>
-      <category>Comunidades</category>
-      <category>R-Ladies</category>
-      <category>Portugues</category>
-      <guid>https://beatrizmilz.com/posts/2019-01-29-meio-ano-r</guid>
-      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
-      <media:content url="https://beatrizmilz.com/img/rladies-1-meetup.jpeg" medium="image" type="image/jpeg"/>
-    </item>
   </channel>
 </rss>

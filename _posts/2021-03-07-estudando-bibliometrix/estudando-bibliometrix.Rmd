@@ -211,11 +211,13 @@ dados %>%
   dplyr::ungroup() %>%
   dplyr::slice(1:10) %>%
   ggplot() +
-  geom_col(aes(x = reorder(nome_autor, desc(n)), y = n), 
+  geom_col(aes(x = reorder(nome_autor,
+                           desc(n)), y = n), 
            fill = '#4b689c') +
   coord_flip() +
   theme_bw() +
-  labs(x = "Pessoas autoras", y = "Quantidade de artigos")
+  labs(x = "Pessoas autoras", 
+       y = "Quantidade de artigos")
 
 ```
 
@@ -264,8 +266,24 @@ graficos_bibliometrix[2]
 #### Reproduzindo com ggplot2
 
 ```{r}
-# Não estou encontrando a informação sobre o país! 
-# Investigar como fazem a análise.
+# Não consegui reproduzir os dados pois não encontrei
+# a informação de países na base inicial.
+# Julio Trecenti deu uma dica sobre como obter
+# os dados a partir de um objeto ggplot.
+paises_mais_produtivos <- graficos_bibliometrix[[2]][["data"]]
+dplyr::glimpse(paises_mais_produtivos)
+
+paises_mais_produtivos %>% 
+  ggplot() + 
+  geom_col(aes(x = Country,
+               y = Freq, fill = Collaboration)) +
+  coord_flip() +
+  theme_bw() +
+  labs(x = "Países",
+       y = "Quantidade de artigos",
+       fill = "Colaboração", 
+       caption = "\n \n MCP: Publicação com pessoas autoras de mais de um país. \n
+       SCP: Publicação com pessoas autoras de apenas um país.")
 ```
 
 
@@ -282,16 +300,20 @@ graficos_bibliometrix[2]
 
 ```{r fig.height=6}
 dados %>%
-  dplyr::mutate(SO = gsub('(.{1,30})(\\s|$)', '\\1\n', SO )
+  dplyr::mutate(SO = gsub('(.{1,30})(\\s|$)', 
+                          '\\1\n', SO )
     ) %>%
       dplyr::count(SO) %>%
       dplyr::arrange(desc(n)) %>% 
       dplyr::slice(1:10) %>% 
       ggplot() +
-      geom_col(aes(x = reorder(SO, n), y = n), fill = "#4b689c") +
+      geom_col(aes(x = reorder(SO, n),
+                   y = n),
+               fill = "#4b689c") +
       coord_flip() +
       theme_bw() +
-      labs(x = "Periódico", y = "Quantidade de artigos")
+      labs(x = "Periódico", 
+           y = "Quantidade de artigos")
 ```
 
 
@@ -307,6 +329,8 @@ Pretendo continuar estudando como utilizar este pacote, pois existem muitas poss
 
 
 - Eu comecei a fazer estes estudos (e escrever este post) durante uma transmissão no meu canal na [Twitch](https://www.twitch.tv/beamilz). Foi muito legal e algumas pessoas participantes me deram dicas sobre o pacote e me ajudaram neste percurso! Obrigada para quem participou e para quem deu dicas! 
+
+- Edit: Agradeço ao [Julio Trecenti](https://twitter.com/jtrecenti) pela dica de como obter os dados utilizados para criar um ggplot.
 
 ```{r echo=FALSE}
 knitr::write_bib(
