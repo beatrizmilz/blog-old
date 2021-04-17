@@ -1,0 +1,74 @@
+---
+title: "Apresentações/slides"
+author:
+  - name: Beatriz Milz
+    url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP
+    orcid_id: 0000-0002-3064-4486
+date: "Atualizado em `r Sys.Date()`"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(magrittr, include.only = "%>%")
+```
+
+```{r metathis, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "beatrizmilz/slidesR") %>% 
+  meta_social(
+    title = "Slides sobre R",
+    description = paste(
+      "Alguns materiais e slides sobre R e comunidades.",
+      "Por Beatriz Milz"
+    ),
+    url = "https://beatrizmilz.github.io/slidesR/",
+    image = "https://beatrizmilz.github.io/slidesR/img/share-card.png",
+    image_alt = paste(
+      "Início do site sobre materiais sobre R e comunidades"
+    ),
+    og_type = "website",
+    og_author = "Beatriz Milz",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@beamilz"
+  )
+```
+
+
+```{r}
+df_slides <- "slides.csv" %>% 
+  readr::read_csv2() %>% 
+  dplyr::mutate(data = readr::parse_date(data, format = "%d/%m/%Y"),
+                ano = lubridate::year(data))
+```
+
+Olá! Abaixo segue uma lista de links de apresentações feitas.
+
+```{r echo=FALSE, layout="l-page"}
+df_slides %>% 
+  dplyr::mutate(url = glue::glue("[{nome}]({link})")) %>% 
+  dplyr::select(-ano, -nome, -link) %>% 
+  dplyr::relocate(url, .before = 1) %>% 
+  dplyr::arrange(desc(data)) %>% 
+  
+  knitr::kable()
+```
+
+<!-- 2020 - rladies Curitiba intro ao R, rladies GYN git e GitHub, -->
+<!-- buscar no github do do meetup das rladies sp -->
+<!-- https://github.com/beatrizmilz?after=Y3Vyc29yOnYyOpK5MjAxOS0wOS0xNFQxOToyNDo1Ny0wMzowMM4MbZqr&tab=repositories -->
+
+
+```{r}
+df_slides %>%
+  ggplot2::ggplot() +
+  ggplot2::geom_bar(ggplot2::aes(x = ano))
+
+
+df_slides %>%
+  ggplot2::ggplot() +
+  ggplot2::geom_bar(ggplot2::aes(x = idioma))
+```
+
