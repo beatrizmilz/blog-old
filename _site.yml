@@ -19,7 +19,9 @@ navbar:
       href: index.html
     - text: "Materiais sobre R"
       menu:
-        - text: "Slides e tutoriais"
+        - text: "Apresentações"
+          href: apresentacoes.html
+        - text: "Materiais"
           href: materiais_r.html
         - text: "Videos"
           href: videos.html
@@ -29,6 +31,8 @@ navbar:
           href: https://livro.curso-r.com/
         - text: "Lista de materiais de estudo"
           href: https://materiais-estudo-r.netlify.app/
+        - text: "Pacote {dados}"
+          href: https://cienciadedatos.github.io/dados/
 
     - text: "Dados ambientais"
       menu:

@@ -1,0 +1,16 @@
+---
+title: "Projetos"
+#description: |
+#  Uma lista de apresentações usando ou sobre R e Comunidades.
+author:
+  - name: Beatriz Milz
+    url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP
+    orcid_id: 0000-0002-3064-4486
+date: "Atualizado em `r Sys.Date()`"
+site: distill::distill_website
+---
+
+
+
+<script src = "js/filter-buttons.js"></script>
