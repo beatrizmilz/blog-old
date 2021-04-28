@@ -15,7 +15,9 @@ navbar:
           href: https://beatrizmilz.github.io/tese/
         - text: "Curriculo"
           href: https://beatrizmilz.github.io/resume/index.html
-    - text: "Blog"
+    - text: "Sobre o blog"
+      href: ferramentas.html
+    - text: "Posts"
       href: index.html
     - text: "Materiais sobre R"
       menu:
@@ -40,9 +42,8 @@ navbar:
           href: pacote_mananciais.html
         - text: "Qualidade da Água (Infoaguas CETESB)"
           href: https://beatriz-milz.shinyapps.io/trabalho_final_ws/
+
   right:
-    - icon: fab fa-twitch
-      href: https://www.twitch.tv/beamilz
     - icon: fas fa-home
       href: index.html
 

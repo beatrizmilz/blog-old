@@ -52,8 +52,6 @@ meta() %>%
 
 - O pacote [`metathis`](https://pkg.garrickadenbuie.com/metathis/) @R-metathis foi utilizado para criação das tags `<meta>` (de `HTML`).
 
--  `r emo::ji("clap")` Botão de aplauso feito com o pacote [`applause`](https://pkg.garrickadenbuie.com/applause/) @R-applause.
-
 - Os ícones são dos sites [Font Awesome](https://fontawesome.com/icons?d=gallery) e [Academicons](https://jpswalsh.github.io/academicons/). 
 
 - O versionamento do código e o deploy do site é realizado através deste [repositório no GitHub](https://github.com/beatrizmilz/slidesR).
