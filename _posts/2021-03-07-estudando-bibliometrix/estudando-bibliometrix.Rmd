@@ -151,7 +151,7 @@ dplyr::distinct(dados_brutos, DT) %>%
 Pronto! Agora temos a base preparada. O significado do nome das colunas pode ser conferido na documentação do pacote.
 
 ```{r}
-glimpse(dados)
+dplyr::glimpse(dados)
 ```
 
 ### Funções do bibliometrix para analisar os dados

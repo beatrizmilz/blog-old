@@ -7,41 +7,34 @@ output_dir: "_site"
 creative_commons: CC BY
 navbar:
   left:
-    - text: "Sobre a autora"
-      menu:
-        - text: "Beatriz Milz"
-          href: about.html
-        - text: "Pesquisa"
-          href: https://beatrizmilz.github.io/tese/
-        - text: "Curriculo"
-          href: https://beatrizmilz.github.io/resume/index.html
-    - text: "Sobre o blog"
-      href: ferramentas.html
+    - text: "Bea"
+      href: about.html
     - text: "Posts"
       href: index.html
     - text: "Materiais sobre R"
-      menu:
-        - text: "Apresentações"
-          href: apresentacoes.html
-        - text: "Materiais"
-          href: materiais_r.html
-        - text: "Videos"
-          href: videos.html
-        - text: "Textos em outros blogs"
-          href: posts_outros_blogs.html
-        - text: "Livro: Ciência de dados em R"
-          href: https://livro.curso-r.com/
-        - text: "Lista de materiais de estudo"
-          href: https://materiais-estudo-r.netlify.app/
-        - text: "Pacote {dados}"
-          href: https://cienciadedatos.github.io/dados/
+      href: materiais.html
+      # menu:
+      #   - text: "Apresentações"
+      #     href: apresentacoes.html
+      #   - text: "Materiais"
+      #     href: materiais_r.html
+      #   - text: "Videos"
+      #     href: videos.html
+      #   - text: "Textos em outros blogs"
+      #     href: posts_outros_blogs.html
+      #   - text: "Livro: Ciência de dados em R"
+      #     href: https://livro.curso-r.com/
+      #   - text: "Lista de materiais de estudo"
+      #     href: https://materiais-estudo-r.netlify.app/
+      #   - text: "Pacote {dados}"
+      #     href: https://cienciadedatos.github.io/dados/
 
-    - text: "Dados ambientais"
-      menu:
-        - text: "Nível dos reservatórios RMSP - Pacote Mananciais (SABESP)"
-          href: pacote_mananciais.html
-        - text: "Qualidade da Água (Infoaguas CETESB)"
-          href: https://beatriz-milz.shinyapps.io/trabalho_final_ws/
+    # - text: "Dados ambientais"
+    #   menu:
+    #     - text: "Nível dos reservatórios RMSP - Pacote Mananciais (SABESP)"
+    #       href: pacote_mananciais.html
+    #     - text: "Qualidade da Água (Infoaguas CETESB)"
+    #       href: https://beatriz-milz.shinyapps.io/trabalho_final_ws/
 
   right:
     - icon: fas fa-home

@@ -84,6 +84,10 @@ d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
   background: #f3f5f7;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
 p {
 text-align: justify;
 }

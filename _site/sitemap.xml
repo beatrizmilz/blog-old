@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://beatrizmilz.com/about_en.html</loc>
-    <lastmod>2021-02-28T19:45:29-03:00</lastmod>
+    <lastmod>2021-05-11T17:26:34-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/about_es.html</loc>
-    <lastmod>2021-02-28T19:45:42-03:00</lastmod>
+    <lastmod>2021-05-11T17:26:39-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/about.html</loc>
-    <lastmod>2021-02-28T19:45:02-03:00</lastmod>
+    <lastmod>2021-05-11T17:24:31-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/apresentacoes.html</loc>
-    <lastmod>2021-04-17T23:13:20-03:00</lastmod>
+    <lastmod>2021-05-11T16:50:40-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/carpentries.html</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://beatrizmilz.com/</loc>
-    <lastmod>2021-02-27T18:55:14-03:00</lastmod>
+    <lastmod>2021-05-11T17:21:46-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/introR.html</loc>
@@ -41,16 +41,16 @@
     <lastmod>2021-02-27T18:55:14-03:00</lastmod>
   </url>
   <url>
+    <loc>https://beatrizmilz.com/materiais.html</loc>
+    <lastmod>2021-05-11T17:18:45-03:00</lastmod>
+  </url>
+  <url>
     <loc>https://beatrizmilz.com/pacote_mananciais.html</loc>
     <lastmod>2021-03-02T19:21:38-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/posts_outros_blogs.html</loc>
     <lastmod>2021-02-27T18:55:14-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://beatrizmilz.com/projetos.html</loc>
-    <lastmod>2021-04-03T10:37:13-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/repositorios.html</loc>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://beatrizmilz.com/posts/2021-03-07-estudando-bibliometrix/</loc>
-    <lastmod>2021-03-28T14:51:18-03:00</lastmod>
+    <lastmod>2021-05-11T17:01:36-03:00</lastmod>
   </url>
   <url>
     <loc>https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/</loc>

@@ -1,0 +1,21 @@
+---
+title: "Materiais para aprender R"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+- [Apresentações/slides](apresentacoes.html)
+
+- [Materiais gerais usados em workshops](materiais_r.html)
+
+- [Videos de apresentações](videos.html)
+
+- [Textos em outros blogs](posts_outros_blogs.html)
+
+- [Livro: Ciência de dados em R](https://livro.curso-r.com/)
+
+- [Lista de materiais de estudo](https://materiais-estudo-r.netlify.app/)
+
+- [Pacote {dados}](https://cienciadedatos.github.io/dados/)

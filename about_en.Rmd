@@ -2,6 +2,8 @@
 title: "Beatriz Milz"
 image: "img/bea.png"
 links:
+  - label: CV
+    url: "https://beatrizmilz.github.io/resume/index.html"
   - label: Twitter
     url: "https://twitter.com/BeaMilz"
   - label: GitHub
@@ -10,11 +12,19 @@ links:
     url: "mailto:milz.bea@gmail.com"
   - label: Orcid
     url: "https://orcid.org/0000-0002-3064-4486"
-  - label: Twitch
-    url: "https://www.twitch.tv/beamilz"
+  - label: Lattes
+    url: "http://lattes.cnpq.br/5150665880581477"
 output:
   postcards::trestles
 ---
+
+<center>
+
+<a href='https://education.rstudio.com/trainers/'>  <img src='img/Hex/CertifiedRstudioTrainer.png' width="90px"></a> <a href='https://rladies.org/'>  <img src='img/Hex/1hexlogorladies.jpeg' width="90px"></a> <a href='https://curso-r.com/'>  <img src="img/Hex/curso-r-azul.jpg" width="90px"></a> <a href='https://livro.curso-r.com/'>  <img src='https://curso-r.com/images/produtos/hex-livro.png' width="90px"></a> <a href='https://saopaulo2019.satrdays.org/'>  <img src='img/Hex/2satrdaysp.png' width="90px"></a> <a href='https://latin-r.com/'>  <img src='img/Hex/4LatinR_hex_violeta-cut.jpg' width="90px"></a> <a href='https://carpentries.org/'>  <img src='img/Hex/carpentries.png' width="90px"> </a> <a href='https://user2021.r-project.org/'>  <img src='https://user2021.r-project.org/img/artwork/user-logo-color.png' width="90px"> </a> <a href='https://cienciadedatos.github.io/dados/'>  <img src='https://cienciadedatos.github.io/dados/reference/figures/dados-hex.png' width="90px"></a>
+<a href='https://beatrizmilz.github.io/mananciais/'>  <img src='https://beatrizmilz.github.io/mananciais/reference/figures/hexlogo.png' width="90px"></a> <br><br><br>
+</center>
+
+
 <center>
 <ul class="list-inline">
   <li class="list-inline-item">
