@@ -7,7 +7,19 @@
     <description>Blog e textos sobre R
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Experimentando o R 4.1.0</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <link>https://beatrizmilz.com/posts/2021-05-18-experimentando-o-r-410</link>
+      <description>Primeiras impressões ao usar o nova versão do R</description>
+      <category>RStudio</category>
+      <category>R</category>
+      <category>Pipe</category>
+      <guid>https://beatrizmilz.com/posts/2021-05-18-experimentando-o-r-410</guid>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://cran.r-project.org/doc/manuals/r-devel/Rlogo.svg" medium="image" type="image/svg+xml"/>
+    </item>
     <item>
       <title>Conhecendo o pacote bibliometrix</title>
       <dc:creator>Beatriz Milz</dc:creator>
@@ -54,17 +66,6 @@
       <guid>https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora</guid>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
       <media:content url="https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/mapa.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Um ano aprendendo R!</title>
-      <dc:creator>Beatriz Milz</dc:creator>
-      <link>https://beatrizmilz.com/posts/2019-08-31-um-ano-aprendendo-r</link>
-      <description>Um relato deste um ano aprendendo R!</description>
-      <category>Portugues</category>
-      <category>R-Ladies</category>
-      <guid>https://beatrizmilz.com/posts/2019-08-31-um-ano-aprendendo-r</guid>
-      <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
-      <media:content url="https://beatrizmilz.com/img/1anorladies.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>
