@@ -61,7 +61,7 @@ Ativando essa opção, é possível usar o mesmo atalho de costume para escrever
 
 Para experimentar, resolvi tentar adaptar os exemplos apresentados no [capítulo sobre o operador pipe](https://livro.curso-r.com/6-1-o-operador-pipe.html), do livro [Ciência de Dados em R](https://livro.curso-r.com/index.html), da qual sou contribuidora!
 
-<a href='https://curso-r.com/images/produtos/hex-livro.png'>
+<a href='https://livro.curso-r.com/index.html'>
 ```{r echo=FALSE, fig.align='center', out.width="30%"}
 knitr::include_graphics("https://curso-r.com/images/produtos/hex-livro.png")
 ```
