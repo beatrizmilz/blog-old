@@ -21,6 +21,18 @@
       <media:content url="https://cran.r-project.org/doc/manuals/r-devel/Rlogo.svg" medium="image" type="image/svg+xml"/>
     </item>
     <item>
+      <title>Desvendando erros: Entendendo mensagens de erro comuns em R</title>
+      <dc:creator>Beatriz Milz</dc:creator>
+      <dc:creator>Fernando Corrêa</dc:creator>
+      <link>https://beatrizmilz.com/posts/2021-03-29-desvendando-erros</link>
+      <description>Post publicado no blog da Curso-R.</description>
+      <category>R</category>
+      <category>Erros</category>
+      <guid>https://beatrizmilz.com/posts/2021-03-29-desvendando-erros</guid>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://blog.curso-r.com/images/posts/banner/dog-pc.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>Conhecendo o pacote bibliometrix</title>
       <dc:creator>Beatriz Milz</dc:creator>
       <link>https://beatrizmilz.com/posts/2021-03-07-estudando-bibliometrix</link>
@@ -54,18 +66,6 @@
       <guid>https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr</guid>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>The Carpentries: Como fazer o treinamento de instrutora?</title>
-      <dc:creator>Beatriz Milz</dc:creator>
-      <link>https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora</link>
-      <description>Neste post, vou contar um pouco sobre o que é a The Carpentries, como conheci este projeto, como foi o treinamento para me tornar uma instrutora, e quais desafios que percebi para o crescimento da comunidade no Brasil.</description>
-      <category>Ensino</category>
-      <category>The Carpentries</category>
-      <category>Portugues</category>
-      <guid>https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora</guid>
-      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/mapa.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,39 @@
+---
+title: "Desvendando erros: Entendendo mensagens de erro comuns em R"
+description: |
+  Post publicado no blog da Curso-R.
+author:
+  - name: Beatriz Milz
+    url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP
+    orcid_id: 0000-0002-3064-4486
+  - name: Fernando Corrêa
+    affiliation_url: https://curso-r.com/
+    affiliation: Curso-R
+date: 2021-03-29
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://blog.curso-r.com/images/posts/banner/dog-pc.jpg
+categories:
+  - R
+  - Erros
+citation_url: https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+Leia o post no blog da Curso-R: [acesse aqui!](https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/)
+
+```{r embed-xaringan, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/
+", ratio = "5:5")
+```
+
+
+
+
