@@ -127,7 +127,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","output","preview","categories","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Desvendando erros: Entendendo mensagens de erro comuns em R"]},{"type":"character","attributes":{},"value":["Post publicado no blog da Curso-R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["PROCAM/IEE/USP"]},{"type":"character","attributes":{},"value":["0000-0002-3064-4486"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation_url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Fernando Corrêa"]},{"type":"character","attributes":{},"value":["https://curso-r.com/"]},{"type":"character","attributes":{},"value":["Curso-R"]}]}]},{"type":"character","attributes":{},"value":["2021-03-29"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/images/posts/banner/dog-pc.jpg"]},{"type":"character","attributes":{},"value":["R","Erros"]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/"]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","output","preview","categories","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Desvendando erros: Entendendo mensagens de erro comuns em R"]},{"type":"character","attributes":{},"value":["Post publicado no blog da Curso-R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["PROCAM/IEE/USP"]},{"type":"character","attributes":{},"value":["0000-0002-3064-4486"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation_url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Fernando Corrêa"]},{"type":"character","attributes":{},"value":["https://curso-r.com/"]},{"type":"character","attributes":{},"value":["https://curso-r.com/"]},{"type":"character","attributes":{},"value":["Curso-R"]}]}]},{"type":"character","attributes":{},"value":["2021-03-29"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/images/posts/banner/dog-pc.jpg"]},{"type":"character","attributes":{},"value":["R","Erros"]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/"]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2243,6 +2243,17 @@ text-align: justify;
 .posts-list .post-preview img {
     width: 50%;
     display: block;
+}
+
+
+strong {
+  font-weight: bold;
+  color: #40b0a6;
+}
+
+code {
+    font-family: monospace;
+    color: #0366d6;
 }</style>
 <style type="text/css">
 /* base style */
@@ -2448,7 +2459,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Desvendando erros: Entendendo mensagens de erro comuns em R","description":"Post publicado no blog da Curso-R.","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"PROCAM/IEE/USP","affiliationURL":"#","orcidID":"0000-0002-3064-4486"},{"author":"Fernando Corrêa","authorURL":"#","affiliation":"Curso-R","affiliationURL":"https://curso-r.com/","orcidID":""}],"publishedDate":"2021-03-29T00:00:00.000-03:00","citationText":"Milz & Corrêa, 2021"}
+{"title":"Desvendando erros: Entendendo mensagens de erro comuns em R","description":"Post publicado no blog da Curso-R.","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"PROCAM/IEE/USP","affiliationURL":"#","orcidID":"0000-0002-3064-4486"},{"author":"Fernando Corrêa","authorURL":"https://curso-r.com/","affiliation":"Curso-R","affiliationURL":"https://curso-r.com/","orcidID":""}],"publishedDate":"2021-03-29T00:00:00.000-03:00","citationText":"Milz & Corrêa, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2488,7 +2499,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <div class="d-byline">
   Beatriz Milz <a href="https://beatrizmilz.com" class="uri">https://beatrizmilz.com</a> (PROCAM/IEE/USP)
   
-,   Fernando Corrêa  (Curso-R)<a href="https://curso-r.com/" class="uri">https://curso-r.com/</a>
+,   Fernando Corrêa <a href="https://curso-r.com/" class="uri">https://curso-r.com/</a> (Curso-R)<a href="https://curso-r.com/" class="uri">https://curso-r.com/</a>
   
 <br/>2021-03-29
 </div>

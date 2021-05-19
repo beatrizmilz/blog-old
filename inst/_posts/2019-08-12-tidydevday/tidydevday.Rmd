@@ -1,0 +1,39 @@
+---
+title: "Tidyverse developer day 2019 (tidy-dev-day)"
+description: |
+  Post publicado no blog da Curso-R.
+author:
+  - name: Beatriz Milz
+    url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP + R-Ladies SP
+    orcid_id: 0000-0002-3064-4486
+  - name: Angélica Custódio
+    affiliation_url: https://twitter.com/angcustodio
+    affiliation: R-Ladies SP + PyLadies SP + Insper
+date: 2019-08-12
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://i.imgur.com/Oz6x6GY.jpg
+categories:
+  - R
+  - Erros
+  - Comundidades
+citation_url: https://blog.curso-r.com/posts/2019-08-12-tidydevday/
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+Leia o post no blog da Curso-R: [acesse aqui!](https://blog.curso-r.com/posts/2019-08-12-tidydevday/)
+
+```{r embed-xaringan, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://blog.curso-r.com/posts/2019-08-12-tidydevday/", ratio = "5:5")
+```
+
+
+
+

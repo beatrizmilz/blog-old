@@ -1,0 +1,39 @@
+---
+title: "Série de dicas: criando melhores tabelas, gráficos e relatórios em R"
+description: |
+  Série de 3 posts publicados no blog da Curso-R. Imagem da preview por @allison_horst
+author:
+  - name: Beatriz Milz
+    url: https://beatrizmilz.com
+    affiliation: PROCAM/IEE/USP
+    orcid_id: 0000-0002-3064-4486
+  - name: William Amorim
+    url: https://curso-r.com/
+    affiliation_url: https://curso-r.com/
+    affiliation: Curso-R
+date: 2020-12-03
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/reproducibility_court.png
+categories:
+  - R
+  - Dicas
+  - R Markdown
+citation_url: https://blog.curso-r.com/posts/2021-03-15-dicas-relatorios-r4ds1_relatorios/
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+No blog da Curso-R, colaborei com três posts que apresentam dicas para fazer tabelas, gráficos e relatórios em R. Leia os posts através dos links a seguir:
+
+- [Dicas para criar **tabelas**](https://blog.curso-r.com/posts/2020-12-03-dicas-relatorios-r4ds1_tabelas/)
+
+- [Dicas para **gráficos**](https://blog.curso-r.com/posts/2020-17-02-dicas-relatorios-r4ds1_graficos/)
+
+- [Dicas para **relatórios**](https://blog.curso-r.com/posts/2021-03-15-dicas-relatorios-r4ds1_relatorios/)
+
+

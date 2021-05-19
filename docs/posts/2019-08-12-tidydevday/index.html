@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -55,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,51 +86,53 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Beatriz Milz: Certificação da RStudio</title>
+<title>Beatriz Milz: Tidyverse developer day 2019 (tidy-dev-day)</title>
 
-<meta property="description" itemprop="description" content="Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification."/>
+<meta property="description" itemprop="description" content="Post publicado no blog da Curso-R."/>
 
-<link rel="canonical" href="https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/"/>
+<link rel="canonical" href="https://blog.curso-r.com/posts/2019-08-12-tidydevday/"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-03-02"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-03-02"/>
+<meta property="article:published" itemprop="datePublished" content="2019-08-12"/>
+<meta property="article:created" itemprop="dateCreated" content="2019-08-12"/>
 <meta name="article:author" content="Beatriz Milz"/>
+<meta name="article:author" content="Angélica Custódio"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Beatriz Milz: Certificação da RStudio"/>
+<meta property="og:title" content="Beatriz Milz: Tidyverse developer day 2019 (tidy-dev-day)"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification."/>
-<meta property="og:url" content="https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/"/>
+<meta property="og:description" content="Post publicado no blog da Curso-R."/>
+<meta property="og:url" content="https://blog.curso-r.com/posts/2019-08-12-tidydevday/"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Beatriz Milz"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Beatriz Milz: Certificação da RStudio"/>
-<meta property="twitter:description" content="Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification."/>
-<meta property="twitter:url" content="https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/"/>
+<meta property="twitter:title" content="Beatriz Milz: Tidyverse developer day 2019 (tidy-dev-day)"/>
+<meta property="twitter:description" content="Post publicado no blog da Curso-R."/>
+<meta property="twitter:url" content="https://blog.curso-r.com/posts/2019-08-12-tidydevday/"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Beatriz Milz: Certificação da RStudio"/>
-<meta name="citation_fulltext_html_url" content="https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/"/>
+<meta name="citation_title" content="Beatriz Milz: Tidyverse developer day 2019 (tidy-dev-day)"/>
+<meta name="citation_fulltext_html_url" content="https://blog.curso-r.com/posts/2019-08-12-tidydevday/"/>
 <meta name="citation_fulltext_world_readable" content=""/>
-<meta name="citation_online_date" content="2021/03/02"/>
-<meta name="citation_publication_date" content="2021/03/02"/>
+<meta name="citation_online_date" content="2019/08/12"/>
+<meta name="citation_publication_date" content="2019/08/12"/>
 <meta name="citation_author" content="Beatriz Milz"/>
-<meta name="citation_author_institution" content="PROCAM/IEE/USP"/>
+<meta name="citation_author_institution" content="PROCAM/IEE/USP + R-Ladies SP"/>
+<meta name="citation_author" content="Angélica Custódio"/>
+<meta name="citation_author_institution" content="R-Ladies SP + PyLadies SP + Insper"/>
 <!--/radix_placeholder_meta_tags-->
-  
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","categories","output","bibliography","draft","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Certificação da RStudio"]},{"type":"character","attributes":{},"value":["Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["PROCAM/IEE/USP"]},{"type":"character","attributes":{},"value":["0000-0002-3064-4486"]}]}]},{"type":"character","attributes":{},"value":["2021-03-02"]},{"type":"character","attributes":{},"value":["RStudio","Comunidades","Portugues","Ensino"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["packages.bib"]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","author","date","output","preview","categories","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["Tidyverse developer day 2019 (tidy-dev-day)"]},{"type":"character","attributes":{},"value":["Post publicado no blog da Curso-R."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Beatriz Milz"]},{"type":"character","attributes":{},"value":["https://beatrizmilz.com"]},{"type":"character","attributes":{},"value":["PROCAM/IEE/USP + R-Ladies SP"]},{"type":"character","attributes":{},"value":["0000-0002-3064-4486"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation_url","affiliation"]}},"value":[{"type":"character","attributes":{},"value":["Angélica Custódio"]},{"type":"character","attributes":{},"value":["https://twitter.com/angcustodio"]},{"type":"character","attributes":{},"value":["R-Ladies SP + PyLadies SP + Insper"]}]}]},{"type":"character","attributes":{},"value":["2019-08-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://i.imgur.com/Oz6x6GY.jpg"]},{"type":"character","attributes":{},"value":["R","Erros","Comundidades"]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/posts/2019-08-12-tidydevday/"]},{"type":"character","attributes":{},"value":["https://blog.curso-r.com/posts/2019-08-12-tidydevday/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["certificacao-rstudio_files/anchor-4.2.2/anchor.min.js","certificacao-rstudio_files/bowser-1.9.3/bowser.min.js","certificacao-rstudio_files/distill-2.2.21/template.v2.js","certificacao-rstudio_files/figure-html5/tweet-1.png","certificacao-rstudio_files/figure-html5/tweet-2.png","certificacao-rstudio_files/figure-html5/tweet-from-dsquintana-1.png","certificacao-rstudio_files/header-attrs-2.7.2/header-attrs.js","certificacao-rstudio_files/jquery-1.11.3/jquery.min.js","certificacao-rstudio_files/popper-2.6.0/popper.min.js","certificacao-rstudio_files/tippy-6.2.7/tippy-bundle.umd.min.js","certificacao-rstudio_files/tippy-6.2.7/tippy-light-border.css","certificacao-rstudio_files/tippy-6.2.7/tippy.css","certificacao-rstudio_files/tippy-6.2.7/tippy.umd.min.js","certificacao-rstudio_files/twitter-widget-0.0.1/widgets.js","certificacao-rstudio_files/webcomponents-2.0.0/webcomponents.js","packages.bib"]}
+  {"type":"character","attributes":{},"value":["tidydevday_files/anchor-4.2.2/anchor.min.js","tidydevday_files/bowser-1.9.3/bowser.min.js","tidydevday_files/distill-2.2.21/template.v2.js","tidydevday_files/fitvids-2.1.1/fitvids.min.js","tidydevday_files/header-attrs-2.8.3/header-attrs.js","tidydevday_files/jquery-1.11.3/jquery.min.js","tidydevday_files/popper-2.6.0/popper.min.js","tidydevday_files/tippy-6.2.7/tippy-bundle.umd.min.js","tidydevday_files/tippy-6.2.7/tippy-light-border.css","tidydevday_files/tippy-6.2.7/tippy.css","tidydevday_files/tippy-6.2.7/tippy.umd.min.js","tidydevday_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2407,7 +2410,8 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.7.2/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.8.3/header-attrs.js"></script>
+  <script src="../../site_libs/fitvids-2.1.1/fitvids.min.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2455,7 +2459,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Certificação da RStudio","description":"Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification.","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"PROCAM/IEE/USP","affiliationURL":"#","orcidID":"0000-0002-3064-4486"}],"publishedDate":"2021-03-02T00:00:00.000-03:00","citationText":"Milz, 2021"}
+{"title":"Tidyverse developer day 2019 (tidy-dev-day)","description":"Post publicado no blog da Curso-R.","authors":[{"author":"Beatriz Milz","authorURL":"https://beatrizmilz.com","affiliation":"PROCAM/IEE/USP + R-Ladies SP","affiliationURL":"#","orcidID":"0000-0002-3064-4486"},{"author":"Angélica Custódio","authorURL":"#","affiliation":"R-Ladies SP + PyLadies SP + Insper","affiliationURL":"https://twitter.com/angcustodio","orcidID":""}],"publishedDate":"2019-08-12T00:00:00.000-03:00","citationText":"Milz & Custódio, 2019"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2482,162 +2486,34 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Certificação da RStudio</h1>
+<h1>Tidyverse developer day 2019 (tidy-dev-day)</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-  <a href="../../index.html#category:RStudio" class="dt-tag">RStudio</a>
-  <a href="../../index.html#category:Comunidades" class="dt-tag">Comunidades</a>
-  <a href="../../index.html#category:Portugues" class="dt-tag">Portugues</a>
-  <a href="../../index.html#category:Ensino" class="dt-tag">Ensino</a>
+  <a href="../../index.html#category:R" class="dt-tag">R</a>
+  <a href="../../index.html#category:Erros" class="dt-tag">Erros</a>
+  <a href="../../index.html#category:Comundidades" class="dt-tag">Comundidades</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Este post relata como foi o processo pra mim de realizar a certificação da RStudio: RStudio Instructor Training and Certification.</p></p>
+<p><p>Post publicado no blog da Curso-R.</p></p>
 </div>
 
 <div class="d-byline">
-  Beatriz Milz <a href="https://beatrizmilz.com" class="uri">https://beatrizmilz.com</a> (PROCAM/IEE/USP)
+  Beatriz Milz <a href="https://beatrizmilz.com" class="uri">https://beatrizmilz.com</a> (PROCAM/IEE/USP + R-Ladies SP)
   
-<br/>2021-03-02
+,   Angélica Custódio  (R-Ladies SP + PyLadies SP + Insper)<a href="https://twitter.com/angcustodio" class="uri">https://twitter.com/angcustodio</a>
+  
+<br/>2019-08-12
 </div>
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
-<ul>
-<li><a href="#importância-da-comunidade">Importância da comunidade</a></li>
-<li><a href="#como-iniciar-o-processo-de-treinamento">Como iniciar o processo de treinamento?</a></li>
-<li><a href="#treinamento">Treinamento</a></li>
-<li><a href="#provas-de-certificação">Provas de certificação</a>
-<ul>
-<li><a href="#prova-de-ensino">Prova de Ensino</a></li>
-<li><a href="#prova-sobre-tidyverse">Prova sobre tidyverse</a></li>
-</ul></li>
-<li><a href="#aprovação">Aprovação!</a></li>
-<li><a href="#e-o-inglês">E o Inglês?</a></li>
-<li><a href="#conclusão">Conclusão</a></li>
-<li><a href="#agradecimentos">Agradecimentos 💜</a></li>
-<li><a href="#mais-materiais-úteis">Mais materiais úteis</a></li>
-<li><a href="#twitch">Twitch</a></li>
-</ul>
-</nav>
-</div>
-<p>Ano passado, eu realizei o processo de treinamento e certificação da <a href="https://rstudio.com/">RStudio</a>, e este post tem com objetivo relatar como foi este processo para mim, afim de possivelmente oferecer informações e ajudar outras pessoas interessadas em realizar essa certificação.</p>
-<p>A <a href="https://rstudio.com/">RStudio</a> oferece a possibilidade de realizar a certificação de treinamento sobre os pacotes <a href="https://www.tidyverse.org/">tidyverse</a> e <a href="https://shiny.rstudio.com/">shiny</a>. Todas as informações necessárias sobre a certificação estão disponíveis <a href="https://education.rstudio.com/trainers/">neste site</a>, porém também adicionarei alguns links extras aqui!</p>
-<blockquote>
-<p>Importante: Eu realizei o processo completo de treinamento com o <a href="https://twitter.com/gvwilson">Greg Wilson</a>, porém ele não está mais envolvido no processo de certificação. Portanto, não sei se alguma etapa será alterada. Aqui descreverei como o processo foi quando eu realizei o treinamento.</p>
-</blockquote>
-<h2 id="importância-da-comunidade">Importância da comunidade</h2>
-<p>Primeiro de tudo: eu gostaria de destacar que a comunidade de R foi essencial para que eu pudesse realizar o treinamento e receber a certificação.</p>
-<p>Quando eu fiquei sabendo da existência dessa certificação, eu logo me deparei com uma dificuldade para participar: no site dizia que era necessário pagar (em dólares) para realizar o processo. Para quem é Brasileiro, sabemos como a moeda local é muito desvalorizada, e isso acaba dificultando a participação de muitas pessoas.Então eu deixei pra lá, até que vi um <a href="https://yabellini.netlify.app/post/rstudiocertification/">post</a> no blog da <a href="https://twitter.com/yabellini">Yanina Saibene</a> falando como foi o processo de certificação para ela. Então entrei em contato com ela (que havia conhecido pessoalmente na <a href="https://latin-r.com/">LatinR 2019</a>) para saber mais sobre como foi o processo para ela.</p>
-<p>Ela me colocou em contato com um grupo de pessoas que fazem parte de <a href="https://rladies.org/">diversos capítulos da R-Ladies</a> na América Latina, que estavam se organizando para começar um grupo de estudos (e apoio!) para realizar o processo. Além disso, também me deu mais informações sobre como fazer o processo de forma mais acessível financeiramente.</p>
-<p>Para esse grupo de estudos, foi criado um canal no Slack, onde eram compartilhadas dicas, resoluções de exercícios e dúvidas, entre outros. Além disso, nos encontravamos semanalmente via zoom para discutir os capítulos do livro <a href="https://r4ds.had.co.nz/">R for Data Science</a> (também disponível em Espanhol <a href="https://es.r4ds.hadley.nz/">neste link</a>).</p>
-<p>A orientação da <a href="https://twitter.com/yabellini">Yanina Saibene</a> e os estudos em grupo foram essenciais para que eu me preparasse para as provas, e me sentisse confiante em realizá-las.</p>
-<h2 id="como-iniciar-o-processo-de-treinamento">Como iniciar o processo de treinamento?</h2>
-<p>Se você se interessou em realizar o processo de treinamento, o primeiro passo para começar é ler as instruções que estão disponíveis <a href="https://education.rstudio.com/trainers/">nesta página</a>, e preencher <a href="https://forms.gle/kRucY2joTiPYWmPr8">este formulário</a>.</p>
-<blockquote>
-<p>Ao preencher o formulário, responda com atenção as duas perguntas opcionais a final do mesmo:</p>
-<ul>
-<li><p>A primeira é sobre o pertencimento a grupos sub-representados em ciência de dados; neste caso, descreva bem quais são os grupos que você faz parte, e aponte as suas contribuições para a comunidade de R.</p></li>
-<li><p>A segunda é sobre a possibilidade de redução da taxa de aplicação das provas e treinamento (<em>fee waiver</em>) para pessoas de países em desenvolvimento (<em>lower-income countries</em>).</p></li>
-</ul>
-</blockquote>
-<h2 id="treinamento">Treinamento</h2>
-<p>Após receber uma mensagem de aceite, é necessário indicar uma dentre as datas possíveis para realizar o treinamento. O treinamento que eu fiz foi realizado no período de duas manhãs, online (através da ferramenta Zoom), e foi em Inglês. O foco do treinamento não foi sobre programação em R, e sim sobre ensino e didática! Todo o conteúdo dos slides utilizados estão disponíveis <a href="https://drive.google.com/drive/folders/13ohFt3D0EJ5PDbMaWTxnHH-hwA7G0IvY">neste link</a>.</p>
-<p>Muito do conteúdo apresentado foi parecido com o treinamento oferecido pela <a href="https://carpentries.org/">The Carpentries</a> (que eu descrevi <a href="https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/">neste post</a>), e também com o conteúdo do livro escrito por <a href="https://twitter.com/gvwilson">Greg Wilson</a>, entitulado <a href="https://teachtogether.tech/">Teach Tech Together</a>:</p>
-<h2 id="provas-de-certificação">Provas de certificação</h2>
-<p>Após realizar o treinamento, a próxima etapa foi realizar a prova de ensino, e a prova da certificação desejada (que, no meu caso, foi sobre tidyverse). <a href="https://education.rstudio.com/blog/2020/02/instructor-certification-exams/">Neste link</a> é possível acessar um exemplo de provas, disponiblizado pela <a href="https://rstudio.com/">RStudio</a> para estudo.</p>
-<p>Não existe ordem correta para realizar as provas! Outro ponto importante é que as provas foram feitas com a tela compartilhada, e foi permitido fazer qualquer tipo de pesquisa na internet. Porém a prova tem um limite de tempo, então é importante ficar atenta(o) ao tempo que usa pesquisando!</p>
-<h3 id="prova-de-ensino">Prova de Ensino</h3>
-<p>A prova de ensino foi composta por uma aula demonstrativa de 15 minutos, e algumas questões a serem respondidas (relacionadas à ensino).</p>
-<p>Antes da prova em si, foi necessário enviar alguns materiais solicitados para serem utilizados em uma aula demonstrativa. Os materiais que eu preparei estão disponibilizados nesta página: <a href="https://beatrizmilz.github.io/RStudio_Certification/">https://beatrizmilz.github.io/RStudio_Certification/</a> (e o código também está disponível neste <a href="https://github.com/beatrizmilz/RStudio_Certification">repositório no GitHub</a>.</p>
-<p>Eu utilizei ferramentas como uma página onde o material é disponibilizado feita com o pacote <a href="https://rstudio.github.io/distill/">distill</a> <span class="citation" data-cites="R-distill">(<a href="#ref-R-distill" role="doc-biblioref">Allaire et al. 2021</a>)</span>, a apresentação feita com o pacote <a href="https://slides.yihui.org/xaringan/">xaringan</a> <span class="citation" data-cites="R-xaringan">(<a href="#ref-R-xaringan" role="doc-biblioref">Xie 2021</a>)</span>, dois exercícios para serem feitos ao final da aula utilizando o pacote <a href="https://rstudio.github.io/learnr/">learnr</a> <span class="citation" data-cites="R-learnr">(<a href="#ref-R-learnr" role="doc-biblioref">Schloerke et al. 2021</a>)</span>, a demonstração com código ao vivo foi realizada usando a IDE <a href="https://rstudio.com/">RStudio</a>, e um mapa conceitual elaborado com a ferramenta <a href="https://cmap.ihmc.us/">CMap Tools</a>. Porém essas são as ferramentas que <em>eu</em> escolhi utilizar, e eu recomendo que você utilize o que estiver mais confortável para você! A única ferramenta que é obrigatória a ser utilizada nessa etapa é a IDE <a href="https://rstudio.com/">RStudio</a> (o que é fácil de entender o motivo…).</p>
-<h3 id="prova-sobre-tidyverse">Prova sobre tidyverse</h3>
-<p>A prova de tidyverse consistiu em resolver diversos exercícios usando R e tidyverse. A recomendação da <a href="https://rstudio.com/">RStudio</a> para estudar para essa prova é a leitura do livro <a href="https://r4ds.had.co.nz/">R for Data Science</a>.</p>
-<p>Não tenho muito a falar desta etapa, apenas que pratique e use o quanto possível no seu dia-a-dia, assim você terá mais experiência e conseguirá resolver os problemas mais rapidamente durante a prova.</p>
-<blockquote>
-<p>Quero ainda escrever um post sobre algumas funções que não são tão comuns, mas que foram úteis para a prova! Assim que o post estiver disponível, editarei e adicionarei o link aqui.</p>
-</blockquote>
-<h2 id="aprovação">Aprovação!</h2>
-<p>Após a aprovação nas provas, recebi um email com um certificado, e também solicitaram o envio de algumas informações para que a página com minhas informações fosse adicionada na lista de pessoas treinadoras certificadas. A página contendo minhas informações pode ser acessada através <a href="https://education.rstudio.com/trainers/people/milz+beatriz/">deste link</a>, e o certificado recebido foi esse:</p>
+<p>Leia o post no blog da Curso-R: <a href="https://blog.curso-r.com/posts/2019-08-12-tidydevday/">acesse aqui!</a></p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
-<img src="https://beatrizmilz.com/img/certificado-rstudio.jpg" alt="Certificado recebido após completar o 'Tidyverse Instructor Certification'." width="100%" />
-<p class="caption">
-Figure 1: Certificado recebido após completar o ‘Tidyverse Instructor Certification.’
-</p>
+<div class="shareagain" style="min-width:300px;margin:1em auto;">
+<iframe src="https://blog.curso-r.com/posts/2019-08-12-tidydevday/" width="500" height="500" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
 </div>
-</div>
-<p>Além disso, também fui convidada para participar de um canal do Slack da RStudio, onde outras pessoas certificadas conversam sobre temas relacionados à certificação, como ensino, didática, R, tidyverse, shiny, entre outros.</p>
-<p>E também não poderia faltar a comemoração, né? Devido à pandemia, o encontro com as pessoas amigas foi online. Também teve um tweet de agradecimento:</p>
-<a href="https://twitter.com/BeaMilz/status/1312129792771125255">
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="certificacao-rstudio_files/figure-html5/tweet-1.png" width="100%" style="display: block; margin: auto;" /><img src="certificacao-rstudio_files/figure-html5/tweet-2.png" width="100%" style="display: block; margin: auto;" /></p>
-</div>
-<p></a></p>
-<ul>
-<li><a href="https://twitter.com/BeaMilz/status/1312129792771125255">Veja a thread completa neste link!</a></li>
-</ul>
-<h2 id="e-o-inglês">E o Inglês?</h2>
-<p>Na minha percepção, é importante ter alguma experiência com Inglês, pois o treinamento de 2 manhãs é realizado ao vivo, totalmente no idioma. Não sei se a RStudio tem planos de aplicar o treinamento em outros idiomas (como a <a href="https://carpentries.org/">The Carpentries</a>, onde já existe alguns oferecimentos de treinamentos em Espanhol).</p>
-<p>As provas que eu realizei foram aplicadas pelo <a href="https://twitter.com/gvwilson">Greg Wilson</a> e acompanhadas pelo brasileiro <a href="https://twitter.com/dfalbel">Daniel Falbel</a> (que trabalha na RStudio no desenvolvimento do <a href="https://torch.mlverse.org/">Torch for R</a>, e também é um dos sócios fundadores da <a href="https://curso-r.com/">Curso-R</a>). A participação do Daniel possibilitou que eu realizasse a apresentação da prova didática totalmente em Português, além de poder responder as perguntas da prova em Português também. Quero deixar registrado aqui o meu agradecimento para o Greg Wilson por apresentar essa possibilidade, e também ao Daniel Falbel por aceitar acompanhar esse processo! Foi muito importante para me sentir mais tranquila na prova, já que teria que me preocupar menos com o idioma e mais com o conteúdo das provas em si.</p>
-<h2 id="conclusão">Conclusão</h2>
-<p>Para mim, realizar este processo foi uma experiência rica onde aprendi e refleti sobre conteúdos importantes para que eu possa compartilhar cada vez mais conteúdo sobre R com qualidade. Dito isso, eu desejo fortemente que mais pessoas da comunidade Latino Americana façam o processo de treinamento.</p>
-<p>Caso eu não tenha abordado algum tema, ou você tenha dúvidas ao ler o post, peço que entre em contato comigo! Pode ser comentando neste post, ou enviando uma mensagem <a href="https://twitter.com/BeaMilz">no twitter</a>.</p>
-<h2 id="agradecimentos">Agradecimentos 💜</h2>
-<p>Eu já deixei diversos agradecimentos ao longo do texto, porém quero deixar em destaque a minha gratidão para pessoas que foram fundamentais para este processo:</p>
-<ul>
-<li><p>Equipe da <a href="https://rstudio.com/">RStudio</a>, <a href="https://twitter.com/gvwilson">Greg Wilson</a> e <a href="https://twitter.com/dfalbel">Daniel Falbel</a>: obrigada por possibilitar a realização deste treinamento!</p></li>
-<li><p><a href="https://twitter.com/yabellini">Yanina Saibene</a>, por toda a disposição de me mostrar os caminhos a seguir!</p></li>
-<li><p>Não foi fácil manter a motivação de estudos durante a pandemia, porém estudar em grupo ajudou muito a continuar. Então, para as pessoas que estudaram comigo, agradeço muito os momentos de estudo, troca, apoio, e ajuda com o Espanhol também.</p>
-<ul>
-<li><a href="https://twitter.com/rivaquiroga">Riva Quiroga</a></li>
-<li><a href="https://twitter.com/GabySandovalM">Gabriela Sandoval</a></li>
-<li><a href="https://twitter.com/sporella">Steph Orellana Bello</a></li>
-<li><a href="https://twitter.com/SalinasSilvy">Silvy Salinas</a></li>
-<li><a href="https://twitter.com/_luciarp_">Lucia Rodriguez-Planes</a></li>
-<li><a href="https://twitter.com/data_datum">Roxana Noelia</a></li>
-<li><a href="https://twitter.com/patriloto">Patricia Loto</a></li>
-<li><a href="https://twitter.com/anadiedrichs">Ana Laura Diedrichs</a></li>
-<li><a href="https://twitter.com/July_Benitezs">Juliana Benitez</a></li>
-<li><a href="https://twitter.com/JavieraRiffoTo1">Javiera Riffo Torres</a></li>
-</ul></li>
-<li><p>Minha amiga querida <a href="https://twitter.com/angcustodio">Angélica Custódio</a>, por todo o apoio e por acreditar em mim (mesmo quando eu estava com medo de não conseguir você estava lá pra me animar a continuar a estudar 💜).</p></li>
-<li><p>As pessoas das comunidades que eu participo e aprendi tanto até aqui: <a href="https://twitter.com/RLadiesSaoPaulo">R-Ladies São Paulo</a>, <a href="https://twitter.com/curso_r">Curso-R</a>, <a href="https://twitter.com/LatinR_Conf">Latin-R</a>.</p></li>
-</ul>
-<h2 id="mais-materiais-úteis">Mais materiais úteis</h2>
-<ul>
-<li><p>Posts em blogs de pessoas que fizeram a certificação:</p>
-<ul>
-<li><p><a href="https://yabellini.netlify.app/post/rstudiocertification/">Yanina Bellini Saibene</a></p></li>
-<li><p><a href="https://silvia.rbind.io/2020-10-07-rstudio-instructor-certification-tidyverse/">Silvia Canelón</a> - Recomendo <strong>muito</strong> a leitura, apresenta uma grande lista de links úteis também!</p></li>
-<li><p><a href="https://shelkariuki.netlify.app/blog/certification/">Shel Kariuki</a></p></li>
-<li><p><a href="https://education.rstudio.com/blog/2019/11/my-experience-with-rstudio-instructor-training/">Ted Laderas</a></p></li>
-</ul></li>
-<li><p><a href="https://carpentries.github.io/instructor-training/demos_rubric/">The Carpentries Instructor Training: Suggested Rubric for Teaching Demonstrations</a> - Essa página da The Carpentries apresenta alguns exemplos de pontos a serem observados para o feedback em aulas, com exemplos positivos e negativos sobre conteúdo e apresentação. É muito legal treinar o oferecimento da aula teste e tentar fazer uma reflexão e auto-feedback, utilizando esses pontos como partida!</p></li>
-<li><p>Artigos sugeridos pelo <a href="https://twitter.com/gvwilson">Greg Wilson</a>:</p>
-<ul>
-<li><p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006915">Ten quick tips for creating an effective lesson</a></p></li>
-<li><p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007433">Ten quick tips for delivering programming lessons</a></p></li>
-</ul></li>
-</ul>
-<h2 id="twitch">Twitch</h2>
-<p>Eu escrevi este post durante uma transmissão na Twitch. <strong>Obrigada a todas as pessoas que participaram!</strong> Caso queira acompanhar transmissões de conteúdo de uso de R, principalmente fazendo tarefas do dia-a-dia usando RMarkdown, basta seguir <a href="https://www.twitch.tv/beamilz">o canal twitch.tv/beamilz</a>!</p>
-<div class="layout-chunk" data-layout="l-body">
-
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-R-distill" class="csl-entry" role="doc-biblioentry">
-Allaire, JJ, Rich Iannone, Alison Presmanes Hill, and Yihui Xie. 2021. <em>Distill: R Markdown Format for Scientific and Technical Writing</em>.
-</div>
-<div id="ref-R-learnr" class="csl-entry" role="doc-biblioentry">
-Schloerke, Barret, JJ Allaire, Barbara Borges, and Garrick Aden-Buie. 2021. <em>Learnr: Interactive Tutorials for r</em>.
-</div>
-<div id="ref-R-xaringan" class="csl-entry" role="doc-biblioentry">
-Xie, Yihui. 2021. <em>Xaringan: Presentation Ninja</em>. <a href="https://github.com/yihui/xaringan">https://github.com/yihui/xaringan</a>.
-</div>
-</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2650,19 +2526,17 @@ Xie, Yihui. 2021. <em>Xaringan: Presentation Ninja</em>. <a href="https://github
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom">
-  <h3 id="references">References</h3>
-  <div id="references-listing"></div>
   <h3 id="reuse">Reuse</h3>
   <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Milz (2021, March 2). Beatriz Milz: Certificação da RStudio. Retrieved from https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/</pre>
+  <pre class="citation-appendix short">Milz &amp; Custódio (2019, Aug. 12). Beatriz Milz: Tidyverse developer day 2019 (tidy-dev-day). Retrieved from https://blog.curso-r.com/posts/2019-08-12-tidydevday/</pre>
   <p>BibTeX citation</p>
-  <pre class="citation-appendix long">@misc{milz2021certificação,
-  author = {Milz, Beatriz},
-  title = {Beatriz Milz: Certificação da RStudio},
-  url = {https://beatrizmilz.com/posts/2021-03-02-certificacao-rstudio/},
-  year = {2021}
+  <pre class="citation-appendix long">@misc{milz2019tidyverse,
+  author = {Milz, Beatriz and Custódio, Angélica},
+  title = {Beatriz Milz: Tidyverse developer day 2019 (tidy-dev-day)},
+  url = {https://blog.curso-r.com/posts/2019-08-12-tidydevday/},
+  year = {2019}
 }</pre>
 </div>
 <!--/radix_placeholder_appendices-->

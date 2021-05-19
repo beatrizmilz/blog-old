@@ -57,15 +57,17 @@
       <media:content url="https://beatrizmilz.com/img/certificado-rstudio.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>Criando mapas com os pacotes tidyverse e geobr</title>
+      <title>Série de dicas: criando melhores tabelas, gráficos e relatórios em R</title>
       <dc:creator>Beatriz Milz</dc:creator>
-      <link>https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr</link>
-      <description>Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo</description>
-      <category>Portugues</category>
-      <category>Reprodutibilidade</category>
-      <guid>https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr</guid>
-      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://beatrizmilz.com/posts/2020-07-27-criando-mapas-com-os-pacotes-tidyverse-e-geobr/criando-mapas-com-os-pacotes-tidyverse-e-geobr_files/figure-html5/mapa-tratamento-1.png" medium="image" type="image/png" width="1248" height="768"/>
+      <dc:creator>William Amorim</dc:creator>
+      <link>https://beatrizmilz.com/posts/2020-12-03-dicas</link>
+      <description>Série de 3 posts publicados no blog da Curso-R. Imagem da preview por @allison_horst</description>
+      <category>R</category>
+      <category>Dicas</category>
+      <category>R Markdown</category>
+      <guid>https://beatrizmilz.com/posts/2020-12-03-dicas</guid>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/reproducibility_court.png" medium="image" type="image/png"/>
     </item>
   </channel>
 </rss>

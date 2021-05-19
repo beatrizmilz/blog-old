@@ -8,6 +8,7 @@ author:
     affiliation: PROCAM/IEE/USP
     orcid_id: 0000-0002-3064-4486
   - name: Fernando Corrêa
+    url: https://curso-r.com/
     affiliation_url: https://curso-r.com/
     affiliation: Curso-R
 date: 2021-03-29
