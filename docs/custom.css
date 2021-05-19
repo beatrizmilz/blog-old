@@ -101,3 +101,8 @@ text-align: justify;
 	border-radius: 50%;
 	float: left;
 }
+
+.posts-list .post-preview img {
+    width: 50%;
+    display: block;
+}
