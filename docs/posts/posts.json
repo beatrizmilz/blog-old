@@ -42,7 +42,7 @@
     "contents": "\nLeia o post no blog da Curso-R: acesse aqui!\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
     "preview": "https://blog.curso-r.com/images/posts/banner/dog-pc.jpg",
     "last_modified": "2021-05-18T20:55:46-03:00",
-    "input_file": "desvendando-erros.knit.md"
+    "input_file": {}
   },
   {
     "path": "posts/2021-03-07-estudando-bibliometrix/",
