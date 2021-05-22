@@ -38,6 +38,8 @@ Esse post **não** tem como objetivo explicar quais foram as mudanças, e sim pa
 
 - [Post "New features in R 4.1.0", blog da jumping rivers](https://www.jumpingrivers.com/blog/new-features-r410-pipe-anonymous-functions/)
 
+- *edit*: [Video por Samuel Macêdo: Qual a diferença entre o pipe do magrittr e o do R base?](https://www.youtube.com/watch?v=6SZc4v0FDTw) 
+
 Além disso,  amanhã acontecerá uma live no canal do Youtube da Curso-R (e eu pretendo participar):
 
 <center>
