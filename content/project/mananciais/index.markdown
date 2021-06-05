@@ -1,0 +1,52 @@
+---
+title: "Pacote Mananciais"
+excerpt: "Autora e mantenedora do [pacote mananciais](https://beatrizmilz.github.io/mananciais/) , que disponibiliza a base de dados da SABESP sobre volume armazenado em mananciais de abastecimento público na Região Metropolitana de São Paulo (SP - Brasil)."
+subtitle: "Autora e mantenedora do pacote mananciais."
+weight: 11
+author: "Beatriz Milz"
+draft: false
+categories:
+  - Pacotes
+# layout options: single or single-sidebar
+layout: single-sidebar
+links:
+- icon: link
+  icon_pack: fas
+  name: Link
+  url: https://beatrizmilz.github.io/mananciais/
+- icon: github
+  icon_pack: fab
+  name: GitHub
+  url: https://github.com/beatrizmilz/mananciais
+---
+
+
+O [pacote mananciais](https://beatrizmilz.github.io/mananciais/) obtém e disponibiliza a base de dados da SABESP sobre volume armazenado em mananciais de abastecimento público na Região Metropolitana de São Paulo (SP - Brasil). A base de dados é atualizada diariamente. [Clique aqui](https://github.com/beatrizmilz/mananciais/raw/master/inst/extdata/mananciais.csv) para acessar a base de dados em formato `CSV`.
+
+Dados de 2000 à 2021, referentes aos sistemas: Cantareira, Alto Tietê, Guarapiranga, Cotia, Rio Grande, Rio Claro e São Lourenço.
+
+Exemplo de dados disponíveis:
+
+
+```r
+library(magrittr)
+
+mananciais::dados_mananciais() %>% 
+  head() %>% 
+  dplyr::select(data, sistema, volume_porcentagem) %>% 
+  knitr::kable()
+```
+
+
+
+|data       |sistema      | volume_porcentagem|
+|:----------|:------------|------------------:|
+|2021-06-05 |Cantareira   |               47.1|
+|2021-06-05 |Alto Tietê   |               57.4|
+|2021-06-05 |Guarapiranga |               65.6|
+|2021-06-05 |Cotia        |               75.7|
+|2021-06-05 |Rio Grande   |               81.1|
+|2021-06-05 |Rio Claro    |               49.4|
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
