@@ -1,0 +1,18 @@
+---
+description: Página em construção.
+draft: false
+layout: standard
+show_title_as_headline: true
+---
+
+### Publicações e apresentações acadêmicas
+
+Essa página está em construção :) 
+
+Conteúdos anteriores à 2019 ainda não foram adicionados. Além disso, o conteúdo desta página está em inglês.
+
+```{r echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "https://beatriz-milz.shinyapps.io/shinyresume/")
+
+```

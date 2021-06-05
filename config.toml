@@ -143,6 +143,11 @@ enableEmoji = true
     title = "Apresentações"
     url = "/palestras/"
     weight = 5
+  [[menu.header]]
+    name = "Pesquisa"
+    title = "Pesquisa"
+    url = "/pesquisa/"
+    weight = 6
 # [[menu.header]]
 #   name = "A collection"
 #   title = "A collection"
