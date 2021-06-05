@@ -1,7 +1,7 @@
-baseURL = "/"
+baseURL = "https://beatrizmilz.com/"
 theme = "hugo-apero"
-languageCode = "en"
-title = "Hugo Apéro"
+languageCode = "pt"
+title = "Beatriz Milz"
 author = "Beatriz Milz"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -28,9 +28,9 @@ enableEmoji = true
     style = "github"
 
 [params]
-  orgName = "RStudio"
-  orgLocal = "Anywhere"
-  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  orgName = "Beatriz Milz"
+  orgLocal = "São Paulo - Brasil"
+  description = "Página pessoal de Beatriz Milz."
   favicon = "/img/favicon.ico"
   logo = "/img/circle-cropped.png"
   mainSections = ["blog", "project", "talk"]
