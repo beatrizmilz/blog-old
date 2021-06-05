@@ -18,11 +18,14 @@ Imports:
     dplyr,
     emo (>= 0.0.0.9000),
     metathis,
+    pdftables,
     postcards,
     readr,
     rmarkdown,
+    tweetrmd (>= 0.0.9),
     xaringanExtra (>= 0.4.0)
 Remotes:  
     rstudio/distill,
     gadenbuie/xaringanExtra,
-    hadley/emo
+    hadley/emo,
+    gadenbuie/tweetrmd

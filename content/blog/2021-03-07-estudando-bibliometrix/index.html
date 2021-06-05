@@ -1,0 +1,425 @@
+---
+title: "Conhecendo o pacote bibliometrix"
+excerpt: "Primeiras impressões utilizando o pacote `{bibliometrix}`"
+author: "Beatriz Milz"
+date: 2021-03-07
+categories:
+  - Estudo
+  - Pesquisa
+bibliography: packages.bib
+draft: false
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="introdução" class="section level2">
+<h2>Introdução</h2>
+<p>Olá! Eu costumo demorar bastante para escrever cada texto que adiciono neste blog, então consequentemente o blog demora <strong>muito</strong> para receber atualizações.</p>
+<p>Portanto, esse post será um pouco diferente dos posts anteriores! Será mais curtinho e simples, e <strong>não</strong> será um conteúdo completo, assim consigo postar o que é possível neste momento (e quem sabe faço os posts parte 2, 3, 4.. futuramente).</p>
+<p>Dito isso, eu comecei a escrever este post enquanto estudava o pacote <a href="https://bibliometrix.org/"><code>{bibliometrix}</code></a>. Eu estou estudando este pacote para utilizar na minha pesquisa, e provavelmente ainda ficarei estudando por um tempo, já que o mesmo tem muitas possibilidades. Este post servirá de registro do que aprendi até agora, e talvez eu o atualize ao longo do tempo!</p>
+<p>O <a href="https://bibliometrix.org/"><code>{bibliometrix}</code></a> <span class="citation">(<a href="#ref-bibliometrix2017" role="doc-biblioref">Aria and Cuccurullo 2017</a>, <a href="#ref-R-bibliometrix" role="doc-biblioref">2021</a>)</span> é um pacote que oferece ferramentas para realizar análises bibliométricas. Os tutoriais que o pacote oferece são muito interessantes e foi essencial utilizar o pacote com <a href="https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html">este tutorial</a> aberto em outra aba!</p>
+</div>
+<div id="obtendo-as-bases-de-dados" class="section level2">
+<h2>Obtendo as bases de dados</h2>
+<p>Antes de começar a usar o bibliometrix, é necessário obter as bases de dados que serão utilizadas. Neste exemplo, eu testei com dados obtidos nos repositórios <a href="https://www.scopus.com/">Scopus</a> e <a href="http://login.webofknowledge.com/">Web of Science</a>, sendo que o acesso foi feito através do “Acesso CAFe” no <a href="https://www-periodicos-capes-gov-br.ezl.periodicos.capes.gov.br/">Portal de Periódicos da Capes</a>.</p>
+<p>Para testar o pacote (e escrever este post), realizei a busca de artigos com uma <em>query</em> genérica (não é a que eu utilizarei na minha pesquisa), para fins didáticos.</p>
+<p>A busca feita foi: trabalhos que possuíam as palavras “water governance” em seu título.</p>
+<p><em>Querys</em>:</p>
+<ul>
+<li><p>no Scopus: <code>TITLE ( water  AND governance )</code></p></li>
+<li><p>no WOS: <code>TÍTULO: (water governance)</code></p></li>
+</ul>
+<blockquote>
+<p>O WOS só permitiu exportar até 500 registros por vez. Foi necessário exportar 3 arquivos diferentes, porém isso dependerá da quantidade de resultados que teremos nas pesquisas!</p>
+</blockquote>
+<blockquote>
+<p><a href="https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html">Este tutorial</a> apresenta informações sobre como exportar os dados das plataformas.</p>
+</blockquote>
+</div>
+<div id="biblioshiny" class="section level2">
+<h2>Biblioshiny</h2>
+<p>O pacote possui um app em Shiny, que possibilita fazer as análises com o bibliometrix em uma interface <em>point and click</em>, sem que seja necessário escrever códigos! Essa é uma possibilidade muito legal para pessoas que querem usar a ferramenta mas não programam em R. Para usar o biblioshiny, é necessário:</p>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li><a href="https://livro.curso-r.com/1-1-instalacao-do-r.html">Instalar o R</a>;</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li><a href="https://livro.curso-r.com/1-2-instalacao-do-rstudio.html">Instalar o RStudio</a>;</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: decimal">
+<li>Instalar o pacote bibiliometrix com a seguinte função:</li>
+</ol>
+<p><code>install.packages("bibliometrix")</code></p></li>
+<li><ol start="4" style="list-style-type: decimal">
+<li>Abrir a interface utilizando a função:</li>
+</ol>
+<p><code>bibliometrix::biblioshiny()</code></p></li>
+</ul>
+<!-- seria legal ter um gif aqui, mostrando -->
+</div>
+<div id="utilizando-o-bibliometrix-no-r" class="section level2">
+<h2>Utilizando o bibliometrix no R</h2>
+<p>Eu achei muito legal a possibilidade de utilizar uma interface em Shiny, porém prefiro realizar as análises com R, assim tenho o código disponível para que seja reproduzido futuramente.</p>
+<p>Primeiramente vamos carregar alguns pacotes utilizados:</p>
+<pre class="r"><code>library(ggplot2)
+library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(bibliometrix)</code></pre>
+<pre><code>## To cite bibliometrix in publications, please use:
+## 
+## Aria, M. &amp; Cuccurullo, C. (2017) bibliometrix: An R-tool for comprehensive science mapping analysis, 
+##                                  Journal of Informetrics, 11(4), pp 959-975, Elsevier.
+##                         
+## 
+## https://www.bibliometrix.org
+## 
+##                         
+## For information and bug reports:
+##                         - Send an email to info@bibliometrix.org   
+##                         - Write a post on https://github.com/massimoaria/bibliometrix/issues
+##                         
+## Help us to keep Bibliometrix free to download and use by contributing with a small donation to support our research team (https://bibliometrix.org/donate.html)
+## 
+##                         
+## To start with the shiny web-interface, please digit:
+## biblioshiny()</code></pre>
+<div id="importar-os-dados" class="section level3">
+<h3>Importar os dados</h3>
+<p>A próxima etapa é importar os dados. A função para importar é <code>bibliometrix::convert2df()</code>, sendo importante informar como argumento: o caminho até o arquivo a ser aberto, a fonte dos dados (<code>dbsource</code>) e o formato do arquivo.</p>
+<p>Os dados exportados do scopus são mais simples, pois é apenas um arquivo:</p>
+<pre class="r"><code>dados_scopus &lt;- bibliometrix::convert2df(&quot;dados/scopus.bib&quot;,
+                                         dbsource = &quot;scopus&quot;,
+                                         format = &quot;bibtex&quot;)</code></pre>
+<pre><code>## 
+## Converting your scopus collection into a bibliographic dataframe
+## 
+## Done!
+## 
+## 
+## Generating affiliation field tag AU_UN from C1:  Done!</code></pre>
+<p>Para importar os dados do Wos, utilizei os passos abaixo:</p>
+<pre class="r"><code># listar arquivos que preciso abrir:
+# todos eles começam com o padrão &quot;savedrecs_&quot;
+arquivos_wos &lt;-
+  list.files(&quot;dados&quot;, pattern = &quot;^savedrecs_&quot;, full.names = TRUE)
+
+arquivos_wos</code></pre>
+<pre><code>## [1] &quot;dados/savedrecs_1_500.bib&quot;      &quot;dados/savedrecs_1000_final.bib&quot;
+## [3] &quot;dados/savedrecs_501_1000.bib&quot;</code></pre>
+<pre class="r"><code># Utilizando esse vetor de caminhos até os arquivos, 
+# utilizamos a função convert2df para importá-los
+
+dados_wos &lt;- bibliometrix::convert2df(arquivos_wos,
+                                      dbsource = &quot;wos&quot;,
+                                      format = &quot;bibtex&quot;)</code></pre>
+<pre><code>## 
+## Converting your wos collection into a bibliographic dataframe
+## 
+## Done!
+## 
+## 
+## Generating affiliation field tag AU_UN from C1:  Done!</code></pre>
+<p>Depois de importar os dados das diferentes bases, é necesário unir todos em um única base, que será utilizada para fazer as análises. A função <code>bibliometrix::mergeDbSources()</code> realiza essa tarefa, e utilizando o argumento <code>remove.duplicated = TRUE</code>, os documentos duplicados são removidos.</p>
+<pre class="r"><code>dados_brutos &lt;-
+  bibliometrix::mergeDbSources(dados_scopus, dados_wos,
+                               remove.duplicated = TRUE) </code></pre>
+<pre><code>## 
+##  1015 duplicated documents have been removed</code></pre>
+<pre class="r"><code># Obrigada beholdersaltitante!</code></pre>
+<p>Os dados exportados retornaram diferentes tipos de trabalhos, como editoriais, erratas, etc. Neste caso, quero apenas que ARTIGOS sejam mantidos na análise:</p>
+<pre class="r"><code># Quais tipos de trabalhos existem na base?
+dplyr::distinct(dados_brutos, DT) %&gt;% 
+  knitr::kable(row.names = FALSE)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">DT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ARTICLE</td>
+</tr>
+<tr class="even">
+<td align="left">ERRATUM</td>
+</tr>
+<tr class="odd">
+<td align="left">REVIEW</td>
+</tr>
+<tr class="even">
+<td align="left">CONFERENCE PAPER</td>
+</tr>
+<tr class="odd">
+<td align="left">NOTE</td>
+</tr>
+<tr class="even">
+<td align="left">DATA PAPER</td>
+</tr>
+<tr class="odd">
+<td align="left">EDITORIAL</td>
+</tr>
+<tr class="even">
+<td align="left">BOOK CHAPTER</td>
+</tr>
+<tr class="odd">
+<td align="left">BOOK</td>
+</tr>
+<tr class="even">
+<td align="left">ARTICLE IN PRESS</td>
+</tr>
+<tr class="odd">
+<td align="left">SHORT SURVEY</td>
+</tr>
+<tr class="even">
+<td align="left">ARTICLE; EARLY ACCESS</td>
+</tr>
+<tr class="odd">
+<td align="left">PROCEEDINGS PAPER</td>
+</tr>
+<tr class="even">
+<td align="left">ARTICLE; PROCEEDINGS PAPER</td>
+</tr>
+<tr class="odd">
+<td align="left">EDITORIAL MATERIAL</td>
+</tr>
+<tr class="even">
+<td align="left">BOOK REVIEW</td>
+</tr>
+<tr class="odd">
+<td align="left">CORRECTION</td>
+</tr>
+<tr class="even">
+<td align="left">MEETING ABSTRACT</td>
+</tr>
+<tr class="odd">
+<td align="left">NEWS ITEM</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code># Filtraremos apenas os artigos NA BASE
+
+  dados &lt;- dados_brutos %&gt;%
+  filter(DT == &quot;ARTICLE&quot;)</code></pre>
+<p>Pronto! Agora temos a base preparada. O significado do nome das colunas pode ser conferido na documentação do pacote.</p>
+<pre class="r"><code>dplyr::glimpse(dados)</code></pre>
+<pre><code>## Rows: 1,176
+## Columns: 32
+## $ AU       &lt;chr&gt; &quot;JOHNS C;VANNIJNATTEN D&quot;, &quot;SAN J M C;ARMARIO B J&quot;, &quot;TANTOH H;…
+## $ DE       &lt;chr&gt; &quot;ADAPTIVE GOVERNANCE;  COMPLEXITY THEORY;  ENVIRONMENTAL POLI…
+## $ ID       &lt;chr&gt; NA, NA, &quot;DECISION MAKING;  WATER MANAGEMENT;  WATER SUPPLY; C…
+## $ C1       &lt;chr&gt; &quot;RYERSON UNIVERSITY, CANADA; WILFRID LAURIER UNIVERSITY, CANA…
+## $ CR       &lt;chr&gt; &quot;AKAMANI, K., ADAPTIVE WATER GOVERNANCE: INTEGRATING THE HUMA…
+## $ JI       &lt;chr&gt; &quot;ENVIRON. SUSTAIN. IND.&quot;, &quot;J. ARID ENVIRON.&quot;, &quot;J. CLEAN. PROD…
+## $ AB       &lt;chr&gt; &quot;FOR THE PAST FEW DECADES, JURISDICTIONS HAVE BEEN USING ECOS…
+## $ PA       &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+## $ AR       &lt;chr&gt; &quot;100102&quot;, &quot;104403&quot;, &quot;125804&quot;, &quot;143867&quot;, NA, NA, NA, NA, &quot;1011…
+## $ RP       &lt;chr&gt; &quot;JOHNS, C.; RYERSON UNIVERSITYCANADA; EMAIL: CJOHNS@RYERSON.C…
+## $ DT       &lt;chr&gt; &quot;ARTICLE&quot;, &quot;ARTICLE&quot;, &quot;ARTICLE&quot;, &quot;ARTICLE&quot;, &quot;ARTICLE&quot;, &quot;ARTIC…
+## $ DI       &lt;chr&gt; &quot;10.1016/j.indic.2021.100102&quot;, &quot;10.1016/j.jaridenv.2020.10440…
+## $ BE       &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+## $ FU       &lt;chr&gt; &quot;SOCIAL SCIENCES AND HUMANITIES RESEARCH COUNCIL OF CANADASOC…
+## $ BN       &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+## $ SN       &lt;chr&gt; &quot;26659727&quot;, &quot;01401963&quot;, &quot;09596526&quot;, &quot;00489697&quot;, &quot;10153802&quot;, &quot;…
+## $ SO       &lt;chr&gt; &quot;ENVIRONMENTAL AND SUSTAINABILITY INDICATORS&quot;, &quot;JOURNAL OF AR…
+## $ LA       &lt;chr&gt; &quot;ENGLISH&quot;, &quot;ENGLISH&quot;, &quot;ENGLISH&quot;, &quot;ENGLISH&quot;, &quot;ENGLISH&quot;, &quot;ENGLI…
+## $ TC       &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 5…
+## $ PN       &lt;chr&gt; NA, NA, NA, NA, &quot;1&quot;, &quot;2&quot;, &quot;1&quot;, &quot;1&quot;, NA, NA, &quot;2&quot;, NA, &quot;2&quot;, &quot;1&quot;…
+## $ PP       &lt;chr&gt; NA, NA, NA, NA, &quot;111-129&quot;, &quot;434-444&quot;, &quot;1-35&quot;, &quot;177-180&quot;, NA, …
+## $ PU       &lt;chr&gt; &quot;ELSEVIER B.V.&quot;, &quot;ACADEMIC PRESS&quot;, &quot;ELSEVIER LTD&quot;, &quot;ELSEVIER …
+## $ DB       &lt;chr&gt; &quot;ISI&quot;, &quot;ISI&quot;, &quot;ISI&quot;, &quot;ISI&quot;, &quot;ISI&quot;, &quot;ISI&quot;, &quot;ISI&quot;, &quot;ISI&quot;, &quot;ISI&quot;…
+## $ TI       &lt;chr&gt; &quot;USING INDICATORS TO ASSESS TRANSBOUNDARY WATER GOVERNANCE IN…
+## $ VL       &lt;chr&gt; &quot;10&quot;, &quot;187&quot;, &quot;290&quot;, &quot;761&quot;, &quot;32&quot;, &quot;17&quot;, &quot;23&quot;, &quot;70&quot;, &quot;68&quot;, &quot;101…
+## $ PY       &lt;dbl&gt; 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2021, 2…
+## $ FX       &lt;chr&gt; &quot;THIS RESEARCH WAS FUNDED BY THE SOCIAL SCIENCES AND HUMANITI…
+## $ AU_UN    &lt;chr&gt; &quot;RYERSON UNIVERSITY;WILFRID LAURIER UNIVERSITY&quot;, &quot;UNIVERSIDAD…
+## $ AU1_UN   &lt;chr&gt; &quot;NOTREPORTED;RYERSON UNIVERSITYCANADA;NOTREPORTED&quot;, &quot;NOTREPOR…
+## $ AU_UN_NR &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+## $ SR_FULL  &lt;chr&gt; &quot;JOHNS C, 2021, ENVIRON SUSTAIN IND&quot;, &quot;SAN JUAN MESONADA C, 2…
+## $ SR       &lt;chr&gt; &quot;JOHNS C, 2021, ENVIRON SUSTAIN IND&quot;, &quot;SAN JUAN MESONADA C, 2…</code></pre>
+</div>
+<div id="funções-do-bibliometrix-para-analisar-os-dados" class="section level3">
+<h3>Funções do bibliometrix para analisar os dados</h3>
+<p>O pacote bibliometrix possui uma função chamada <code>bibliometrix::biblioAnalysis()</code>, que fornece uma sumarização dos dados. Não vou apresentar o resultado aqui pois é muito longo e não agrega muito no post, mas é possível ver um exemplo neste <a href="https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html">tutorial</a> do pacote.</p>
+<pre class="r"><code>resumo &lt;- bibliometrix::biblioAnalysis(dados)</code></pre>
+<p>Algo interessante são os gráficos gerados pela função <code>plot()</code> quando oferecemos o resultado da função <code>bibliometrix::biblioAnalysis()</code>. São gerados diversos gráficos padronizados automaticamente:</p>
+<pre class="r"><code>graficos_bibliometrix &lt;- plot(resumo)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" /><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-2.png" width="672" /><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-3.png" width="672" /><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-4.png" width="672" /><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-5.png" width="672" /></p>
+<p>Porém os gráficos são gerados em inglês, e não consegui personalizar os gráficos já gerados. Portanto, acho que um exercício legal é reproduzir as visualizações para que seja possível personalizar o que for necessário (por exemplo, o idioma), e gerar as imagens formatadas para adicionar nos nossos relatórios.</p>
+</div>
+</div>
+<div id="reproduzindo-as-visualizações-com-o-pacote-ggplot2" class="section level2">
+<h2>Reproduzindo as visualizações com o pacote ggplot2</h2>
+<div id="autorases-mais-produtivasos" class="section level3">
+<h3>Autoras(es) mais produtivas(os)</h3>
+<div id="fazendo-com-bibliometrix" class="section level4">
+<h4>Fazendo com bibliometrix</h4>
+<pre class="r"><code>graficos_bibliometrix[1]</code></pre>
+<pre><code>## $MostProdAuthors</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+<div id="reproduzindo-com-ggplot2" class="section level4">
+<h4>Reproduzindo com ggplot2</h4>
+<pre class="r"><code># Primeiro precisamos descobrir qual é o 
+# número máximo de autores em um artigo.
+# Isso será usado depois para separar a coluna
+# de nomes de pessoas autoras.
+numero_max_autores &lt;-
+  stringr::str_split(dados$AU, &quot;;&quot;) %&gt;% 
+  lengths() %&gt;%
+  max()
+
+
+
+dados %&gt;%
+  tidyr::separate(AU,
+                  sep = &quot;;&quot;,
+                  into = glue::glue(&quot;autor_{1:numero_max_autores}&quot;)) %&gt;%
+  tidyr::pivot_longer(
+    cols = glue::glue(&quot;autor_{1:10}&quot;),
+    names_to = &quot;ordem_autor&quot;,
+    values_to = &quot;nome_autor&quot;,
+    values_drop_na = TRUE
+    
+  ) %&gt;%
+  dplyr::group_by(nome_autor) %&gt;%
+  dplyr::count() %&gt;%
+  dplyr::arrange(desc(n)) %&gt;%
+  dplyr::ungroup() %&gt;%
+  dplyr::slice(1:10) %&gt;%
+  ggplot() +
+  geom_col(aes(x = reorder(nome_autor,
+                           desc(n)), y = n), 
+           fill = &#39;#4b689c&#39;) +
+  coord_flip() +
+  theme_bw() +
+  labs(x = &quot;Pessoas autoras&quot;, 
+       y = &quot;Quantidade de artigos&quot;)</code></pre>
+<pre><code>## Warning: Expected 29 pieces. Missing pieces filled with `NA` in 1175 rows [1, 2,
+## 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+</div>
+</div>
+<div id="produção-por-ano" class="section level3">
+<h3>Produção por ano</h3>
+<div id="fazendo-com-bibliometrix-1" class="section level4">
+<h4>Fazendo com bibliometrix</h4>
+<pre class="r"><code>graficos_bibliometrix[3]</code></pre>
+<pre><code>## $AnnualScientProd</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+<div id="reproduzindo-com-ggplot2-1" class="section level4">
+<h4>Reproduzindo com ggplot2</h4>
+<pre class="r"><code># O código abaixo é necessário para preencher 
+# com 0 os anos sem nenhuma publicação.
+anos_vazios &lt;- tibble::tibble(
+  PY = min(dados$PY):max(dados$PY), 
+  n = 0
+) %&gt;% 
+  dplyr::filter(!PY %in% unique(dados$PY))
+
+
+dados %&gt;%
+  dplyr::count(PY) %&gt;% 
+  dplyr::full_join(anos_vazios) %&gt;% 
+  dplyr::arrange(PY) %&gt;% 
+  ggplot(aes(x = PY, y = n)) +
+  geom_line() +
+  geom_area(fill = &#39;#002F80&#39;, alpha = .5) +
+  theme_bw() +
+  labs(x = &quot;Ano&quot;, y = &quot;Quantidade de artigos&quot;)</code></pre>
+<pre><code>## Joining, by = c(&quot;PY&quot;, &quot;n&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+</div>
+</div>
+<div id="países-mais-produtivos" class="section level3">
+<h3>Países mais produtivos</h3>
+<div id="fazendo-com-bibliometrix-2" class="section level4">
+<h4>Fazendo com bibliometrix</h4>
+<pre class="r"><code>graficos_bibliometrix[2]</code></pre>
+<pre><code>## $MostProdCountries</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+<div id="reproduzindo-com-ggplot2-2" class="section level4">
+<h4>Reproduzindo com ggplot2</h4>
+<pre class="r"><code># Não consegui reproduzir os dados pois não encontrei
+# a informação de países na base inicial.
+# Julio Trecenti deu uma dica sobre como obter
+# os dados a partir de um objeto ggplot.
+paises_mais_produtivos &lt;- graficos_bibliometrix[[2]][[&quot;data&quot;]]
+dplyr::glimpse(paises_mais_produtivos)</code></pre>
+<pre><code>## Rows: 20
+## Columns: 3
+## $ Country       &lt;fct&gt; USA, GERMANY, UNITED KINGDOM, NETHERLANDS, AUSTRALIA, CA…
+## $ Freq          &lt;dbl&gt; 4, 4, 0, 2, 0, 2, 4, 2, 3, 2, 111, 83, 81, 76, 74, 70, 4…
+## $ Collaboration &lt;chr&gt; &quot;MCP&quot;, &quot;MCP&quot;, &quot;MCP&quot;, &quot;MCP&quot;, &quot;MCP&quot;, &quot;MCP&quot;, &quot;MCP&quot;, &quot;MCP&quot;, …</code></pre>
+<pre class="r"><code>paises_mais_produtivos %&gt;% 
+  ggplot() + 
+  geom_col(aes(x = Country,
+               y = Freq, fill = Collaboration)) +
+  coord_flip() +
+  theme_bw() +
+  labs(x = &quot;Países&quot;,
+       y = &quot;Quantidade de artigos&quot;,
+       fill = &quot;Colaboração&quot;, 
+       caption = &quot;\n \n MCP: Publicação com pessoas autoras de mais de um país. \n
+       SCP: Publicação com pessoas autoras de apenas um país.&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+</div>
+</div>
+<div id="principais-periódicos" class="section level3">
+<h3>Principais periódicos</h3>
+<div id="fazendo-com-bibliometrix-3" class="section level4">
+<h4>Fazendo com bibliometrix</h4>
+<pre class="r"><code># Não encontrei a função. Mas tem essa opcão no biblioshiny.
+# Pesquisar mais!</code></pre>
+</div>
+<div id="fazendo-com-ggplot2" class="section level4">
+<h4>Fazendo com ggplot2</h4>
+<pre class="r"><code>dados %&gt;%
+  dplyr::mutate(SO = gsub(&#39;(.{1,30})(\\s|$)&#39;, 
+                          &#39;\\1\n&#39;, SO )
+    ) %&gt;%
+      dplyr::count(SO) %&gt;%
+      dplyr::arrange(desc(n)) %&gt;% 
+      dplyr::slice(1:10) %&gt;% 
+      ggplot() +
+      geom_col(aes(x = reorder(SO, n),
+                   y = n),
+               fill = &quot;#4b689c&quot;) +
+      coord_flip() +
+      theme_bw() +
+      labs(x = &quot;Periódico&quot;, 
+           y = &quot;Quantidade de artigos&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+</div>
+</div>
+</div>
+<div id="conclusão" class="section level2">
+<h2>Conclusão</h2>
+<p>Este texto é um trabalho em andamento! Mas até agora percebi que o bibliometrix oferece ferramentas muito interessantes, principalmente para importar as bases de dados de diferentes fontes.</p>
+<p>Pretendo continuar estudando como utilizar este pacote, pois existem muitas possibilidades ainda a serem exploradas.</p>
+</div>
+<div id="agradecimentos" class="section level2">
+<h2>Agradecimentos</h2>
+<ul>
+<li><p><a href="https://omegadatascience.com.br/">Walmes Zeviani</a> por disponibilizar o vídeo do treinamento oferecido pelo <a href="http://www.leg.ufpr.br/doku.php">LEG UFPR</a> e ministrado pela Angélica Tortola Ribeiro (UTFPR e PPGMNE), sobre análise de referências bibliográficas com apoio do pacote Bibliometrix.</p></li>
+<li><p>Eu comecei a fazer estes estudos (e escrever este post) durante uma transmissão no meu canal na <a href="https://www.twitch.tv/beamilz">Twitch</a>. Foi muito legal e algumas pessoas participantes me deram dicas sobre o pacote e me ajudaram neste percurso! Obrigada para quem participou e para quem deu dicas!</p></li>
+<li><p>Edit: Agradeço ao <a href="https://twitter.com/jtrecenti">Julio Trecenti</a> pela dica de como obter os dados utilizados para criar um ggplot.</p></li>
+</ul>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-bibliometrix2017" class="csl-entry">
+Aria, Massimo, and Corrado Cuccurullo. 2017. <span>“Bibliometrix: An r-Tool for Comprehensive Science Mapping Analysis.”</span> <em>Journal of Informetrics</em> 11 (4): 959–75. <a href="https://doi.org/10.1016/j.joi.2017.08.007">https://doi.org/10.1016/j.joi.2017.08.007</a>.
+</div>
+<div id="ref-R-bibliometrix" class="csl-entry">
+———. 2021. <em>Bibliometrix: Comprehensive Science Mapping Analysis</em>. <a href="https://CRAN.R-project.org/package=bibliometrix">https://CRAN.R-project.org/package=bibliometrix</a>.
+</div>
+</div>
+</div>

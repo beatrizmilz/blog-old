@@ -1,0 +1,38 @@
+---
+title: "Comunidade The Carpentries"
+author:
+  - name: Beatriz Milz 
+    url: https://beatrizmilz.com
+    affiliation: IEE/USP
+date: "Atualizado em `r Sys.Date()`"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center")
+```
+
+Boas vindas!
+Nesta página reúno informações, em português, sobre a comunidade The Carpentries.
+
+- [Post: The Carpentries: Como fazer o treinamento de instrutora?](https://beatrizmilz.com/posts/2020-02-22-the-carpentries-como-fazer-o-treinamento-de-instrutora/)
+
+
+- Apresentação Python Brasil 2020: 
+
+  - Ensino de programação: Como fazer parte da comunidade global The Carpentries? - com Mariana Dias Guilardi e Beatriz Milz
+
+  - Slides:
+
+```{r echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "https://mariguilardi.github.io/Python-Brasil-2020-The-Carpentries/index.html",
+  ratio = "16:9"
+)
+
+```
+
+  - Video: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jaM88MGaJQM?start=1082" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
