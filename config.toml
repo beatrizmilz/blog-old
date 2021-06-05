@@ -139,8 +139,8 @@ enableEmoji = true
     url = "/project/"
     weight = 4
   [[menu.header]]
-    name = "Palestras"
-    title = "Palestras"
+    name = "Apresentações"
+    title = "Apresentações"
     url = "/palestras/"
     weight = 5
 # [[menu.header]]

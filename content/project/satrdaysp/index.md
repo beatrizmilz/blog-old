@@ -2,7 +2,7 @@
 title: "Evento SatRday São Paulo"
 subtitle: "Co-organizadora do evento SatRday SP 2019"
 excerpt: "Co-organizadora do evento SatRday SP 2019"
-weight: 20
+weight: 21
 author: "Comunidade de R em SP :)"
 draft: false
 categories:

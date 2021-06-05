@@ -2,7 +2,7 @@
 title: "Evento LatinR"
 subtitle: "Equipe do comitê organizador da LatinR 2019, 2020 e 2021 - Equipe de redes sociais."
 excerpt: "Equipe do comitê organizador da LatinR 2019, 2020 e 2021 - Equipe de redes sociais."
-weight: 21
+weight: 23
 author: "LatinR"
 draft: false
 categories:
