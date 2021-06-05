@@ -4,14 +4,19 @@ author: "Beatriz Milz"
 #role: ""
 avatar_shape: rounded # circle, square, rounded, leave blank to exclude
 show_social_links: true # specify social accounts in site config
-# link_list_label: "Interesses" # bookmarks, elsewhere, etc.
-# link_list:
-# - name: Paris
-#   url: https://en.wikipedia.org/wiki/Paris
-# - name: Pastries
-#   url: https://en.wikipedia.org/wiki/Pastry
-# - name: People
-#   url: https://en.wikipedia.org/wiki/People
+link_list_label: "Atualmente:"  # bookmarks, elsewhere, etc.
+link_list:
+  - name: "Lendo 📚: Ensinando a transgredir:  a educação como prática da liberdade - bell hooks"
+    url: https://g.co/kgs/x47uoD
+  - name: "Assistindo 📺: Naruto Shippuden "
+    url: https://g.co/kgs/rnM3x7
+  - name: "Praticando: Yoga 🧘‍♀️"
+    url: https://resilireyoga.com.br/ 
+  - name: "Estudando idiomas 📗: Espanhol️"
+    url: http://www.cavcidiomas.com.br/
+
+
+
 ---
 
 ** index doesn't contain a body, just front matter above.

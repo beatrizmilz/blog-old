@@ -17,6 +17,7 @@ Imports:
     distill (>= 1.2.4),
     dplyr,
     emo (>= 0.0.0.9000),
+    ermoji (>= 0.2.0),
     metathis,
     pdftables,
     postcards,
@@ -28,4 +29,5 @@ Remotes:
     rstudio/distill,
     gadenbuie/xaringanExtra,
     hadley/emo,
-    gadenbuie/tweetrmd
+    gadenbuie/tweetrmd,
+    gadenbuie/ermoji
