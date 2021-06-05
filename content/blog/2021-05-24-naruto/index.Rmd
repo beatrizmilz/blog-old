@@ -10,6 +10,9 @@ categories: ["tutoriais", "web scraping", "faxina", "purrr", "rvest"]
 knitr::opts_chunk$set(echo = TRUE, cache = TRUE, message = FALSE, warning = FALSE)
 ```
 
+
+Leia o post no blog da Curso-R: [acesse aqui!](https://blog.curso-r.com/posts/2021-05-24-naruto/)
+
 Alguns animes tem muitos *fillers*, que são episódios que não se baseiam na história original, e não agregam na história principal. Muitas vezes parece uma **encheção de linguiça** mesmo, contendo diversos episódios em sequência que não contribuem com a história que estamos acompanhando.
 
 Naruto é um caso onde existem muuuitos fillers! Então eu pulo esses episódios sem dó, usando a [Lista de episódios de Naruto Shippuden](https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Naruto_Shippuden) disponível no Wikipédia.
