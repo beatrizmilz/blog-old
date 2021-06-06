@@ -109,7 +109,10 @@ enableEmoji = true
       icon      = "lattes" # icon name without the 'fa-'
       icon_pack = "ai"
       url       = "http://lattes.cnpq.br/5150665880581477"
-
+  [[params.social]]
+      icon      = "google-scholar" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://scholar.google.com.br/citations?user=yOnBaMUAAAAJ&hl=pt-BR&oi=sra"
 
 [taxonomies]
   category = "categories"
