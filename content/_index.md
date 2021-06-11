@@ -2,7 +2,7 @@
 action_label: Leia mais &rarr;
 action_link: /about
 action_type: text
-description:  "Meu nome é Bea e eu sou Doutoranda em Ciência Ambiental na Universidade de São Paulo.  A maioria do conteúdo desse site é sobre usos da linguagem de programação `R`. Aqui você encontra [textos](/blog/), [apresentações](/talk/), [projetos](/project/) e [outros conteúdos](/miscelanea/) sobre `R`. <br><br> **Palestras recentes:** <br> Palestra *Coleta de dados automatizada e integração contínua utilizando GitHub Actions: Exemplos com o Pacote Mananciais*, no [V SER - 10/06/2021 às 16h00](http://ser.uff.br/programacao/). A palestra foi transmitida no [canal do Youtube do evento](https://youtu.be/tMemGsZbEe0?t=7052)."
+description:  "Meu nome é Bea e eu sou Doutoranda em Ciência Ambiental na Universidade de São Paulo.  A maioria do conteúdo desse site é sobre usos da linguagem de programação `R`. Aqui você encontra [textos](/blog/), [apresentações](/talk/), [projetos](/project/) e [outros conteúdos](/miscelanea/) sobre `R`. <br><br> **Palestras recentes:** <br> [*Coleta de dados automatizada e integração contínua utilizando GitHub Actions: Exemplos com o Pacote Mananciais*](https://beatrizmilz.com/talk/2021-ser-uff/)"
 image_left: true
 images:
 - img/circle-cropped.png
