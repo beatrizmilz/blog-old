@@ -6,10 +6,12 @@ avatar_shape: rounded # circle, square, rounded, leave blank to exclude
 show_social_links: true # specify social accounts in site config
 link_list_label: "Atualmente:"  # bookmarks, elsewhere, etc.
 link_list:
-  - name: "Lendo 📚: Ensinando a transgredir:  a educação como prática da liberdade - bell hooks"
-    url: https://g.co/kgs/x47uoD
-  - name: "Assistindo 📺: Naruto Shippuden "
-    url: https://g.co/kgs/rnM3x7
+  # - name: "Lendo 📚: Ensinando a transgredir:  a educação como prática da liberdade - bell hooks"
+  #   url: https://g.co/kgs/x47uoD
+  - name: "Lendo 📚: Pedagogia da autonomia - Paulo Freire"
+    url: https://g.co/kgs/6hUxHn
+  # - name: "Assistindo 📺: ?? "
+  #   url: https://g.co/kgs/rnM3x7
   - name: "Praticando: Yoga 🧘‍♀️"
     url: https://resilireyoga.com.br/ 
   - name: "Estudando idiomas 📗: Espanhol️"
