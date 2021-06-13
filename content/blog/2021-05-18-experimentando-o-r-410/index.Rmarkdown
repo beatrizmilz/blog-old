@@ -87,44 +87,34 @@ Exemplo do livro:
 x <- c(1, 2, 3, 4)
 ```
 
+Clique abaixo nos diferentes "Panels" para verificar a diferença no código!
 
-::::: {.panelset}
-
-::: {.panel}
-
-## Sem pipe  {.sem-pipe}
+{{< panelset class="exemplo1" >}}
+{{< panel name="Sem pipe">}}
+### Sem pipe
 ```{r}
 # Versão original do livro, sem usar o pipe
 sqrt(sum(x))
 ```
-
-
-:::
-  
-  
-::: {.panel}
-
-## Pipe magrittr {.pipe-magrittr}
+{{< /panel >}}
+{{< panel name="Pipe magrittr">}}
+### Pipe magrittr
 ```{r}
 # Versão original do livro, com o pipe do magrittr
 x %>% sum() %>% sqrt()
 ```
-
-
-:::
-  
-::: {.panel}
-
-## Versão adaptada com pipe do R base {.pipe-nativo}
+{{< /panel >}}
+{{< panel name="Versão adaptada com pipe do R base" >}}
+### Versão adaptada com pipe do R base
 ```{r}
 # Versão usando o pipe do R base
 x |> sum() |> sqrt()
 ```
+{{< /panel >}}
+{{< /panelset >}}
 
-:::
-  
 
-:::::
+
 
 Foi tranquilo!
 
@@ -140,11 +130,12 @@ Exemplo do livro:
 > Queremos que o dataset seja recebido pelo segundo argumento (data=) da função "lm".
 
 
-::::: {.panelset}
 
-::: {.panel}
+Clique abaixo nos diferentes "Panels" para verificar a diferença no código!
 
-## Versão original do livro {.pipe-magrittr}
+{{< panelset class="exemplo1" >}}
+{{< panel name="Pipe magrittr">}}
+### Pipe magrittr
 ```{r}
 # Versão original do livro usando o pipe do magrittr
 airquality %>%
@@ -152,13 +143,9 @@ airquality %>%
   lm(Ozone ~ Wind + Temp + Solar.R, data = .) %>%
   summary()
 ```
-
-
-:::
-  
-::: {.panel}
-
-## Versão adaptada com pipe do R base {.pipe-nativo}
+{{< /panel >}}
+{{< panel name="Versão adaptada com pipe do R base" >}}
+### Versão adaptada com pipe do R base
 ```{r}
 # Versão usando o pipe do R base + funções anônimas
 airquality |>
@@ -166,10 +153,10 @@ airquality |>
   {\(x) lm(formula = Ozone ~ Wind + Temp + Solar.R, data = x)}() |>
   summary()
 ```
+{{< /panel >}}
+{{< /panelset >}}
 
-:::
-  
-:::::
+
 
 ## Conclusão
 

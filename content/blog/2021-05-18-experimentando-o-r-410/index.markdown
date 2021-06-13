@@ -84,12 +84,11 @@ Exemplo do livro:
 x <- c(1, 2, 3, 4)
 ```
 
+Clique abaixo nos diferentes "Panels" para verificar a diferença no código!
 
-::::: {.panelset}
-
-::: {.panel}
-
-## Sem pipe  {.sem-pipe}
+{{< panelset class="exemplo1" >}}
+{{< panel name="Sem pipe">}}
+### Sem pipe
 
 ```r
 # Versão original do livro, sem usar o pipe
@@ -99,14 +98,9 @@ sqrt(sum(x))
 ```
 ## [1] 3.162278
 ```
-
-
-:::
-  
-  
-::: {.panel}
-
-## Pipe magrittr {.pipe-magrittr}
+{{< /panel >}}
+{{< panel name="Pipe magrittr">}}
+### Pipe magrittr
 
 ```r
 # Versão original do livro, com o pipe do magrittr
@@ -116,13 +110,9 @@ x %>% sum() %>% sqrt()
 ```
 ## [1] 3.162278
 ```
-
-
-:::
-  
-::: {.panel}
-
-## Versão adaptada com pipe do R base {.pipe-nativo}
+{{< /panel >}}
+{{< panel name="Versão adaptada com pipe do R base" >}}
+### Versão adaptada com pipe do R base
 
 ```r
 # Versão usando o pipe do R base
@@ -132,11 +122,11 @@ x |> sum() |> sqrt()
 ```
 ## [1] 3.162278
 ```
+{{< /panel >}}
+{{< /panelset >}}
 
-:::
-  
 
-:::::
+
 
 Foi tranquilo!
 
@@ -152,11 +142,12 @@ Exemplo do livro:
 > Queremos que o dataset seja recebido pelo segundo argumento (data=) da função "lm".
 
 
-::::: {.panelset}
 
-::: {.panel}
+Clique abaixo nos diferentes "Panels" para verificar a diferença no código!
 
-## Versão original do livro {.pipe-magrittr}
+{{< panelset class="exemplo1" >}}
+{{< panel name="Pipe magrittr">}}
+### Pipe magrittr
 
 ```r
 # Versão original do livro usando o pipe do magrittr
@@ -188,13 +179,9 @@ airquality %>%
 ## Multiple R-squared:  0.6059,	Adjusted R-squared:  0.5948 
 ## F-statistic: 54.83 on 3 and 107 DF,  p-value: < 2.2e-16
 ```
-
-
-:::
-  
-::: {.panel}
-
-## Versão adaptada com pipe do R base {.pipe-nativo}
+{{< /panel >}}
+{{< panel name="Versão adaptada com pipe do R base" >}}
+### Versão adaptada com pipe do R base
 
 ```r
 # Versão usando o pipe do R base + funções anônimas
@@ -226,10 +213,10 @@ airquality |>
 ## Multiple R-squared:  0.6059,	Adjusted R-squared:  0.5948 
 ## F-statistic: 54.83 on 3 and 107 DF,  p-value: < 2.2e-16
 ```
+{{< /panel >}}
+{{< /panelset >}}
 
-:::
-  
-:::::
+
 
 ## Conclusão
 
@@ -254,6 +241,6 @@ sessioninfo::session_info()$platform
 ##  collate  en_US.UTF-8                                
 ##  ctype    en_US.UTF-8                                
 ##  tz       America/Sao_Paulo                          
-##  date     2021-06-05
+##  date     2021-06-13
 ```
 
