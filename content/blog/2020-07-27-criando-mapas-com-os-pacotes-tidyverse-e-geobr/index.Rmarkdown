@@ -2,16 +2,12 @@
 title: "Criando mapas com os pacotes tidyverse e geobr"
 excerpt: "Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"
 author: "Beatriz Milz"
-date: 2020-07-27
-categories:
-  - Portugues 
-  - Reprodutibilidade
+date: '2020-07-27'
+categories: ["Portugues", "Reprodutibilidade", "Mapas"]
 bibliography: packages.bib
-draft: true
 ---
 
 ```{r setup, include=FALSE}
-
 knitr::opts_chunk$set(
 	echo = TRUE,
 	fig.align = "center",
@@ -38,7 +34,6 @@ Neste post, irei focar em mostrar como abri os dados, e utilizando principalment
 ## Pacotes necessários
 
 ```{r message=FALSE, warning=FALSE}
-library(tidyverse)
 library(ggplot2)
 library(dplyr)
 library(magrittr)
@@ -52,7 +47,6 @@ library(ggspatial)
 library(tibble)
 library(knitr)
 library(sf)
-
 ```
 
 
