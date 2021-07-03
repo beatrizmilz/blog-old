@@ -14,6 +14,8 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
+    abjutils (>= 0.3.1.9000),
+    blogdown,
     distill (>= 1.2.4),
     dplyr,
     emo (>= 0.0.0.9000),
@@ -25,9 +27,10 @@ Imports:
     rmarkdown,
     tweetrmd (>= 0.0.9),
     xaringanExtra (>= 0.4.0)
-Remotes:  
+Remotes: 
     rstudio/distill,
     gadenbuie/xaringanExtra,
     hadley/emo,
     gadenbuie/tweetrmd,
-    gadenbuie/ermoji
+    gadenbuie/ermoji,
+    abjur/abjutils
