@@ -12,8 +12,6 @@ link_list:
     url: https://g.co/kgs/6hUxHn
   # - name: "Assistindo 📺: ?? "
   #   url: https://g.co/kgs/rnM3x7
-  - name: "Praticando: Yoga 🧘‍♀️"
-    url: https://resilireyoga.com.br/ 
   - name: "Estudando idiomas 📗: Espanhol️"
     url: http://www.cavcidiomas.com.br/
 
