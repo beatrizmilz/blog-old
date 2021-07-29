@@ -21,7 +21,7 @@ title: Conhecendo o Hugo Apéro
 excerpt: 
 ---
 
-## Links importantes:
+## Links úteis:
 
 
 - [Pacote blogdown](https://pkgs.rstudio.com/blogdown/)
@@ -38,6 +38,11 @@ excerpt:
 
 - [Saiba mais sobre Markdown](https://livro.curso-r.com/9-1-markdown.html)
 
+- [Outros temas para hugo](https://themes.gohugo.io/)
+
+- [Mais temas de hugo - themefisher](https://github.com/themefisher)
+
+- [Video Curso-R: Making of de um blog do zero com blogdown](https://www.youtube.com/watch?v=PjUcR2cZTW8&t=2s)
 
 ## Exemplos de sites e blogs com blogdown:
 
@@ -46,3 +51,7 @@ excerpt:
 - [Site da Curso-R](https://curso-r.com/)
 
 - [Blog da Curso-R](https://blog.curso-r.com/)
+
+
+
+
