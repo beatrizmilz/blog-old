@@ -2,7 +2,7 @@
 action_label: Leia mais &rarr;
 action_link: /about
 action_type: text
-description:  "Meu nome é Bea e eu sou Doutoranda em Ciência Ambiental na Universidade de São Paulo.  A maioria do conteúdo desse site é sobre usos da linguagem de programação `R`. Aqui você encontra [textos](/blog/), [apresentações](/talk/), [projetos](/project/) e [outros conteúdos](/miscelanea/) sobre `R`. <br><br> **Próximas:** <br> [*Live no canal GeoCast - Conhecendo o Hugo Apéro: Fazendo blogs com blogdown e R*](https://youtu.be/4Ixl2RjZEYI)"
+description:  "Meu nome é Bea e eu sou Doutoranda em Ciência Ambiental na Universidade de São Paulo.  A maioria do conteúdo desse site é sobre usos da linguagem de programação `R`. Aqui você encontra [textos](/blog/), [apresentações](/talk/), [projetos](/project/) e [outros conteúdos](/miscelanea/) sobre `R`. <br><br> **Próximas:** <br> [*30/07/2021 - Live no canal GeoCast - Conhecendo o Hugo Apéro: Fazendo blogs com blogdown e R*](https://youtu.be/4Ixl2RjZEYI)"
 image_left: true
 images:
 - img/circle-cropped.png
