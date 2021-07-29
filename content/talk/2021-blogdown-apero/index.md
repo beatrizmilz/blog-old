@@ -13,7 +13,7 @@ links:
 - icon: youtube
   icon_pack: fab
   name: Video
-  url: https://www.youtube.com/c/geocastbrasil/featured
+  url: https://youtu.be/4Ixl2RjZEYI
 location: Online
 show_post_time: false
 subtitle: Fazendo blogs com blogdown e R
