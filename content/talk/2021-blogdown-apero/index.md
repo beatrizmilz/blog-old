@@ -45,6 +45,8 @@ excerpt:
 
 -   [Video Curso-R: Making of de um blog do zero com blogdown](https://www.youtube.com/watch?v=PjUcR2cZTW8&t=2s)
 
+- Icones: [Font Awesome](https://fontawesome.com/) e [Academic Icons](https://jpswalsh.github.io/academicons/)
+
 ## Exemplos de sites e blogs com blogdown:
 
 ### Com Apéro:
@@ -60,6 +62,8 @@ excerpt:
 
 ### Com outros temas:
 
+-   [Blog do Mauricio Vancine](https://mauriciovancine.github.io/pt/)
+
 -   [III SICAM](https://sicam.com.br/)
 
 -   [Site da Curso-R](https://curso-r.com/)
@@ -69,6 +73,8 @@ excerpt:
 
 
 ## Código usado
+
+- Antes disso: tenha o [R e o RStudio instalados](https://livro.curso-r.com/1-instalacao.html), tenha uma conta no [GitHub](https://github.com/), configure o GitHub com o RStudio (veja [essa apresentação](https://curso-r.github.io/main-pacotes/slides/index.html#65)), crie uma conta no [Netlify](https://app.netlify.com/).
 
 -   Baseado [neste post da Alison Hill](https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/) e na [documentação do Hugo Apéro](https://hugo-apero-docs.netlify.app/start/)
 
@@ -83,6 +89,8 @@ remotes::install_github('rstudio/blogdown')
 # 1.2) Caso não tenha o Hugo instalado, instale com a função:
 blogdown::install_hugo()
 
+# Caso tenha dificuldades em instalar o Hugo, veja esse site: https://gohugo.io/getting-started/installing/
+
 # 2) Criar um projeto no RStudio. Como primeiro argumento, 
 # informar o caminho até o projeto, e o nome do projeto
 usethis::create_project("~/Desktop/live-blogdown")
@@ -96,7 +104,7 @@ blogdown::serve_site()
 # 5) Criar um post:
 blogdown::new_post(title = "Olá mundo!", 
                      ext = '.Rmarkdown', 
-                     subdir = "post")
+                     subdir = "blog")
                      
 # 6) Iniciar o controle de versão neste projeto                     
 usethis::use_git()   
@@ -129,3 +137,4 @@ Depois disso, é necessário conectar o repositório com o [netlify](https://app
 - `nome_do_projeto/content/blog` - Posts do blog. Cada post deve ter uma pasta, com pelo menos 2 arquivos: `index` (com o conteúdo) - pode ser com extensão `.md`, `.Rmd` ou `.Rmarkdown`, porém **recomend** usar `.Rmarkdown`; e uma imagem que deve ter o nome `featured` (pode usar diferentes extensões, como `.jpg`/`.png`.
 
 - `nome_do_projeto/content/about` - conteúdo sobre a pessoa que está escrevendo, dividido entre header, main e sidebar.
+
