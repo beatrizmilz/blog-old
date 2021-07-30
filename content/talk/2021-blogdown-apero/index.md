@@ -45,11 +45,24 @@ excerpt:
 
 ## Exemplos de sites e blogs com blogdown:
 
+### Com Apéro:
+
 -   Esse blog :)
+
+-   [Blog da Alison Hill](https://alison.rbind.io/)
+
+-   [Núcleo de Direito, Tecnologia e Jurimetria](https://ndtj.com.br/)
+
+-   [Todos esses sites...](https://hugo-apero-docs.netlify.app/project/)
+
+
+### Com outros temas:
 
 -   [Site da Curso-R](https://curso-r.com/)
 
 -   [Blog da Curso-R](https://blog.curso-r.com/)
+
+
 
 ## Código usado
 
