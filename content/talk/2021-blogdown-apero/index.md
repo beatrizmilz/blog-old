@@ -25,6 +25,8 @@ excerpt:
 
 -   [Pacote blogdown](https://pkgs.rstudio.com/blogdown/)
 
+-   [Pacote distill](https://rstudio.github.io/distill/)
+
 -   [Livro sobre o pacote blogdown](https://bookdown.org/yihui/blogdown/)
 
 -   [Documentação do Hugo Apéro](https://hugo-apero.netlify.app/)
