@@ -58,6 +58,8 @@ excerpt:
 
 ### Com outros temas:
 
+-   [III SICAM](https://sicam.com.br/)
+
 -   [Site da Curso-R](https://curso-r.com/)
 
 -   [Blog da Curso-R](https://blog.curso-r.com/)
