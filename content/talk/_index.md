@@ -11,7 +11,21 @@ cascade:
     text_link_label: Veja palestras recentes
     text_link_url: /talk/
 description: |
-  Aqui estão listadas apresentações de palestras, workshops e conferências. Desde 2018, já realizei mais de 20 apresentações relacionadas à R, portanto, essa lista está incompleta <br> **Veja palestras anteriores [aqui](/palestras/)**.
+  Aqui estão listadas apresentações de palestras, workshops e conferências. Desde 2018, já realizei mais de 20 apresentações relacionadas à R, portanto, essa lista está incompleta <br> **Veja palestras anteriores [aqui](/palestras/)**. <br>
+  Próximas apresentações/participações: <br>
+  ### 2021
+  - **Agosto**:
+    - 13/08/2021 - [Live no canal PET Estatística. Tema: conversa sobre o pacote {learnr}](https://www.youtube.com/c/PETEstat%C3%ADsticaUFPR/featured)
+    - 29/08/2021 - [Domingo de Dados - ABRAJI. Tema: Jornalismo com R](https://eventos.congresse.me/ddadosabraji#)
+  - **Setembro**:
+    - 11/09/2021 - [R-Ladies Goiânia. Tema: Introdução ao Git e GitHub no RStudio](https://github.com/R-LadiesGYN/README)
+    - 18/09/2021 - [R-Ladies Goiânia. Tema: Introdução ao GitHub Actions](https://github.com/R-LadiesGYN/README), com [Julio Trecenti](https://www.instagram.com/faxineirodedados/)
+  - **Outubro**: Em breve! <!--esperando resultado: sicam-->
+  - **Novembro**:  <!--esperando resultado: LatinR-->
+    - 26/11/2021 - [5ª Semana de Iniciação Científica da ENCE. Tema: Introdução à utilização do Git e GitHub no RStudio.](https://ence.ibge.gov.br/index.php/portal-eventos)
+  - **Dezembro**: Em breve! 
+  ### 2022
+  - **Fevereiro**: Curso de verão IME/USP sobre RMarkdown. Mais informações em breve. 
 
 layout: list
 show_author_byline: true
@@ -25,7 +39,7 @@ sidebar:
   text_link_label: Subscribe via RSS
   text_link_url: /talk/index.xml
   title: Apresentações
-title: Apresentações recentes
+title: Apresentações
 ---
 
 ** No content below YAML for the talk _index. This file provides front matter for the listing page layout and sidebar content. It is also a branch bundle, and all settings under `cascade` provide front matter for all pages inside talk/. You may still override any of these by changing them in a page's front matter.**
