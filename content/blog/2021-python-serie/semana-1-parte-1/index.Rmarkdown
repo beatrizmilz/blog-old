@@ -1,10 +1,10 @@
 ---
 title: "Estudando Python - Semana 1, Parte 1"
 excerpt: "Este posts é uma forma de documentar alguns aprendizados na minha trajetória estudando Python. Estou fazendo o curso de [Python para inovação cívica](https://escoladedados.org/courses/python-para-inovacao-civica/), oferecido pela [Escola de Dados](https://escoladedados.org/)."
-draft: TRUE
+draft: FALSE
 author: "Beatriz Milz"
 date: '2021-08-07'
-categories: ["Portugues", "Python", "Estudo"]
+categories: ["Portugues", "Python", "Estudo", "Reticulate"]
 ---
 
 ```{r setup, include=FALSE}
