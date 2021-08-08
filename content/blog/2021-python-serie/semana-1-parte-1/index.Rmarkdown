@@ -56,7 +56,7 @@ py_version()
 Vamos lá!
 
 ```{r echo=FALSE, fig.cap="Imagem do pacote reticulate, que mostra o logo do R em azul e cinza, junto com uma cobra python com carinha feliz, representando a união das duas linguagens."}
-knitr::include_graphics("reticulated_python-featured.png")
+knitr::include_graphics("reticulated_python-featured-hex.png")
 ```
 
 > Se você se interessa em saber mais como programar em Python diretamente do RStudio, escreve aqui nos comentários :) Assim dá pra saber se tem demanda por um post futuramente sobre como tem sido essa experiência. 

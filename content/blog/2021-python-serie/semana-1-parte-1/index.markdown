@@ -48,7 +48,7 @@ py_version()
 Vamos lá!
 
 <div class="figure" style="text-align: center">
-<img src="reticulated_python-featured.png" alt="Imagem do pacote reticulate, que mostra o logo do R em azul e cinza, junto com uma cobra python com carinha feliz, representando a união das duas linguagens." width="370" />
+<img src="reticulated_python-featured-hex.png" alt="Imagem do pacote reticulate, que mostra o logo do R em azul e cinza, junto com uma cobra python com carinha feliz, representando a união das duas linguagens." width="370" />
 <p class="caption">Figure 1: Imagem do pacote reticulate, que mostra o logo do R em azul e cinza, junto com uma cobra python com carinha feliz, representando a união das duas linguagens.</p>
 </div>
 
