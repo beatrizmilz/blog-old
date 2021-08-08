@@ -1,0 +1,159 @@
+---
+title: "Estudando Python - Semana 1, Parte 3"
+excerpt: "Este posts é uma forma de documentar alguns aprendizados na minha trajetória estudando Python. Estou fazendo o curso de [Python para inovação cívica](https://escoladedados.org/courses/python-para-inovacao-civica/), oferecido pela [Escola de Dados](https://escoladedados.org/)."
+draft: FALSE
+author: "Beatriz Milz"
+date: '2021-08-09'
+categories: ["Portugues", "Python", "Estudo", "Reticulate"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  cache = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center",
+  comment = NA,
+  python = reticulate::eng_python
+)
+
+library(magrittr)
+```
+
+## Introdução
+
+Olá!
+
+Esse post faz parte de uma série de posts, que tem como objetivo documentar alguns aprendizados na minha trajetória estudando Python. Estou fazendo o curso de [Python para inovação cívica](https://escoladedados.org/courses/python-para-inovacao-civica/), oferecido pela [Escola de Dados](https://escoladedados.org/). Eu já programo em R, portanto muitas das anotações serão feitas comparando como é feito em R e em Python, assim acho que fica mais fácil para eu fazer as conexões conceituais e lembrar mais fácil depois.
+
+Esse é o terceiro post, então caso não tenha lido os posts anteriores, [acesse esse link](https://beatrizmilz.com/blog/2021-python-serie/)!
+
+## Estruturas de controle condicionais
+
+As estruturas de controle condicionais (que conhecemos como if/else) funcionam da mesma forma nas duas linguagens, porém a sintaxe é um pouco diferente.
+
+Vamos pensar em um exemplo onde queremos criar uma estrutura onde, dada uma nota que alguém tirou em alguma disciplina, é possível saber se a pessoa foi aprovada, se deve fazer a prova de recuperação, ou se foi reprovada. Escrevi primeiro a estrutura em R, onde eu conheço mais, e depois escrevi seguindo a sintaxe em Python:
+
+```{r}
+# Em R...
+
+# considerando a nota que a pessoa tirou
+nota <- 4.5
+
+# se a nota for maior ou igual a 5, ela será aprovada
+if(nota >= 5) {
+  print("Aprovação")
+
+  # se a nota for maior ou igual a 5, mas menor que 5,
+  # ela deverá fazer a prova de recuperação
+} else if (nota >= 3 & nota < 5) {
+  print("Exame de recuperação")
+  
+  # se nenhum dos casos anteriores for verdadeiro,
+  # ou seja, a nota for menor que 3,
+  # a pessoa será reprovada
+} else {
+  print("Reprovação")
+}
+```
+
+
+
+```{python}
+# Em Python..
+
+# considerando a nota que a pessoa tirou
+nota = 4.5
+
+# se a nota for maior ou igual a 5, ela será aprovada
+if nota >= 5:
+  print('Aprovação')
+  
+  # se a nota for maior ou igual a 5, mas menor que 5,
+  # ela deverá fazer a prova de recuperação  
+elif nota >= 3 and nota < 5:
+  print('Exame de recuperação')
+  
+  # se nenhum dos casos anteriores for verdadeiro,
+  # ou seja, a nota for menor que 3,
+  # a pessoa será reprovada
+else:
+  print('Reprovação')
+
+```
+
+Diferenças importantes: 
+
+  - Em R usamos `else if`, já em Python devemos usar `elif`.
+  
+  - Em Python não é necessário delimitar com as chaves como fazemos em R. Em vez disso, a indentação é importante e será usada para definir a estrutura. A indentação será mais abordada no próximo tópico.
+
+## Indentação
+
+- Explicar o que é a indentacao
+
+Em R é boa prática, mas se o código não estiver indentado corretamente ele ainda funcionará. Em Python, a indentação correta é obrigatória!
+
+- pep 8 https://www.python.org/dev/peps/pep-0008/ - Guia de estilo para código em python
+
+## Função `range()` em Python
+
+```{python}
+# Em Python...
+
+# range(inicio, fim, passo)
+
+list(range(9))
+
+list(range(4, 9, 2))
+```
+
+
+```{r}
+# Em R...
+seq(9)
+seq(4,9,2)
+```
+
+
+
+### Estrutura de repetição
+
+for 
+
+o for aceita else (????)
+
+
+## estrutura de dados
+
+- uma lista de dicionárioss
+
+## Conclusão
+
+Esse post ficou imenso e eu abordei a comparação de apenas parte do conteúdo da semana 1! Então achei melhor encerrar por aqui e continuar em outro post.
+
+Achei bem legal escrever esse post pois me fez "colocar a mão na massa" e perceber várias das diferenças tratadas aqui!
+
+Espero que esse post seja útil para pessoas que, assim como eu, já programam em R e querem aprender Python.
+
+## Agradecimentos
+
+Agradeço muito à equipe da [Escola de Dados](https://escoladedados.org/courses/python-para-inovacao-civica/), por oferecer esse curso. Além disso, gostaria de agradecer especialmente à instrutora da semana: [Ana Cecília Vieira](https://twitter.com/cecivieira).
+
+## Como interagir?
+
+Atualmente, não está funcionando a opção de comentários. Então se quiser comentar/interagir, recomendo que faça nessa thread, onde estou falando sobre essa série de posts:
+
+<center>
+```{r tweet, echo=FALSE}
+# devtools::install_github("gadenbuie/tweetrmd")
+# devtools::install_github('rstudio/webshot2')
+# tweet <- tweetrmd::tweet_screenshot("https://twitter.com/BeaMilz/status/1424188713974829056?s=20", file = "tweet.png")
+
+library(tweetrmd)
+tweet_embed("https://twitter.com/BeaMilz/status/1424188713974829056?s=20")
+```
+
+</center>
+- [Veja a thread completa neste link!](https://twitter.com/BeaMilz/status/1424188713974829056?s=20)
