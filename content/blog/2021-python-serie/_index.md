@@ -3,7 +3,9 @@ author: Beatriz Milz
 cascade:
   author: Beatriz Milz
   categories:
-  - Relatórios
+  - Python
+  - Estudos
+  - Reticulate
   - R
   layout: single-series
   series: Anotações do curso Python para Inovação Cívica
