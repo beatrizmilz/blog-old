@@ -290,4 +290,20 @@ Espero que esse post seja útil para pessoas que, assim como eu, já programam e
 
 Agradeço muito à equipe da [Escola de Dados](https://escoladedados.org/courses/python-para-inovacao-civica/), por oferecer esse curso. Além disso, gostaria de agradecer especialmente à instrutora da semana: [Ana Cecília Vieira](https://twitter.com/cecivieira). 
 
+## Como interagir?
+
+Atualmente, não está funcionando a opção de comentários. Então se quiser comentar/interagir, recomendo que faça nessa thread, onde estou falando sobre essa série de posts:
+
+<center>
+```{r tweet, echo=FALSE}
+# devtools::install_github("gadenbuie/tweetrmd")
+# devtools::install_github('rstudio/webshot2')
+# tweet <- tweetrmd::tweet_screenshot("https://twitter.com/BeaMilz/status/1424188713974829056?s=20", file = "tweet.png")
+
+library(tweetrmd)
+tweet_embed("https://twitter.com/BeaMilz/status/1424188713974829056?s=20")
+```
+
+</center>
+- [Veja a thread completa neste link!](https://twitter.com/BeaMilz/status/1424188713974829056?s=20)
 
