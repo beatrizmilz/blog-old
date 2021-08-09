@@ -170,7 +170,7 @@ seq(9)
 
     [1] 1 2 3 4 5 6 7 8 9
 
-### Estrutura de repetição
+## Estrutura de repetição
 
 No exemplo que usei para mostrar o `if/else`, era possível verificar se uma pessoa passou ou não na disciplina. Mas em disciplinas na vida real teremos muitas pessoas matriculadas, correto? Se quisermos repetir aquela estrutura para várias pessoas, podemos usar o `for`.
 
