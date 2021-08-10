@@ -11,7 +11,7 @@ cascade:
     text_link_label: Veja apresentações recentes
     text_link_url: /talk/
 description: |
-  Aqui estão listadas apresentações de palestras, workshops e conferências. Desde 2018, já realizei mais de 20 apresentações relacionadas à R, portanto, essa lista está incompleta <br> **Veja palestras anteriores [aqui](/palestras/)**. <br>
+  Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. <br>
   Próximas apresentações/participações: <br>
   ### 2021
   - **Agosto**:
