@@ -90,7 +90,11 @@ atribuindo_variavel_em_python
 
 ## Tipos básicos de dados
 
-Os tipos básicos de dados nas duas linguagens também são similares, apesar de até então não visto um tipo de dado básico similar aos `factors` em R no Python. Para descobrir a classe de uma variável, em R usamos a função `class()`, e em Python usamos a função `type()`:
+Os tipos básicos de dados nas duas linguagens também são similares, apesar de até então não visto um tipo de dado básico similar aos `factors` (usado para dados categóricos) em R no Python.
+
+> Editando: O [Belisário](https://twitter.com/belisards), da [Escola de Dados](https://escoladedados.org/), me contou que no [pandas](https://pandas.pydata.org/) existe um tipo de dado categórico, chamado `Categoricals`. Deixo aqui o [link para a documentação](https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html), que ele enviou! Muito obrigada, Belisário!
+
+Para descobrir a classe de uma variável, em R usamos a função `class()`, e em Python usamos a função `type()`:
 
 ``` r
 # Em R:
