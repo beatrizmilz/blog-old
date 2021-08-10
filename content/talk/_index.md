@@ -8,14 +8,14 @@ cascade:
   show_post_time: true
   sidebar:
     show_sidebar_adunit: false
-    text_link_label: Veja palestras recentes
+    text_link_label: Veja apresentações recentes
     text_link_url: /talk/
 description: |
   Aqui estão listadas apresentações de palestras, workshops e conferências. Desde 2018, já realizei mais de 20 apresentações relacionadas à R, portanto, essa lista está incompleta <br> **Veja palestras anteriores [aqui](/palestras/)**. <br>
   Próximas apresentações/participações: <br>
   ### 2021
   - **Agosto**:
-    - 13/08/2021 - [Live no canal PET Estatística. Tema: conversa sobre o pacote {learnr}](https://www.youtube.com/c/PETEstat%C3%ADsticaUFPR/featured)
+    - 13/08/2021 - [Live no canal PET Estatística. Tema: Criando tutoriais interativos com R: conhecendo o pacote learnr](https://youtu.be/fTW5ASpn7TE)
     - 29/08/2021 - [Domingo de Dados - ABRAJI. Tema: Jornalismo com R](https://eventos.congresse.me/ddadosabraji#)
   - **Setembro**:
     - 11/09/2021 - [R-Ladies Goiânia. Tema: Introdução ao Git e GitHub no RStudio](https://github.com/R-LadiesGYN/README)
@@ -26,7 +26,8 @@ description: |
     - 26/11/2021 - [5ª Semana de Iniciação Científica da ENCE. Tema: Introdução à utilização do Git e GitHub no RStudio.](https://ence.ibge.gov.br/index.php/portal-eventos)
   - **Dezembro**: Em breve! 
   ### 2022
-  - **Fevereiro**: Curso de verão IME/USP sobre RMarkdown. Mais informações em breve. 
+  - **Fevereiro**:
+    - Curso de verão IME/USP - 14 à 18  de fevereiro (2ª à 6ª), 9h-12h. Tema: Relatórios reprodutíveis com R. 
 
 layout: list
 show_author_byline: true
