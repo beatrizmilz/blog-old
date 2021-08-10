@@ -24,3 +24,18 @@ subtitle: Usando o R para comunicar seus resultados
 title: R Markdown
 excerpt: 
 ---
+
+
+Boas vindas!
+O público-alvo deste material são pessoas que utilizam o R para análise de dados, e gostariam de gerar relatórios dinâmicos com diferentes tipos de outputs.
+
+É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
+
+
+- Arquivos de exemplo mostrados na live: 
+
+  - Exemplo de R Markdown com parâmetros: [`.Rmd`](https://github.com/beatrizmilz/slidesR/blob/master/docs/rmarkdown/exemplo_parametros/rmd_params_exemplo.Rmd) e [`.html`](https://beatrizmilz.github.io/slidesR/rmarkdown/exemplo_parametros/rmd_params_exemplo.html)     
+  - Exemplo de código para gerar vários relatórios com parâmetros: [.R](https://beatrizmilz.github.io/slidesR/rmarkdown/exemplo_parametros/render.R)
+  - Arquivos gerados no exemplo: Sistema [Cantareira](https://beatrizmilz.github.io/slidesR/rmarkdown/exemplo_parametros/Cantareira.html), [Guarapiranga](https://beatrizmilz.github.io/slidesR/rmarkdown/exemplo_parametros/Guarapiranga.html)  e [Rio Grande](https://beatrizmilz.github.io/slidesR/rmarkdown/exemplo_parametros/Rio Grande.html)
+
+

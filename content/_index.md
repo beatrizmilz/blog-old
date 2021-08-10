@@ -2,7 +2,7 @@
 action_label: Leia mais &rarr;
 action_link: /about
 action_type: text
-description:  "Meu nome é Bea e eu sou Doutoranda em Ciência Ambiental na Universidade de São Paulo.  A maioria do conteúdo desse site é sobre usos da linguagem de programação `R`. Aqui você encontra [textos](/blog/), [apresentações](/talk/), [projetos](/project/) e [outros conteúdos](/miscelanea/) sobre `R`. <br><br> **Próximas:** <br> [13/08/2021 - Live no canal PET Estatística UFPR -  Criando tutoriais interativos com R: conhecendo o pacote learnr](https://youtu.be/fTW5ASpn7TE)"
+description:  "Meu nome é Bea e eu sou Doutoranda em Ciência Ambiental na Universidade de São Paulo.  A maioria do conteúdo desse site é sobre usos da linguagem de programação `R`. Aqui você encontra [textos](/blog/), [apresentações](/talk/) e [projetos](/project/) sobre `R`. <br><br> **Próximas:** <br> [13/08/2021 - Live no canal PET Estatística UFPR -  Criando tutoriais interativos com R: conhecendo o pacote learnr](https://youtu.be/fTW5ASpn7TE)"
 image_left: true
 images:
 - img/circle-cropped.png
