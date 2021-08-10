@@ -1,7 +1,7 @@
 ---
 title: "Estudando Python - Semana 1, Parte 4"
 excerpt: "Este posts é uma forma de documentar alguns aprendizados na minha trajetória estudando Python. Estou fazendo o curso de [Python para inovação cívica](https://escoladedados.org/courses/python-para-inovacao-civica/), oferecido pela [Escola de Dados](https://escoladedados.org/)."
-draft: FALSE
+draft: TRUE
 author: "Beatriz Milz"
 date: '2021-08-10'
 categories: ["Portugues", "Python", "Estudo", "Reticulate"]
@@ -19,7 +19,6 @@ knitr::opts_chunk$set(
 )
 
 library(magrittr)
-
 ```
 
 ## Introdução
@@ -30,25 +29,27 @@ Esse post faz parte de uma série de posts, que tem como objetivo documentar alg
 
 Esse é o quarto post, então caso não tenha lido os posts anteriores, [acesse esse link](https://beatrizmilz.com/blog/2021-python-serie/)!
 
-## Pacotes 
-### Ambientes virtuais (env)
 
-comparar com o renv.
+## Pacotes 
+
+Em R, podemos instalar pacotes e com isso ter disponível muitas funções que expandem as possibilidades do R base. Em Python também podemos instalar as bibliotecas (li em outros lugares também chamar de módulos ou pacotes), através do [`pip`](https://pypi.org/project/pip/), um instalador de pacotes para Python, que já está disponível nas versões mais recentes do Python ao instalá-lo. Se em R usamos `install.packages("nome_do_pacote")`, em Python podemos usar `pip install nome_do_pacote`.
+
+Referência interessante: [Documentação do Python - Instalando módulos](https://docs.python.org/3/installing/index.html)
+
+### Ambientes virtuais
+
+Em R, quando queremos isolar os pacotes e suas respectivas versões entre os projetos que estamos desenvolvendo, podemos utilizar o pacote  [`{renv}`](https://rstudio.github.io/renv/articles/renv.html) (apesar de não ser tão comum de ser utilizado: eu mesma uso em apenas alguns projetos que desenvolvo, como por exemplo o da minha tese).
+
+Em Python, o uso dos ambientes virtuais parece ser bem mais comum. Eu ainda estou me ambientando com os ambientes virtuais em Python, mas algo que já percebi de diferente entre os ambientes virtuais de Python e o [`{renv}`](https://rstudio.github.io/renv/articles/renv.html) do R é que o {renv} é configurado vinculado ao projeto no RStudio (os `.RProj`); já em Python nós podemos criar os ambientes virtuais no computador e eles não parecem ser vinculados à "projetos" (e )
 
 ```{r}
 library(reticulate)
 reticulate::conda_list()
 ```
 
-
-
-
-
 ### Instalar e carregar pacotes
 
 
-
-O `pip` é o sistema de gestão de pacotes de Python
 
 ```{r}
 # pip install pandas
@@ -86,9 +87,7 @@ Matplotlib
 
 ```{python}
 import pandas as pd
-candidaturas_pe = pd.read_csv('dados/consulta_cand_2020_PE.csv',
-                              sep = ';',
-                              encoding = 'latin_1')
+candidaturas_pe = pd.read_csv('dados/consulta_cand_2020_PE.csv', sep = ';', encoding = 'latin_1')
 #pd.options.display.max_columns = 4
 candidaturas_pe.head()
 candidaturas_pe.shape
@@ -105,6 +104,8 @@ import glob
 
 https://media.giphy.com/media/nJZxhesBFKbCw/giphy.gif
 
+
+https://www.youtube.com/watch?v=X3RbYyHABzo
 
 ## Conclusão
 
