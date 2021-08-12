@@ -13,24 +13,9 @@ df_slides <- "slides.csv" %>%
   dplyr::mutate(data = readr::parse_date(data, format = "%d/%m/%Y"),
                 ano = lubridate::year(data))
 ```
-Olá! 
 
 
-
-Abaixo segue uma lista de links para acessar `r nrow(df_slides)` apresentações feitas sobre R desde 2018. 
-
-```{r echo=FALSE}
-df_slides %>% 
-  dplyr::filter(data <= Sys.Date()) %>% 
-  dplyr::mutate(url = glue::glue("[{nome}]({link})")) %>% 
-  dplyr::select(-ano, -nome, -link) %>% 
-  dplyr::relocate(url, .before = 1) %>% 
-  dplyr::arrange(desc(data)) %>% 
-  knitr::kable(col.names = c("Nome da apresentação", "Idioma", "Data", "Local", "Co-autoria"))
-```
-
-
-Além das apresentações apresentadas na tabela anterior, também contribuí com o desenvolvimento do material e/ou dei aulas nas seguintes apresentações:
+Lista de palestras que contribui com o desenvolvimento do material e/ou dei aulas nas seguintes apresentações:
 
 ```{r}
 "slides_colaborei.csv" %>% 
