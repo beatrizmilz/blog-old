@@ -13,18 +13,26 @@ cascade:
 description: |
   Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. <br>
   Próximas apresentações/participações: <br>
+  
   ### 2021
+  
   - **Agosto**:
-    - 13/08/2021 - [Live no canal PET Estatística. Tema: Criando tutoriais interativos com R: conhecendo o pacote learnr](https://youtu.be/fTW5ASpn7TE)
-    - 29/08/2021 - [Domingo de Dados - ABRAJI. Tema: Jornalismo com R](https://eventos.congresse.me/ddadosabraji#)
+    - 29/08/2021 - [Domingo de Dados - ABRAJI](https://eventos.congresse.me/ddadosabraji#). Tema: Jornalismo com R.
+    
   - **Setembro**:
-    - 11/09/2021 - [R-Ladies Goiânia. Tema: Introdução ao Git e GitHub no RStudio](https://github.com/R-LadiesGYN/README)
-    - 18/09/2021 - [R-Ladies Goiânia. Tema: Introdução ao GitHub Actions](https://github.com/R-LadiesGYN/README), com [Julio Trecenti](https://www.instagram.com/faxineirodedados/)
-  - **Outubro**: Em breve! <!--esperando resultado: sicam-->
-    - 22/10/2021 - [AI Inclusive. Tema: RMarkdown](https://www.ai-inclusive.org/)
+    - 11/09/2021 - [R-Ladies Goiânia.](https://github.com/R-LadiesGYN/README) Tema: Introdução ao Git e GitHub no RStudio.
+    - 18/09/2021 - [R-Ladies Goiânia](https://github.com/R-LadiesGYN/README), com [Julio Trecenti](https://www.instagram.com/faxineirodedados/). Tema: Introdução ao GitHub Actions.
+    
+  - **Outubro**:  <!--esperando resultado: sicam-->
+    - 22/10/2021 - [AI Inclusive](https://www.ai-inclusive.org/). Tema: RMarkdown.
+    
   - **Novembro**:  <!--esperando resultado: LatinR-->
-    - 26/11/2021 - [5ª Semana de Iniciação Científica da ENCE. Tema: Introdução à utilização do Git e GitHub no RStudio.](https://ence.ibge.gov.br/index.php/portal-eventos)
-  - **Dezembro**: Em breve! 
+    - 08/11 e 09/11, 19 às 21h - [SENACAMB - Semana Nacional de Ciências Ambientais](https://linktr.ee/senacamb) - Tema: Introdução ao R para Ciências Ambientais
+    - 26/11/2021 - [5ª Semana de Iniciação Científica da ENCE](https://ence.ibge.gov.br/index.php/portal-eventos). Tema: Introdução à utilização do Git e GitHub no RStudio.
+    
+  - **Dezembro**: 
+    - Em breve! 
+  
   ### 2022
   - **Fevereiro**:
     - Curso de verão IME/USP - 14 à 18  de fevereiro (2ª à 6ª), 9h-12h. Tema: Relatórios reprodutíveis com R. 
