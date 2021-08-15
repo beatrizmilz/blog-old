@@ -237,6 +237,41 @@ head(candidaturas_PE_RN_r)
     #   CD_SITUACAO_CANDIDATURA <dbl>, DS_SITUACAO_CANDIDATURA <chr>,
     #   CD_DETALHE_SITUACAO_CAND <dbl>, DS_DETALHE_SITUACAO_CAND <chr>, …
 
+## Desafio da semana
+
+1.  Quantas pessoas candidatas no estado de Pernambuco seriam mais novas do que você?
+
+``` python
+import pandas as pd # importar o pandas
+
+# importar os dados
+candidaturas_pe = pd.read_csv('dados/consulta_cand_2020_PE.csv', sep = ';', 
+                              encoding = 'latin_1')
+
+
+minha_idade = 28
+qtd_pessoas_mais_novas = sum(candidaturas_pe['NR_IDADE_DATA_POSSE'] < minha_idade)
+
+
+print(f'Eu tenho {minha_idade} anos, e existem {qtd_pessoas_mais_novas} pessoas candidatas no estado \n de Pernambuco que são mais novas que eu!')
+```
+
+    Eu tenho 28 anos, e existem 1356 pessoas candidatas no estado 
+     de Pernambuco que são mais novas que eu!
+
+2.  Quantos porcentos isso representa em relação ao total de pessoas candidatas?
+
+``` python
+total_pessoas_candidatas = candidaturas_pe.shape[0]
+
+porcentagem = qtd_pessoas_mais_novas / total_pessoas_candidatas * 100
+
+print(f'A quantidade de pessoas candidatas mais nova que eu representa {round(porcentagem, 1)}% \n em relação ao total de pessoas candidatas.')
+```
+
+    A quantidade de pessoas candidatas mais nova que eu representa 6.4% 
+     em relação ao total de pessoas candidatas.
+
 E é isso, chegamos ao final da semana 1 :)
 
 ## Agradecimentos
