@@ -11,3 +11,8 @@ blockquote {
 body, li, ul, html{
    line-height: 1.5; !important
 }
+
+b, strong{
+    font-weight: bold; !important
+    background-color: lavender; !important
+}
