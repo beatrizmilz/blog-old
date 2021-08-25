@@ -13,12 +13,14 @@
         {{ .Content }}
       </section>
       <footer class="post-footer">
+
         {{ partial "shared/post-pagination.html" . }}
       </footer>
     </article>
        {{ if .Params.show_comments }}
       {{ partial "shared/comments.html" . }}
     {{ end }}
+            {{ partial "shared/licenca-de-uso.html" . }}
   </section>
 </main>
 
