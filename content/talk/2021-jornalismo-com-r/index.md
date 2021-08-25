@@ -4,6 +4,7 @@ categories:
 - Lives no Youtube
 date: "2021-08-29"
 date_end: "2021-08-29"
+publishDate: "2021-08-20"
 draft: false
 event: 3º Domingo de Dados
 event_url: https://eventos.congresse.me/ddadosabraji#
