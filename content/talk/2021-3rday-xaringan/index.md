@@ -15,10 +15,10 @@ links:
   icon_pack: fa
   name: Inscrições
   url: http://rday.leg.ufpr.br/
-# - icon: images
-#   icon_pack: far
-#   name: Slides
-#   url: https://beatrizmilz.github.io/slidesR/xaringan/
+- icon: images
+  icon_pack: far
+  name: Slides
+  url: https://beatrizmilz.github.io/slidesR/xaringan/09-2021-rday.html
 location: Online
 show_post_time: false
 subtitle: Conhecendo o pacote xaringan
