@@ -1,7 +1,7 @@
 ---
 author: Cecília do Lago, Gabriela Caesar, Beatriz Milz
 categories:
-- Lives no Youtube
+- Workshop
 date: "2021-08-29"
 date_end: "2021-08-29"
 publishDate: "2021-08-20"
