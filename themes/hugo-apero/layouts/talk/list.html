@@ -6,7 +6,7 @@
     {{ if .Params.show_author_byline }}<p class="f7 measure lh-copy tc center i">{{ if .Params.author }}Escrito por {{ .Params.author }}{{ end }}</p>{{ end }}
   </section>
   <section class="blog-content mw7 center">
-               {{ partial "shared/licenca-de-uso.html" . }}
+
     {{ $caller := . }}
     {{ $paginator := .Paginate ((where .RegularPages "Type" .Section).GroupByDate "2006") }}
     {{ range $paginator.PageGroups}}
@@ -20,6 +20,7 @@
     </section>
     {{ end }}
     {{ partial "shared/list-pagination.html" . }}
+    {{ partial "shared/licenca-de-uso.html" . }}
   </section>
 </main>
 {{ end }}
