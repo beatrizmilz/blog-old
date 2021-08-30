@@ -1,0 +1,17 @@
+dificuldades usando python no rstudio
+
+- o help nao funciona, rstudio aborta com python- FUNCIONA COM A VERSAO MAIS NOVA DO RETICULATE
+
+- lidar com os env tem sido dificil, nao ta rolando acessar outros
+
+- print de bases nao fica bonito no rstudio como fica com codigos em r
+
+- ainda nao tem suporte pra arquivos .ipynb - TEM UMA  FUNCAO PARA CONVERTER
+
+- no rmarkdown: as vezes os objetos nao sao passados direito entre chunks ao compilar - INSTALAR VERSAO DO GITHUB
+devtools::install_github("rstudio/reticulate")
+
+
+# coisas legais
+
+- ter a aba enviromnet, os objetos estão lá e podemos usar o view! (da pra ver mas nao da pra ordenar)

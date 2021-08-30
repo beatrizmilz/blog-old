@@ -1,0 +1,284 @@
+---
+title: "Estudando Python - Semana 2, Parte 1"
+excerpt: "Este posts é uma forma de documentar alguns aprendizados na minha trajetória estudando Python. Estou fazendo o curso de [Python para inovação cívica](https://escoladedados.org/courses/python-para-inovacao-civica/), oferecido pela [Escola de Dados](https://escoladedados.org/). Imagem de [Towards Data Science](https://towardsdatascience.com/tidying-up-pandas-4572bfa38776)."
+draft: true
+author: "Beatriz Milz"
+date: '2021-08-16'
+categories: ["Portugues", "Python", "Estudo", "Reticulate"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  cache = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center",
+  comment = NA,
+  python = reticulate::eng_python
+)
+```
+
+```{r eval=FALSE, include=FALSE}
+reticulate::conda_install("r-reticulate", "pandas-profiling")
+reticulate::conda_install("r-reticulate", "unidecode")
+```
+
+
+## Introdução
+
+```{r eval=FALSE, include=TRUE}
+readr::write_csv2(dados::dados_starwars, "dados/starwars.csv") 
+```
+
+
+```{python}
+import pandas as pd
+
+starwars = pd.read_csv('dados/starwars.csv', sep = ';', encoding = 'utf-8')
+
+starwars.describe()
+```
+- Quais colunas temos na base?
+```{python}
+starwars.columns
+```
+
+
+
+## Filtro
+parece muito a sintaxe do R base!
+
+Filtrando apenas linhas em que a espécie seja Humano:
+
+```{python}
+personagens_humanos = starwars[starwars['especie'] == 'Humano'] 
+```
+
+## relatório sobre o dataset 
+
+```{python eval=FALSE, include=TRUE}
+from pandas_profiling import ProfileReport
+
+profile = ProfileReport(starwars, title='relatorio-starwars')
+profile.to_file(output_file = 'relatorio_starwars.html')
+```
+
+## medidas de tendencia central
+
+```{python}
+starwars['altura'].mode()
+
+starwars['altura'].mean()
+
+starwars['altura'].median()
+```
+
+## medidas de dispersao
+
+```{python}
+starwars['altura'].var()
+starwars['altura'].std()
+```
+
+```{r}
+library(magrittr)
+dados::dados_starwars %>% 
+  dplyr::summarise(minimo = min(altura, na.rm = TRUE),
+                   maximo = max(altura, na.rm = TRUE),
+                   media = mean(altura, na.rm = TRUE),
+                   mediana = median(altura, na.rm = TRUE),
+                   variancia = var(altura, na.rm = TRUE),
+                   desviopadrao = sd(altura, na.rm = TRUE))
+```
+
+
+## valores faltantes
+
+em R: NA
+
+em python: None
+
+
+substituir algum valor por NA:
+
+```{python}
+import pandas as pd
+df_candidatos_pe = pd.read_csv('dados/consulta_cand_2020_PE.csv', sep = ';', encoding = 'latin_1')
+
+df_candidatos_pe[df_candidatos_pe['DS_SITUACAO_CANDIDATO_PLEITO'] == '#NULO#']
+
+df_candidatos_pe['DS_SITUACAO_CANDIDATO_PLEITO'] = df_candidatos_pe.loc[:, 'DS_SITUACAO_CANDIDATO_PLEITO'].replace({'#NULO#': None})
+
+
+df_candidatos_pe[df_candidatos_pe['DS_SITUACAO_CANDIDATO_PLEITO'] == '#NULO#']
+
+```
+
+## correlacao
+
+- pearson (ou linear) expressa a correlacao linear entre duas variaveis quantitativas
+- matriz de correlacao
+
+- spearman - expressa a correlacao entre duas variaveis quantitativas, que nao possuam necessariamente a mesma taxa de mudança.
+indica grau de correlacao, mas nao indica que é na mesma taxa
+
+
+
+## operacoes basicas com dados
+
+
+
+operadores dentro do panda é diferente! muito cuidado aqui.
+
+
+```{r echo=FALSE}
+tabela_operadores_logicos <- tibble::tribble(
+   ~"Descrição", ~"R", ~"Python", ~"Pandas (Python)", ~"atencao",
+  "E", "&", "and", "&", FALSE,
+  "Ou", "|", "or", "|", FALSE,
+  "Negação", "!", "not", "~", TRUE
+
+) 
+
+library(reactable)
+reactable(
+  tabela_operadores_logicos[, 1:4],
+  rowStyle = function(index) {
+    if (tabela_operadores_logicos[index, "atencao"] == TRUE) {
+      list(fontWeight = "bold", background = "rgba(0, 0, 0, 0.03)")
+    }
+  }
+)
+```
+
+
+- selecionar uma coluna: dataframe['titulo_coluna']
+
+- selecionar várias colunas: novo_df = dataframe['lista_coluna_desejadas']
+
+- filtro: selecionar linhas: novo_df = dataframe[expressao_condicional]
+
+- selecionar linhas e colunas: novo_df = dataframe.loc[expressao_condicional, 'lista_colunas_desejadas']
+
+- parece R base. mostrar comparando pandas, r base, dplyr 
+
+```{python}
+import pandas as pd
+starwars = pd.read_csv('dados/starwars.csv', sep = ';', encoding = 'utf-8')
+
+# selecionar apenas uma coluna
+starwars['nome']
+
+
+# selecionar algumas colunas
+starwars[['altura', 'massa']]
+
+
+# filtrar com 1 condicao
+starwars[starwars['planeta_natal'] == 'Tatooine']
+
+# filtrar com mais condicoes # AQUI TEM OUTRA DIFERENCA! PRECISAMOS COLOCAR
+# PARENTESES!
+
+# E
+starwars[(starwars['planeta_natal'] == 'Tatooine') & (starwars['especie'] == 'Humano')]
+
+starwars[(starwars['planeta_natal'] == 'Tatooine') & (starwars['especie'] == 'Humano') & (starwars['cor_do_cabelo'] != 'Loiro')]
+
+
+# OU 
+starwars[(starwars['planeta_natal'] == 'Tatooine') | (starwars['especie'] == 'Humano')]
+
+
+
+# e o loc?
+
+starwars.loc[(starwars['planeta_natal'] == 'Tatooine'), ['nome', 'planeta_natal', 'especie']]
+
+# não ficou claro pra mim o copy() - perguntei no chat!
+
+```
+
+## filter e sort_values
+
+```{python}
+# é chamado de filter mas trabalha em colunas, meu deus aguas escuras cuidado com isso
+starwars.filter(like='cor_', axis = 1)
+```
+
+```{python}
+starwars.sort_values(by = 'altura', ascending = False)
+```
+
+
+## operacoes com dados
+
+```{python}
+starwars['altura_em_metros'] = starwars['altura']/100
+```
+
+## apply
+
+```{python}
+import pandas as pd
+starwars = pd.read_csv('dados/starwars.csv', sep = ';', encoding = 'utf-8')
+
+
+from unidecode import unidecode
+starwars['nome_sem_acentos'] = starwars['nome'].apply(unidecode)
+starwars['nome_sem_acentos']
+
+```
+
+## Gráficos!
+
+```{python}
+from matplotlib import pyplot as plt
+```
+
+### boxplot
+
+```{python}
+starwars.boxplot(column=['altura'])
+```
+
+### gráfico de barras
+
+```{python}
+#plt.bar(x = altura, y = massa)
+```
+
+## operacoes com dados agrupados
+
+
+```{python}
+import pandas as pd
+starwars = pd.read_csv('dados/starwars.csv', sep = ';', encoding = 'utf-8')
+
+starwars.groupby('cor_do_cabelo').count()
+```
+
+
+## copy 
+
+O subset (df_vereadores[cols...]) retorna uma referência ao data frame original. Modificações no subset refletirão no data frame original. É o conceito de deep vs shallow copy. O copy() por padrão é "deep" (copy(deep=True)).
+
+www.geeksforgeeks.org
+Difference Between Shallow copy VS Deep copy in Pandas Dataframes - GeeksforGeeks
+
+
+
+
+
+## extra
+
+post da carol https://carolineattilio.medium.com/piririm-piririm-piririm-ainda-existe-orelh%C3%A3o-em-curitiba-8bb4d6bd67e
+
+sugestao do junior: https://br.linkedin.com/in/juniorssz/
+
+```{python}
+from unidecode import unidecode
+unidecode('São Paulo')
+```
+

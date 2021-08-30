@@ -1,0 +1,179 @@
+---
+title: "Estudando Python - Semana 2, Desafio"
+excerpt: "Este posts é uma forma de documentar alguns aprendizados na minha trajetória estudando Python. Estou fazendo o curso de [Python para inovação cívica](https://escoladedados.org/courses/python-para-inovacao-civica/), oferecido pela [Escola de Dados](https://escoladedados.org/). Imagem de [Towards Data Science](https://towardsdatascience.com/tidying-up-pandas-4572bfa38776)."
+draft: true
+author: "Beatriz Milz"
+date: '2021-08-29'
+categories: ["Portugues", "Python", "Estudo", "Reticulate"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  cache = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center",
+  comment = NA,
+  python = reticulate::eng_python
+)
+```
+
+
+# Limpeza de dados e estatística descritiva
+
+Neste desafio, iremos revisar alguns conceitos vistos nas aulas e ver algumas novidades. Os dados originais são do [repositório de dados eleitorais do Tribunal Superior Eleitoral](https://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais-1). 
+
+O CSV disponibilizado é formado pela conjunção de algumas tabelas do arquivo [orgao_partidario.zip](https://cdn.tse.jus.br/estatistica/sead/odsele/orgao_partidario/orgao_partidario.zip), localizado no menu Partidos > Órgão Partidário.
+
+Preencha as lacunas abaixo para completar o desafio.
+
+# Importe os pacotes necessários
+
+```{python}
+import pandas as pd
+import numpy as np
+```
+
+# Leia o arquivo "receitas_orgaos_partidarios_2020_NORDESTE.csv" usando o Pandas
+
+Na aula `1.10 - Outliers e valores faltantes`, vimos como utilizar o método `replace` para substituir valores em certos colunas do nosso dataframe e trocar o texto (string) `#NULO#` pela representação padrão do Pandas para valores nulos.
+
+Aqui, vamos utilizar um outro método, onde definimos quais strings serão considerados valores nulos já na importação do arquivo.
+
+Edite as células abaixo e inclua:
+
+* O nome do arquivo que queremos importar
+* O separador utilizado
+* Insira uma lista no parâmetro `na_values` que contenha o texto a ser ignorado.
+
+Experimente rodar os comandos primeiro sem e depois com o parâmetro `na_values`, então, compare a diferença. Observe, por exemplo, o campo `CD_CNAE_DOADOR`.
+
+```{python}
+df = pd.read_csv('receitas_orgaos_partidarios_2020_NORDESTE.csv',sep=';')
+
+df.info()
+```
+
+```{python}
+df = pd.read_csv('receitas_orgaos_partidarios_2020_NORDESTE.csv', sep=';', na_values='#NULO#')
+
+df.info()
+```
+
+# Filtre apenas os registros que sejam da prestação de contas final
+
+```{python}
+# Primeiro vamos ver os valores únicos da coluna TP_PRESTACAO_CONTAS
+
+df['TP_PRESTACAO_CONTAS'].unique()
+```
+
+```{python}
+# O resultado deste comando nos diz que quantas linhas e colunas temos antes do filtro
+df.shape
+```
+
+```{python}
+# Preencha o campo os espaços abaixo com o nome da coluna e o valor desejado para nosso filtro
+df_final = df[df['TP_PRESTACAO_CONTAS'] == 'Final'].copy()
+```
+
+```{python}
+# Rode o comando shape no novo dataframe criado e confira se o número de linhas foi reduzido
+df_final.shape
+```
+
+## Qual foi a maior doação de pessoa física e pessoa jurídica em cada estado?
+
+Vamos usar o método `value_counts` para não só listar cada valor único da coluna `CD_CNAE_DOADOR`, como também mostrar quantos registros temos em cada um.
+
+```{python}
+# Preencha o nome da coluna abaixo
+df_final['CD_CNAE_DOADOR'].value_counts()
+```
+
+```{python}
+# Para ver os resultados em percentuais é fácil! Basta falarmos para o value_counts que queremos os resultados normalizados
+df_final['CD_CNAE_DOADOR'].value_counts(normalize=True)
+```
+
+Se o doador for pessoa jurídica, temos seu respectivo código CNAE. Se for pessoa física, então temos o valor `-1`. 
+
+Qual conclusão podemos tirar a respeito dos comandos acima?
+
+Escreva um **comentário** na célula abaixo com a resposta.
+
+```{python}
+# Mais da metade dos registros são de pessoas físicas.
+```
+
+Agora, vamos duplicar a coluna `CD_CNAE_DOADOR` e deixar esta nova coluna apenas com 2 categorias: física (representada pelo valor -1) ou jurídica (que vamos representar inicialmente com 1).
+
+```{python}
+# Vamos criar uma nova coluna que seja uma cópia exata da coluna CD_CNAE_DOADOR
+df_final['TIPO_DOADOR'] = df_final['CD_CNAE_DOADOR']
+```
+
+## Substituição condicional (conditional replacing)
+
+Agora, vamos usar o método where do pacote NumPy (carinhosamente chamado de np abaixo).
+
+Esta função recebe três parâmetros:
+
+* Uma condição: no nosso caso, queremos que filtrar as coluna do CNAE onde os valores sejam -1
+* Um valor: caso a condição acima seja verdadeira, qual valor deverá ser retornado?
+* Outro valor: se a condição for falsa, então, qual outro valor deverá ser retornado?
+
+```{python}
+df_final['TIPO_DOADOR'] = np.where(df_final['CD_CNAE_DOADOR']== -1, 'fisica', 'juridica')
+
+help(sum)
+```
+
+## Agrupando (group by)
+
+Relembrando a pergunta: Qual foi a maior doação de pessoa física e pessoa jurídica em cada estado?
+
+```{python}
+# Preencha abaixo primeiro uma lista com as 3 colunas que precisamos utilizar para responder à pergunta. E depois o nome das 2 colunas que precisamos agrupar.
+
+df_final[['SG_UF', 'TIPO_DOADOR', 'SQ_RECEITA', 'VR_RECEITA']].groupby(by=['SG_UF', 'TIPO_DOADOR']).max()
+```
+
+```{python}
+# Para repetir o valor da coluna TIPO_DOADOR nas linhas, coloque o parâmetro as_index=False no método groupby do comando acima
+df_final[['SG_UF', 'TIPO_DOADOR', 'SQ_RECEITA', 'VR_RECEITA']].groupby(by=['SG_UF', 'TIPO_DOADOR'], as_index=False).max()
+```
+
+## Qual o total de doações recebidas por partido?
+
+```{python}
+df_final[['VR_RECEITA', 'SG_PARTIDO']].groupby(by='SG_PARTIDO').sum().sort_values(by = 'VR_RECEITA', ascending = False)
+```
+
+## Qual é o top 10?
+
+Crie um novo dataframe com os 10 partidos com mais doações. Você precisa primeiro ordenar os resultados e depois selecionar apenas os 10 primeiros.
+
+
+```{python}
+df_final[['VR_RECEITA', 'SG_PARTIDO']].groupby(by='SG_PARTIDO').sum().sort_values(by='VR_RECEITA',ascending=False).head(10)
+```
+
+# Vamos visualizar os resultados?
+Na aula, nós vimos como usar o matplotlib para gerar gráficos. Agora, vamos descobrir uma nova forma de fazer o mesmo usando um método nativo Pandas. Experimente colocar `.plot(kind='barh')` após a consulta ou dataframe anterior.
+
+Com este comando, podemos produzir um gráfico (plot) do tipo (kind) de barras horizontais (barh).
+
+```{python}
+df_final[['VR_RECEITA', 'SG_PARTIDO']].groupby(by='SG_PARTIDO').sum().sort_values(by='VR_RECEITA',ascending=False).head(10).plot(kind='barh')
+```
+
+## Qual o valor médio das doações por tipo de doador?
+
+Agora é sua vez! A partir dos comandos anteriores, faça uma nova consulta para descobrir a mediana de acordo com o tipo de doador.
+
+```{python}
+df_final[['TIPO_DOADOR', 'VR_RECEITA']].groupby(by=['TIPO_DOADOR'], as_index=False).median()
+```
