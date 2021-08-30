@@ -21,15 +21,13 @@ description: |
     - 11/09/2021 - [R-Ladies Goiânia.](https://github.com/R-LadiesGYN/README) Tema: Introdução ao Git e GitHub no RStudio.
     - 18/09/2021 - [R-Ladies Goiânia](https://github.com/R-LadiesGYN/README), com [Julio Trecenti](https://www.instagram.com/faxineirodedados/). Tema: Introdução ao GitHub Actions.
     
-  - **Outubro**:  <!--esperando resultado: sicam-->
+  - **Outubro**:  <!--esperando resultado: sicam, python brasil-->
     - 22/10/2021 - [AI Inclusive](https://www.ai-inclusive.org/). Tema: RMarkdown.
     
   - **Novembro**:  <!--esperando resultado: LatinR-->
     - 08/11 e 09/11, 19 às 21h - [SENACAMB - Semana Nacional de Ciências Ambientais](https://linktr.ee/senacamb) - Tema: Introdução ao R para Ciências Ambientais
     - 26/11/2021 - [5ª Semana de Iniciação Científica da ENCE](https://ence.ibge.gov.br/index.php/portal-eventos). Tema: Introdução à utilização do Git e GitHub no RStudio.
-    
-  - **Dezembro**: 
-    - Em breve! 
+  
   
   ### 2022
   - **Fevereiro**:
