@@ -8,8 +8,8 @@ link_list_label: "Atualmente:"  # bookmarks, elsewhere, etc.
 link_list:
   # - name: "Lendo 📚: Ensinando a transgredir:  a educação como prática da liberdade - bell hooks"
   #   url: https://g.co/kgs/x47uoD
-  - name: "Lendo 📚: Pedagogia da autonomia - Paulo Freire"
-    url: https://g.co/kgs/6hUxHn
+  - name: "Lendo 📚: Educação Não Violenta - Elisama Santos"
+    url: https://g.co/kgs/vh1JQZ    
   # - name: "Assistindo 📺: ?? "
   #   url: https://g.co/kgs/rnM3x7
   - name: "Estudando idiomas 📗: Espanhol️"
