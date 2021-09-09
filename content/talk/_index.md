@@ -17,8 +17,7 @@ description: |
   ### 2021
 
   - **Setembro**:
-    - 09/09/2021 - [3º R Day - Encontro Nacional de Usuários do R](http://rday.leg.ufpr.br/) -  Tema: Faça apresentações ninja em R: conhecendo o pacote xaringan
-    - 11/09/2021 - [R-Ladies Goiânia.](https://github.com/R-LadiesGYN/README) Tema: Introdução ao Git e GitHub no RStudio.
+    - 11/09/2021 - [R-Ladies Goiânia.](https://www.sympla.com.br/introducao-a-utilizacao-do-git-e-github-no-rstudio__1334230) Tema: Introdução ao Git e GitHub no RStudio.
     - 18/09/2021 - [R-Ladies Goiânia](https://github.com/R-LadiesGYN/README), com [Julio Trecenti](https://www.instagram.com/faxineirodedados/). Tema: Introdução ao GitHub Actions.
     
   - **Outubro**:  <!--esperando resultado: sicam, python brasil-->
