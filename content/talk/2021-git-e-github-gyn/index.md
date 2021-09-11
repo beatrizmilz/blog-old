@@ -10,11 +10,11 @@ event: Meetup R-Ladies Goiânia
 event_url: https://www.rladiesgyn.com/
 featured: true
 layout: single
-# links:
-# - icon: images
-#   icon_pack: far
-#   name: Slide em HTML
-#   url: https://beatrizmilz.github.io/slidesR/git_rstudio/
+links:
+- icon: images
+  icon_pack: far
+  name: Slide em HTML
+  url: https://beatrizmilz.github.io/slidesR/git_rstudio/09-2021-gyn.html
 location: Online
 show_post_time: false
 title: Introdução à utilização do Git e GitHub no RStudio
