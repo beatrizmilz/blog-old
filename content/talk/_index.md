@@ -17,10 +17,9 @@ description: |
   ### 2021
 
   - **Setembro**:
-    - 11/09/2021 - [R-Ladies Goiânia.](https://www.sympla.com.br/introducao-a-utilizacao-do-git-e-github-no-rstudio__1334230) Tema: Introdução ao Git e GitHub no RStudio.
-    - 18/09/2021 - [R-Ladies Goiânia](https://github.com/R-LadiesGYN/README), com [Julio Trecenti](https://www.instagram.com/faxineirodedados/). Tema: Introdução ao GitHub Actions.
+    - 18/09/2021 - [R-Ladies Goiânia](https://www.sympla.com.br/introducao-a-github-actions__1342598), com [Julio Trecenti](https://linktr.ee/j.trecenti). Tema: Introdução ao GitHub Actions.
     
-  - **Outubro**:  <!--esperando resultado: sicam, python brasil-->
+  - **Outubro**:  <!--esperando resultado: python brasil-->
     - 22/10/2021 - [AI Inclusive](https://www.ai-inclusive.org/). Tema: RMarkdown.
     
   - **Novembro**:  <!--esperando resultado: LatinR-->
