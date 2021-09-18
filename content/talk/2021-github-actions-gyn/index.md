@@ -34,49 +34,26 @@ Boas vindas!
 
 É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
 
+## Conteúdo
 
 
-### Pré-requisitos
+- [Pré-requisitos](https://curso-r.github.io/rladies-GYN-github-actions/#pre-requisitos)
 
-Essa apresentação será **expositiva**. Para praticar o que faremos na apresentação, esses são os pré-requisitos:
+- [Projetos no RStudio (ou `.RProj`)](https://curso-r.github.io/rladies-GYN-github-actions/#projetos-rstudio)
 
-- Instalar o R e o RStudio (e **atualizar**):
+- [Estrutura básica de um pacote em R](https://curso-r.github.io/rladies-GYN-github-actions/#basico-pacotes)
 
-  - [Guia de instalação do R](https://livro.curso-r.com/1-1-instalacao-do-r.html)
-  
-  - [Guia de instalação do RStudio](https://livro.curso-r.com/1-2-instalacao-do-rstudio.html)
+- [Revisão sobre Git e GitHub](https://curso-r.github.io/rladies-GYN-github-actions/#revisao-github)
 
-- Instalar o [Git](https://git-scm.com/) (saiba mais [aqui](https://livro.curso-r.com/1-3-instalacao-adicionais.html#git))
+- [O que é integração contínua e GitHub Actions?](https://curso-r.github.io/rladies-GYN-github-actions/#gha)
 
+- [Exemplos usando GitHub Actions para:](https://curso-r.github.io/rladies-GYN-github-actions/#exemplos)
 
-- Criar uma conta no [GitHub](https://github.com/)
+  - [Executar a checagem de um pacote em R](https://curso-r.github.io/rladies-GYN-github-actions/#exemplo-check)
+  - [Automatizar uma tarefa](https://curso-r.github.io/rladies-GYN-github-actions/#exemplo-automacao) 
 
+- [Referências](https://curso-r.github.io/rladies-GYN-github-actions/#referencias)
 
-- Instalar as [Ferramentas de desenvolvimento](https://r-pkgs.org/setup.html#setup-tools):
-
-  - Windows: [RTools instalado](https://livro.curso-r.com/1-3-instalacao-adicionais.html#rtools)
-  
-  - Linux: [r-base-dev](https://livro.curso-r.com/1-3-instalacao-adicionais.html#rtools)
-  
-  - MacOS: Xcode command line tools
-
-Para verificar se as ferramentas de desenvolvimento estão instaladas, utilize a função:
-
-```r
-devtools::has_devel()
-#> Your system is ready to build packages!
-```
-
-
-## Pacotes necessários
-
-```{r eval=FALSE, include=TRUE}
-pacotes <- c(
-  "devtools",
-  "usethis"
-) 
-install.packages(pacotes)
-```
 
 ### Comunidades e locais amigáveis para fazer perguntas :)
 
