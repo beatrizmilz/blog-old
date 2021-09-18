@@ -17,6 +17,10 @@ links:
   icon_pack: far
   name: Slide em HTML
   url:  https://curso-r.github.io/rladies-GYN-github-actions/
+- icon: github
+  icon_pack: fab
+  name: Repositório criado no curso
+  url:  https://github.com/curso-r/gatitos
 location: Online
 show_post_time: false
 title: Introdução ao GitHub Actions
