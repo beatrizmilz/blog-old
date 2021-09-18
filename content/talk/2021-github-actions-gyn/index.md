@@ -1,5 +1,7 @@
 ---
 author: Beatriz Milz e Julio Trecenti
+coautoria: Julio Trecenti
+coautoria_url: https://linktr.ee/j.trecenti
 categories:
 - Palestra
 date: "2021-09-18"
@@ -11,10 +13,10 @@ event_url: https://www.sympla.com.br/introducao-a-github-actions__1342598
 featured: true
 layout: single
 links:
-#- icon: images
-#  icon_pack: far
-#  name: Slide em HTML
-#  url: https://beatrizmilz.github.io/slidesR/git_rstudio/09-2021-gyn.html
+- icon: images
+  icon_pack: far
+  name: Slide em HTML
+  url:  https://curso-r.github.io/rladies-GYN-github-actions/
 location: Online
 show_post_time: false
 title: Introdução ao GitHub Actions
@@ -25,10 +27,6 @@ excerpt: O GitHub Actions (GHA) permite automatizar fluxos de trabalho de desenv
 
 
 Boas vindas!
-
-Essa atividade será realizada em dupla, com o <a href='https://linktr.ee/j.trecenti'> Julio Trecenti</a>.
-
-
 
 É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
 
@@ -71,11 +69,7 @@ devtools::has_devel()
 ```{r eval=FALSE, include=TRUE}
 pacotes <- c(
   "devtools",
-  "usethis",
-  "pkgdown",
-  "testthat",
-  "roxygen2", 
-  "knitr"
+  "usethis"
 ) 
 install.packages(pacotes)
 ```

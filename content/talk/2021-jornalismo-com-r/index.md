@@ -1,5 +1,9 @@
 ---
 author: Cecília do Lago, Gabriela Caesar, Beatriz Milz
+coautoria: Cecília do Lago
+coautoria_url: https://twitter.com/ceciliadolago
+coautoria2: Gabriela Caesar
+coautoria_url2: https://www.gabrielacaesar.com/
 categories:
 - Workshop
 date: "2021-08-29"
