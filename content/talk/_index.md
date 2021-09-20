@@ -16,7 +16,8 @@ description: |
   
   ### 2021
 
-  - **Outubro**:  <!--esperando resultado: python brasil-->
+  - **Outubro**:  
+    - Data a definir - [Python Brasil 2021](https://2021.pythonbrasil.org.br/). Título da palestra: Fazendo amizade com a Phyton reticulada: Introdução ao uso de Python e R no RStudio com o pacote reticulate.
     - 22/10/2021 - [AI Inclusive](https://www.ai-inclusive.org/). Tema: RMarkdown.
     
   - **Novembro**:  <!--esperando resultado: LatinR-->
