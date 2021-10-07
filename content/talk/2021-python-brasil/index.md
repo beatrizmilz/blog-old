@@ -2,11 +2,11 @@
 author: Beatriz Milz
 categories:
 - Palestra
-date: "2021-10-11"
-date_end: "2021-10-11"
+date: "2021-10-13"
+date_end: "2021-10-13"
 publishDate: "2021-09-20"
 draft: false
-event: Python Brasil 2021
+event: Python Brasil 2021 - 13 de outubro, quarta-feira, das 15:50 às 16:35
 event_url: https://2021.pythonbrasil.org.br/
 featured: true
 layout: single
@@ -14,7 +14,7 @@ links:
 # - icon: images
 #   icon_pack: far
 #   name: Slides
-#   url: https://mariguilardi.github.io/Python-Brasil-2020-The-Carpentries/index.html
+#   url: https://beatrizmilz.github.io/python-brasil-2021-reticulate/
 # - icon: youtube
 #   icon_pack: fab
 #   name: Video
