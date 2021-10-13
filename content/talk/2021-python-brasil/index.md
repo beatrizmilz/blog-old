@@ -25,7 +25,7 @@ links:
   url: https://2021.pythonbrasil.org.br/
 location: Online
 show_post_time: false
-title: Fazendo amizade com a Phyton reticulada
+title: Fazendo amizade com a Python reticulada
 subtitle: Introdução ao uso de Python e R no RStudio com o pacote reticulate
 excerpt: Quer ir além da treta 'qual linguagem é melhor?' e saber mais sobre como usar R e Python juntos? Nessa palestra apresentarei uma introdução e sobre o pacote reticulate, usando a IDE RStudio. 
 ---
