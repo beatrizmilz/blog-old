@@ -11,14 +11,14 @@ event_url: https://2021.pythonbrasil.org.br/
 featured: true
 layout: single
 links:
-# - icon: images
-#   icon_pack: far
-#   name: Slides
-#   url: https://beatrizmilz.github.io/python-brasil-2021-reticulate/
-# - icon: youtube
-#   icon_pack: fab
-#   name: Video
-#   url: https://youtu.be/jaM88MGaJQM?t=1080 
+- icon: images
+  icon_pack: far
+  name: Slides
+  url: https://beatrizmilz.github.io/python-brasil-2021-reticulate/
+- icon: youtube
+  icon_pack: fab
+  name: Video
+  url: https://www.youtube.com/watch?v=lO3-tfEwzTc
 - icon: user-plus
   icon_pack: fa
   name: Inscrições
