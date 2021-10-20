@@ -17,15 +17,20 @@ description: |
   ### 2021
 
   - **Outubro**:  
-    - 13/10, 15h50 às 16h35 - [Python Brasil 2021](https://2021.pythonbrasil.org.br/). Título da palestra: Fazendo amizade com a Phyton reticulada: Introdução ao uso de Python e R no RStudio com o pacote reticulate.
-    - 22/10/2021 - [AI Inclusive](https://www.ai-inclusive.org/). Tema: RMarkdown.
+
+    - 22/10/2021 - [AI Inclusive](https://www.ai-inclusive.org/). Tema: Comunicando os resultados de projetos em Ciência de Dados. Ao vivo no [Canal dp Youtube da AI Inclusive](https://www.youtube.com/watch?v=kPU06tzfqPk)
     
-  - **Novembro**:  <!--esperando resultado: LatinR-->
+  - **Novembro**:  
     - 08/11 e 09/11, 19 às 21h - [SENACAMB - Semana Nacional de Ciências Ambientais](https://linktr.ee/senacamb) - Tema: Introdução ao R para Ciências Ambientais
+    - 08 à 12/11 - [LatinR](https://latin-r.com/) (mais informações em breve)
     - 26/11/2021 - [5ª Semana de Iniciação Científica da ENCE](https://ence.ibge.gov.br/index.php/portal-eventos). Tema: Introdução à utilização do Git e GitHub no RStudio.
-  
+    
+  - **Dezembro**: 🎄
   
   ### 2022
+  
+  - **Janeiro**: Foco na tese ☕📚
+  
   - **Fevereiro**:
     - Curso de verão IME/USP - 14 à 18  de fevereiro (2ª à 6ª), 9h-12h. Tema: Relatórios reprodutíveis com R. 
 
