@@ -17,8 +17,8 @@ links:
   url:  https://beatrizmilz.github.io/slidesR/rmarkdown/index.html
 - icon: r-project
   icon_pack: fab
-  name: RStudio Cloud
-  url:  https://rstudio.cloud/project/3072545
+  name: Live coding
+  url:  https://github.com/beatrizmilz/live-ai-inclusive-rmarkdown
 - icon: youtube
   icon_pack: fab
   name: Video

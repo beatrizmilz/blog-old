@@ -16,10 +16,6 @@ description: |
   
   ### 2021
 
-  - **Outubro**:  
-
-    - 22/10/2021 - [AI Inclusive](https://www.ai-inclusive.org/). Tema: Comunicando os resultados de projetos em Ciência de Dados. Ao vivo no [Canal dp Youtube da AI Inclusive](https://www.youtube.com/watch?v=kPU06tzfqPk)
-    
   - **Novembro**:  
     - 08/11 e 09/11, 19 às 21h - [SENACAMB - Semana Nacional de Ciências Ambientais](https://linktr.ee/senacamb) - Tema: Introdução ao R para Ciências Ambientais
     - 08 à 12/11 - [LatinR](https://latin-r.com/) (mais informações em breve)
@@ -32,7 +28,7 @@ description: |
   - **Janeiro**: Foco na tese ☕📚
   
   - **Fevereiro**:
-    - Curso de verão IME/USP - 14 à 18  de fevereiro (2ª à 6ª), 9h-12h. Tema: Relatórios reprodutíveis com R. 
+    - Curso de verão IME/USP. Tema: Relatórios reprodutíveis com R. 
 
 layout: list
 show_author_byline: true
