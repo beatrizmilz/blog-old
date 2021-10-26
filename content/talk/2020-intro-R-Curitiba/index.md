@@ -27,7 +27,7 @@ excerpt:
 Boas vindas!
 O público-alvo desta apresentação são pessoas om interesse em começar a utilizar R para análise de dados. 
 
-É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
+É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#portuguese).
 
 
 ### Pré-requisitos

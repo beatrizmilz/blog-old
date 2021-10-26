@@ -29,7 +29,7 @@ excerpt:
 Boas vindas!
 O público-alvo deste material são pessoas que utilizam o R para análise de dados, e gostariam de gerar relatórios dinâmicos com diferentes tipos de outputs.
 
-É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
+É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#portuguese).
 
 
 - Arquivos de exemplo mostrados na live: 

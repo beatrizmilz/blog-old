@@ -29,7 +29,7 @@ excerpt: O conceito de controle de versão com Git será apresentado e também c
 Boas vindas!
 O público-alvo desta apresentação são pessoas que utilizam o R para análise de dados, tem um conhecimento básico sobre Git e GitHub e querem utilizar essas ferramentas diretamente do RStudio. 
 
-É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
+É muito importante proporcionar uma experiência livre de assédio para todas as pessoas participantes.  Por favor, leia o [Código de Conduta da R-Ladies](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#portuguese).
 
 ### Resumo
 
