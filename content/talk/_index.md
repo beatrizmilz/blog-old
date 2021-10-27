@@ -29,7 +29,7 @@ description: |
   
   - **Fevereiro**:
   
-    - Curso de verão IME-USP. Curso: Relatórios reprodutíveis com R. Datas: 2, 7, 9, 14, 16 de fevereiro de 2022 (2ª e 4ª), período matutino (9h-12h). Informações em breve no [site do Programa de Verão IME-USP](https://www.ime.usp.br/~verao/).
+    - Curso de verão IME-USP. Curso: [Relatórios reprodutíveis com R](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/). Datas: 2, 7, 9, 14, 16 de fevereiro de 2022 (2ª e 4ª), período matutino (9h-12h). Informações em breve no [site do Programa de Verão IME-USP](https://www.ime.usp.br/~verao/).
 
 
 layout: list
