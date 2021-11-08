@@ -17,8 +17,6 @@ description: |
   ### 2021
 
   - **Novembro**:  
-    - 08/11 e 09/11, 19 às 21h - [SENACAMB - Semana Nacional de Ciências Ambientais](https://linktr.ee/senacamb) - Tema: Introdução ao R para Ciências Ambientais
-    - 08 à 12/11 - [LatinR](https://latin-r.com/) (mais informações em breve)
     - 26/11/2021 - [5ª Semana de Iniciação Científica da ENCE](https://ence.ibge.gov.br/index.php/portal-eventos). Tema: Introdução à utilização do Git e GitHub no RStudio.
     
   - **Dezembro**: 🎄
