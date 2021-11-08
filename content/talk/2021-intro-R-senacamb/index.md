@@ -10,11 +10,11 @@ event:  SENACAMB - Semana Nacional de Ciências Ambientais
 event_url: https://linktr.ee/senacamb
 featured: true
 layout: single
-#links:
-# - icon: images
-#   icon_pack: far
-#   name: Slide (em breve)
-#   url: index.html
+links:
+- icon: images
+  icon_pack: far
+  name: Material
+  url: https://beatrizmilz.github.io/2021-senacamb-intro-R/materiais.html
 location: Online
 show_post_time: false
 title: Linguagem R para Cientistas Ambientais

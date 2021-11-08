@@ -21,10 +21,10 @@ links:
   icon_pack: fab
   name: Texto
   url: https://github.com/curso-r/LatinR2021/blob/main/submission/submission.pdf
-# - icon: youtube
-#   icon_pack: fab
-#   name: Video
-#   url: https://www.youtube.com/c/LatinR/videos
+- icon: youtube
+  icon_pack: fab
+  name: Video
+  url: https://youtu.be/7v7XPtizdzU
 location: Online
 show_post_time: false
 title: Scaling feedback using learnr and gradethis in a introductory R course
