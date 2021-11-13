@@ -25,6 +25,10 @@ links:
   icon_pack: fab
   name: Video
   url: https://youtu.be/7v7XPtizdzU
+- icon: youtube
+  icon_pack: fab
+  name: Sessão de perguntas
+  url: https://youtu.be/4TCNocxRtwo?t=2708
 location: Online
 show_post_time: false
 title: Scaling feedback using learnr and gradethis in a introductory R course
