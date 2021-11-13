@@ -13,8 +13,16 @@ layout: single
 links:
 - icon: images
   icon_pack: far
-  name: Material
+  name: Material completo
   url: https://beatrizmilz.github.io/2021-senacamb-intro-R/materiais.html
+- icon: youtube
+  icon_pack: fab
+  name: Gravação - dia 1
+  url: https://youtu.be/l7Qso07Llkw
+- icon: youtube
+  icon_pack: fab
+  name: Gravação - dia 2
+  url: https://youtu.be/bAN2Yj5IeX0
 location: Online
 show_post_time: false
 title: Linguagem R para Cientistas Ambientais
