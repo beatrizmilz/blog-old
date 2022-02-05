@@ -11,17 +11,9 @@ cascade:
     text_link_label: Veja apresentações recentes
     text_link_url: /talk/
 description: |
-  Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. <br>
-  Próximas apresentações/participações: <br>
-  
-  
-  ### 2022
-  
-  - **Fevereiro**:
-  
-    - Curso de verão IME-USP. Curso: [Relatórios reprodutíveis com R](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/). Datas: 2 à 16 de fevereiro de 2022 (2ª e 4ª), período matutino (9h-12h). Inscrições exclusivamente através do [site do Programa de Verão IME-USP](https://www.ime.usp.br/verao/index.php/turmas/apresentacao.php).
-    
-    ## Outros
+  Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. 
+  <br>
+  ## Outros
     - [<i class="fab fa-youtube"></i>  Dica para tirar dúvidas sobre erros em R: Pacote Reprex](https://youtu.be/IxlGYVnaGXk)
 
 

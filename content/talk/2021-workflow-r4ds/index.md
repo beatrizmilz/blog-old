@@ -6,7 +6,6 @@ date: "2021-07-14"
 date_end: "2021-07-14"
 draft: false
 event: Grupo de estudos - R-Ladies São Paulo
-event_url: http://ser.uff.br/
 featured: true
 layout: single
 links:
