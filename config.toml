@@ -85,6 +85,11 @@ enableEmoji = true
       icon      = "discourse" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://discourse.curso-r.com/u/beatrizmilz/summary"
+
+    [[params.social]]
+      icon      = "chalkboard-teacher" # icon name without the 'fa-'
+      icon_pack = "fas"
+      url       = "https://curso-r.com/"
   [[params.social]]
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"

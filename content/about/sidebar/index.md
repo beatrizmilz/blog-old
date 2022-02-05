@@ -4,16 +4,7 @@ author: "Beatriz Milz"
 #role: ""
 avatar_shape: rounded # circle, square, rounded, leave blank to exclude
 show_social_links: true # specify social accounts in site config
-link_list_label: "Atualmente:"  # bookmarks, elsewhere, etc.
-link_list:
-  # - name: "Lendo 📚: Ensinando a transgredir:  a educação como prática da liberdade - bell hooks"
-  #   url: https://g.co/kgs/x47uoD
-  - name: "Lendo 📚: Educação Não Violenta - Elisama Santos"
-    url: https://g.co/kgs/vh1JQZ    
-  # - name: "Assistindo 📺: ?? "
-  #   url: https://g.co/kgs/rnM3x7
-  - name: "Estudando idiomas 📗: Espanhol️"
-    url: http://www.cavcidiomas.com.br/
+
 
 
 
