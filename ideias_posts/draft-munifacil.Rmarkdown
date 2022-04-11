@@ -1,0 +1,105 @@
+---
+title: "Criando mapas com os pacotes tidyverse e geobr"
+excerpt: "Utilizando dados sobre coleta e tratamento de esgoto no Estado De São Paulo"
+author: "Beatriz Milz"
+date: '2020-07-27'
+categories: ["Portugues", "Reprodutibilidade", "Mapas"]
+bibliography: packages.bib
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	fig.align = "center",
+	message = FALSE,
+	warning = FALSE,
+	out.width = "100%"
+)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+library(magrittr)
+```
+
+
+
+```{r eval=FALSE, include=TRUE}
+# Link do relatório
+url <-
+  "https://cetesb.sp.gov.br/aguas-interiores/wp-content/uploads/sites/12/2019/10/Ap%C3%AAndice-C_Dados-de-Saneamento-por-Munic%C3%ADpio.pdf" 
+
+```
+
+```{r}
+apendice_c_2018 <-
+  readr::read_csv(
+    "dados/apendice_c_2018.csv", # Qual arquivo CSV quero carregar
+    col_names = c(
+      # define o nome das colunas
+      "ugrhi",
+      "municipio",
+      "consessao",
+      "pop_urbana",
+      "atendimento_coleta_porc",
+      "atendimento_tratamento_porc",
+      "eficiencia",
+      "carga_poluidora_potencial",
+      "carga_poluidora_remancescente",
+      "ictem",
+      "corpo_receptor"
+    ),
+    locale = readr::locale(encoding = "ISO-8859-1"),
+    # encoding dos dados
+    skip = 5, # Quantas linhas para pular no CSV antes de começar a ler os dados.
+    col_types = readr::cols(pop_urbana = readr::col_double(),
+  atendimento_coleta_porc = readr::col_double(),
+  atendimento_tratamento_porc = readr::col_double(),
+  eficiencia = readr::col_double()
+)
+  ) %>%
+  # Filtrar linhas que não contém nome de municípios
+  dplyr::filter(!municipio %in% c("Estado de São Paulo", "Município", NA, "MUNICÍPIO")) 
+readr::spec(apendice_c_2018 )
+```
+
+
+
+
+```{r}
+apendice_c_2018_limpo <- apendice_c_2018 %>% 
+  munifacil::limpar_colunas(col_muni = municipio, col_uf = "SP") %>% 
+  munifacil::incluir_codigo_ibge()
+
+apendice_c_2018_limpo %>% 
+  dplyr::filter(is.na(id_municipio))
+
+```
+
+### Dados shapefile dos município
+
+Os dados foram obtidos com o pacote `geobr`:
+
+```{r message=FALSE, warning=FALSE, results='hide', error=FALSE}
+# Lê a base de dados espaciais (do tipo Shapefile) dos municípios do Estado de São Paulo,
+# no ano de 2018, segundo o IBGE.
+# Os dados salvos são da classe Simple Feature
+
+municipios_sp <- geobr::read_municipality("SP", 2018) %>% 
+  dplyr::mutate(id_municipio = as.character(code_muni))
+```
+
+```{r}
+apendice_c_geo <-
+  dplyr::full_join(municipios_sp, apendice_c_2018_limpo) 
+
+apendice_c_geo %>% nrow() # Confirmando se a nova base tem o número de municípios do estado.
+```
+
+```{r}
+apendice_c_geo %>% # Base de dados usada
+  ggplot() + # Inicia o gráfico ggplot
+  geom_sf(aes(fill = atendimento_coleta_porc))
+```
+
