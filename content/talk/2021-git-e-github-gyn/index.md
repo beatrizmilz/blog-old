@@ -15,6 +15,10 @@ links:
   icon_pack: far
   name: Slide em HTML
   url: https://beatrizmilz.github.io/slidesR/git_rstudio/09-2021-gyn.html
+- icon: youtube
+  icon_pack: fab
+  name: Gravação
+  url: https://youtu.be/uQL6NOSd9cc
 location: Online
 show_post_time: false
 title: Introdução à utilização do Git e GitHub no RStudio

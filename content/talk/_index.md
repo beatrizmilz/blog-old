@@ -11,8 +11,48 @@ cascade:
     text_link_label: Veja apresentações recentes
     text_link_url: /talk/
 description: |
-  Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. 
+  Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. <br> 
+  ## Próximas apresentações/participações: <br>
+  
+  ### 2022
+  
+  - **Abril**:  
+  
+      - 14/04 a 05/05/2022 - [Curso-R](https://curso-r.com/) - Curso online: R para Ciência de Dados II. Ministrando com: Caio Lente.
+
+
+  - **Maio**:
+  
+    - 09/05 a  13/05/2022 - [CEBRAP Lab](https://cursos.cebrap.org.br/cursos/introducao-ao-r/) - Curso online: Introdução ao R
+
+    - 19/05 a 26/05/2022 - [Curso-R](https://curso-r.com/) - Curso online: Pacotes. Ministrando com: Caio Lente.
+    
+    - 20/05/2022 - [Brazilian Open Science Training (BOST)](https://mathpol.github.io/bost/top/programacao/) - Treinamento online: "Documentos dinâmicos em RMarkdown"
+  
+    - 25 a 27/05/2022 - [VI SER](https://ser.uff.br/) - Seminário Internacional de Estatística com R. Palestra online: "Quarto: Conhecendo a evolução do R Markdown". 
+    
+    - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice.
+    
+        
+  - **Julho**:
+    - 04/07 a 21/07/2022 - [Curso-R](https://curso-r.com/) - Curso online: Dashboards I. Ministrando com: Fernando Correa.
+    
+    -  25 a 28/07/2022 - [rstudio::conf(2022)](https://www.rstudio.com/conference/) - Lightning Talk: "Making awesome automations with GitHub Actions" 
+
+  - **Agosto**:
+    - 16/08 a 06/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Julio Trecenti.
+    
+  - **Setembro**:    
+    - 12/09 a 29/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Web scraping. Ministrando com: Julio Trecenti.
+
+  - **Outubro**:        
+    - 04/10 a 25/10/2022 - [Curso-R](https://curso-r.com/) - Curso online: Visualização de dados. Ministrando com: Fernando Correa.
+    
+  - **Novembro**:        
+    - 01/11 a 29/11/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Tereza Lacerda.
+    
   <br>
+  
   ## Outros
     - [<i class="fab fa-youtube"></i>  Dica para tirar dúvidas sobre erros em R: Pacote Reprex](https://youtu.be/IxlGYVnaGXk)
 

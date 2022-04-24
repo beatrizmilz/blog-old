@@ -21,6 +21,10 @@ links:
   icon_pack: fab
   name: Repositório criado no curso
   url:  https://github.com/curso-r/gatitos
+- icon: youtube
+  icon_pack: fab
+  name: Gravação
+  url: https://youtu.be/PUv_NBUmH0k
 location: Online
 show_post_time: false
 title: Introdução ao GitHub Actions
