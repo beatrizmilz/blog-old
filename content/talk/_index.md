@@ -12,7 +12,7 @@ cascade:
     text_link_url: /talk/
 description: |
   Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. <br> 
-  ## Próximas apresentações/participações: <br>
+  ## Próximas apresentações/participações/cursos: <br>
   
   ### 2022
   
@@ -32,8 +32,11 @@ description: |
     - 25 a 27/05/2022 - [VI SER](https://ser.uff.br/) - Seminário Internacional de Estatística com R. Palestra online: "Quarto: Conhecendo a evolução do R Markdown". 
     
     - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice.
+
+  - **Junho**:
+  
+    - 09/06 a 04/07/2022 - [Curso-R](https://curso-r.com/) - Curso: R para Ciência de Dados I. Ministrando com: Tereza Lacerda.
     
-        
   - **Julho**:
     - 04/07 a 21/07/2022 - [Curso-R](https://curso-r.com/) - Curso online: Dashboards I. Ministrando com: Fernando Correa.
     
@@ -50,7 +53,9 @@ description: |
     
   - **Novembro**:        
     - 01/11 a 29/11/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Tereza Lacerda.
-    
+
+  - **Dezembro**:        
+    - 03/12 a 20/12/2022 - [Curso-R](https://curso-r.com/) - Curso: Deploy. Ministrando com: Caio Lente.
   <br>
   
   ## Outros
