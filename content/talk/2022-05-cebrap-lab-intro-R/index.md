@@ -4,6 +4,7 @@ categories:
 - Curso
 date: "2022-05-09"
 date_end: "2022-05-13"
+publishDate: "2022-05-07"
 draft: false
 event: cebrap.lab online
 event_url: https://cursos.cebrap.org.br/cursos/introducao-ao-r/

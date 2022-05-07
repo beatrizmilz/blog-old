@@ -4,6 +4,7 @@ categories:
 - Apresentação
 date: "2022-05-12"
 date: "2022-05-12"
+publishDate: "2022-05-07"
 draft: false
 event: Grupo de Estudos de Ecologia Quantitativa (GEEQ)
 featured: true
