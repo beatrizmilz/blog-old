@@ -14,6 +14,10 @@ links:
   icon_pack: far
   name: Materiais
   url: https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/
+- icon: images
+  icon_pack: far
+  name: Slides
+  url: https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/slides/
 - icon: chalkboard-teacher
   icon_pack: fas
   name: Plataforma USP

@@ -16,46 +16,43 @@ description: |
   
   ### 2022
   
-  - **Abril**:  
-  
-      - 14/04 a 05/05/2022 - [Curso-R](https://curso-r.com/) - Curso online: R para Ciência de Dados II. Ministrando com: Caio Lente.
-
-
   - **Maio**:
   
-    - 09/05 a  13/05/2022 - [CEBRAP Lab](https://cursos.cebrap.org.br/cursos/introducao-ao-r/) - Curso online: Introdução ao R
+    - 09/05 a  13/05/2022 - [CEBRAP Lab](https://cursos.cebrap.org.br/cursos/introducao-ao-r/) - Curso online: Introdução ao R.
 
-    - 19/05 a 26/05/2022 - [Curso-R](https://curso-r.com/) - Curso online: Pacotes. Ministrando com: Caio Lente.
+    - 12/05 - [Texto e Código: Escrevendo documentos Científicos com R](https://www.youtube.com/watch?v=-28kKOnX5hU) - Apresentação online no Grupo de Estudos de Ecologia Quantitativa (GEEQ).
     
-    - 20/05/2022 - [Brazilian Open Science Training (BOST)](https://mathpol.github.io/bost/top/programacao/) - Treinamento online: "Documentos dinâmicos em RMarkdown"
+    - 19/05 a 26/05/2022 - [Curso-R](https://curso-r.com/) - Curso online: Pacotes. Ministrando com: Caio Lente. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
+    
+    - 20/05/2022 - [Brazilian Open Science Training (BOST)](https://mathpol.github.io/bost/top/programacao/) - Treinamento online: "Documentos dinâmicos em RMarkdown".
   
     - 25 a 27/05/2022 - [VI SER](https://ser.uff.br/) - Seminário Internacional de Estatística com R. Palestra online: "Quarto: Conhecendo a evolução do R Markdown". 
     
-    - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice.
+    - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
 
   - **Junho**:
   
-    - 09/06 a 04/07/2022 - [Curso-R](https://curso-r.com/) - Curso: R para Ciência de Dados I. Ministrando com: Tereza Lacerda.
+    - 09/06 a 04/07/2022 - [Curso-R](https://curso-r.com/) - Curso: R para Ciência de Dados I. Ministrando com: Tereza Lacerda. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
     
   - **Julho**:
-    - 04/07 a 21/07/2022 - [Curso-R](https://curso-r.com/) - Curso online: Dashboards I. Ministrando com: Fernando Correa.
+    - 04/07 a 21/07/2022 - [Curso-R](https://curso-r.com/) - Curso online: Dashboards I. Ministrando com: Fernando Correa. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
     
-    -  25 a 28/07/2022 - [rstudio::conf(2022)](https://www.rstudio.com/conference/) - Lightning Talk: "Making awesome automations with GitHub Actions" 
+    -  25 a 28/07/2022 - [rstudio::conf(2022)](https://www.rstudio.com/conference/) - Lightning Talk: "Making awesome automations with GitHub Actions". 
 
   - **Agosto**:
-    - 16/08 a 06/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Julio Trecenti.
+    - 16/08 a 06/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Julio Trecenti. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
     
   - **Setembro**:    
-    - 12/09 a 29/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Web scraping. Ministrando com: Julio Trecenti.
+    - 12/09 a 29/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Web scraping. Ministrando com: Julio Trecenti. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
 
   - **Outubro**:        
-    - 04/10 a 25/10/2022 - [Curso-R](https://curso-r.com/) - Curso online: Visualização de dados. Ministrando com: Fernando Correa.
+    - 04/10 a 25/10/2022 - [Curso-R](https://curso-r.com/) - Curso online: Visualização de dados. Ministrando com: Fernando Correa. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
     
   - **Novembro**:        
-    - 01/11 a 29/11/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Tereza Lacerda.
+    - 01/11 a 29/11/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Tereza Lacerda. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
 
   - **Dezembro**:        
-    - 03/12 a 20/12/2022 - [Curso-R](https://curso-r.com/) - Curso: Deploy. Ministrando com: Caio Lente.
+    - 03/12 a 20/12/2022 - [Curso-R](https://curso-r.com/) - Curso: Deploy. Ministrando com: Caio Lente. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
   <br>
   
   ## Outros
