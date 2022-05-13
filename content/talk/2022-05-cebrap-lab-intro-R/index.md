@@ -15,10 +15,10 @@ links:
   icon_pack: fas
   name: Inscrições
   url: https://cursos.cebrap.org.br/cursos/introducao-ao-r/
-- icon: images
-  icon_pack: far
-  name: Slide
-  url: https://beatrizmilz.github.io/cebrap-lab-intro-R-5-2022/slides/introducao-ao-curso.html
+- icon: book
+  icon_pack: fas
+  name: Material
+  url: https://beatrizmilz.github.io/cebrap-lab-intro-R-5-2022/
 - icon: github
   icon_pack: fab
   name: GitHub

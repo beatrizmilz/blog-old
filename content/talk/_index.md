@@ -12,16 +12,12 @@ cascade:
     text_link_url: /talk/
 description: |
   Aqui estão listadas apresentações de palestras, workshops, lives no youtube e conferências que eu participei relacionadas à programação. <br> 
-  ## Próximas apresentações/participações/cursos: <br>
+  ## Próximas apresentações, participações e cursos: <br>
   
   ### 2022
   
   - **Maio**:
-  
-    - 09/05 a  13/05/2022 - [CEBRAP Lab](https://cursos.cebrap.org.br/cursos/introducao-ao-r/) - Curso online: Introdução ao R.
 
-    - 12/05 - [Texto e Código: Escrevendo documentos Científicos com R](https://www.youtube.com/watch?v=-28kKOnX5hU) - Apresentação online no Grupo de Estudos de Ecologia Quantitativa (GEEQ).
-    
     - 19/05 a 26/05/2022 - [Curso-R](https://curso-r.com/) - Curso online: Pacotes. Ministrando com: Caio Lente. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
     
     - 20/05/2022 - [Brazilian Open Science Training (BOST)](https://mathpol.github.io/bost/top/programacao/) - Treinamento online: "Documentos dinâmicos em RMarkdown".
@@ -47,6 +43,9 @@ description: |
 
   - **Outubro**:        
     - 04/10 a 25/10/2022 - [Curso-R](https://curso-r.com/) - Curso online: Visualização de dados. Ministrando com: Fernando Correa. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
+
+    - 24/10 a  28/10/2022 - [CEBRAP Lab](https://cursos.cebrap.org.br/cursos/introducao-ao-r/) - Curso presencial: Introdução ao R.
+        
     
   - **Novembro**:        
     - 01/11 a 29/11/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Tereza Lacerda. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
@@ -75,3 +74,6 @@ title: Apresentações
 ---
 
 ** No content below YAML for the talk _index. This file provides front matter for the listing page layout and sidebar content. It is also a branch bundle, and all settings under `cascade` provide front matter for all pages inside talk/. You may still override any of these by changing them in a page's front matter.**
+
+- Datas a definir:
+- ?? - [Texto e Código: Escrevendo documentos Científicos com R - Parte 2](https://www.youtube.com/watch?v=-28kKOnX5hU) - Apresentação online no Grupo de Estudos de Ecologia Quantitativa (GEEQ).

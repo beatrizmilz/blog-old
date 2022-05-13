@@ -14,6 +14,10 @@ links:
   icon_pack: fab
   name: Youtube
   url: https://youtu.be/-28kKOnX5hU
+- icon: images
+  icon_pack: far
+  name: Slides
+  url: https://beatrizmilz.github.io/2022-texto-e-codigo-geeq/
 location: Online
 show_post_time: false
 title: Texto e código - Escrevendo documentos Científicos com R
