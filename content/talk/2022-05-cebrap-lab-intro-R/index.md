@@ -22,7 +22,7 @@ links:
 - icon: github
   icon_pack: fab
   name: GitHub
-  url: hhttps://github.com/beatrizmilz/cebrap-lab-intro-R-5-2022
+  url: https://github.com/beatrizmilz/cebrap-lab-intro-R-5-2022
 location: Online
 show_post_time: false
 title: Introdução ao R

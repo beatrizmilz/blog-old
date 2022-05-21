@@ -17,21 +17,17 @@ description: |
   ### 2022
   
   - **Maio**:
-
-    - 19/05 a 26/05/2022 - [Curso-R](https://curso-r.com/) - Curso online: Pacotes. Ministrando com: Caio Lente. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
-    
-    - 20/05/2022 - [Brazilian Open Science Training (BOST)](https://mathpol.github.io/bost/top/programacao/) - Treinamento online: "Documentos dinâmicos em RMarkdown".
   
     - 25 a 27/05/2022 - [VI SER](https://ser.uff.br/) - Seminário Internacional de Estatística com R. Palestra online: "Quarto: Conhecendo a evolução do R Markdown". 
     
-    - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
-
+    - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice.
+    
   - **Junho**:
   
-    - 09/06 a 04/07/2022 - [Curso-R](https://curso-r.com/) - Curso: R para Ciência de Dados I. Ministrando com: Tereza Lacerda. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
+    - 09/06 a 04/07/2022 - [Curso-R](https://curso-r.com/) - Curso: R para Ciência de Dados I. Ministrando com: Tereza Lacerda.
     
   - **Julho**:
-    - 04/07 a 21/07/2022 - [Curso-R](https://curso-r.com/) - Curso online: Dashboards I. Ministrando com: Fernando Correa. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
+    - 04/07 a 21/07/2022 - [Curso-R](https://curso-r.com/) - Curso online: Dashboards I. Ministrando com: Fernando Correa.
     
     -  25 a 28/07/2022 - [rstudio::conf(2022)](https://www.rstudio.com/conference/) - Lightning Talk: "Making awesome automations with GitHub Actions". 
 
