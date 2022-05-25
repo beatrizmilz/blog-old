@@ -17,9 +17,7 @@ description: |
   ### 2022
   
   - **Maio**:
-  
-    - 25 a 27/05/2022 - [VI SER](https://ser.uff.br/) - Seminário Internacional de Estatística com R. Palestra online: "Quarto: Conhecendo a evolução do R Markdown". 
-    
+ 
     - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice.
     
   - **Junho**:
