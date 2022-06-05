@@ -16,40 +16,11 @@ description: |
   
   ### 2022
   
-  - **Maio**:
- 
-    - 31/05 a 21/06/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Nicole Luduvice.
+  - Cursos na [Curso-R](https://curso-r.com/): Relatórios e apresentações (maio), R para Ciência de Dados I (junho), Dashboards I (julho), Relatórios e apresentações (agosto), Web scraping (setembro), Visualização de dados (outubro), Relatórios e apresentações (novembro), Deploy (dezembro). [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
     
-  - **Junho**:
-  
-    - 09/06 a 04/07/2022 - [Curso-R](https://curso-r.com/) - Curso: R para Ciência de Dados I. Ministrando com: Tereza Lacerda.
-    
-  - **Julho**:
-    - 04/07 a 21/07/2022 - [Curso-R](https://curso-r.com/) - Curso online: Dashboards I. Ministrando com: Fernando Correa.
-    
-    -  25 a 28/07/2022 - [rstudio::conf(2022)](https://www.rstudio.com/conference/) - Lightning Talk: "Making awesome automations with GitHub Actions". 
+  -  25 a 28/07/2022 - [rstudio::conf(2022)](https://www.rstudio.com/conference/) - Lightning Talk: "Making awesome automations with GitHub Actions". 
 
-  - **Agosto**:
-    - 16/08 a 06/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Julio Trecenti. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
-    
-  - **Setembro**:    
-    - 12/09 a 29/09/2022 - [Curso-R](https://curso-r.com/) - Curso online: Web scraping. Ministrando com: Julio Trecenti. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
-
-  - **Outubro**:        
-    - 04/10 a 25/10/2022 - [Curso-R](https://curso-r.com/) - Curso online: Visualização de dados. Ministrando com: Fernando Correa. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
-
-    - 24/10 a  28/10/2022 - [CEBRAP Lab](https://cursos.cebrap.org.br/cursos/introducao-ao-r/) - Curso presencial: Introdução ao R.
-        
-    
-  - **Novembro**:        
-    - 01/11 a 29/11/2022 - [Curso-R](https://curso-r.com/) - Curso online: Relatórios e apresentações. Ministrando com: Tereza Lacerda. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
-
-  - **Dezembro**:        
-    - 03/12 a 20/12/2022 - [Curso-R](https://curso-r.com/) - Curso: Deploy. Ministrando com: Caio Lente. [Formulário de bolsas](https://forms.gle/9t1JGHLH3TBdzUFLA).
-  <br>
-  
-  ## Outros
-    - [<i class="fab fa-youtube"></i>  Dica para tirar dúvidas sobre erros em R: Pacote Reprex](https://youtu.be/IxlGYVnaGXk)
+  - 24/10 a  28/10/2022 - [CEBRAP Lab](https://cursos.cebrap.org.br/cursos/introducao-ao-r/) - Curso presencial: Introdução ao R.
 
 
 layout: list
