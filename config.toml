@@ -151,11 +151,16 @@ enableEmoji = true
     title = "Apresentações"
     url = "/talk/"
     weight = 5
+#  [[menu.header]]
+#    name = "Pesquisa"
+#    title = "Pesquisa"
+#    url = "/pesquisa/"
+#    weight = 6
   [[menu.header]]
-    name = "Pesquisa"
-    title = "Pesquisa"
-    url = "/pesquisa/"
-    weight = 6
+    name = "Blog in English"
+    title = "Blog in English"
+    url = "https://beamilz.com/"
+    weight = 7
 # [[menu.header]]
 #   name = "A collection"
 #   title = "A collection"
